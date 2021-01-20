@@ -49,23 +49,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AILinkFactoryAuto.Base">
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Base.dll</HintPath>
+      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Base.dll</HintPath>
     </Reference>
     <Reference Include="AILinkFactoryAuto.Dut.AtCommand">
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Dut.AtCommand.dll</HintPath>
+      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\managedwifi.1.1.0\lib\net20\ManagedWifi.dll</HintPath>
     </Reference>
-    <Reference Include="MesDll, Version=4.0.2.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\对接IMES\MesDll\MesDll\bin\x86\Debug\MesDll.dll</HintPath>
+    <Reference Include="MesDll">
+      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\MesDll.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Debug\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SimpleWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleWifi.1.0.0.0\lib\net40\SimpleWifi.dll</HintPath>
@@ -80,9 +78,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThoughtWorks.QRCode, Version=1.0.2774.19990, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

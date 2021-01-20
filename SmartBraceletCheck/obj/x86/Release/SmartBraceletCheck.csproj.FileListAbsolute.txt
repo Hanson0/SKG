@@ -211,14 +211,10 @@ F:\2_工作和软件\1_工作存档\01长虹爱联\17_RTL8197FS-VE4-CG功能检�
 F:\2_工作和软件\1_工作存档\01长虹爱联\17_RTL8197FS-VE4-CG功能检查\Code\WF-RTL8720N\SmartBraceletCheck\obj\x86\Release\AILinkFactoryAuto.Task.SmartBracelet.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Task.SmartBracelet.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Task.SmartBracelet.pdb
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Base.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\DevExpress.Data.v18.1.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\DevExpress.Xpo.v18.1.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\ManagedWifi.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\Newtonsoft.Json.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\SimpleWifi.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\ThoughtWorks.QRCode.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\log4net.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Base.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.pdb

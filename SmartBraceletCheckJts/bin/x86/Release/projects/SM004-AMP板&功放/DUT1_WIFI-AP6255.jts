@@ -42,7 +42,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "检测DUT上电",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CmdFindDeviceProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -55,7 +55,7 @@
         "GlobalVariblesKey": null,
         "GlobalVariblesKeyPattern": null,
         "ExecuteCondition": 1,
-        "Timeout": 40000,
+        "Timeout": 30000,
         "SleepTimeBefore": 0,
         "SleepTimeAfter": 0,
         "RetryCount": 0,
@@ -67,7 +67,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "MIC测试-灵敏度_失真检测",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CmdSplThdCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -102,7 +102,7 @@
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
         "AtType": 0,
         "SleepTimeAfterFindDut": 100,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "BaudRate": 115200,
         "Rts": true,
         "Dtr": true,
@@ -127,11 +127,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+LVL1?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -142,7 +142,7 @@
         "GlobalVariblesKeyPattern": {
           "$type": "System.String[], mscorlib",
           "$values": [
-            "LVL1=([.0-9]{5,7})"
+            "LVL1=([.0-9]{5})"
           ]
         },
         "CommandType": 0,
@@ -164,7 +164,7 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "低压通道1电压值",
-        "MinValue": 0.0,
+        "MinValue": 1.0,
         "MaxValue": 3.0,
         "GlobalVarible": "LVL1",
         "ExecuteCondition": 1,
@@ -185,11 +185,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+LVL2?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -222,7 +222,7 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "低压通道2电压值",
-        "MinValue": 0.0,
+        "MinValue": 2.0,
         "MaxValue": 3.0,
         "GlobalVarible": "LVL2",
         "ExecuteCondition": 1,
@@ -243,11 +243,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+LVL3?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -280,8 +280,8 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "低压通道3电压值",
-        "MinValue": 0.0,
-        "MaxValue": 3.0,
+        "MinValue": 2.0,
+        "MaxValue": 5.0,
         "GlobalVarible": "LVL3",
         "ExecuteCondition": 1,
         "Timeout": 3000,
@@ -301,11 +301,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+HVL1?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -359,11 +359,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+HVL2?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -396,7 +396,7 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "高压通道2电压值",
-        "MinValue": 0.0,
+        "MinValue": 2.0,
         "MaxValue": 3.0,
         "GlobalVarible": "HVL2",
         "ExecuteCondition": 1,
@@ -413,15 +413,15 @@
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
       "Enable": true,
-      "Item": "AT-获取高压通道3",
+      "Item": "AT-获取·高压通道3",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+HVL3?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -454,7 +454,7 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "高压通道3电压值",
-        "MinValue": 0.0,
+        "MinValue": 2.0,
         "MaxValue": 5.0,
         "GlobalVarible": "HVL3",
         "ExecuteCondition": 1,
@@ -475,11 +475,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
-        "AtCommand": "AT+CRT1?",
-        "AtCommandError": "error",
+        "PortName": "COM4",
+        "AtCommand": "AT+CRT?",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -490,7 +490,7 @@
         "GlobalVariblesKeyPattern": {
           "$type": "System.String[], mscorlib",
           "$values": [
-            "CRT1=([.0-9]{3,7})"
+            "CRT1=([.0-9]{5})"
           ]
         },
         "CommandType": 0,
@@ -512,8 +512,8 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "电流通道1电流值",
-        "MinValue": 200.0,
-        "MaxValue": 500.0,
+        "MinValue": 1.0,
+        "MaxValue": 3.0,
         "GlobalVarible": "CRT1",
         "ExecuteCondition": 1,
         "Timeout": 3000,
@@ -533,11 +533,11 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
         "commandType": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "AtCommand": "AT+CRT2?",
-        "AtCommandError": "error",
+        "AtCommandError": "UNKNOWN",
         "AtCommandOk": "OK",
-        "AtCommandInterval": 100,
+        "AtCommandInterval": 800,
         "CheckInfo": null,
         "GlobalVariblesKey": {
           "$type": "System.String[], mscorlib",
@@ -548,7 +548,7 @@
         "GlobalVariblesKeyPattern": {
           "$type": "System.String[], mscorlib",
           "$values": [
-            "CRT2=([.0-9]{3,7})"
+            "CRT2=([.0-9]{5})"
           ]
         },
         "CommandType": 0,
@@ -570,8 +570,8 @@
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "TestValueName": "电流通道2电流值",
-        "MinValue": 0.0,
-        "MaxValue": 500.0,
+        "MinValue": 2.0,
+        "MaxValue": 3.0,
         "GlobalVarible": "CRT2",
         "ExecuteCondition": 1,
         "Timeout": 3000,
@@ -590,8 +590,8 @@
       "Item": "用户判断",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.Property.UserConfirmProperties, AILinkFactoryAuto.Base",
-        "CountDownTime": 60000,
-        "Tips": "长按MIC按键，跟着语音操作后，是听到'完成'？",
+        "CountDownTime": 30000,
+        "Tips": "被测板卡是否有完成声音发出？",
         "KeyPass": 32,
         "KeyFail": 70,
         "ExecuteCondition": 1,
@@ -613,7 +613,7 @@
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.ClosePhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
         "AtType": 0,
         "SleepTimeAfterFindDut": 0,
-        "PortName": "COM50",
+        "PortName": "COM4",
         "BaudRate": 115200,
         "Rts": true,
         "Dtr": true,
