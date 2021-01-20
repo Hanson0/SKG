@@ -1,0 +1,108 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-01-09, Test Time: 23:15:22
+
+
+1 Init
+TestTime:37.2911ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+SN null
+TestTime:313.8616ms
+                                                                        FAIL
+5 打开串口
+TestTime:17.7826ms
+                                                                        SKIP
+6 AT-获取低压通道1
+TestTime:11.7613ms
+                                                                        SKIP
+7 检查低压通道1
+TestTime:20.2516ms
+                                                                        SKIP
+8 AT-获取低压通道2
+TestTime:16.2384ms
+                                                                        SKIP
+9 检查低压通道2
+TestTime:17.4204ms
+                                                                        SKIP
+10 AT-获取低压通道3
+TestTime:10.9749ms
+                                                                        SKIP
+11 检查低压通道3
+TestTime:17.0106ms
+                                                                        SKIP
+12 AT-获取高压通道1
+TestTime:16.245ms
+                                                                        SKIP
+13 检查高压通道1
+TestTime:12.9685ms
+                                                                        SKIP
+14 AT-获取高压通道2
+TestTime:23.9855ms
+                                                                        SKIP
+15 检查高压通道2
+TestTime:12.0239ms
+                                                                        SKIP
+16 AT-获取高压通道3
+TestTime:42.4701ms
+                                                                        SKIP
+17 检查高压通道3
+TestTime:17.3292ms
+                                                                        SKIP
+18 AT指令-电流通道1
+TestTime:18.2522ms
+                                                                        SKIP
+19 检查电流通道1
+TestTime:12.6312ms
+                                                                        SKIP
+20 AT指令-电流通道2
+TestTime:20.944ms
+                                                                        SKIP
+21 检查电流通道2
+TestTime:17.5158ms
+                                                                        SKIP
+22 用户判断
+TestTime:14.9394ms
+                                                                        SKIP
+23 关闭串口
+给定关键字不在字典中。
+TestTime:265.4571ms
+                                                                        FAIL
+24 Deinit
+TestTime:13.9078ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: SN null
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckSn(String sn)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+all test time:0:00:01.4738519
+

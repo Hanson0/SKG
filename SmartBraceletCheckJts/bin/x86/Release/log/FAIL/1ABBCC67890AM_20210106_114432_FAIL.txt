@@ -1,0 +1,113 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-01-05, Test Time: 18:06:14
+
+
+1 Init
+TestTime:15.9585ms
+                                                                        PASS
+4 检测DUT上电
+请放入产品，检查产品上电中....
+CMD Commond=adb devices
+检测到产品上电，ADB Response：
+Microsoft Windows [版本 10.0.19041.685]
+(c) 2020 Microsoft Corporation. 保留所有权利。
+
+F:\Release>cd  adb
+
+F:\Release\adb>adb devices
+List of devices attached
+0123456789ABCDEF	device
+
+
+F:\Release\adb>exit
+  contain： 
+	device
+
+
+TestTime:10890.2558ms
+                                                                        PASS
+7 MIC测试-灵敏度_失真检测
+CMD Commond=
+adb shell SA -l0 -F1000~1000 -L32767 -d4
+Microsoft Windows [版本 10.0.19041.685]
+(c) 2020 Microsoft Corporation. 保留所有权利。
+F:\Release>cd  adb
+F:\Release\adb>mic.bat
+F:\Release\adb>adb shell SA -l0 -F1000~1000 -L32767 -d4 
+hz	 spl	 thd
+1031	 -31.450832	 1.703458
+984	 -23.037178	 1.703357
+1031	 -26.494923	 1.612858
+984	 -22.087151	 1.769664
+93	 -43.905788	 7.581097
+46	 -52.947803	 89.816383
+channel0
+hz	 spl	 thd
+1031	 -33.447617	 1.608330
+984	 -22.555130	 1.820664
+93	 -28.806303	 6.903354
+46	 -48.234436	 81.489967
+channel1
+hz	 spl	 thd
+1078	 -31.533007	 12.385765
+1031	 -17.210644	 8.199031
+984	 -8.594371	 19.199883
+93	 -30.612772	 11.723911
+channel2
+hz	 spl	 thd
+1031	 -31.720539	 9.790697
+984	 -17.539648	 11.920613
+93	 -31.944548	 12.638291
+46	 -55.773296	 99.493439
+channel3
+hz	 spl	 thd
+984	 -32.359360	 4.915515
+93	 -28.065788	 6.727948
+46	 -47.704765	 70.762840
+channel4
+hz	 spl	 thd
+1031	 -39.605236	 1.148891
+984	 -26.521233	 1.551793
+93	 -41.057663	 7.027157
+46	 -50.967930	 92.555000
+channel5
+ADB Response接收完毕：
+contain：channel5
+MIC通道间最大灵敏度值:-8.594371dB,
+最小灵敏度值:-32.35936dB，
+差值大于6dB
+TestTime:22722.4171ms
+                                                                        FAIL
+12 Deinit
+TestTime:14.961ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第7项:
+MIC测试-灵敏度_失真检测
+AILinkFactoryAuto.Task.BaseException: MIC通道间最大灵敏度值:-8.594371dB,最小灵敏度值:-32.35936dB，差值大于6
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.CmdSplThdCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:CmdSplThdCheckExecuter.cs:行号 257
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+all test time:0:00:33.7761917

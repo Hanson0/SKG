@@ -1,0 +1,654 @@
+{
+  "$type": "System.Collections.Generic.List`1[[AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base]], mscorlib",
+  "$values": [
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Init",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.InitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.InitExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "扫码枪扫描标签",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.ParseLabelProperties, AILinkFactoryAuto.Base",
+        "SnLocation": 1,
+        "ImeiLocation": 0,
+        "MeidLocation": 0,
+        "MacLocation": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.ParseLabelExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "检测DUT上电",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CmdFindDeviceProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "Command": "adb devices",
+        "CommandInterval": 800,
+        "ToolFolder": "adb",
+        "CommandError": "error",
+        "CommandOk": "\tdevice\r\n\r\n",
+        "CheckInfo": null,
+        "GlobalVariblesKey": null,
+        "GlobalVariblesKeyPattern": null,
+        "ExecuteCondition": 1,
+        "Timeout": 40000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CmdFindDeviceExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "MIC测试-灵敏度_失真检测",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CmdSplThdCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "CheckFreqValue": 984,
+        "SplMaxOffset": 6.0,
+        "ThdMaxOffset": 10.0,
+        "Command": "adb shell SA -l0 -F1000~1000 -L32767 -d4",
+        "CommandDelayTime": 5000,
+        "ToolFolder": "adb",
+        "IsMicorsoftInit": false,
+        "CommandError": "error",
+        "CommandOk": "channel5",
+        "CheckInfo": null,
+        "GlobalVariblesKey": null,
+        "GlobalVariblesKeyPattern": null,
+        "ExecuteCondition": 1,
+        "Timeout": 30000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CmdSplThdCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "打开串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 100,
+        "PortName": "COM50",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": "\\r\\n",
+        "AutoKey": null,
+        "ExecuteCondition": 1,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT-获取低压通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+LVL1?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{LVL1}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "LVL1=([.0-9]{5,7})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查低压通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "低压通道1电压值",
+        "MinValue": 0.0,
+        "MaxValue": 3.0,
+        "GlobalVarible": "LVL1",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT-获取低压通道2",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+LVL2?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{LVL2}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "LVL2=([.0-9]{5})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查低压通道2",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "低压通道2电压值",
+        "MinValue": 0.0,
+        "MaxValue": 3.0,
+        "GlobalVarible": "LVL2",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT-获取低压通道3",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+LVL3?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{LVL3}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "LVL3=([.0-9]{5})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查低压通道3",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "低压通道3电压值",
+        "MinValue": 0.0,
+        "MaxValue": 3.0,
+        "GlobalVarible": "LVL3",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT-获取高压通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+HVL1?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{HVL1}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "HVL1=([.0-9]{5})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查高压通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "高压通道1电压值",
+        "MinValue": 1.0,
+        "MaxValue": 3.0,
+        "GlobalVarible": "HVL1",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT-获取高压通道2",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+HVL2?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{HVL2}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "HVL2=([.0-9]{5})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查高压通道2",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "高压通道2电压值",
+        "MinValue": 0.0,
+        "MaxValue": 3.0,
+        "GlobalVarible": "HVL2",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT-获取高压通道3",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+HVL3?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{HVL3}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "HVL3=([.0-9]{5})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查高压通道3",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "高压通道3电压值",
+        "MinValue": 0.0,
+        "MaxValue": 5.0,
+        "GlobalVarible": "HVL3",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT指令-电流通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+CRT1?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{CRT1}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "CRT1=([.0-9]{3,7})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查电流通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "电流通道1电流值",
+        "MinValue": 200.0,
+        "MaxValue": 500.0,
+        "GlobalVarible": "CRT1",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "AT指令-电流通道2",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM50",
+        "AtCommand": "AT+CRT2?",
+        "AtCommandError": "error",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 100,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{CRT2}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "CRT2=([.0-9]{3,7})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查电流通道2",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "电流通道2电流值",
+        "MinValue": 0.0,
+        "MaxValue": 500.0,
+        "GlobalVarible": "CRT2",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "用户判断",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.UserConfirmProperties, AILinkFactoryAuto.Base",
+        "CountDownTime": 60000,
+        "Tips": "长按MIC按键，跟着语音操作后，是听到'完成'？",
+        "KeyPass": 32,
+        "KeyFail": 70,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.UserConfirmExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "关闭串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.ClosePhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 0,
+        "PortName": "COM50",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": "\\r\\n",
+        "AutoKey": null,
+        "ExecuteCondition": 0,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Deinit",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.DeinitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "LogType": 2,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.DeinitExecuter, AILinkFactoryAuto.Base"
+      }
+    }
+  ]
+}

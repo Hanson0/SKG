@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MesDll</name>
+    </assembly>
+    <members>
+        <member name="T:Mes.Test.MesProcess">
+            <summary>
+            iMES系统工序
+            </summary>
+        </member>
+        <member name="M:Mes.Test.MesProcess.PreCheck(System.String)">
+            <summary>
+            SN预检查
+            </summary>
+            <param name="sn">MAC、IMEI或SN</param>
+        </member>
+    </members>
+</doc>

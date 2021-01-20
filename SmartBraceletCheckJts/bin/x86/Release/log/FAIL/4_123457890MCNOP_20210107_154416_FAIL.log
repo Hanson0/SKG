@@ -1,0 +1,249 @@
+
+     AP6255(ADB)   Ver 3.2.6R2.001
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for AP6255(ADB)                         ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2021/01/07, Test Time: 15:43:50
+
+
+
+
+     Plugin Information:
+     ==============================================
+       TesterPlugin | Tester_Legacy.dll | 1.0.1
+     ---------------|-------------------|----------
+       DutPlugin    | Dut_AP6255.dll    | 0.0.1
+     ---------------|-------------------|----------
+       CsvPlugin    |                   | 
+     ---------------|-------------------|----------
+       MesPlugin    |                   | 
+     ---------------|-------------------|----------
+       MethodPlugin | MethodBt.dll      | 1.0.0
+                    | MethodCommon.dll  | 1.0.0
+                    | MethodDut.dll     | 1.0.0
+                    | MethodWifi.dll    | 1.0.0
+                    | MethodZigbee.dll  | 1.0.0
+     ==============================================
+
+     Tester API Information:
+     ==============================================
+     WT20X T24R2(2.8.8.1)
+     ==============================================
+
+1 .WT_CONNECT_TESTER
+-------------------------------------------------------------------------------
+   Tester's SUB IP hasn't been configured.
+   Connect Tester(192.168.10.253) OK! SN: WT208C-30184   FW: 3.0.2.111
+
+TYPE:WT208C;NAME:WT208C-30184;IP:192.168.10.253;SN:WT208C-30184;VERSION:3.0.2.111;
+   Test Time: 0.20 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   [0261209984]Cmd:adb devices
+   ----------------------------[0261210234]Rsp Start----------------------------
+   List of devices attached
+   0123456789ABCDEF	device
+   -----------------------------[0261210234]Rsp End-----------------------------
+   Device ID : 0123456789ABCDEF
+   [0261210234]Cmd:exec.bat
+   ----------------------------[0261211625]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell start_wifi
+   -----------------------------[0261211625]Rsp End-----------------------------
+   Test Time: 1.64 sec
+
+
+   DUT MAC:456789ABCDEF
+
+3 .WT_VERIFY_TX_ALL    2412(1) 11M CHAIN0
+-------------------------------------------------------------------------------
+AntNum = 0, Channel = 1, Cableloss = 12.50 
+   [0261211625]Cmd:TestWifi.bat
+   ----------------------------[0261214156]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell start_wifi
+   E:\zjh\WlanFacilityForAP6255>adb shell wl down
+   E:\zjh\WlanFacilityForAP6255>adb shell wl band b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl mpc 0
+   E:\zjh\WlanFacilityForAP6255>adb shell wl nrate -r 11
+   E:\zjh\WlanFacilityForAP6255>adb shell wl rateset 11b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl country ALL
+   E:\zjh\WlanFacilityForAP6255>adb shell wl up
+   E:\zjh\WlanFacilityForAP6255>adb shell wl channel 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl scansuppress 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl txpwr1 -1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl phy_forcecal 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl pkteng_start 00:11:22:33:44:55 tx 100 1000 0
+   -----------------------------[0261214156]Rsp End-----------------------------
+   [0261216015]Cmd:TestWifi.bat
+   ----------------------------[0261216343]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell stop_wifi
+   -----------------------------[0261216343]Rsp End-----------------------------
+   [0261216343]Cmd:TestWifi.bat
+   ----------------------------[0261219875]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell start_wifi
+   E:\zjh\WlanFacilityForAP6255>adb shell wl down
+   E:\zjh\WlanFacilityForAP6255>adb shell wl band b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl mpc 0
+   E:\zjh\WlanFacilityForAP6255>adb shell wl nrate -r 11
+   E:\zjh\WlanFacilityForAP6255>adb shell wl rateset 11b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl country ALL
+   E:\zjh\WlanFacilityForAP6255>adb shell wl up
+   E:\zjh\WlanFacilityForAP6255>adb shell wl channel 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl scansuppress 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl txpwr1 -1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl phy_forcecal 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl pkteng_start 00:11:22:33:44:55 tx 100 1000 0
+   -----------------------------[0261219875]Rsp End-----------------------------
+   [0261221734]Cmd:TestWifi.bat
+   ----------------------------[0261222062]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell stop_wifi
+   -----------------------------[0261222062]Rsp End-----------------------------
+   TX_[0]  11M EVM          : -12.25 dB   (-100.00 ................O.  -10.00)
+   TX_[0]  11M Power[ 0]    : 14.33  dBm  (  14.00 O.................   20.00)
+   TX_[0]  11M MaskErr      : 0.00   %    (   0.00 O.................    5.12)
+   TX_[0]  11M FreqErr      : 5.65   ppm  ( -10.00 .............O....   10.00)
+
+                                                                          PASS
+   Test Time: 10.44 sec
+
+
+4 .WT_VERIFY_TX_ALL    5180(36) 54M CHAIN0
+-------------------------------------------------------------------------------
+AntNum = 0, Channel = 36, Cableloss = 15.50 
+   [0261222078]Cmd:TestWifi.bat
+   ----------------------------[0261225625]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell start_wifi
+   E:\zjh\WlanFacilityForAP6255>adb shell wl down
+   E:\zjh\WlanFacilityForAP6255>adb shell wl band a
+   E:\zjh\WlanFacilityForAP6255>adb shell wl mpc 0
+   E:\zjh\WlanFacilityForAP6255>adb shell wl nrate -r 54
+   E:\zjh\WlanFacilityForAP6255>adb shell wl rateset 54b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl country ALL
+   E:\zjh\WlanFacilityForAP6255>adb shell wl up
+   E:\zjh\WlanFacilityForAP6255>adb shell wl channel 36
+   E:\zjh\WlanFacilityForAP6255>adb shell wl scansuppress 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl txpwr1 -1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl phy_forcecal 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl pkteng_start 00:11:22:33:44:55 tx 100 1000 0
+   -----------------------------[0261225625]Rsp End-----------------------------
+   [0261226031]Cmd:TestWifi.bat
+   ----------------------------[0261226359]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell stop_wifi
+   -----------------------------[0261226359]Rsp End-----------------------------
+   [0261226359]Cmd:TestWifi.bat
+   ----------------------------[0261229906]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell start_wifi
+   E:\zjh\WlanFacilityForAP6255>adb shell wl down
+   E:\zjh\WlanFacilityForAP6255>adb shell wl band a
+   E:\zjh\WlanFacilityForAP6255>adb shell wl mpc 0
+   E:\zjh\WlanFacilityForAP6255>adb shell wl nrate -r 54
+   E:\zjh\WlanFacilityForAP6255>adb shell wl rateset 54b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl country ALL
+   E:\zjh\WlanFacilityForAP6255>adb shell wl up
+   E:\zjh\WlanFacilityForAP6255>adb shell wl channel 36
+   E:\zjh\WlanFacilityForAP6255>adb shell wl scansuppress 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl txpwr1 -1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl phy_forcecal 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl pkteng_start 00:11:22:33:44:55 tx 100 1000 0
+   -----------------------------[0261229906]Rsp End-----------------------------
+   [0261230312]Cmd:TestWifi.bat
+   ----------------------------[0261230625]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell stop_wifi
+   -----------------------------[0261230625]Rsp End-----------------------------
+   [0261230734]Cmd:TestWifi.bat
+   ----------------------------[0261234312]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell start_wifi
+   E:\zjh\WlanFacilityForAP6255>adb shell wl down
+   E:\zjh\WlanFacilityForAP6255>adb shell wl band a
+   E:\zjh\WlanFacilityForAP6255>adb shell wl mpc 0
+   E:\zjh\WlanFacilityForAP6255>adb shell wl nrate -r 54
+   E:\zjh\WlanFacilityForAP6255>adb shell wl rateset 54b
+   E:\zjh\WlanFacilityForAP6255>adb shell wl country ALL
+   E:\zjh\WlanFacilityForAP6255>adb shell wl up
+   E:\zjh\WlanFacilityForAP6255>adb shell wl channel 36
+   E:\zjh\WlanFacilityForAP6255>adb shell wl scansuppress 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl txpwr1 -1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl phy_forcecal 1
+   E:\zjh\WlanFacilityForAP6255>adb shell wl pkteng_start 00:11:22:33:44:55 tx 100 1000 0
+   -----------------------------[0261234312]Rsp End-----------------------------
+   [0261234718]Cmd:TestWifi.bat
+   ----------------------------[0261235031]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell stop_wifi
+   -----------------------------[0261235031]Rsp End-----------------------------
+   TX_[0]  54M EVM          : -26.26 dB   (-100.00 ................O.  -25.00)
+   TX_[0]  54M Power[ 0]    : -6.03  dBm  (  11.50 X.................   16.50) FAIL
+   TX_[0]  54M MaskErr      : 2.33   %    (   0.00 .......O..........    5.12)
+   TX_[0]  54M FreqErr      : 10.11  ppm  ( -10.00 .................X   10.00) FAIL
+
+                                                                          FAIL
+   Test Time: 12.97 sec
+
+
+
+Teardown:
+
+5 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   [0261235031]Cmd:exec.bat
+   ----------------------------[0261235359]Rsp Start----------------------------
+   E:\zjh\WlanFacilityForAP6255>adb shell stop_wifi
+   wl: wl driver adapter not found
+   -----------------------------[0261235359]Rsp End-----------------------------
+   Test Time: 0.33 sec
+
+
+6 .WT_SHOW_VERIFY_SUMMARY
+-------------------------------------------------------------------------------
+
+     Tx Verify Summary:
+     ====================================================================================
+     ItemNo. ANT   Ch  Freq    Rate       EVM       Pwr        FeqErr     Mask     Result
+     ------------------------------------------------------------------------------------
+        3  ANT0    1   2412    11M     -12.25dB    14.33dBm    5.65ppm    0.00%    PASS
+        4  ANT0   36   5180    54M     -26.26dB    -6.03dBm   10.11ppm    2.33%    FAIL
+     ====================================================================================
+
+   Test Time: 0.02 sec
+
+
+7 .WT_DISCONNECT_TESTER
+-------------------------------------------------------------------------------
+   Test Time: 0.20 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_CONNECT_TESTER                                              PASS     0.20sec
+  2  WT_INSERT_DUT                                                  PASS     1.64sec
+  3  WT_VERIFY_TX_ALL    2412(1) 11M CHAIN0                         PASS     10.44sec
+  4  WT_VERIFY_TX_ALL    5180(36) 54M CHAIN0                        FAIL     12.97sec
+  5  WT_REMOVE_DUT                                                  PASS     0.33sec
+  6  WT_SHOW_VERIFY_SUMMARY                                                  0.02sec
+  7  WT_DISCONNECT_TESTER                                           PASS     0.20sec
+=====================================================================================
+
+
+   Error: 5180-11AG-54M-ANT0 TX Verify FreqOffset Fail  Code:5006
+
+     Total Time: 25.828 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################

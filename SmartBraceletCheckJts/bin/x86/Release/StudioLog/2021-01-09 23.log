@@ -1,0 +1,298 @@
+2021-01-09 23:12:39,707 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-01-09 23:12:39,740 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.00
+2021-01-09 23:12:39,751 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - V1.00
+2021-01-09 23:12:39,758 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 0 - FormLog................Success!
+2021-01-09 23:12:43,028 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2021-01-09 23:12:43,037 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[\projects\SM004-功放&AMP板\DUT1_WIFI-AP6255.jts]
+2021-01-09 23:12:43,366 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2021-01-09 23:12:43,402 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2021-01-09 23:15:06,519 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-01-09 23:15:06,550 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.00
+2021-01-09 23:15:06,563 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - V1.00
+2021-01-09 23:15:06,570 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 0 - FormLog................Success!
+2021-01-09 23:15:09,453 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2021-01-09 23:15:09,464 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[\projects\SM004-功放&AMP板\DUT1_WIFI-AP6255.jts]
+2021-01-09 23:15:09,663 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2021-01-09 23:15:09,666 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2021-01-09 23:15:22,629 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-01-09, Test Time: 23:15:22
+
+
+2021-01-09 23:15:22,679 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2021-01-09 23:15:22,702 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-01-09 23:15:22,715 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:37.2911ms
+                                                                        PASS
+2021-01-09 23:15:22,732 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 扫码枪扫描标签
+2021-01-09 23:15:22,744 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=
+2021-01-09 23:15:22,760 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2021-01-09 23:15:22,776 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=
+2021-01-09 23:15:22,789 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2021-01-09 23:15:22,804 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN null
+2021-01-09 23:15:22,829 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - AILinkFactoryAuto.Task.BaseException: SN null
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckSn(String sn)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2021-01-09 23:15:23,045 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:313.8616ms
+                                                                        FAIL
+2021-01-09 23:15:23,067 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 打开串口
+2021-01-09 23:15:23,085 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:17.7826ms
+                                                                        SKIP
+2021-01-09 23:15:23,097 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 AT-获取低压通道1
+2021-01-09 23:15:23,109 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:11.7613ms
+                                                                        SKIP
+2021-01-09 23:15:23,128 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 检查低压通道1
+2021-01-09 23:15:23,149 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:20.2516ms
+                                                                        SKIP
+2021-01-09 23:15:23,166 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 AT-获取低压通道2
+2021-01-09 23:15:23,182 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:16.2384ms
+                                                                        SKIP
+2021-01-09 23:15:23,201 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 检查低压通道2
+2021-01-09 23:15:23,219 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:17.4204ms
+                                                                        SKIP
+2021-01-09 23:15:23,235 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 AT-获取低压通道3
+2021-01-09 23:15:23,246 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:10.9749ms
+                                                                        SKIP
+2021-01-09 23:15:23,272 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 检查低压通道3
+2021-01-09 23:15:23,289 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:17.0106ms
+                                                                        SKIP
+2021-01-09 23:15:23,305 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 AT-获取高压通道1
+2021-01-09 23:15:23,322 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:16.245ms
+                                                                        SKIP
+2021-01-09 23:15:23,346 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 检查高压通道1
+2021-01-09 23:15:23,359 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:12.9685ms
+                                                                        SKIP
+2021-01-09 23:15:23,377 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 14 AT-获取高压通道2
+2021-01-09 23:15:23,401 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:23.9855ms
+                                                                        SKIP
+2021-01-09 23:15:23,422 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 检查高压通道2
+2021-01-09 23:15:23,434 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:12.0239ms
+                                                                        SKIP
+2021-01-09 23:15:23,453 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 16 AT-获取高压通道3
+2021-01-09 23:15:23,495 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:42.4701ms
+                                                                        SKIP
+2021-01-09 23:15:23,521 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 17 检查高压通道3
+2021-01-09 23:15:23,539 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:17.3292ms
+                                                                        SKIP
+2021-01-09 23:15:23,555 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 18 AT指令-电流通道1
+2021-01-09 23:15:23,573 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:18.2522ms
+                                                                        SKIP
+2021-01-09 23:15:23,593 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 19 检查电流通道1
+2021-01-09 23:15:23,606 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:12.6312ms
+                                                                        SKIP
+2021-01-09 23:15:23,623 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 AT指令-电流通道2
+2021-01-09 23:15:23,644 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:20.944ms
+                                                                        SKIP
+2021-01-09 23:15:23,662 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 21 检查电流通道2
+2021-01-09 23:15:23,680 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:17.5158ms
+                                                                        SKIP
+2021-01-09 23:15:23,702 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 22 用户判断
+2021-01-09 23:15:23,718 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 0 - TestTime:14.9394ms
+                                                                        SKIP
+2021-01-09 23:15:23,731 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 23 关闭串口
+2021-01-09 23:15:23,745 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 给定关键字不在字典中。
+2021-01-09 23:15:23,778 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 0 - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+2021-01-09 23:15:23,997 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - TestTime:265.4571ms
+                                                                        FAIL
+2021-01-09 23:15:24,020 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 24 Deinit
+2021-01-09 23:15:24,034 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:13.9078ms
+                                                                        PASS
+2021-01-09 23:15:24,050 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-01-09 23:15:24,064 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: SN null
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckSn(String sn)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+2021-01-09 23:15:24,092 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - all test time:0:00:01.4738519
+2021-01-09 23:15:32,625 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-01-09, Test Time: 23:15:32
+
+
+2021-01-09 23:15:32,652 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 1 Init
+2021-01-09 23:15:32,674 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-01-09 23:15:32,683 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:33.9087ms
+                                                                        PASS
+2021-01-09 23:15:32,713 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 2 扫码枪扫描标签
+2021-01-09 23:15:32,726 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - IMEI=
+2021-01-09 23:15:32,740 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MEID=
+2021-01-09 23:15:32,756 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - SN=123456789012345
+2021-01-09 23:15:32,776 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - MAC=
+2021-01-09 23:15:32,789 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:78.7894ms
+                                                                        PASS
+2021-01-09 23:15:32,838 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 5 打开串口
+2021-01-09 23:15:32,962 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:125.5627ms
+                                                                        PASS
+2021-01-09 23:15:32,979 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 6 AT-获取低压通道1
+2021-01-09 23:15:33,107 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+LVL1?
+2021-01-09 23:15:33,228 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=LVL1=2.312
+OK
+
+2021-01-09 23:15:33,257 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:279.9514ms
+                                                                        PASS
+2021-01-09 23:15:33,283 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 7 检查低压通道1
+2021-01-09 23:15:33,296 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 低压通道1电压值：2.312，在设定范围：0 ~ 3之间 PASS 
+
+2021-01-09 23:15:33,354 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:72.107ms
+                                                                        PASS
+2021-01-09 23:15:33,376 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 8 AT-获取低压通道2
+2021-01-09 23:15:33,527 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+LVL2?
+2021-01-09 23:15:33,653 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=LVL2=0.006
+OK
+
+2021-01-09 23:15:33,670 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:295.0681ms
+                                                                        PASS
+2021-01-09 23:15:33,691 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 9 检查低压通道2
+2021-01-09 23:15:33,714 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 低压通道2电压值：0.006，在设定范围：0 ~ 3之间 PASS 
+
+2021-01-09 23:15:33,733 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:43.2323ms
+                                                                        PASS
+2021-01-09 23:15:33,754 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 10 AT-获取低压通道3
+2021-01-09 23:15:33,887 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+LVL3?
+2021-01-09 23:15:34,030 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=LVL3=0.003
+OK
+
+2021-01-09 23:15:34,045 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:292.0659ms
+                                                                        PASS
+2021-01-09 23:15:34,086 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 11 检查低压通道3
+2021-01-09 23:15:34,100 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 低压通道3电压值：0.003，在设定范围：0 ~ 3之间 PASS 
+
+2021-01-09 23:15:34,114 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:31.5755ms
+                                                                        PASS
+2021-01-09 23:15:34,129 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 12 AT-获取高压通道1
+2021-01-09 23:15:34,249 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+HVL1?
+2021-01-09 23:15:34,390 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=HVL1=1.506
+OK
+
+2021-01-09 23:15:34,407 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:278.3197ms
+                                                                        PASS
+2021-01-09 23:15:34,428 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 13 检查高压通道1
+2021-01-09 23:15:34,445 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 高压通道1电压值：1.506，在设定范围：1 ~ 3之间 PASS 
+
+2021-01-09 23:15:34,464 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:37.194ms
+                                                                        PASS
+2021-01-09 23:15:34,491 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 14 AT-获取高压通道2
+2021-01-09 23:15:34,608 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+HVL2?
+2021-01-09 23:15:34,733 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=HVL2=0.049
+OK
+
+2021-01-09 23:15:34,768 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:277.5023ms
+                                                                        PASS
+2021-01-09 23:15:34,795 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 15 检查高压通道2
+2021-01-09 23:15:34,813 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 高压通道2电压值：0.049，在设定范围：0 ~ 3之间 PASS 
+
+2021-01-09 23:15:34,830 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:37.307ms
+                                                                        PASS
+2021-01-09 23:15:34,850 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 16 AT-获取高压通道3
+2021-01-09 23:15:34,999 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+HVL3?
+2021-01-09 23:15:35,126 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=HVL3=3.328
+OK
+
+2021-01-09 23:15:35,141 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:292.4811ms
+                                                                        PASS
+2021-01-09 23:15:35,187 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 17 检查高压通道3
+2021-01-09 23:15:35,204 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 高压通道3电压值：3.328，在设定范围：0 ~ 5之间 PASS 
+
+2021-01-09 23:15:35,227 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:40.8344ms
+                                                                        PASS
+2021-01-09 23:15:35,245 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 18 AT指令-电流通道1
+2021-01-09 23:15:35,365 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+CRT1?
+2021-01-09 23:15:35,490 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=CRT1=450
+OK
+
+2021-01-09 23:15:35,506 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:262.5925ms
+                                                                        PASS
+2021-01-09 23:15:35,531 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 19 检查电流通道1
+2021-01-09 23:15:35,553 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 电流通道1电流值：450，在设定范围：200 ~ 500之间 PASS 
+
+2021-01-09 23:15:35,566 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:37.696ms
+                                                                        PASS
+2021-01-09 23:15:35,592 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 20 AT指令-电流通道2
+2021-01-09 23:15:35,725 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Commond=AT+CRT2?
+2021-01-09 23:15:35,865 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - AT Response=CRT2=0.000
+OK
+
+2021-01-09 23:15:35,881 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:292.6069ms
+                                                                        PASS
+2021-01-09 23:15:35,906 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 21 检查电流通道2
+2021-01-09 23:15:35,954 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 电流通道2电流值：0，在设定范围：0 ~ 500之间 PASS 
+
+2021-01-09 23:15:35,968 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:66.1099ms
+                                                                        PASS
+2021-01-09 23:15:35,996 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 22 用户判断
+2021-01-09 23:15:36,862 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - User Press Space
+2021-01-09 23:15:36,897 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:902.6607ms
+                                                                        PASS
+2021-01-09 23:15:36,932 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 23 关闭串口
+2021-01-09 23:15:36,956 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:27.8725ms
+                                                                        PASS
+2021-01-09 23:15:36,985 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - 24 Deinit
+2021-01-09 23:15:37,005 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - TestTime:20.4048ms
+                                                                        PASS
+2021-01-09 23:15:37,028 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 0 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2021-01-09 23:15:37,048 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 0 - 
+2021-01-09 23:15:37,073 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 0 - all test time:0:00:04.46587

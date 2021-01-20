@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MesDll</name>
+    </assembly>
+    <members>
+        <member name="T:Mes.JsonClass.JsonGetMac">
+            <summary>
+            获取MAC的Jsons实例化类
+            </summary>
+        </member>
+        <member name="P:Mes.JsonClass.JsonGetMac.macList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mes.Test.MesProcess">
+            <summary>
+            iMES系统工序
+            </summary>
+        </member>
+        <member name="M:Mes.Test.MesProcess.PreCheck(System.String)">
+            <summary>
+            SN预检查
+            </summary>
+            <param name="sn">MAC、IMEI或SN</param>
+        </member>
+        <member name="M:Mes.Test.MesProcess.GetMacNoLabel">
+            <summary>
+            从IMES获取MAC
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Mes.Test.MesProcess.FindInfoBySn(System.String)">
+            <summary>
+            根据产品SN获取产品基本信息
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Mes.Test.MesProcess.LoginImes(System.String,System.String)">
+            <summary>
+            登录iMES,获取IMES权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mes.Test.MesProcess.BindDid(System.String,System.String)">
+            <summary>
+            登录iMES,获取IMES权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mes.Test.MesProcess.PreCheckPcbNo(System.String)">
+            <summary>
+            预检查PCB板号
+            </summary>
+            <param name="pcbNo"></param>
+        </member>
+        <member name="M:Mes.Test.MesProcess.GetSerialNum(System.String)">
+            <summary>
+            根据串号ID获取串号.适用于excel模板未提前绑定的情况,如通用串号类型
+            </summary>
+            <param name="mac">MAC</param>
+        </member>
+    </members>
+</doc>

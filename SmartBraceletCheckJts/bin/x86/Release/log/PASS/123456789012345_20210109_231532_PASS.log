@@ -1,0 +1,148 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-01-09, Test Time: 23:15:32
+
+
+1 Init
+TestTime:33.9087ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789012345
+MAC=
+TestTime:78.7894ms
+                                                                        PASS
+5 打开串口
+TestTime:125.5627ms
+                                                                        PASS
+6 AT-获取低压通道1
+AT Commond=AT+LVL1?
+AT Response=LVL1=2.312
+OK
+
+TestTime:279.9514ms
+                                                                        PASS
+7 检查低压通道1
+低压通道1电压值：2.312，在设定范围：0 ~ 3之间 PASS 
+
+TestTime:72.107ms
+                                                                        PASS
+8 AT-获取低压通道2
+AT Commond=AT+LVL2?
+AT Response=LVL2=0.006
+OK
+
+TestTime:295.0681ms
+                                                                        PASS
+9 检查低压通道2
+低压通道2电压值：0.006，在设定范围：0 ~ 3之间 PASS 
+
+TestTime:43.2323ms
+                                                                        PASS
+10 AT-获取低压通道3
+AT Commond=AT+LVL3?
+AT Response=LVL3=0.003
+OK
+
+TestTime:292.0659ms
+                                                                        PASS
+11 检查低压通道3
+低压通道3电压值：0.003，在设定范围：0 ~ 3之间 PASS 
+
+TestTime:31.5755ms
+                                                                        PASS
+12 AT-获取高压通道1
+AT Commond=AT+HVL1?
+AT Response=HVL1=1.506
+OK
+
+TestTime:278.3197ms
+                                                                        PASS
+13 检查高压通道1
+高压通道1电压值：1.506，在设定范围：1 ~ 3之间 PASS 
+
+TestTime:37.194ms
+                                                                        PASS
+14 AT-获取高压通道2
+AT Commond=AT+HVL2?
+AT Response=HVL2=0.049
+OK
+
+TestTime:277.5023ms
+                                                                        PASS
+15 检查高压通道2
+高压通道2电压值：0.049，在设定范围：0 ~ 3之间 PASS 
+
+TestTime:37.307ms
+                                                                        PASS
+16 AT-获取高压通道3
+AT Commond=AT+HVL3?
+AT Response=HVL3=3.328
+OK
+
+TestTime:292.4811ms
+                                                                        PASS
+17 检查高压通道3
+高压通道3电压值：3.328，在设定范围：0 ~ 5之间 PASS 
+
+TestTime:40.8344ms
+                                                                        PASS
+18 AT指令-电流通道1
+AT Commond=AT+CRT1?
+AT Response=CRT1=450
+OK
+
+TestTime:262.5925ms
+                                                                        PASS
+19 检查电流通道1
+电流通道1电流值：450，在设定范围：200 ~ 500之间 PASS 
+
+TestTime:37.696ms
+                                                                        PASS
+20 AT指令-电流通道2
+AT Commond=AT+CRT2?
+AT Response=CRT2=0.000
+OK
+
+TestTime:292.6069ms
+                                                                        PASS
+21 检查电流通道2
+电流通道2电流值：0，在设定范围：0 ~ 500之间 PASS 
+
+TestTime:66.1099ms
+                                                                        PASS
+22 用户判断
+User Press Space
+TestTime:902.6607ms
+                                                                        PASS
+23 关闭串口
+TestTime:27.8725ms
+                                                                        PASS
+24 Deinit
+TestTime:20.4048ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:04.46587
+

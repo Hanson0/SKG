@@ -1,0 +1,2147 @@
+
+     AP6255   Ver 1.0.0
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility             ##########
+     ###########                     for AP6255                 ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/12/27, Test Time: 14:05:20
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_AP6255.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    | iMes3.dll             | 1.0.0
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+   Connect Mes....Fail.
+	Error Msg: Item¡¾Server.token¡¿in ¡°ConfigOfMes.INI¡± not found or IniFile error!
+   Test Time: 0.03 sec
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+=====================================================================================
+
+
+   Error:MES Operate Fail  Code:25002
+
+     Total Time: 0.093 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:06:06
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   Extra Function[GPIO] retry : 1/3
+   Retry:1/3, Exec[ATED\r\n] Fail
+   Retry:2/3, Exec[ATED\r\n] Fail
+   Retry:3/3, Exec[ATED\r\n] Fail
+   Extra Function[GPIO] retry : 2/3
+   Retry:1/3, Exec[ATED\r\n] Fail
+   Retry:2/3, Exec[ATED\r\n] Fail
+   Retry:3/3, Exec[ATED\r\n] Fail
+   Extra Function[GPIO] retry : 3/3
+   Retry:1/3, Exec[ATED\r\n] Fail
+   Retry:2/3, Exec[ATED\r\n] Fail
+   Retry:3/3, Exec[ATED\r\n] Fail
+
+   Close DUT Fail.
+   Test Time: 8.46 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            FAIL     8.46sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 8.455 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:07:15
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   Extra Function[GPIO] retry : 1/3
+   Retry:1/3, Exec[ATED\r\n] Fail
+   Retry:2/3, Exec[ATED\r\n] Fail
+   Retry:3/3, Exec[ATED\r\n] Fail
+   Extra Function[GPIO] retry : 2/3
+   Retry:1/3, Exec[ATED\r\n] Fail
+   Retry:2/3, Exec[ATED\r\n] Fail
+   Retry:3/3, Exec[ATED\r\n] Fail
+   Extra Function[GPIO] retry : 3/3
+   Retry:1/3, Exec[ATED\r\n] Fail
+   Retry:2/3, Exec[ATED\r\n] Fail
+   Retry:3/3, Exec[ATED\r\n] Fail
+
+   Close DUT Fail.
+   Test Time: 8.33 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            FAIL     8.33sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 8.330 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:10:10
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.09 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Analysis MAC from DUT_SN[123456789987] Fail
+   Analysis MAC from DUT_SN[123456789987] Fail
+   Analysis MAC from DUT_SN[123456789987] Fail
+
+   Open DUT Fail.
+   Test Time: 0.22 sec
+
+
+
+Teardown:
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.08 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.09sec
+  2  WT_INSERT_DUT                                                  FAIL     0.22sec
+  3  WT_REMOVE_DUT                                                  PASS     0.08sec
+=====================================================================================
+
+
+   Error:Connect DUT Fail  Code:20008
+
+     Total Time: 3.385 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:11:48
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.10 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Analysis MAC from DUT_SN[1] Fail
+   Analysis MAC from DUT_SN[1] Fail
+   Analysis MAC from DUT_SN[1] Fail
+
+   Open DUT Fail.
+   Test Time: 0.22 sec
+
+
+
+Teardown:
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.08 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.10sec
+  2  WT_INSERT_DUT                                                  FAIL     0.22sec
+  3  WT_REMOVE_DUT                                                  PASS     0.08sec
+=====================================================================================
+
+
+   Error:Connect DUT Fail  Code:20008
+
+     Total Time: 3.416 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:13:42
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.12 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Analysis MAC from DUT_SN[] Fail
+   Analysis MAC from DUT_SN[] Fail
+   Analysis MAC from DUT_SN[] Fail
+
+   Open DUT Fail.
+   Test Time: 0.22 sec
+
+
+
+Teardown:
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.06 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.12sec
+  2  WT_INSERT_DUT                                                  FAIL     0.22sec
+  3  WT_REMOVE_DUT                                                  PASS     0.06sec
+=====================================================================================
+
+
+   Error:Connect DUT Fail  Code:20008
+
+     Total Time: 3.416 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:14:54
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.09 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Analysis MAC from DUT_SN[] Fail
+   Analysis MAC from DUT_SN[] Fail
+   Analysis MAC from DUT_SN[] Fail
+
+   Open DUT Fail.
+   Test Time: 0.23 sec
+
+
+
+Teardown:
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.08 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.09sec
+  2  WT_INSERT_DUT                                                  FAIL     0.23sec
+  3  WT_REMOVE_DUT                                                  PASS     0.08sec
+=====================================================================================
+
+
+   Error:Connect DUT Fail  Code:20008
+
+     Total Time: 3.401 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:15:34
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.12 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.26 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.06 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 2/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 3/3
+   Cannot find StopFlag : UART send data(20)
+
+   Close DUT Fail.
+   Test Time: 14.79 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.12sec
+  2  WT_INSERT_DUT                                                  PASS     1.26sec
+  3  WT_REMOVE_DUT                                                  PASS     0.06sec
+  4  WT_REMOVE_DUT    LRWPAN                                        FAIL     14.79sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 19.297 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:16:59
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.07 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.17 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.06 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 2/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 3/3
+   Cannot find StopFlag : UART send data(20)
+
+   Close DUT Fail.
+   Test Time: 14.79 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.07sec
+  2  WT_INSERT_DUT                                                  PASS     1.17sec
+  3  WT_REMOVE_DUT                                                  PASS     0.06sec
+  4  WT_REMOVE_DUT    LRWPAN                                        FAIL     14.79sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 19.110 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:25:07
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.12 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.16 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.08 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 2/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 3/3
+   Cannot find StopFlag : UART send data(20)
+
+   Close DUT Fail.
+   Test Time: 14.77 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.12sec
+  2  WT_INSERT_DUT                                                  PASS     1.16sec
+  3  WT_REMOVE_DUT                                                  PASS     0.08sec
+  4  WT_REMOVE_DUT    LRWPAN                                        FAIL     14.77sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 19.126 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+   [0021753153]TX:
+   [0021753263]RX:\r\n\r\r#
+   [0021753263]TX:
+   [0021753372]RX:\r\n\r\r#
+   [0021754183]TX:
+   [0021754308]RX:\r\n\r\r#
+   [0021754308]TX:
+   [0021754401]RX:\r\n\r\r#
+   [0021755213]TX:
+   [0021755322]RX:\r\n\r\r#
+   [0021755322]TX:
+   [0021755431]RX:\r\n\r\r#
+   [0021756242]TX:
+   [0021756351]RX:\r\n\r\r#
+   [0021756351]TX:
+   [0021756461]RX:\r\n\r\r#
+   [0021757272]TX:
+   [0021757381]RX:\r\n\r\r#
+   [0021757381]TX:
+   [0021757490]RX:\r\n\r\r#
+   [0021758301]TX:
+   [0021758395]RX:\r\n\r\r#
+   [0021758395]TX:
+   [0021758504]RX:\r\n\r\r#
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:25:39
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   [0021758879]TX:ATSR
+   [0021759222]RX:ATSR\r\n\r[ATSC]: _AT_SYSTEM_Switch to OTA1  app!!\r\n\r\rBitIdx: 9 \n\r\rcurrrent is OTA2, select OTA1 \n\r\r<RTL8195A>\rROM:[V0.1]\n\r\rFLASHRATE:4\n\r\rBOOT TYPE:0 XTAL:40000000\n\r\rIMG1 DATA[1168:10002000]\n\r\rIMG1 ENTRY[8000541:100021ef]\n\r\rIMG1 ENTER\n\r\rCHIPID[000000ff]\n\r\rread_mode idx:0, flash_speed idx:0\n\r\rcalibration_result:[1:7:11][7:d] \n\r\rcalibration_result:[2:13:7][1:d] \n\r\rcalibration_result:[3:3:3][1:3] \n\r\rcalibration_ok:[2:13:7] \n\r\rFLASH CALIB[NEW OK]\n\r\rOTA2 ADDR[8100000]\n\r\rOTAx SELE[fffffc00]\n\r\rOTA1 USE\n\r\rIMG2 DATA[0x8053eac:5072:0x10005000]\n\r\rIMG2 SIGN[RTKWin(10005008)]\n\r\rIMG2 ENTRY[0x10005000:0x804ff75]\n\r\r===== Enter Image 2 ====\n\r\rSystem_Init1\n\r\rOSC8M: 8386568 \n\r\rboot reason: 25 \n\r\rDONT PG EFUSE Under MP \n\r\rSystem_Init2\n\r\r#wifissid_: ssid,CHNT_Socket_Test,pwd,chint1984xyz\r\n\rinterface 0 is initialized\n\rinterface 1 is initialized\n\r\n\r\rInitializing WIFI ...\r\n\rLDO Mode, BD_Info: 0 \n\r
+   [0021759425]TX:ATED
+   [0021759674]RX:ATED\r\n\r[AI-Link]: TEST START ...\n\r
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.20 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   [0021762435]TX:ATWP=1
+   [0021762529]RX:ATWP=1\r\n\r[ATWP]: _AT_WLAN_POWER_[ON]\n\r\r\n\r\rWIFI is already running\n\r\r[MEM] After do cmd, available heap 55664\n\r\r\r\n\r\n\r# 
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   [0021762529]TX:iwpriv mp_start
+   [0021762607]RX:iwpriv mp_start\r\n\r
+   [0021762623]TX:iwpriv mp_start
+   [0021762701]RX:iwpriv mp_start\r\n\r
+   [0021762701]TX:iwpriv mp_start
+   [0021762779]RX:iwpriv mp_start\r\n\r\n\r\r[MEM] After do cmd, available heap 55664\n\r\r\r\n\r\n\r# 
+   [0021762779]TX:iwpriv config_get realmap
+   [0021763340]RX:iwpriv config_get realmap\r\n\r\n\r\rPrivate Message: \n\r\r0x000	95 81 C2 16 FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x010	FF FF FF FF FF FF FF FF 	FF FF 00 02 FF FF FF FF \n\r\r0x020	25 25 25 25 25 25 26 26 	26 26 26 02 FF FF FF FF \n\r\r0x030	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x040	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x050	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x060	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x070	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x080	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x090	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x0a0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x0b0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x0c0	FF FF FF FF FF FF FF FF 	20 0A 1C 05 00 00 00 FF \n\r\r0x0d0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x0e0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x0f0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x100	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x110	FF FF FF FF FF FF FF FF 	FF FF D4 B7 61 B2 29 6E \n\r\r0x120	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x130	FF 01 00 10 00 FF 00 FF 	10 00 FF FF FF FF FF FF \n\r\r0x140	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x150	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x160	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x170	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x180	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x190	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x1a0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x1b0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x1c0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x1d0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x1e0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r0x1f0	FF FF FF FF FF FF FF FF 	FF FF FF FF FF FF FF FF \n\r\r\n\r\r[MEM] After do cmd, available heap 55664\n\r\r\r\n\r\n\r# 
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.48 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   [0021763356]TX:iwpriv mp_stop
+   [0021763434]RX:iwpriv mp_stop\r\n\r\n\r\r[MEM] After do cmd, available heap 55664\n\r\r\r\n\r\n\r# 
+   Test Time: 0.08 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   [0021763637]TX:ATSC
+   [0021763949]RX:ATSC\r\n\r[ATSC]: _AT_SYSTEM_Switch to OTA2 app!!\r\n\r\rBitIdx: 10 \n\r\rcurrrent is OTA1, select OTA2 \n\r\r<RTL8195A>\rROM:[V0.1]\n\r\rFLASHRATE:4\n\r\rBOOT TYPE:0 XTAL:40000000\n\r\rIMG1 DATA[1168:10002000]\n\r\rIMG1 ENTRY[8000541:100021ef]\n\r\rIMG1 ENTER\n\r\rCHIPID[000000ff]\n\r\rread_mode idx:0, flash_speed idx:0\n\r\rcalibration_result:[1:7:11][7:d] \n\r\rcalibration_result:[2:13:7][1:d] \n\r\rcalibration_result:[3:3:3][1:3] \n\r\rcalibration_ok:[2:13:7] \n\r\rFLASH CALIB[NEW OK]\n\r\rOTA2 ADDR[8100000]\n\r\rOTAx SELE[fffff800]\n\r\rOTA2 USE\n\r\rOTA2 SIGN[35393138:31313738]\n\r\rIMG2 DATA[0x81ab1b0:7604:0x10005000]\n\r\rIMG2 SIGN[RTKWin(10005008)]\n\r\rIMG2 ENTRY[0x10005000:0x81001b9]\n\r\r===== Enter Image 2 ====\n\r\rSystem_Init1\n\r\rOSC8M: 8383135 \n\r\rboot reason: 25 \n\r\rSystem_Init2\n\r
+   [0021764136]TX:reboot
+   [0021764510]RX:reboot\r\n\r\r\n\r\rRebooting ...\n\r\r<RTL8195A>\rROM:[V0.1]\n\r\rFLASHRATE:4\n\r\rBOOT TYPE:0 XTAL:40000000\n\r\rIMG1 DATA[1168:10002000]\n\r\rIMG1 ENTRY[8000541:100021ef]\n\r\rIMG1 ENTER\n\r\rCHIPID[000000ff]\n\r\rread_mode idx:0, flash_speed idx:0\n\r\rcalibration_result:[1:7:11][7:d] \n\r\rcalibration_result:[2:13:7][1:d] \n\r\rcalibration_result:[3:3:3][1:3] \n\r\rcalibration_ok:[2:13:7] \n\r\rFLASH CALIB[NEW OK]\n\r\rOTA2 ADDR[8100000]\n\r\rOTAx SELE[fffff800]\n\r\rOTA2 USE\n\r\rOTA2 SIGN[35393138:31313738]\n\r\rIMG2 DATA[0x81ab1b0:7604:0x10005000]\n\r\rIMG2 SIGN[RTKWin(10005008)]\n\r\rIMG2 ENTRY[0x10005000:0x81001b9]\n\r\r===== Enter Image 2 ====\n\r\rSystem_Init1\n\r\rOSC8M: 8383135 \n\r\rboot reason: 25 \n\r\rSystem_Init2\n\r\r# sample_TaskCreat stack size 5k byte!\r\n\r\r\r\n\rLiteOS Release Date: 2019/07/05-10:08:41\r\n\r\rLiteOS Version: LiteOSV200R001C10B335SP1\r\n\rinterface 0 is initialized\n\rinterface 1 is initialized\n\r\n\r\rInitializing WIFI ...\r\n\rLDO Mode, BD_Info: 0 \n\r\r\n\rLDO Mode, BD_Info: 0 \n\r\n\r\rStart LOG SERVICE MODE\n\r\r\n\r\r# 
+   [0021768738]TX:ATSC
+   [0021768987]RX:ATSC\r\n\r\r\n\runknown command 'ATSC'\n\r\r[MEM] After do cmd, available heap 68488\n\r\r\r\n\r\n\r# 
+   [0021769190]TX:reboot
+   [0021769580]RX:reboot\r\n\r\r\n\r\rRebooting ...\n\r\r<RTL8195A>\rROM:[V0.1]\n\r\rFLASHRATE:4\n\r\rBOOT TYPE:0 XTAL:40000000\n\r\rIMG1 DATA[1168:10002000]\n\r\rIMG1 ENTRY[8000541:100021ef]\n\r\rIMG1 ENTER\n\r\rCHIPID[000000ff]\n\r\rread_mode idx:0, flash_speed idx:0\n\r\rcalibration_result:[1:7:11][7:d] \n\r\rcalibration_result:[2:13:7][1:d] \n\r\rcalibration_result:[3:3:3][1:3] \n\r\rcalibration_ok:[2:13:7] \n\r\rFLASH CALIB[NEW OK]\n\r\rOTA2 ADDR[8100000]\n\r\rOTAx SELE[fffff800]\n\r\rOTA2 USE\n\r\rOTA2 SIGN[35393138:31313738]\n\r\rIMG2 DATA[0x81ab1b0:7604:0x10005000]\n\r\rIMG2 SIGN[RTKWin(10005008)]\n\r\rIMG2 ENTRY[0x10005000:0x81001b9]\n\r\r===== Enter Image 2 ====\n\r\rSystem_Init1\n\r\rOSC8M: 8390004 \n\r\rboot reason: 25 \n\r\rSystem_Init2\n\r\r# sample_TaskCreat stack size 5k byte!\r\n\r\r\r\n\rLiteOS Release Date: 2019/07/05-10:08:41\r\n\r\rLiteOS Version: LiteOSV200R001C10B335SP1\r\n\rinterface 0 is initialized\n\rinterface 1 is initialized\n\r\n\r\rInitializing WIFI ...\r\n\rLDO Mode, BD_Info: 0 \n\r\r\n\rLDO Mode, BD_Info: 0 \n\r\n\r\rStart LOG SERVICE MODE\n\r\r\n\r\r# 
+   [0021773792]TX:ATSC
+   [0021774042]RX:ATSC\r\n\r\r\n\runknown command 'ATSC'\n\r\r[MEM] After do cmd, available heap 68496\n\r\r\r\n\r\n\r# 
+   [0021774245]TX:reboot
+   [0021774588]RX:reboot\r\n\r\r\n\r\rRebooting ...\n\r\r<RTL8195A>\rROM:[V0.1]\n\r\rFLASHRATE:4\n\r\rBOOT TYPE:0 XTAL:40000000\n\r\rIMG1 DATA[1168:10002000]\n\r\rIMG1 ENTRY[8000541:100021ef]\n\r\rIMG1 ENTER\n\r\rCHIPID[000000ff]\n\r\rread_mode idx:0, flash_speed idx:0\n\r\rcalibration_result:[1:7:11][7:d] \n\r\rcalibration_result:[2:13:7][1:d] \n\r\rcalibration_result:[3:3:3][1:3] \n\r\rcalibration_ok:[2:13:7] \n\r\rFLASH CALIB[NEW OK]\n\r\rOTA2 ADDR[8100000]\n\r\rOTAx SELE[fffff800]\n\r\rOTA2 USE\n\r\rOTA2 SIGN[35393138:31313738]\n\r\rIMG2 DATA[0x81ab1b0:7604:0x10005000]\n\r\rIMG2 SIGN[RTKWin(10005008)]\n\r\rIMG2 ENTRY[0x10005000:0x81001b9]\n\r\r===== Enter Image 2 ====\n\r\rSystem_Init1\n\r\rOSC8M: 8386568 \n\r\rboot reason: 25 \n\r\rSystem_Init2\n\r\r# sample_TaskCreat stack size 5k byte!\r\n\r\r\r\n\rLiteOS Release Date: 2019/07/05-10:08:41\r\n\r\rLiteOS Version: LiteOSV200R001C10B335SP1\r\n\rinterface 0 is initialized\n\rinterface 1 is initialized\n\r\n\r\rInitializing WIFI ...\r\n\rLDO Mode, BD_Info: 0 \n\r\r\n\rLDO Mode, BD_Info: 0 \n\r\n\r\rStart LOG SERVICE MODE\n\r\r\n\r\r# 
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 2/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 3/3
+   Cannot find StopFlag : UART send data(20)
+
+   Close DUT Fail.
+   Test Time: 15.18 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.20sec
+  2  WT_INSERT_DUT                                                  PASS     1.48sec
+  3  WT_REMOVE_DUT                                                  PASS     0.08sec
+  4  WT_REMOVE_DUT    LRWPAN                                        FAIL     15.18sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 19.953 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+   [0021779642]TX:
+   [0021779798]RX:\r\n\r\r#
+   [0021779798]TX:
+   [0021779907]RX:\r\n\r\r#
+   [0021780734]TX:
+   [0021780843]RX:\r\n\r\r#
+   [0021780843]TX:
+   [0021780953]RX:\r\n\r\r#
+   [0021781748]TX:
+   [0021781857]RX:\r\n\r\r#
+   [0021781857]TX:
+   [0021781967]RX:\r\n\r\r#
+   [0021782778]TX:
+   [0021782887]RX:\r\n\r\r#
+   [0021782887]TX:
+   [0021782996]RX:\r\n\r\r#
+   [0021783823]TX:
+   [0021783932]RX:\r\n\r\r#
+   [0021783932]TX:
+   [0021784042]RX:\r\n\r\r#
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:27:40
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.12 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.17 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.06 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Cannot find StopFlag : UART send data(20)
+   Extra Function[SWITCHTOAPP] retry : 2/3
+   Retry:1/3, Exec[ATSC\r\n] Fail
+   Retry:2/3, Exec[ATSC\r\n] Fail
+   Retry:3/3, Exec[ATSC\r\n] Fail
+   Extra Function[SWITCHTOAPP] retry : 3/3
+   Retry:1/3, Exec[ATSC\r\n] Fail
+   Retry:2/3, Exec[ATSC\r\n] Fail
+   Retry:3/3, Exec[ATSC\r\n] Fail
+
+   Close DUT Fail.
+   Test Time: 7.74 sec
+
+
+
+Teardown:
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.12sec
+  2  WT_INSERT_DUT                                                  PASS     1.17sec
+  3  WT_REMOVE_DUT                                                  PASS     0.06sec
+  4  WT_REMOVE_DUT    LRWPAN                                        FAIL     7.74sec
+=====================================================================================
+
+
+   Error:DisConnect DUT Fail  Code:20009
+
+     Total Time: 12.090 sec
+     Total Result: FAIL
+     #######################################################################
+     ##                                                                   ##
+     ##                    ########    ###     ####  ##                   ##
+     ##                    ##         ## ##     ##   ##                   ##
+     ##                    ##        ##   ##    ##   ##                   ##
+     ##                    ######   ##     ##   ##   ##                   ##
+     ##                    ##       #########   ##   ##                   ##
+     ##                    ##       ##     ##   ##   ##                   ##
+     ##                    ##       ##     ##  ####  ########             ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:28:49
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.09 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.17 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.09 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   ------------------------------[SWITCHTOAPP] Begin-------------------------------
+   ROM:[V0.1]
+   FLASHRATE:4
+   BOOT TYPE:0 XTAL:40000000
+   IMG1 DATA[1168:10002000]
+   IMG1 ENTRY[8000541:100021ef]
+   IMG1 ENTER
+   CHIPID[000000ff]
+   read_mode idx:0, flash_speed idx:0
+   calibration_result:[1:7:11][7:d]
+   calibration_result:[2:13:7][1:d]
+   calibration_result:[3:3:3][1:3]
+   calibration_ok:[2:13:7]
+   FLASH CALIB[NEW OK]
+   OTA2 ADDR[8100000]
+   OTAx SELE[ffff8000]
+   OTA2 USE
+   OTA2 SIGN[35393138:31313738]
+   IMG2 DATA[0x81ab1b0:7604:0x10005000]
+   IMG2 SIGN[RTKWin(10005008)]
+   IMG2 ENTRY[0x10005000:0x81001b9]
+   ===== Enter Image 2 ====
+   System_Init1
+   OSC8M: 8386568
+   boot reason: 25
+   System_Init2
+   # sample_TaskCreat stack size 5k byte!
+   LiteOS Release Date: 2019/07/05-10:08:41
+   LiteOS Version: LiteOSV200R001C10B335SP1
+   interface 0 is initialized
+   interface 1 is initialized
+   Initializing WIFI ...
+   LDO Mode, BD_Info: 0
+   LDO Mode, BD_Info: 0
+   Start LOG SERVICE MODE
+   #
+   Create Task "rtw_recv_tasklet"
+   Create Task "rtw_xmit_tasklet"
+   Create Task "rtw_interrupt_thread"
+   Create Task "cmd_thread"
+   WIFI initialized
+   init_thread(74), Available heap 0x13570clr wdt
+   ¶ÁÈ¡¿´ÊÇ·ñÆô¶¯hilink sdk  buff = ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+   Ö¸Ê¾µÆ¿ª¹Ø backlight == on
+   ´æ´¢µÄµçÁ¿ÏµÊý--ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ ÏµÊý:0.000000
+   µçÁ¿Ð£×¼²ÎÊýÆ«²îÏµÊý = 0.000000
+   ´æ´¢µÄ¹¦ÂÊÏµÊý--ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ ÏµÊý:0.000000
+   ¹¦ÂÊÐ£×¼²ÎÊýÆ«²îÏµÊý  = 0.000000
+   reboot_type_ADDR = ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ222 BKUP_REG3 = 0X0
+   hilink sdk build time Jul 10 2019 22:47:29
+   hilink sdk version v9.0.10.323[date:2019-07-10 22:47:29 compiler:arm-none-eabi-gcc]
+   ±£Áôwifi×´Ì¬×öÖ¸Ê¾µÆ hilink_notify_devstatus== 5
+   LwIP_DHCP: dhcp stop.
+   Deinitializing WIFI ...
+   RTKTHREAD exit Swt_Task
+   =============hilink ver infor===================
+   		firmwareVer 1.0.0.127
+   		softwareVer 1.0.0
+   		hardwareVer 1.0.0
+   		²úÆ·Ãû³Æ ÕýÌ©ÖÇÄÜ²åÅÅ(hilink)
+   		×î´ó¹¦ÂÊ 2500W
+   		¹ýÔØ±£»¤µçÁ÷ÊÇ==10.200000
+   		¹ýÔØ±£»¤µçÁ÷ÊÇ==10.200000
+   		¹¦ÂÊ´óÓÚ90%,¹¦ÂÊÖ»ÊÇpowerµÆÏÔÊ¾ºìÉ«
+   =============hilink ver infor===================
+   ======================
+   firmwave: 1.0.0.127
+   dev model: Sunrise 5-1233WU(2.0m)
+   manuafacturer: chint
+   mac: D4B761B2296E
+   build time: 2020/02/13-18:57:34
+   ver: AI_LITEOS_RTL870BX_GD25QX2M_chint(148M)_v9.0.10.323_v1.0.0.127_20200213
+   ======================
+   =============hilink ver infor===================
+   		firmwareVer 1.0.0.127
+   		softwareVer 1.0.0
+   		hardwareVer 1.0.0
+   		²úÆ·Ãû³Æ ÕýÌ©ÖÇÄÜ²åÅÅ(hilink)
+   		×î´ó¹¦ÂÊ 2500W
+   		¹ýÔØ±£»¤µçÁ÷ÊÇ==10.200000
+   		¹ýÔØ±£»¤µçÁ÷?
+   RTKTHREAD exit Swt_Task
+   Delete Task "cmd_thread"
+   Delete Task "rtw_interrupt_thread"
+   ?=10.200000
+   		¹¦ÂÊ´óÓÚ90%,¹¦ÂÊÖ»ÊÇpowerµÆÏÔÊ¾ºìÉ«
+   =============hilink ver infor===================
+   RTKTHREAD exit Swt_Task
+   ======================
+   firmwave: 1.0.0.127
+   dev model: Sunrise 5-1233WU(2.0m)
+   manuafacturer: chint
+   m
+   Delete Task "rtw_recv_tasklet"
+   ac: D4B761B2296E
+   build time: 2020/02/13-18:57:34
+   ver: AI_LITEOS_RTL870BX_GD25QX2M_chint(148M)_v9.0.10.
+   RTKTHREAD exit Swt_Task
+   323_v1.0.0.127_20200213
+   ======================
+   Delete Task "rtw_xmit_tasklet"
+   WIFI deinitialized
+   Initializing WIFI ...
+   LDO Mode, BD_Info: 0
+   LDO Mode, BD_Info: 0
+   init hal timer
+   Create Task "rtw_recv_tasklet"
+   Create Task "rtw_xmit_tasklet"
+   Create Task "rtw_interrupt_thread"
+   Create Task "cmd_thread"
+   WIFI initialized
+   Create Task "LateResumeThread"
+   ³§²âwifi ssid: CHNT_Socket_Test,pwd:chint1984xyz
+   ÔÚÕýÌ©¼Ó¹¤³§-¹¤³§Ð£×¼²âÊÔÄ£Ê½
+   $$key test:3000ms##
+   ÔÚÕýÌ©¼Ó¹¤³§-°´¼üÍË³öÉÁµÆÄ£Ê½
+   ÉÏµç±ØÐëÊÇ°´¼ü±ØÐëÊÇµ¯ÆðµÄ ,ÒÔ±ã¼ì²â°´¼üÊÇ²»ÊÇºÃµÄ
+   -------------------------------[SWITCHTOAPP] End--------------------------------
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Find Begin-Flag Pass: ROM:[V0.1]
+   Find End-Flag   Pass: ÉÏµç±ØÐëÊÇ°´¼ü±ØÐëÊÇµ¯ÆðµÄ ,ÒÔ±ã¼ì²â°´¼üÊÇ²»ÊÇºÃµÄ
+   Test Time: 2.40 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.09sec
+  2  WT_INSERT_DUT                                                  PASS     1.17sec
+  3  WT_REMOVE_DUT                                                  PASS     0.09sec
+  4  WT_REMOVE_DUT    LRWPAN                                        PASS     2.40sec
+=====================================================================================
+
+
+     Total Time: 6.770 sec
+     Total Result: PASS
+     #######################################################################
+     ##                                                                   ##
+     ##                 ########     ###     ######   ######              ##
+     ##                 ##     ##   ## ##   ##    ## ##    ##             ##
+     ##                 ##     ##  ##   ##  ##       ##                   ##
+     ##                 ########  ##     ##  ######   ######              ##
+     ##                 ##        #########       ##       ##             ##
+     ##                 ##        ##     ## ##    ## ##    ##             ##
+     ##                 ##        ##     ##  ######   ######              ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:32:00
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.09 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.14 sec
+
+
+   DUT MAC:809F9B21A3CA
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.06 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.09sec
+  2  WT_INSERT_DUT                                                  PASS     1.14sec
+  3  WT_REMOVE_DUT                                                  PASS     0.06sec
+=====================================================================================
+
+
+     Total Time: 4.337 sec
+     Total Result: PASS
+     #######################################################################
+     ##                                                                   ##
+     ##                 ########     ###     ######   ######              ##
+     ##                 ##     ##   ## ##   ##    ## ##    ##             ##
+     ##                 ##     ##  ##   ##  ##       ##                   ##
+     ##                 ########  ##     ##  ######   ######              ##
+     ##                 ##        #########       ##       ##             ##
+     ##                 ##        ##     ## ##    ## ##    ##             ##
+     ##                 ##        ##     ##  ######   ######              ##
+     ##                                                                   ##
+     #######################################################################
+
+     RTL8710BN(UART)   Ver 3.2.6R2.0967
+     ############################################################################
+     ############################################################################
+     ###########                                                       ##########
+     ###########                     WLAN Facility                     ##########
+     ###########               for RTL8710BN(UART)                     ##########
+     ###########                                                       ##########
+     ############################################################################
+     ############################################################################
+     Test Date: 2020/04/18, Test Time: 14:33:55
+
+
+
+
+     Plugin Information:
+     ==================================================
+       TesterPlugin | Tester_Legacy.dll     | 1.0.1
+     ---------------|-----------------------|----------
+       DutPlugin    | DutCtrl_RTL8710BN.DLL | 1.0.0
+     ---------------|-----------------------|----------
+       CsvPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MesPlugin    |                       | 
+     ---------------|-----------------------|----------
+       MethodPlugin | MethodBt.dll          | 1.0.0
+                    | MethodCommon.dll      | 1.0.0
+                    | MethodDut.dll         | 1.0.0
+                    | MethodWifi.dll        | 1.0.0
+                    | MethodZigbee.dll      | 1.0.0
+     ==================================================
+
+     Tester API Information:
+     ==================================================
+     WT20X T24R2(2.8.7.17)
+     ==================================================
+
+1 .WT_REMOVE_DUT    CW
+-------------------------------------------------------------------------------
+   This flow be used for GPIO test
+   ----------------------------------[GPIO] Begin----------------------------------
+   [AI-Link]: TEST START ...
+   [AI-Link]: GPIO Test: GPIO 14 --> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <-- GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 14 <---> GPIO 5 success.
+   [AI-Link]: GPIO Test: GPIO 15 --> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <-- GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 15 <---> GPIO 12 success.
+   [AI-Link]: GPIO Test: GPIO 18 --> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <-- GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 18 <---> GPIO 23 success.
+   [AI-Link]: GPIO Test: GPIO 22 --> GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <-- GPIO 19 success.
+   [AI-Link]: GPIO Test: GPIO 22 <---> GPIO 19 success.
+   [AI-Link]: GPIO Test BIN End!
+   GPIO Test Pass!
+   [MEM]
+   -----------------------------------[GPIO] End-----------------------------------
+   Extra Function[GPIO] retry : 1/3
+   Find Begin-Flag Pass: [AI-Link]: TEST START
+   Find End-Flag   Pass: [MEM]
+   Find Key-Flag01 Pass: GPIO Test Pass
+   Test Time: 3.12 sec
+
+
+2 .WT_INSERT_DUT
+-------------------------------------------------------------------------------
+   Precheck be disabled,Skip Precheck on iMes
+   DUT ChipID[000000ff] Verify Pass
+   Read  512 bytes from Map file[WF-R710-RTH1_20191029.map]
+   -------------------DUT Efuse Start-------------------
+         00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+   -----------------------------------------------------
+   0000  95 81 C2 16 FF FF FF FF FF FF FF FF FF FF FF FF
+   0001  FF FF FF FF FF FF FF FF FF FF 00 02 FF FF FF FF
+   0002  25 25 25 25 25 25 26 26 26 26 26 02 FF FF FF FF
+   0003  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0004  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0005  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0006  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0007  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0008  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0009  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000C  FF FF FF FF FF FF FF FF 20 0A 1C 05 00 00 00 FF
+   000D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   000F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0010  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0011  FF FF FF FF FF FF FF FF FF FF D4 B7 61 B2 29 6E
+   0012  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0013  FF 01 00 10 00 FF 00 FF 10 00 FF FF FF FF FF FF
+   0014  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0015  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0016  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0017  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0018  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   0019  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001A  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001B  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001C  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001D  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001E  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   001F  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+   --------------------DUT Efuse End--------------------
+   DUT MAC: D4B761B2296E
+   Test Time: 1.17 sec
+
+
+   DUT MAC:D4B761B2296E
+
+3 .WT_REMOVE_DUT
+-------------------------------------------------------------------------------
+   Test Time: 0.08 sec
+
+
+4 .WT_REMOVE_DUT    LRWPAN
+-------------------------------------------------------------------------------
+   This flow be used for SwitchToApp mode
+   ------------------------------[SWITCHTOAPP] Begin-------------------------------
+   ROM:[V0.1]
+   FLASHRATE:4
+   BOOT TYPE:0 XTAL:40000000
+   IMG1 DATA[1168:10002000]
+   IMG1 ENTRY[8000541:100021ef]
+   IMG1 ENTER
+   CHIPID[000000ff]
+   read_mode idx:0, flash_speed idx:0
+   calibration_result:[1:9:9][5:d]
+   calibration_result:[2:13:7][1:d]
+   calibration_result:[3:3:3][1:3]
+   calibration_ok:[2:13:7]
+   FLASH CALIB[NEW OK]
+   OTA2 ADDR[8100000]
+   OTAx SELE[fffe0000]
+   OTA2 USE
+   OTA2 SIGN[35393138:31313738]
+   IMG2 DATA[0x81ab1b0:7604:0x10005000]
+   IMG2 SIGN[RTKWin(10005008)]
+   IMG2 ENTRY[0x10005000:0x81001b9]
+   ===== Enter Image 2 ====
+   System_Init1
+   OSC8M: 8386568
+   boot reason: 25
+   System_Init2
+   # sample_TaskCreat stack size 5k byte!
+   LiteOS Release Date: 2019/07/05-10:08:41
+   LiteOS Version: LiteOSV200R001C10B335SP1
+   interface 0 is initialized
+   interface 1 is initialized
+   Initializing WIFI ...
+   LDO Mode, BD_Info: 0
+   LDO Mode, BD_Info: 0
+   Start LOG SERVICE MODE
+   #
+   -------------------------------[SWITCHTOAPP] End--------------------------------
+   Extra Function[SWITCHTOAPP] retry : 1/3
+   Find Begin-Flag Pass: ROM:[V0.1]
+   Find End-Flag   Pass: 1
+   Test Time: 0.92 sec
+
+
+
+Test Time Summary:
+=====================================================================================
+ No.   Item                                                        Result   TestTime 
+-------------------------------------------------------------------------------------
+  1  WT_REMOVE_DUT    CW                                            PASS     3.12sec
+  2  WT_INSERT_DUT                                                  PASS     1.17sec
+  3  WT_REMOVE_DUT                                                  PASS     0.08sec
+  4  WT_REMOVE_DUT    LRWPAN                                        PASS     0.92sec
+=====================================================================================
+
+
+     Total Time: 5.288 sec
+     Total Result: PASS
+     #######################################################################
+     ##                                                                   ##
+     ##                 ########     ###     ######   ######              ##
+     ##                 ##     ##   ## ##   ##    ## ##    ##             ##
+     ##                 ##     ##  ##   ##  ##       ##                   ##
+     ##                 ########  ##     ##  ######   ######              ##
+     ##                 ##        #########       ##       ##             ##
+     ##                 ##        ##     ## ##    ## ##    ##             ##
+     ##                 ##        ##     ##  ######   ######              ##
+     ##                                                                   ##
+     #######################################################################
