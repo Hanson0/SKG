@@ -124,6 +124,8 @@
     <Compile Include="SmartBracelet\Executer\PrintLabelImeiChangetToNbImeiExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\ReScanLabelExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\ShowBtMacQrCodeExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\SkgAuthorizeCheckExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\SKGControlCommandExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\SKGExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\SkgQueryCheckExecuter.cs" />
@@ -173,6 +175,8 @@
     <Compile Include="SmartBracelet\Property\ReadMapProperties.cs" />
     <Compile Include="SmartBracelet\Property\ReScanLabelProperties.cs" />
     <Compile Include="SmartBracelet\Property\ShowBtMacQrCodeProperties.cs" />
+    <Compile Include="SmartBracelet\Property\SkgAuthorizeCheckProperties.cs" />
+    <Compile Include="SmartBracelet\Property\SKGAuthorizeCommandProperties.cs" />
     <Compile Include="SmartBracelet\Property\SKGControlCommandProperties.cs" />
     <Compile Include="SmartBracelet\Property\SKGProperties.cs" />
     <Compile Include="SmartBracelet\Property\SkgQueryCheckProperties.cs" />

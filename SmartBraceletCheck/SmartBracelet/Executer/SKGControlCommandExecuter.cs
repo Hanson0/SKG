@@ -444,7 +444,9 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
 
             //异或校验 1字节
-            byte xor = ByteToXOR(buf);
+            byte[] bufOutOxr = new byte[buf.Length - 1];
+            Array.Copy(buf, 0, bufOutOxr, 0, buf.Length - 1);
+            byte xor = ByteToXOR(bufOutOxr);
 
             if (!(buf[n - 1] != xor))
             {
