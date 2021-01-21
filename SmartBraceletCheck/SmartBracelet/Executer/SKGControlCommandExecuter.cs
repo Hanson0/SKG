@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 {
-    public class SKGExecuter : IExecuter
+    public class SKGControlCommandExecuter : IExecuter
     {
         private string pattern;
 
@@ -23,7 +23,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
         private ILog log;
         private List<byte> buffer = new List<byte>(4096);       //uart 接受数据buffer 未做任何处理
 
-        public SKGExecuter()
+        public SKGControlCommandExecuter()
         {
             this.pattern = GlobalVaribles.PATTERN;
         }
@@ -72,7 +72,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
         public void Run(IProperties properties, GlobalDic<string, object> globalDic)
         {
-            SKGProperties config = properties as SKGProperties;
+            SKGControlCommandProperties config = properties as SKGControlCommandProperties;
             List<ComDut> comDutList = globalDic[typeof(List<ComDut>).ToString()] as List<ComDut>;
             //ComDut comDut = globalDic[typeof(ComDut).ToString()] as ComDut;
             ComDut comDut = null;
@@ -98,8 +98,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             foreach (var item in configList)
             {
                 if (item.PortName == config.PortName)
-                { 
-                    configOpenPhone = item; 
+                {
+                    configOpenPhone = item;
                     break;
                 }
 
@@ -118,7 +118,125 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             {
                 endLine = Parse_r_n(endLine);
             }
-            byte[] atCommand = strToToHexByte(config.AtCommand);
+
+            string command = "";
+            command += config.Head;
+
+            //int型的处理-转2字节byte,连接到16进制字符串中
+            int allLength = 9 + config.DataLength;
+            byte[] byteTemp = new byte[2];
+            byte[] oneByteTemp = new byte[1];
+
+            byteTemp = intToBytes(allLength);
+            command += byteToHexStr(byteTemp);
+
+            command += config.ReservedWord;
+            command += config.CommandWord;
+
+            //DataContent部分
+            //枚举类的处理
+            int intTemp = (int)config.PowerOnOffSetting;
+            command += intTemp.ToString().PadLeft(2,'0');
+
+            intTemp = (int)config.LedModeSetting;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.EmsTestSwitch;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            //int型的处理
+            byteTemp = intToBytes(config.EmsPWSetting);
+            command += byteToHexStr(byteTemp);
+
+            byteTemp = intToBytes(config.EmsFreqSetting);
+            command += byteToHexStr(byteTemp);
+
+            byteTemp = intToBytes(config.EmsAmplitudeSetting);
+            command += byteToHexStr(byteTemp);
+
+            //枚举类的处理
+            intTemp = (int)config.HeatingGearControl;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VoiceControl;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.WritePcbaFinishFlag;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.WholeMachineFinishFlag;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.BtTestOnOffSetting;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.MotorControl;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.AginTestOnOffSetting;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            //int型的处理-转为1字节byte
+            oneByteTemp = intToOneBytes(config.AginTestTime);
+            command += byteToHexStr(byteTemp);
+            #region 多路振动控制
+            intTemp = (int)config.VibrationControl1;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl2;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl3;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl4;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl5;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl6;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl7;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl8;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl9;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl10;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl11;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl12;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl13;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl4;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl5;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+            intTemp = (int)config.VibrationControl6;
+            command += intTemp.ToString().PadLeft(2, '0');
+            #endregion
+            intTemp = (int)config.RedLightControl640nm;
+            command += intTemp.ToString().PadLeft(2, '0');
+
+
+            //byteToHexStr();
+
+            //byte[] atCommand = strToToHexByte(config.AtCommand);
+            byte[] atCommand = strToToHexByte(command);
+
             //string atCommand = PreTranslateAtCommand(config.AtCommand);
             UartDisplay(atCommand, "T");
 
@@ -277,15 +395,15 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //起始标志 数据长度 保留字     命令字     数据内容    异或校验码 
             //0XA5C3    9+N     0x0000      0x0037      Data        异或 
             //2 字节  2 字节    2 字节      2 字节      N 字节     1 字节
-            UartDisplay(buf,"R");
+            UartDisplay(buf, "R");
             if (buf.Length < 9)
             {
-                throw new BaseException(string.Format("Length Not enough"));
+                throw new BaseException(string.Format("Response Length Not enough"));
             }
             //包头
-            if (!(buf[0]==0xA5 && buf[1]==0xC3))
+            if (!(buf[0] == 0xA5 && buf[1] == 0xC3))
             {
-                throw new BaseException(string.Format("Head Error"));
+                throw new BaseException(string.Format("Response Head Error"));
             }
             //长度 2字节
             byte high = buf[2];
@@ -294,43 +412,43 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
             if (iTotalLength != n)
             {
-                throw new BaseException(string.Format("Length Error,长度位：{0},实际长度:{1}", iTotalLength,n));
+                throw new BaseException(string.Format("Response Length Error,长度位：{0},实际长度:{1}", iTotalLength, n));
             }
 
             //命令字
-            if (config.CommandType==SKGProperties.EnumCommandType.查询指令)
+            if (config.CommandType == SKGControlCommandProperties.EnumCommandType.查询指令)
             {
                 if (!(buf[6] == 0xA0 && buf[7] == 0x37))
                 {
-                    throw new BaseException(string.Format("CMD Type Error"));
+                    throw new BaseException(string.Format("Response Command Type Error"));
                 }
             }
-            else if(config.CommandType == SKGProperties.EnumCommandType.控制指令)
+            else if (config.CommandType == SKGControlCommandProperties.EnumCommandType.控制指令)
             {
                 if (!(buf[6] == 0xA0 && buf[7] == 0x40))
                 {
-                    throw new BaseException(string.Format("CMD Type Error"));
+                    throw new BaseException(string.Format("Response Command Type Error"));
                 }
             }
-            else if(config.CommandType == SKGProperties.EnumCommandType.下发授权)
+            else if (config.CommandType == SKGControlCommandProperties.EnumCommandType.下发授权)
             {
                 if (!(buf[6] == 0xA0 && buf[7] == 0x23))
                 {
-                    throw new BaseException(string.Format("CMD Type Error"));
+                    throw new BaseException(string.Format("Response Command Type Error"));
                 }
             }
             else
             {
-                throw new BaseException(string.Format("非法指令类型"));
+                throw new BaseException(string.Format("Response为非法指令类型"));
             }
 
 
             //异或校验 1字节
             byte xor = ByteToXOR(buf);
 
-            if (!(buf[n-1] != xor))
+            if (!(buf[n - 1] != xor))
             {
-                throw new BaseException(string.Format("校验不正确"));
+                throw new BaseException(string.Format("Response 校验位不正确"));
             }
 
 
@@ -364,6 +482,11 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                     log.Info("应答报文正确");
                 }
             }
+            //检查是否有效果!!!
+            //通过另外一个AT口,去获取电流值
+
+
+
 
             ////如果收到的包正确
             //string str = byteToHexStr(buf);
@@ -473,7 +596,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
         /// </summary>
         /// <param name="bytes"></param>
         /// <returns></returns>
-        public  string byteToHexStr(byte[] bytes)
+        public string byteToHexStr(byte[] bytes)
         {
             string returnStr = "";
             if (bytes != null)
@@ -485,6 +608,36 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             }
             return returnStr;
         }
+        /// <summary>
+        /// int转化为byte[2]
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public byte[] intToBytes(int value)
+        {
+            byte[] src = new byte[2];
+            //src[3] = (byte)((value >> 24) & 0xFF);
+            //src[2] = (byte)((value >> 16) & 0xFF);
+            src[0] = (byte)((value >> 8) & 0xFF);
+            src[1] = (byte)(value & 0xFF);
+            return src;
+        }
+        /// <summary>
+        /// int转化为byte[1]
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public byte[] intToOneBytes(int value)
+        {
+            byte[] src = new byte[1];
+            //src[3] = (byte)((value >> 24) & 0xFF);
+            //src[2] = (byte)((value >> 16) & 0xFF);
+            //src[0] = (byte)((value >> 8) & 0xFF);
+            //src[1] = (byte)(value & 0xFF);
+            src[0] = (byte)(value & 0xFF);
+            return src;
+        }
+
 
         public void UartDisplay(byte[] by, string type)
         {
@@ -495,15 +648,15 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             }
             if (type == "R")
             {
-                this.log.Info("Rx:" + log );
+                this.log.Info("Rx:" + log);
             }
             else if (type == "T")
             {
-                this.log.Info("Tx:" + log );
+                this.log.Info("Tx:" + log);
             }
             else
             {
-                this.log.Info(log );
+                this.log.Info(log);
             }
 
         }

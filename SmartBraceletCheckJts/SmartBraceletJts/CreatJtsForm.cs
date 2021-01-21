@@ -39,12 +39,12 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             TaskItemManager taskItemManager = new TaskItemManager(properties);
             taskItemManager.MesPreCheckProperties.EnableCheckMac = false;
             taskItemManager.TaskItemParseLabel.Enable = true;
-            //生成log
+            //生成log 
             taskItemManager.DeinitProperties.LogType = LogType.SN;
 
 
 
-            if (true)
+            if (false)
             {
                 TaskItem readBinItem = new TaskItem();
                 readBinItem.Enable = true;
@@ -148,7 +148,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             //}
 
             //MIC测试-灵敏度_失真检测
-            if (true)
+            if (false)
             {
                 TaskItem readBinItem = new TaskItem();
                 readBinItem.Enable = true;
@@ -296,21 +296,170 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 findDevice.Executer = new FindDeviceExecuter();
                 taskItemManager.Put(findDevice);
             }
-            #region 低压通道
+            //发送指令
+            if (true)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "发送查询指令";//Find Device
+                findDevice.CommonProperties = new SKGProperties()
+                {
+                    PortName = "COM4",
+                    AtCommand = "A5C3001100000037FFFFFFFFFFFFFFFF40",
+                    AtCommandInterval = 500,
+                    CommandType= SKGProperties.EnumCommandType.查询指令,
+                    //CommandType= EnumCommandType
+                    //EndLine = "",//\r\n
+                    //AtCommandOk = "[97F] Default BB Swing=30",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
+                    //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
+                    GlobalVariblesKey = new string[] { "{RetQueryData}"},//, "{DevBt_MAC}" 
+                    DataLength = 32,
+                    //Timeout = 30 * 1000,
+                    RetryCount = 0,
+                    SleepTimeBefore = 0,
+                };
+                findDevice.Executer = new SKGExecuter();
+                taskItemManager.Put(findDevice);
+            }
+            //查询内容检查
+            if (true)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "查询内容检查";//Find Device
+                findDevice.CommonProperties = new SkgQueryCheckProperties()
+                {
+
+                    GlobalVariblesKey= "RetQueryData",
+                    FirmwareName= "K4-2T-",
+                    FirewareVersion="1010",
+                    SoftwareVersion="1011",
+                    VolMaxValue=3000,//mv
+                    VolMinValue=500,
+                    Ntc1MaxValue=900,//0.1摄氏度
+                    Ntc1MinValue=10,
+
+                    MotorSpeedMaxValue=1000,//电机转速
+                    MotorSpeedMinValue=100,
+
+                    Ntc2MaxValue = 900,//0.1摄氏度
+                    Ntc2MinValue = 10,
+
+                    Ntc3MaxValue = 900,//0.1摄氏度
+                    Ntc3MinValue = 10,
+
+                    //Timeout = 30 * 1000,
+                    RetryCount = 0,
+                    SleepTimeBefore = 0,
+                };
+                findDevice.Executer = new SkgQueryCheckExecuter();
+                taskItemManager.Put(findDevice);
+            }
+            //控制命令要自己来计算校验位
+            //参数应该是开启电机1档,2档,3档;LED灯颜色
+            //EMS脉宽设置命令后，通过采集串口发命令获取电流值（自动化:大部分每改变一个状态，都要去检测是否OK）
+
+
+            //发送指令
+            if (true)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "发送控制指令";//Find Device
+                findDevice.CommonProperties = new SKGControlCommandProperties()
+                {
+                    PortName = "COM4",
+                    Head= "A5C3",
+                    DataLength = 20,
+                    ReservedWord = "0000",
+                    CommandWord="0040",
+                    PowerOnOffSetting= SKGControlCommandProperties.EnumPowerOnOffSetting.开机,
+                    LedModeSetting= SKGControlCommandProperties.EnumLedModeSetting.红或橙色LED开,
+                    EmsTestSwitch= SKGControlCommandProperties.EnumEmsTestSwitch.开启正反交替脉冲_2电极产品,
+                    EmsPWSetting= 1000,
+                    EmsFreqSetting=1000,
+                    EmsAmplitudeSetting=1000,
+                    HeatingGearControl= SKGControlCommandProperties.EnumHeatingGearControl.开启42度加热或加热中档,
+                    VoiceControl= SKGControlCommandProperties.EnumVoiceControl.输出一段语音_输出蜂鸣器响声,
+                    WritePcbaFinishFlag= SKGControlCommandProperties.EnumWritePcbaFinishFlag.PCBA测试未完成_标志不写入flash,
+                    WholeMachineFinishFlag= SKGControlCommandProperties.EnumWholeMachineFinishFlag.整机测试未完成_标志不写入flash,
+                    BtTestOnOffSetting= SKGControlCommandProperties.EnumBtTestOnOffSetting.开启蓝牙测试,
+                    MotorControl= SKGControlCommandProperties.EnumMotorControl.开启1档力度,
+                    AginTestOnOffSetting= SKGControlCommandProperties.EnumAginTestOnOffSetting.不开启老化测试,
+                    AginTestTime= 30,//30分钟
+                    VibrationControl1= SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl2 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl3 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl4 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl5 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl6 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl7 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl8 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl9 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl10 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl11 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl12 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl13 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl14 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl15 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    VibrationControl16 = SKGControlCommandProperties.EnumVibrationControl.开,
+
+                    RedLightControl640nm= SKGControlCommandProperties.EnumVibrationControl.开,
+
+
+                    //AtCommand = "A5C3001D0000004001010103E803E800640101000001030003FFFF015E",
+                    AtCommandInterval = 500,
+                    CommandType = SKGControlCommandProperties.EnumCommandType.控制指令,
+                    //CommandType= EnumCommandType
+                    //EndLine = "",//\r\n
+                    //AtCommandOk = "[97F] Default BB Swing=30",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
+                    //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
+                    GlobalVariblesKey = new string[] { "{RetControlData}" },//, "{DevBt_MAC}" 
+
+                    //Timeout = 30 * 1000,
+                    RetryCount = 0,
+                    SleepTimeBefore = 0,
+                };
+                findDevice.Executer = new SKGControlCommandExecuter();
+                taskItemManager.Put(findDevice);
+            }
+
+            //打开WIFI UART
+            if (true)
+            {
+                OpenPhoneProperties configOpenWifiUart = new OpenPhoneProperties();
+                configOpenWifiUart.PortName = "COM5";
+                configOpenWifiUart.BaudRate = 115200;
+                configOpenWifiUart.Dtr = true;
+                configOpenWifiUart.Rts = true;
+                //configOpenWifiUart.EndLine = "\\r\\n";
+                configOpenWifiUart.Timeout = 10 * 1000;
+                configOpenWifiUart.RetryCount = 0;
+                configOpenWifiUart.AtType = AtType.Manual;
+                configOpenWifiUart.SleepTimeAfterFindDut = 100;
+                TaskItem openWifiUartItem = new TaskItem();
+                openWifiUartItem.Enable = true;
+                openWifiUartItem.Item = "打开检测串口";//Open Wifi Uart
+                openWifiUartItem.CommonProperties = configOpenWifiUart;
+                openWifiUartItem.Executer = new OpenPhoneExecutor();
+                taskItemManager.Put(openWifiUartItem);
+            }
             if (true)
             {
                 TaskItem checkBtVersionItem = new TaskItem();
                 checkBtVersionItem.Enable = true;
                 checkBtVersionItem.Item = "AT-获取低压通道1";//Write BT MAC
                 AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
-                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.PortName = "COM5";
                 checkBtVersionProperties.AtCommand = "AT+LVL1?";
 
                 checkBtVersionProperties.AtCommandOk = "OK";
                 checkBtVersionProperties.AtCommandError = "UNKNOWN";
 
-                checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})"};//, "([0-9A-Fa-f:]{18})" 
-                checkBtVersionProperties.GlobalVariblesKey = new string[] {"{LVL1}"};//, "{DevBt_MAC}" 
+                checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
 
                 checkBtVersionProperties.RetryCount = 3;
                 checkBtVersionProperties.AtCommandInterval = 800;
@@ -343,106 +492,155 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkNbVersion);
             }
 
-            if (true)
-            {
-                TaskItem checkBtVersionItem = new TaskItem();
-                checkBtVersionItem.Enable = true;
-                checkBtVersionItem.Item = "AT-获取低压通道2";//Write BT MAC
-                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
-                checkBtVersionProperties.PortName = "COM4";
-                //checkBtVersionProperties.CommandType = EnumCommandType.Hex;
-                checkBtVersionProperties.AtCommand = "AT+LVL2?";
-
-                checkBtVersionProperties.AtCommandOk = "OK";
-                checkBtVersionProperties.AtCommandError = "UNKNOWN";
-
-                //checkBtVersionProperties.AtCommandError = "SCAN_TIMEOUT";
-                //checkBtVersionProperties.CheckInfo = new string[] { "{}" };
-                checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL2=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
-                checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL2}" };//, "{DevBt_MAC}" 
-
-                checkBtVersionProperties.RetryCount = 3;
-                checkBtVersionProperties.AtCommandInterval = 800;
-                checkBtVersionProperties.SleepTimeBefore = 100;
-                checkBtVersionProperties.Timeout = 8000;
-
-                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
-                checkBtVersionItem.Executer = new AtCommandExecuter();
-                taskItemManager.Put(checkBtVersionItem);
-            }
-            //低压通道1检查
-            if (true)
-            {
-                TaskItem checkNbVersion = new TaskItem();
-                checkNbVersion.Enable = true;
-                checkNbVersion.Item = "检查低压通道2";//Check NB IMEI
-                checkNbVersion.CommonProperties = new CheckRangeValueProperties()
-                {
-                    MaxValue = 3.0,
-                    MinValue = 2.0,
-
-                    TestValueName = "低压通道2电压值",
-                    GlobalVarible = "LVL2",
 
 
-                    Timeout = 3 * 1000,
-                    RetryCount = 0,
-                };
-                checkNbVersion.Executer = new CheckRangeValueExecuter();
-                taskItemManager.Put(checkNbVersion);
-            }
+            #region 低压通道
+            //if (true)
+            //{
+            //    TaskItem checkBtVersionItem = new TaskItem();
+            //    checkBtVersionItem.Enable = true;
+            //    checkBtVersionItem.Item = "AT-获取低压通道1";//Write BT MAC
+            //    AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+            //    checkBtVersionProperties.PortName = "COM4";
+            //    checkBtVersionProperties.AtCommand = "AT+LVL1?";
 
-            if (true)
-            {
-                TaskItem checkBtVersionItem = new TaskItem();
-                checkBtVersionItem.Enable = true;
-                checkBtVersionItem.Item = "AT-获取低压通道3";//Write BT MAC
-                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
-                checkBtVersionProperties.PortName = "COM4";
-                //checkBtVersionProperties.CommandType = EnumCommandType.Hex;
-                checkBtVersionProperties.AtCommand = "AT+LVL3?";
+            //    checkBtVersionProperties.AtCommandOk = "OK";
+            //    checkBtVersionProperties.AtCommandError = "UNKNOWN";
 
-                checkBtVersionProperties.AtCommandOk = "OK";
-                checkBtVersionProperties.AtCommandError = "UNKNOWN";
+            //    checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})"};//, "([0-9A-Fa-f:]{18})" 
+            //    checkBtVersionProperties.GlobalVariblesKey = new string[] {"{LVL1}"};//, "{DevBt_MAC}" 
 
-                //checkBtVersionProperties.AtCommandError = "SCAN_TIMEOUT";
-                //checkBtVersionProperties.CheckInfo = new string[] { "{}" };
-                checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL3=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
-                checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL3}" };//, "{DevBt_MAC}" 
+            //    checkBtVersionProperties.RetryCount = 3;
+            //    checkBtVersionProperties.AtCommandInterval = 800;
+            //    checkBtVersionProperties.SleepTimeBefore = 100;
+            //    checkBtVersionProperties.Timeout = 8000;
 
-                checkBtVersionProperties.RetryCount = 3;
-                checkBtVersionProperties.AtCommandInterval = 800;
-                checkBtVersionProperties.SleepTimeBefore = 100;
-                checkBtVersionProperties.Timeout = 8000;
+            //    checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+            //    checkBtVersionItem.Executer = new AtCommandExecuter();
+            //    taskItemManager.Put(checkBtVersionItem);
+            //}
+            ////低压通道1检查
+            //if (true)
+            //{
+            //    TaskItem checkNbVersion = new TaskItem();
+            //    checkNbVersion.Enable = true;
+            //    checkNbVersion.Item = "检查低压通道1";//Check NB IMEI
+            //    checkNbVersion.CommonProperties = new CheckRangeValueProperties()
+            //    {
+            //        MaxValue = 3.0,
+            //        MinValue = 1.0,
 
-                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
-                checkBtVersionItem.Executer = new AtCommandExecuter();
-                taskItemManager.Put(checkBtVersionItem);
-            }
-            //低压通道1检查
-            if (true)
-            {
-                TaskItem checkNbVersion = new TaskItem();
-                checkNbVersion.Enable = true;
-                checkNbVersion.Item = "检查低压通道3";//Check NB IMEI
-                checkNbVersion.CommonProperties = new CheckRangeValueProperties()
-                {
-                    MaxValue = 5.0,
-                    MinValue = 2.0,
-
-                    TestValueName = "低压通道3电压值",
-                    GlobalVarible = "LVL3",
+            //        TestValueName = "低压通道1电压值",
+            //        GlobalVarible = "LVL1",
 
 
-                    Timeout = 3 * 1000,
-                    RetryCount = 0,
-                };
-                checkNbVersion.Executer = new CheckRangeValueExecuter();
-                taskItemManager.Put(checkNbVersion);
-            }
+            //        Timeout = 3 * 1000,
+            //        RetryCount = 0,
+            //    };
+            //    checkNbVersion.Executer = new CheckRangeValueExecuter();
+            //    taskItemManager.Put(checkNbVersion);
+            //}
+
+            //if (true)
+            //{
+            //    TaskItem checkBtVersionItem = new TaskItem();
+            //    checkBtVersionItem.Enable = true;
+            //    checkBtVersionItem.Item = "AT-获取低压通道2";//Write BT MAC
+            //    AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+            //    checkBtVersionProperties.PortName = "COM4";
+            //    //checkBtVersionProperties.CommandType = EnumCommandType.Hex;
+            //    checkBtVersionProperties.AtCommand = "AT+LVL2?";
+
+            //    checkBtVersionProperties.AtCommandOk = "OK";
+            //    checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+            //    //checkBtVersionProperties.AtCommandError = "SCAN_TIMEOUT";
+            //    //checkBtVersionProperties.CheckInfo = new string[] { "{}" };
+            //    checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL2=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+            //    checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL2}" };//, "{DevBt_MAC}" 
+
+            //    checkBtVersionProperties.RetryCount = 3;
+            //    checkBtVersionProperties.AtCommandInterval = 800;
+            //    checkBtVersionProperties.SleepTimeBefore = 100;
+            //    checkBtVersionProperties.Timeout = 8000;
+
+            //    checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+            //    checkBtVersionItem.Executer = new AtCommandExecuter();
+            //    taskItemManager.Put(checkBtVersionItem);
+            //}
+            ////低压通道1检查
+            //if (true)
+            //{
+            //    TaskItem checkNbVersion = new TaskItem();
+            //    checkNbVersion.Enable = true;
+            //    checkNbVersion.Item = "检查低压通道2";//Check NB IMEI
+            //    checkNbVersion.CommonProperties = new CheckRangeValueProperties()
+            //    {
+            //        MaxValue = 3.0,
+            //        MinValue = 2.0,
+
+            //        TestValueName = "低压通道2电压值",
+            //        GlobalVarible = "LVL2",
+
+
+            //        Timeout = 3 * 1000,
+            //        RetryCount = 0,
+            //    };
+            //    checkNbVersion.Executer = new CheckRangeValueExecuter();
+            //    taskItemManager.Put(checkNbVersion);
+            //}
+
+            //if (true)
+            //{
+            //    TaskItem checkBtVersionItem = new TaskItem();
+            //    checkBtVersionItem.Enable = true;
+            //    checkBtVersionItem.Item = "AT-获取低压通道3";//Write BT MAC
+            //    AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+            //    checkBtVersionProperties.PortName = "COM4";
+            //    //checkBtVersionProperties.CommandType = EnumCommandType.Hex;
+            //    checkBtVersionProperties.AtCommand = "AT+LVL3?";
+
+            //    checkBtVersionProperties.AtCommandOk = "OK";
+            //    checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+            //    //checkBtVersionProperties.AtCommandError = "SCAN_TIMEOUT";
+            //    //checkBtVersionProperties.CheckInfo = new string[] { "{}" };
+            //    checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL3=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+            //    checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL3}" };//, "{DevBt_MAC}" 
+
+            //    checkBtVersionProperties.RetryCount = 3;
+            //    checkBtVersionProperties.AtCommandInterval = 800;
+            //    checkBtVersionProperties.SleepTimeBefore = 100;
+            //    checkBtVersionProperties.Timeout = 8000;
+
+            //    checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+            //    checkBtVersionItem.Executer = new AtCommandExecuter();
+            //    taskItemManager.Put(checkBtVersionItem);
+            //}
+            ////低压通道1检查
+            //if (true)
+            //{
+            //    TaskItem checkNbVersion = new TaskItem();
+            //    checkNbVersion.Enable = true;
+            //    checkNbVersion.Item = "检查低压通道3";//Check NB IMEI
+            //    checkNbVersion.CommonProperties = new CheckRangeValueProperties()
+            //    {
+            //        MaxValue = 5.0,
+            //        MinValue = 2.0,
+
+            //        TestValueName = "低压通道3电压值",
+            //        GlobalVarible = "LVL3",
+
+
+            //        Timeout = 3 * 1000,
+            //        RetryCount = 0,
+            //    };
+            //    checkNbVersion.Executer = new CheckRangeValueExecuter();
+            //    taskItemManager.Put(checkNbVersion);
+            //}
             #endregion
             #region 高压通道
-            if (true)
+            if (false)
             {
                 TaskItem checkBtVersionItem = new TaskItem();
                 checkBtVersionItem.Enable = true;
@@ -466,7 +664,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkBtVersionItem);
             }
             //低压通道1检查
-            if (true)
+            if (false)
             {
                 TaskItem checkNbVersion = new TaskItem();
                 checkNbVersion.Enable = true;
@@ -487,7 +685,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkNbVersion);
             }
 
-            if (true)
+            if (false)
             {
                 TaskItem checkBtVersionItem = new TaskItem();
                 checkBtVersionItem.Enable = true;
@@ -514,7 +712,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkBtVersionItem);
             }
             //低压通道1检查
-            if (true)
+            if (false)
             {
                 TaskItem checkNbVersion = new TaskItem();
                 checkNbVersion.Enable = true;
@@ -535,7 +733,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkNbVersion);
             }
 
-            if (true)
+            if (false)
             {
                 TaskItem checkBtVersionItem = new TaskItem();
                 checkBtVersionItem.Enable = true;
@@ -563,7 +761,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkBtVersionItem);
             }
             //低压通道1检查
-            if (true)
+            if (false)
             {
                 TaskItem checkNbVersion = new TaskItem();
                 checkNbVersion.Enable = true;
@@ -586,7 +784,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             #endregion
 
             #region 电流通道
-            if (true)
+            if (false)
             {
                 TaskItem checkBtVersionItem = new TaskItem();
                 checkBtVersionItem.Enable = true;
@@ -610,7 +808,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkBtVersionItem);
             }
             //低压通道1检查
-            if (true)
+            if (false)
             {
                 TaskItem checkNbVersion = new TaskItem();
                 checkNbVersion.Enable = true;
@@ -631,7 +829,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkNbVersion);
             }
 
-            if (true)
+            if (false)
             {
                 TaskItem checkBtVersionItem = new TaskItem();
                 checkBtVersionItem.Enable = true;
@@ -657,7 +855,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(checkBtVersionItem);
             }
             //低压通道1检查
-            if (true)
+            if (false)
             {
                 TaskItem checkNbVersion = new TaskItem();
                 checkNbVersion.Enable = true;
@@ -740,6 +938,30 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 //closeAtUartItem = ExecuteCondition.ALWAYS;
 
                 closeAtUartItem.Item = "关闭串口";//Open Wifi Uart
+                closeAtUartItem.CommonProperties = closeWifiUartItem;
+                closeAtUartItem.CommonProperties.ExecuteCondition = ExecuteCondition.ALWAYS;
+                closeAtUartItem.Executer = new ClosePhoneExecuter();
+                taskItemManager.Put(closeAtUartItem);
+            }
+
+            if (true)
+            {
+                ClosePhoneProperties closeWifiUartItem = new ClosePhoneProperties();
+                closeWifiUartItem.PortName = "COM5";
+                closeWifiUartItem.BaudRate = 115200;
+                closeWifiUartItem.Dtr = true;
+                closeWifiUartItem.Rts = true;
+                closeWifiUartItem.EndLine = "\\r\\n";
+                closeWifiUartItem.Timeout = 10 * 1000;
+                closeWifiUartItem.RetryCount = 0;
+                closeWifiUartItem.AtType = AtType.Manual;
+
+                TaskItem closeAtUartItem = new TaskItem();
+
+                closeAtUartItem.Enable = true;
+                //closeAtUartItem = ExecuteCondition.ALWAYS;
+
+                closeAtUartItem.Item = "关闭检测串口";//Open Wifi Uart
                 closeAtUartItem.CommonProperties = closeWifiUartItem;
                 closeAtUartItem.CommonProperties.ExecuteCondition = ExecuteCondition.ALWAYS;
                 closeAtUartItem.Executer = new ClosePhoneExecuter();

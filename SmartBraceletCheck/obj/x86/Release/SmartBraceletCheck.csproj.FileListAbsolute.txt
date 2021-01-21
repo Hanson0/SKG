@@ -240,3 +240,8 @@ F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletC
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\x86\Release\SmartBraceletCheck.csproj.CopyComplete
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\x86\Release\AILinkFactoryAuto.Task.SmartBracelet.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\x86\Release\AILinkFactoryAuto.Task.SmartBracelet.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Base.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\MesDll.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\Newtonsoft.Json.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\x86\Release\ThoughtWorks.QRCode.dll

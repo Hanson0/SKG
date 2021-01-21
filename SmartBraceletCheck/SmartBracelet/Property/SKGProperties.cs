@@ -26,7 +26,9 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         private string[] globalVariblesKeyPattern;
 
-        public EnumCommandType commandType;
+        private int dataLength;
+
+        private EnumCommandType commandType;
 
         public enum EnumCommandType
         {
@@ -35,6 +37,12 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             下发授权
         }
 
+        [Category("DataLength"), Description("数据部分长度")]
+        public int DataLength
+        {
+            get { return dataLength; }
+            set { dataLength = value; }
+        }
 
 
         [Category("SerialPort"), Description("PortName"), TypeConverter(typeof(PortNamesConverter))]

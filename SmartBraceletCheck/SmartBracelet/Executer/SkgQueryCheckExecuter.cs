@@ -158,7 +158,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
                 byte low = dataArry[30];
                 int ntc = (high & 0xFF) << 8 | low;
-                CheckRange("NTC1温度值(单位0.1摄氏度)：", ntc, config.VolMaxValue, config.VolMinValue);
+                CheckRange("NTC1温度值(单位0.1摄氏度)：", ntc, config.Ntc1MaxValue, config.Ntc1MinValue);
             }
 
             //PCBA-ID

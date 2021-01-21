@@ -175,8 +175,6 @@ F:\2_工作和软件\1_工作存档\01长虹爱联\17_RTL8197FS-VE4-CG功能检�
 F:\2_工作和软件\1_工作存档\01长虹爱联\17_RTL8197FS-VE4-CG功能检查\Code\WF-RTL8720N\SmartBraceletCheckJts\obj\x86\Release\SmartBraceletCheckJts.csprojAssemblyReference.cache
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.GenJts.SmartBracelet.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.GenJts.SmartBracelet.pdb
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Base.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Task.SmartBracelet.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\log4net.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Release\Newtonsoft.Json.dll
