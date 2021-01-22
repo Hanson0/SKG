@@ -14,7 +14,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         private string reservedWord;
         private string commandWord;
         private EnumAuthorizeEvent authorizeEvent;
-        private string sn_PCBA_IDVariable;
+        //private string sn_PCBA_IDVariable;
         private string bleBroadcastName;
         private string deviceType;
         private string reservedWord1;
@@ -127,12 +127,12 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             set { authorizeEvent = value; }
         }
 
-        [Category("Sn/PcbaAuthorize"), Description("存放SN/PCBAID号的变量")]
-        public string Sn_PCBA_IDVariable
-        {
-            get { return sn_PCBA_IDVariable; }
-            set { sn_PCBA_IDVariable = value; }
-        }
+        //[Category("Sn/PcbaAuthorize"), Description("存放SN/PCBAID号的变量")]
+        //public string Sn_PCBA_IDVariable
+        //{
+        //    get { return sn_PCBA_IDVariable; }
+        //    set { sn_PCBA_IDVariable = value; }
+        //}
 
         [Category("BleBroadcastAuthorize"), Description("BLE广播名,最长17个字符")]
         public string BleBroadcastName

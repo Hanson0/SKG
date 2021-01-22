@@ -138,7 +138,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             command += intTemp.ToString().PadLeft(2, '0');
 
             //int型处理
-            string snPcbaId= configGv.Get(config.Sn_PCBA_IDVariable);
+            string snPcbaId= configGv.Get(GlobalVaribles.LABEL_SN);
 
 
             if (config.AuthorizeEvent== SKGAuthorizeCommandProperties.EnumAuthorizeEvent.SN_授权 ||
@@ -166,7 +166,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 command += config.DeviceType;
                 command += config.ReservedWord1;
                 command += config.ReservedWord2;
-
+                //string bleBroadcastInfo=
+                //configGv.Add("BleBroadcastInfo",)
             }
 
 

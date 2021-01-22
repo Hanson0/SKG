@@ -21,7 +21,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "扫码枪扫描标签",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.Property.ParseLabelProperties, AILinkFactoryAuto.Base",
@@ -68,7 +68,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "发送查询指令",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -86,7 +86,7 @@
           ]
         },
         "GlobalVariblesKeyPattern": null,
-        "CommandType": 0,
+        "CommandType": 2,
         "ExecuteCondition": 1,
         "Timeout": 1000,
         "SleepTimeBefore": 0,
@@ -104,6 +104,7 @@
       "Item": "查询内容检查",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgQueryCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "CheckNumberInFlash": 3,
         "VolMaxValue": 3000,
         "VolMinValue": 500,
         "Ntc1MaxValue": 900,
@@ -154,7 +155,7 @@
         "AginTestTime": 30,
         "VibrationControl1": 0,
         "VibrationControl2": 0,
-        "VibrationControl3": 0,
+        "VibrationControl3": 1,
         "VibrationControl4": 0,
         "VibrationControl5": 0,
         "VibrationControl6": 0,
@@ -197,7 +198,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "打开检测串口",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
@@ -223,7 +224,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "AT-获取低压通道1",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
@@ -260,7 +261,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "检查低压通道1",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -281,7 +282,133 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
+      "Item": "发送授权指令",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGAuthorizeCommandProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "Head": "A5C3",
+        "ReservedWord": "0000",
+        "CommandWord": "0023",
+        "AuthorizeEvent": 1,
+        "BleBroadcastName": null,
+        "DeviceType": null,
+        "ReservedWord1": null,
+        "ReservedWord2": null,
+        "DataLength": 26,
+        "RespDataLength": 44,
+        "PortName": "COM4",
+        "AtCommand": null,
+        "AtCommandError": null,
+        "AtCommandOk": null,
+        "AtCommandInterval": 500,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{RespAuthorizeData}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": null,
+        "CommandType": 2,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "授权状态检查",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgAuthorizeCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "GlobalVariblesKey": "RespAuthorizeData",
+        "FirewareVersion": null,
+        "SoftwareVersion": null,
+        "FirmwareName": null,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgAuthorizeCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "回读确保授权写入成功-发送查询指令",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "DataLength": 32,
+        "PortName": "COM4",
+        "AtCommand": "A5C3001100000037FFFFFFFFFFFFFFFF40",
+        "AtCommandError": null,
+        "AtCommandOk": null,
+        "AtCommandInterval": 500,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{RetQueryData}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": null,
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "回读确保授权写入成功-查询内容检查",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgQueryCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "CheckNumberInFlash": 1,
+        "VolMaxValue": 0,
+        "VolMinValue": 0,
+        "Ntc1MaxValue": 0,
+        "Ntc1MinValue": 0,
+        "Ntc2MaxValue": 0,
+        "Ntc2MinValue": 0,
+        "Ntc3MaxValue": 0,
+        "Ntc3MinValue": 0,
+        "MotorSpeedMaxValue": 0,
+        "MotorSpeedMinValue": 0,
+        "GlobalVariblesKey": "RetQueryData",
+        "FirewareVersion": null,
+        "SoftwareVersion": null,
+        "FirmwareName": null,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgQueryCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
       "Item": "用户判断",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.Property.UserConfirmProperties, AILinkFactoryAuto.Base",
@@ -328,7 +455,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": false,
+      "Enable": true,
       "Item": "关闭检测串口",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.ClosePhoneProperties, AILinkFactoryAuto.Dut.AtCommand",

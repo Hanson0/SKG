@@ -42,9 +42,9 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
 
 
-            string fireWareVersion = config.FirewareVersion;
-            string softwareVersion = config.SoftwareVersion;
-            string firmwareName = config.FirmwareName;
+            //string fireWareVersion = config.FirewareVersion;
+            //string softwareVersion = config.SoftwareVersion;
+            //string firmwareName = config.FirmwareName;
             #region
             //是否完成过PCBA 0x01：已完成过 其他值：未完成过
             if (true)
@@ -87,17 +87,17 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
 
             //硬件版本号（高位） 0x00 硬件版本号（高位）
-            if (true)
+            if (!string.IsNullOrEmpty(config.FirewareVersion))
             {
                 byte[] dataFirmwareVersion = new byte[2];
                 Array.Copy(dataArry, 3, dataFirmwareVersion, 0, 2);
                 string strFirmwareVersion = System.Text.Encoding.ASCII.GetString(dataFirmwareVersion);
                 //string strFirmwareVersion = byteToHexStr(dataFirmwareVersion);
-                if (strFirmwareVersion != fireWareVersion)
+                if (strFirmwareVersion != config.FirewareVersion)
                 {
-                    throw new BaseException(string.Format("硬件版本号:{0},与设置版本号:{1}不一致", strFirmwareVersion, fireWareVersion));
+                    throw new BaseException(string.Format("硬件版本号:{0},与设置版本号:{1}不一致", strFirmwareVersion, config.FirewareVersion));
                 }
-                log.Info(string.Format("硬件版本号:{0},与设置版本号:{1}一致", strFirmwareVersion, fireWareVersion));
+                log.Info(string.Format("硬件版本号:{0},与设置版本号:{1}一致", strFirmwareVersion, config.FirewareVersion));
             }
 
 
@@ -105,17 +105,17 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //软件版本号 0x01 软件版本号 7 
             //软件版本号 0x02 软件版本号 8 
             //软件版本号（低位） 0x03 软件版本号（低位）
-            if (true)
+            if (!string.IsNullOrEmpty(config.SoftwareVersion))
             {
                 byte[] dataSoftwareVersion = new byte[4];
                 Array.Copy(dataArry, 5, dataSoftwareVersion, 0, 4);
                 string strSoftwareVersion = System.Text.Encoding.ASCII.GetString(dataSoftwareVersion);
                 //string strSoftwareVersion = byteToHexStr(dataSoftwareVersion);
-                if (strSoftwareVersion != softwareVersion)
+                if (strSoftwareVersion != config.SoftwareVersion)
                 {
-                    throw new BaseException(string.Format("软件版本号:{0},与设置版本号:{1}不一致", strSoftwareVersion, softwareVersion));
+                    throw new BaseException(string.Format("软件版本号:{0},与设置版本号:{1}不一致", strSoftwareVersion, config.SoftwareVersion));
                 }
-                log.Info(string.Format("软件版本号:{0},与设置版本号:{1}一致", strSoftwareVersion, softwareVersion));
+                log.Info(string.Format("软件版本号:{0},与设置版本号:{1}一致", strSoftwareVersion, config.SoftwareVersion));
             }
 
             //MCU ID
@@ -138,7 +138,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
             //电池电压
             //长度 2字节
-            if (true)
+            if (!(config.VolMaxValue==0&& config.VolMinValue==0))
             {
                 byte high = dataArry[27];
                 byte low = dataArry[28];
@@ -148,7 +148,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
             //NTC温度
             //长度 2字节
-            if (true)
+            if (!(config.Ntc1MaxValue == 0 && config.Ntc1MinValue == 0))
             {
                 byte high = dataArry[29];
                 if (high == 0x80)
@@ -162,7 +162,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             }
 
             //PCBA-ID
-            if (true)
+            if (config.CheckNumberInFlash== SkgQueryCheckProperties.EnumCheckNumberInFlash.检查PCBA_ID)
             {
                 if (dataArry[31] > 0x18 )
                 {
@@ -175,10 +175,16 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 //MCU ID：1F39A109高位在前1F,39的直接16进制拼接方式
                 string strDataPcbaId = byteToHexStr(dataPcbaId);
                 log.Info(string.Format("PCBA-ID:{0}", strDataPcbaId));
-            }
+                //int型处理
+                string preSnPcbaId = configGv.Get(GlobalVaribles.LABEL_SN);
+                if (preSnPcbaId!= strDataPcbaId)
+                {
+                    throw new BaseException(string.Format("预写PCBIDA-ID :{0}与写入的PCBA-ID ：{1}，不一致", preSnPcbaId, strDataPcbaId));
+                }
 
-            //SN
-            if (true)
+                //configGv.Add("ReadPcbaId", strDataPcbaId);
+            }
+            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.检查SN)
             {
                 if (dataArry[31] > 0x18)
                 {
@@ -193,22 +199,42 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 //不足的，需要判断补0?
                 string strDataSn = byteToHexStr(dataSn);
                 log.Info(string.Format("SN:{0}", strDataSn));
+
+                //int型处理
+                string preSn = configGv.Get(GlobalVaribles.LABEL_SN);
+                if (preSn != strDataSn)
+                {
+                    throw new BaseException(string.Format("预写SN :{0}与写入的SN ：{1}，不一致", preSn, strDataSn));
+                }
+
+                //configGv.Add("ReadSn", strDataSn);
             }
+            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.检查蓝牙广播信息)
+            {
+                //预留-查询返回信息中没有蓝牙广播信息
+
+
+            }
+            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.不检查)
+            {
+                //跳过
+            }
+
             //固件名称
-            if (true)
+            if (!string.IsNullOrEmpty(config.FirmwareName))
             {
                 byte[] dataFirmwareName = new byte[8];
                 Array.Copy(dataArry, 81, dataFirmwareName, 0, 8);
                 string strDataFirmwareName = System.Text.Encoding.ASCII.GetString(dataFirmwareName);
                 //string strSoftwareVersion = byteToHexStr(dataSoftwareVersion);
-                if (strDataFirmwareName != firmwareName)
+                if (strDataFirmwareName != config.FirmwareName)
                 {
-                    throw new BaseException(string.Format("固件名称:{0},与设置固件名称:{1}不一致", strDataFirmwareName, firmwareName));
+                    throw new BaseException(string.Format("固件名称:{0},与设置固件名称:{1}不一致", strDataFirmwareName, config.FirmwareName));
                 }
-                log.Info(string.Format("固件名称:{0},与设置固件名称:{1}一致", strDataFirmwareName, firmwareName));
+                log.Info(string.Format("固件名称:{0},与设置固件名称:{1}一致", strDataFirmwareName, config.FirmwareName));
             }
             //电机转速
-            if (true)
+            if (!(config.MotorSpeedMaxValue == 0 && config.MotorSpeedMinValue == 0))
             {
                 byte high = dataArry[89];
                 byte low = dataArry[90];
@@ -217,7 +243,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             }
 
             //NTC2温度
-            if (true)
+            if (!(config.Ntc2MaxValue == 0 && config.Ntc2MinValue == 0))
             {
                 byte high = dataArry[91];
                 if (high == 0x80)
@@ -231,7 +257,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             }
 
             //NTC3温度
-            if (true)
+            if (!(config.Ntc3MaxValue == 0 && config.Ntc3MinValue == 0))
             {
                 byte high = dataArry[93];
                 if (high == 0x80)

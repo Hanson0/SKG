@@ -508,50 +508,11 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                     DataLength = 26,
                     ReservedWord = "0000",
                     CommandWord = "0023",
-
-
-                    //PowerOnOffSetting = SKGControlCommandProperties.EnumPowerOnOffSetting.开机,
-                    //LedModeSetting = SKGControlCommandProperties.EnumLedModeSetting.红或橙色LED开,
-                    //EmsTestSwitch = SKGControlCommandProperties.EnumEmsTestSwitch.开启正反交替脉冲_2电极产品,
-                    //EmsPWSetting = 1000,
-                    //EmsFreqSetting = 1000,
-                    //EmsAmplitudeSetting = 1000,
-                    //HeatingGearControl = SKGControlCommandProperties.EnumHeatingGearControl.开启42度加热或加热中档,
-                    //VoiceControl = SKGControlCommandProperties.EnumVoiceControl.输出一段语音_输出蜂鸣器响声,
-                    //WritePcbaFinishFlag = SKGControlCommandProperties.EnumWritePcbaFinishFlag.PCBA测试未完成_标志不写入flash,
-                    //WholeMachineFinishFlag = SKGControlCommandProperties.EnumWholeMachineFinishFlag.整机测试未完成_标志不写入flash,
-                    //BtTestOnOffSetting = SKGControlCommandProperties.EnumBtTestOnOffSetting.开启蓝牙测试,
-                    //MotorControl = SKGControlCommandProperties.EnumMotorControl.开启1档力度,
-                    //AginTestOnOffSetting = SKGControlCommandProperties.EnumAginTestOnOffSetting.不开启老化测试,
-                    //AginTestTime = 30,//30分钟
-                    //VibrationControl1 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl2 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl3 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl4 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl5 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl6 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl7 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl8 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl9 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl10 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl11 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl12 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl13 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl14 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl15 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    //VibrationControl16 = SKGControlCommandProperties.EnumVibrationControl.开,
-
-                    //RedLightControl640nm = SKGControlCommandProperties.EnumVibrationControl.开,
-
-
+                    CommandType = SKGAuthorizeCommandProperties.EnumCommandType.下发授权,
+                    AuthorizeEvent = SKGAuthorizeCommandProperties.EnumAuthorizeEvent.SN_授权,
+                    //Sn_PCBA_IDVariable ="1122334455667788990011223344556677",//该项由扫描标签SN/PCBA_ID获取，不用设置,需平台支持一个不限长度的标签SN扫描
                     //AtCommand = "A5C3001D0000004001010103E803E800640101000001030003FFFF015E",
                     AtCommandInterval = 500,
-                    CommandType = SKGAuthorizeCommandProperties.EnumCommandType.下发授权,
-                    //CommandType= EnumCommandType
-                    //EndLine = "",//\r\n
-                    //AtCommandOk = "[97F] Default BB Swing=30",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
-                    //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
-                    //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
                     GlobalVariblesKey = new string[] { "{RespAuthorizeData}" },//, "{DevBt_MAC}" 
                     RespDataLength=44,
                     //Timeout = 30 * 1000,
@@ -566,11 +527,57 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
-                findDevice.Item = "授权状态检查";//Find Device
+                findDevice.Item = "授权指令成功状态检查";//Find Device
                 findDevice.CommonProperties = new SkgAuthorizeCheckProperties()
                 {
 
                     GlobalVariblesKey = "RespAuthorizeData",
+
+                    RetryCount = 0,
+                    SleepTimeBefore = 0,
+                };
+                findDevice.Executer = new SkgAuthorizeCheckExecuter();
+                taskItemManager.Put(findDevice);
+            }
+
+            //回读一遍查询，确保授权写入成功
+            //发送指令
+            if (true)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "回读确保授权写入成功-发送查询指令";//Find Device
+                findDevice.CommonProperties = new SKGProperties()
+                {
+                    PortName = "COM4",
+                    AtCommand = "A5C3001100000037FFFFFFFFFFFFFFFF40",
+                    AtCommandInterval = 500,
+                    CommandType = SKGProperties.EnumCommandType.查询指令,
+                    //CommandType= EnumCommandType
+                    //EndLine = "",//\r\n
+                    //AtCommandOk = "[97F] Default BB Swing=30",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
+                    //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
+                    GlobalVariblesKey = new string[] { "{RetQueryData}" },//, "{DevBt_MAC}" 
+                    DataLength = 32,
+                    //Timeout = 30 * 1000,
+                    RetryCount = 0,
+                    SleepTimeBefore = 0,
+                };
+                findDevice.Executer = new SKGExecuter();
+                taskItemManager.Put(findDevice);
+            }
+            //查询内容检查
+            if (true)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "回读确保授权写入成功-查询内容检查";//Find Device
+                findDevice.CommonProperties = new SkgQueryCheckProperties()
+                {
+
+                    GlobalVariblesKey = "RetQueryData",
+                    CheckNumberInFlash= SkgQueryCheckProperties.EnumCheckNumberInFlash.检查SN,
                     //FirmwareName = "K4-2T-",
                     //FirewareVersion = "1010",
                     //SoftwareVersion = "1011",
@@ -592,7 +599,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                     RetryCount = 0,
                     SleepTimeBefore = 0,
                 };
-                findDevice.Executer = new SkgAuthorizeCheckExecuter();
+                findDevice.Executer = new SkgQueryCheckExecuter();
                 taskItemManager.Put(findDevice);
             }
 
