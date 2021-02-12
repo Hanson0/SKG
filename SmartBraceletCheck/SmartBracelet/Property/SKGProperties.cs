@@ -39,7 +39,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         [Category("DataLength"), Description("数据部分长度")]
         public int DataLength
-        {
+        { 
             get { return dataLength; }
             set { dataLength = value; }
         }

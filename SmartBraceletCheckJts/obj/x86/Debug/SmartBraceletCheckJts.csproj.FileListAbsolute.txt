@@ -217,8 +217,6 @@ F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletC
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\SimpleWifi.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\ManagedWifi.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\ThoughtWorks.QRCode.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Base.pdb
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Dut.AtCommand.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\log4net.xml
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\Newtonsoft.Json.xml

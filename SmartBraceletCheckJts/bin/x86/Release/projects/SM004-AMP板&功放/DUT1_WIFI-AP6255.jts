@@ -68,7 +68,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
+      "Enable": false,
       "Item": "发送查询指令",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -86,7 +86,7 @@
           ]
         },
         "GlobalVariblesKeyPattern": null,
-        "CommandType": 2,
+        "CommandType": 0,
         "ExecuteCondition": 1,
         "Timeout": 1000,
         "SleepTimeBefore": 0,
@@ -100,11 +100,11 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
+      "Enable": false,
       "Item": "查询内容检查",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgQueryCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
-        "CheckNumberInFlash": 3,
+        "CheckNumberInFlash": 0,
         "VolMaxValue": 3000,
         "VolMinValue": 500,
         "Ntc1MaxValue": 900,
@@ -132,7 +132,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
+      "Enable": false,
       "Item": "发送控制指令",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGControlCommandProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -155,7 +155,7 @@
         "AginTestTime": 30,
         "VibrationControl1": 0,
         "VibrationControl2": 0,
-        "VibrationControl3": 1,
+        "VibrationControl3": 0,
         "VibrationControl4": 0,
         "VibrationControl5": 0,
         "VibrationControl6": 0,
@@ -198,7 +198,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
+      "Enable": false,
       "Item": "打开检测串口",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
@@ -224,7 +224,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
+      "Enable": false,
       "Item": "AT-获取低压通道1",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
@@ -261,7 +261,7 @@
     },
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
-      "Enable": true,
+      "Enable": false,
       "Item": "检查低压通道1",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
@@ -324,7 +324,7 @@
     {
       "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
       "Enable": true,
-      "Item": "授权状态检查",
+      "Item": "授权指令成功状态检查",
       "CommonProperties": {
         "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgAuthorizeCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
         "GlobalVariblesKey": "RespAuthorizeData",

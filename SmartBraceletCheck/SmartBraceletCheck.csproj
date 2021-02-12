@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2080BC4D-F888-4C47-ACAA-4E3F448EE891}</ProjectGuid>
+    <ProjectGuid>{E29376E3-0E59-46C5-9786-C34E2EC432F6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AILinkFactoryAuto.Task</RootNamespace>
     <AssemblyName>AILinkFactoryAuto.Task.SmartBracelet</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,24 +30,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\SmartBraceletCheckJts\bin\x86\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <OutputPath>bin\x86\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AILinkFactoryAuto.Base">
       <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Base.dll</HintPath>
@@ -54,19 +37,14 @@
     <Reference Include="AILinkFactoryAuto.Dut.AtCommand">
       <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\managedwifi.1.1.0\lib\net20\ManagedWifi.dll</HintPath>
+    <Reference Include="ManagedWifi">
+      <HintPath>bin\x86\Release\ManagedWifi.dll</HintPath>
     </Reference>
     <Reference Include="MesDll">
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\MesDll.dll</HintPath>
+      <HintPath>bin\x86\Release\MesDll.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="SimpleWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleWifi.1.0.0.0\lib\net40\SimpleWifi.dll</HintPath>
+    <Reference Include="SimpleWifi">
+      <HintPath>bin\x86\Release\SimpleWifi.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -79,21 +57,27 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="ThoughtWorks.QRCode">
-      <HintPath>..\SmartBraceletCheckJts\bin\x86\Release\ThoughtWorks.QRCode.dll</HintPath>
+      <HintPath>bin\x86\Release\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\FormScanCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FormScanCode.Designer.cs">
+      <DependentUpon>FormScanCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\QrCodeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Common\QrCodeForm.Designer.cs">
       <DependentUpon>QrCodeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Common\FormScanCode.cs">
+    <Compile Include="Common\TipAndCheckUartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Common\FormScanCode.Designer.cs">
-      <DependentUpon>FormScanCode.cs</DependentUpon>
+    <Compile Include="Common\TipAndCheckUartForm.Designer.cs">
+      <DependentUpon>TipAndCheckUartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmartBracelet\Executer\AccessToMacExecuter.cs" />
@@ -103,12 +87,14 @@
     <Compile Include="SmartBracelet\Executer\CheckCsqExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckHexUartExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckHexUartPowerOnExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\CheckNbImeiExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckNbVersionExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckRangeValueExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckReScanLabelsExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckTempExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckWifiBtMacExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckWifiMacExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\CheckWifiMapExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CheckWifiProbeExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CmdExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\CmdFindDeviceExecuter.cs" />
@@ -118,10 +104,15 @@
     <Compile Include="SmartBracelet\Executer\DisableAdapterExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\DisConnectSsiExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\EnableAdapterExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\FindDeviceExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\GetBtRssiAtCommandExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\GetLicenseExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\IsitWrittenToTheBtMacExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\LabelVerifyExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\LogMacChangeToThisMacExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\PrintLabelImeiChangetToNbImeiExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\ReadMapExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\ReScanLabelExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\ShowBtMacQrCodeExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\SkgAuthorizeCheckExecuter.cs" />
@@ -132,15 +123,24 @@
     <Compile Include="SmartBracelet\Executer\SocketCommandExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\SocketConnectExecuter.cs" />
     <Compile Include="SmartBracelet\Executer\SocketDisConnectExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\WriteBtBinExecuter.cs" />
+    <Compile Include="SmartBracelet\Executer\WriteWifiMapExecuter.cs" />
     <Compile Include="SmartBracelet\Property\AccessToMacProperties.cs" />
     <Compile Include="SmartBracelet\Property\AutoToUserModeProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckBtMacProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckBtRssiProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckCsqProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckHexUartPowerOnProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckHexUartProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckNbImeiProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckNbVersionProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckRangeValueProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckReScanLabelsProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckTempProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckWifiBtMacProperties.cs" />
     <Compile Include="SmartBracelet\Property\CheckWifiMacProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckWifiMapProperties.cs" />
+    <Compile Include="SmartBracelet\Property\CheckWifiProbeProperties.cs" />
     <Compile Include="SmartBracelet\Property\CmdFindDeviceProperties.cs" />
     <Compile Include="SmartBracelet\Property\CmdProperties.cs" />
     <Compile Include="SmartBracelet\Property\CmdReadMacProperties.cs" />
@@ -150,23 +150,9 @@
     <Compile Include="SmartBracelet\Property\DisableAdapterProperties.cs" />
     <Compile Include="SmartBracelet\Property\DisConnectSsiProperties.cs" />
     <Compile Include="SmartBracelet\Property\EnableAdapterProperties.cs" />
-    <Compile Include="SmartBracelet\Property\GetBtRssiAtCommandProperties.cs" />
-    <Compile Include="SmartBracelet\Property\CheckBtRssiProperties.cs" />
-    <Compile Include="SmartBracelet\Property\CheckCsqProperties.cs" />
-    <Compile Include="SmartBracelet\Property\CheckNbImeiProperties.cs" />
-    <Compile Include="SmartBracelet\Executer\CheckWifiMapExecuter.cs" />
-    <Compile Include="SmartBracelet\Executer\FindDeviceExecuter.cs" />
-    <Compile Include="SmartBracelet\Executer\ReadMapExecuter.cs" />
-    <Compile Include="SmartBracelet\Executer\WriteBtBinExecuter.cs" />
-    <Compile Include="SmartBracelet\Executer\WriteWifiMapExecuter.cs" />
-    <Compile Include="SmartBracelet\Property\CheckBtMacProperties.cs" />
-    <Compile Include="SmartBracelet\Executer\CheckNbImeiExecuter.cs" />
-    <Compile Include="SmartBracelet\Property\CheckTempProperties.cs" />
-    <Compile Include="SmartBracelet\Property\CheckWifiMapProperties.cs" />
-    <Compile Include="SmartBracelet\Property\CheckWifiProbeProperties.cs" />
     <Compile Include="SmartBracelet\Property\FindDeviceProperties.cs" />
-    <Compile Include="SmartBracelet\Executer\GetBtRssiAtCommandExecuter.cs" />
-    <Compile Include="SmartBracelet\Executer\LogMacChangeToThisMacExecuter.cs" />
+    <Compile Include="SmartBracelet\Property\FormTipAndUartCheckProperties.cs" />
+    <Compile Include="SmartBracelet\Property\GetBtRssiAtCommandProperties.cs" />
     <Compile Include="SmartBracelet\Property\GetLicenseProperties.cs" />
     <Compile Include="SmartBracelet\Property\IsitWrittenToTheBtMacProperties.cs" />
     <Compile Include="SmartBracelet\Property\LabelVerifyProperties.cs" />
@@ -180,29 +166,25 @@
     <Compile Include="SmartBracelet\Property\SKGControlCommandProperties.cs" />
     <Compile Include="SmartBracelet\Property\SKGProperties.cs" />
     <Compile Include="SmartBracelet\Property\SkgQueryCheckProperties.cs" />
+    <Compile Include="SmartBracelet\Property\SocketCommandProperties.cs" />
     <Compile Include="SmartBracelet\Property\SocketConnectProperties.cs" />
     <Compile Include="SmartBracelet\Property\SocketDisConnectProperties.cs" />
-    <Compile Include="SmartBracelet\Property\SocketCommandProperties.cs" />
     <Compile Include="SmartBracelet\Property\WriteBtBinProperties.cs" />
     <Compile Include="SmartBracelet\Property\WriteWifiMapProperties.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Common\FormScanCode.resx">
+      <DependentUpon>FormScanCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Common\QrCodeForm.resx">
       <DependentUpon>QrCodeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Common\FormScanCode.resx">
-      <DependentUpon>FormScanCode.cs</DependentUpon>
+    <EmbeddedResource Include="Common\TipAndCheckUartForm.resx">
+      <DependentUpon>TipAndCheckUartForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

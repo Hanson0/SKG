@@ -253,7 +253,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
 
             //功放板测试-
             //打开WIFI UART
-            if (true)
+            if (cbSkg.Checked)
             {
                 OpenPhoneProperties configOpenWifiUart = new OpenPhoneProperties();
                 configOpenWifiUart.PortName = "COM4";
@@ -272,8 +272,27 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 openWifiUartItem.Executer = new OpenPhoneExecutor();
                 taskItemManager.Put(openWifiUartItem);
             }
+            if (cbSm005.Checked)
+            {
+                OpenPhoneProperties configOpenWifiUart = new OpenPhoneProperties();
+                configOpenWifiUart.PortName = "COM4";
+                configOpenWifiUart.BaudRate = 921600;
+                configOpenWifiUart.Dtr = true;
+                configOpenWifiUart.Rts = true;
+                configOpenWifiUart.EndLine = "\\r\\n";
+                configOpenWifiUart.Timeout = 10 * 1000;
+                configOpenWifiUart.RetryCount = 0;
+                configOpenWifiUart.AtType = AtType.Manual;
+                configOpenWifiUart.SleepTimeAfterFindDut = 100;
+                TaskItem openWifiUartItem = new TaskItem();
+                openWifiUartItem.Enable = true;
+                openWifiUartItem.Item = "打开串口";//Open Wifi Uart
+                openWifiUartItem.CommonProperties = configOpenWifiUart;
+                openWifiUartItem.Executer = new OpenPhoneExecutor();
+                taskItemManager.Put(openWifiUartItem);
+            }
             //发现设备
-            if (false)
+            if (cbSm005.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -284,7 +303,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                     TestPowerOnAT = "",
                     AtCommandInterval = 100,
                     EndLine = "",//\r\n
-                    AtCommandOk = "[97F] Default BB Swing=30",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    AtCommandOk = "ACCESSIBLE_CHANGE",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
                     //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
                     //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
                     //GlobalVariblesKey = new string[] { "{DevWifi_MAC}","{DevBt_MAC}" },//, "{DevBt_MAC}" 
@@ -297,7 +316,323 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(findDevice);
             }
             //发送指令
-            if (true)
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "进入测试模式";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_PT_START";
+
+                checkBtVersionProperties.AtCommandOk = "TR: CMD_PT_START Success";
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "信息检查";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_GET_INFO";
+
+                checkBtVersionProperties.AtCommandOk = "Current Level";
+                checkBtVersionProperties.CheckInfo = new string[] {"hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //AT指令发送按键测试命令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "发送按键测试命令";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_KEY_TEST";
+
+                //checkBtVersionProperties.AtCommandOk = "TR: CMD_KEY_TEST OK";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //提示并检测音量+按键按下
+            if (cbSm005.Checked)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "检测音量+按键";//Find Device
+                findDevice.CommonProperties = new FormTipAndUartCheckProperties()
+                {
+                    PortName = "COM4",
+                    TestPowerOnAT = "",
+                    AtCommandInterval = 100,
+                    EndLine = "",//\r\n
+                    AtCommandOk = "ACCESSIBLE_CHANGE",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
+                    //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
+                    //GlobalVariblesKey = new string[] { "{DevWifi_MAC}","{DevBt_MAC}" },//, "{DevBt_MAC}" 
+
+                    Timeout = 30 * 1000,
+                    RetryCount = 0,
+                    SleepTimeBefore = 0,
+                };
+                findDevice.Executer = new FormTipAndUartCheckExecuter();
+                taskItemManager.Put(findDevice);
+            }
+            
+            //提示并检测音量+按键按下
+
+            //提示并检测音量-按键按下            
+
+            //按键测试涉及界面，因此要单独开一项
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "测试按键";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_KEY_TEST";
+
+                checkBtVersionProperties.AtCommandOk = "TR: CMD_KEY_TEST OK";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "测试LEFT MIC-输出声音";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_LMIC_START";
+
+                checkBtVersionProperties.AtCommandOk = "TR: CMD_LEFT_START TEST";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            if (cbSm005.Checked)
+            {
+                UserConfirmProperties userConfirmProperties = new UserConfirmProperties()
+                {
+                    Tips = "测试LEFT MIC-人工判断",
+                    CountDownTime = 15000,
+                    KeyPass = Keys.Space,
+                    KeyFail = Keys.F,
+
+                    //EnableCheckMac = true,
+                    //EnableCheckImei = false,
+                    //EnableCheckSn = false,
+                };
+                taskItemManager.AppendUserConfirm(userConfirmProperties);
+            }
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "测试RIGHT MIC-发出声音";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_RMIC_START";
+
+                checkBtVersionProperties.AtCommandOk = "TR: CMD_LEFT_START TEST";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            if (cbSm005.Checked)
+            {
+                UserConfirmProperties userConfirmProperties = new UserConfirmProperties()
+                {
+                    Tips = "测试RIGHT MIC-人工判断",
+                    CountDownTime = 15000,
+                    KeyPass = Keys.Space,
+                    KeyFail = Keys.F,
+                };
+                taskItemManager.AppendUserConfirm(userConfirmProperties);
+            }
+
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "关闭声音输出";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_MIC_STOP";
+
+                checkBtVersionProperties.AtCommandOk = "TR: MIC TEST EXIT Success";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "清除配对记录";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_CLR_PAIRLIST";
+
+                checkBtVersionProperties.AtCommandOk = "TR: CLR  PAIR  LIST Success";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "退出产测模式";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_PT_STOP";
+
+                checkBtVersionProperties.AtCommandOk = "TR: CMD_PT_STOP Success";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+            //发送指令
+            if (cbSm005.Checked)
+            {
+                TaskItem checkBtVersionItem = new TaskItem();
+                checkBtVersionItem.Enable = true;
+                checkBtVersionItem.Item = "测试RF";//Write BT MAC
+                AtCommandProperties checkBtVersionProperties = new AtCommandProperties();
+                checkBtVersionProperties.PortName = "COM4";
+                checkBtVersionProperties.AtCommand = "CMD_ENTER_DUT";
+                //checkBtVersionProperties.AtCommandOk = "CMD_ENTER_DUT";
+                //checkBtVersionProperties.CheckInfo = new string[] { "hw_ver:3.0.0", "fw_ver:1.3.12", "B T Name:SM005" };
+                //checkBtVersionProperties.AtCommandError = "UNKNOWN";
+
+                //checkBtVersionProperties.GlobalVariblesKeyPattern = new string[] { "LVL1=([.0-9]{5})" };//, "([0-9A-Fa-f:]{18})" 
+                //checkBtVersionProperties.GlobalVariblesKey = new string[] { "{LVL1}" };//, "{DevBt_MAC}" 
+                checkBtVersionProperties.RetryCount = 3;
+                checkBtVersionProperties.AtCommandInterval = 800;
+                checkBtVersionProperties.SleepTimeBefore = 100;
+                checkBtVersionProperties.Timeout = 8000;
+
+                checkBtVersionItem.CommonProperties = checkBtVersionProperties;
+                checkBtVersionItem.Executer = new AtCommandExecuter();
+                taskItemManager.Put(checkBtVersionItem);
+            }
+
+
+
+            //发送指令
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -323,7 +658,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(findDevice);
             }
             //查询内容检查
-            if (true)
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -362,7 +697,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
 
 
             //发送指令
-            if (true)
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -496,7 +831,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             //提示一项,然后一直处于串口接收状态，并在500ms内回复,然后解析后，检查该项是否OK
 
             //授权指令
-            if (true)
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -523,7 +858,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(findDevice);
             }
             //授权状态检查
-            if (true)
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -542,7 +877,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
 
             //回读一遍查询，确保授权写入成功
             //发送指令
-            if (true)
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -568,7 +903,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 taskItemManager.Put(findDevice);
             }
             //查询内容检查
-            if (true)
+            if (cbSkg.Checked)
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
@@ -577,7 +912,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 {
 
                     GlobalVariblesKey = "RetQueryData",
-                    CheckNumberInFlash= SkgQueryCheckProperties.EnumCheckNumberInFlash.检查SN,
+                    CheckNumberInFlash= SkgQueryCheckProperties.EnumCheckNumberInFlash.检查SN,//因为前面授权写入的是SN，所以检查SN
                     //FirmwareName = "K4-2T-",
                     //FirewareVersion = "1010",
                     //SoftwareVersion = "1011",
