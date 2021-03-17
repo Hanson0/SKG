@@ -20,6 +20,15 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         private string[] globalVariblesKeyPattern;
         private string atCommandError;
 
+        public EnumCommandType commandType;
+        //public EnumReturnType returnType;
+
+
+        public enum EnumCommandType
+        {
+            String,
+            Hex
+        }
 
         [Category("SerialPort"), Description("PortName"), TypeConverter(typeof(PortNamesConverter))]
         public string PortName
@@ -82,6 +91,12 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             set { atCommandError = value; }
         }
 
+        [Category("CommandType"), Description("串口数据类型")]
+        public EnumCommandType CommandType
+        {
+            get { return commandType; }
+            set { commandType = value; }
+        }
 
     }
 }

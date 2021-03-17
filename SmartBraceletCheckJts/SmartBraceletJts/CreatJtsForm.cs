@@ -282,9 +282,10 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 {
                     PortName = "COM4",
                     TestPowerOnAT = "",
+                    CommandType = FindDeviceProperties.EnumCommandType.Hex,
                     AtCommandInterval = 100,
                     EndLine = "",//\r\n
-                    AtCommandOk = "ACCESSIBLE_CHANGE",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    AtCommandOk = "A5C3",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
                     //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
                     //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
                     //GlobalVariblesKey = new string[] { "{DevWifi_MAC}","{DevBt_MAC}" },//, "{DevBt_MAC}" 
@@ -326,8 +327,10 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 findDevice.Item = "检测SM005产品上电中...";//Find Device
                 findDevice.CommonProperties = new FindDeviceProperties()
                 {
+
                     PortName = "COM4",
                     TestPowerOnAT = "",
+                    CommandType = FindDeviceProperties.EnumCommandType.String,
                     AtCommandInterval = 100,
                     EndLine = "",//\r\n
                     AtCommandOk = "hw_close",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
