@@ -1,0 +1,266 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 13:36:25
+
+
+1 Init
+TestTime:12.9387ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=112233445566789
+MAC=
+TestTime:55.8497ms
+                                                                        PASS
+3 打开串口
+TestTime:120.5495ms
+                                                                        PASS
+4 检测产品上电中....
+检测到产品上电，AT response=[   114632/  2 | app_bt_accessmode_timehandler accMode=3
+   114633/  5 | app_bt_mail_process src_thread:0x200256c0 request_id:5 enter
+   114633/  5 | !!!ME_SetAccessibleMode  MEC(accOp).mode = 3, mode = 3
+
+MeStartOperation f 
+MeAcc: !!!MeHandleAccessModeOp  event=1 curMode =3
+   114633/  5 | app_bt_global_handle evt = 10
+   114633/  5 | ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x3
+MeStartOperation end
+   114633/  5 | app_set_accessmode status=0x2
+   114633/  5 | app_bt_mail_process request_id:5 :status:25 exit
+]  contain =[MeStartOperation]
+TestTime:2900.8379ms
+                                                                        PASS
+5 进入测试模式
+AT Commond=CMD_PT_START
+AT Response=   115909/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+   115910/  0 | pos:13,CMD_PT_START
+
+
+   115910/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+TestTime:659.8635ms
+                                                                        PASS
+6 信息检查
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:9
+
+TestTime:459.4878ms
+                                                                        PASS
+7 发送按键测试命令
+AT Commond=CMD_KEY_TEST
+AT Response=TR: CMD_KEY_TEST start
+
+TestTime:217.4345ms
+                                                                        PASS
+8 检测音量+按键
+Response：
+Response：Power key ok!
+
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume down key ok!
+
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Wait TimeOut, 15seconds
+Fail
+TestTime:15479.8875ms
+                                                                        FAIL
+9 检测音量-按键
+TestTime:9.9754ms
+                                                                        SKIP
+10 测试LEFT MIC-输出声音
+TestTime:12.0454ms
+                                                                        SKIP
+11 用户判断
+TestTime:8.2871ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:9.0085ms
+                                                                        SKIP
+13 用户判断
+TestTime:24.7049ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:7.976ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:9.94ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:9.0106ms
+                                                                        SKIP
+22 关闭串口
+TestTime:13.9657ms
+                                                                        PASS
+24 Deinit
+TestTime:12.3284ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第8项:
+检测音量+按键
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:20.3826264
+

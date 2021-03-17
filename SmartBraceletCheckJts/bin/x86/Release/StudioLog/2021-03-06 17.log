@@ -1,0 +1,5 @@
+2021-03-06 17:52:20,234 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 17:52:20,245 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 17:52:20,249 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-RF\DUT1_WIFI-AP6255.jts]
+2021-03-06 17:52:20,256 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 17:52:20,259 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!

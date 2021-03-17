@@ -1,0 +1,60 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 16:21:26
+
+
+1 Init
+TestTime:23.4424ms
+                                                                        PASS
+19 蓝牙配对测试
+DeviceName:D4:62:EA:56:07:CB,DeviceAddress:D462EA5607CB
+DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+DeviceName:MEIZU,DeviceAddress:90F052A67D9F
+DeviceName:Mi Outdoor Bluetooth Speaker,DeviceAddress:1895526CCD7B
+DeviceName:原来是阿源呐的Mi 10,DeviceAddress:582059B829DD
+DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+DeviceName:DESKTOP-Q8N6PAP,DeviceAddress:EC5C68B78B74
+DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+DeviceName:chunxu,DeviceAddress:F460E2713303
+DeviceName:LAPTOP-78I81BR4,DeviceAddress:4CEBBD3F7D4C
+向一个无法连接的网络尝试了一个套接字操作。 1895526CCD7B:0000111e00001000800000805f9b34fb
+TestTime:45772.3907ms
+                                                                        FAIL
+30 Deinit
+TestTime:17.9523ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 1895526CCD7B:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 95
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:45.9596835
+

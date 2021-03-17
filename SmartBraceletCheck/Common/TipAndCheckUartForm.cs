@@ -1,4 +1,5 @@
 ﻿using AILinkFactoryAuto.Core;
+using AILinkFactoryAuto.Dut.AtCommand;
 using AILinkFactoryAuto.Task.SmartBracelet.Property;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,9 @@ namespace AILinkFactoryAuto.Task.Common
 
         private ILog log;
 
+        private ComDut comDut;
+        Timer timer;
+
         public bool Result
         {
             get { return result; }
@@ -35,7 +39,7 @@ namespace AILinkFactoryAuto.Task.Common
             InitializeComponent();
         }
 
-        public TipAndCheckUartForm(FormTipAndUartCheckProperties formTipAndUartCheckProperties, ILog log)
+        public TipAndCheckUartForm(FormTipAndUartCheckProperties formTipAndUartCheckProperties, ILog log,ComDut comDut)
         {
             InitializeComponent();
 
@@ -46,13 +50,16 @@ namespace AILinkFactoryAuto.Task.Common
             //lblInfoFail.Text = "FAIL：请按" + userConfirmProperties.KeyFail + "键";
             txtTips.Text = formTipAndUartCheckProperties.Tips;
             countDown = new TimeSpan(formTipAndUartCheckProperties.CountDownTime * 1000 * 10);
+
+            this.comDut = comDut;
+
         }
 
         private void TipAndCheckUartForm_Shown(object sender, EventArgs e)
         {
             txtTips.SelectionLength = 0;
 
-            Timer timer = new Timer();
+            timer = new Timer();
             timer.Enabled = true;
             timer.Interval = 100;
             timer.Tick += Timer_Tick;
@@ -66,17 +73,33 @@ namespace AILinkFactoryAuto.Task.Common
             TimeSpan remainTime = countDown - (DateTime.Now - start);
             if (remainTime.Ticks <= 0)
             {
-                Timer timer = sender as Timer;
+                //Timer timer = sender as Timer;
                 timer.Stop();
 
-                log.Fail("Wait TimeOut, " + countDown.Seconds + "seconds");
-                Thread.Sleep(400);
+                log.Fail("Wait TimeOut, " + countDown.Seconds + "seconds");  
+                //Thread.Sleep(100);
 
                 this.Close();
             }
             else
             {
                 lblCountDown.Text = "倒计时：" + remainTime.Seconds + "秒";
+                string response = comDut.ReadExisting();
+                log.Info("Response：" + response); 
+
+                if (!string.IsNullOrEmpty(this.formTipAndUartCheckProperties.AtCommandOk))
+                {
+                    if (response.Contains(this.formTipAndUartCheckProperties.AtCommandOk))
+                    {
+                        result = true;
+                        timer.Stop();
+                        //throw new BaseException(string.Format("not contain OK=[{0}]", this.formTipAndUartCheckProperties.AtCommandOk));
+                        log.Pass(string.Format("包含关键字：{0}", this.formTipAndUartCheckProperties.AtCommandOk));
+                        //Thread.Sleep(500);
+
+                        this.Close();
+                    }
+                }
             }
         }
 
@@ -94,7 +117,7 @@ namespace AILinkFactoryAuto.Task.Common
         //        log.Pass("User Press " + userConfirmProperties.KeyPass);
         //        this.Close();
         //    }
-        //    return base.ProcessCmdKey(ref msg, keyData);
+            //return base.ProcessCmdKey(ref msg, keyData);
         //}
     }
 }

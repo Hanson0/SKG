@@ -19,15 +19,20 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
         {
             FormTipAndUartCheckProperties config = properties as FormTipAndUartCheckProperties;
             ILog log = globalDic.Get<ILog>();
+            List<ComDut> comDutList = globalDic[typeof(List<ComDut>).ToString()] as List<ComDut>;
+            if (comDutList==null || comDutList.Count==0)
+            {
+                throw new BaseException("COM为空");
+            }
 
-            TipAndCheckUartForm formUserConfirm = new TipAndCheckUartForm(config, log)
+            TipAndCheckUartForm formUserConfirm = new TipAndCheckUartForm(config, log, comDutList[0])
             {
             };
             formUserConfirm.ShowDialog();
 
             if (!formUserConfirm.Result)
             {
-                throw new BaseException("User Confirm Fail");
+                throw new BaseException("Fail");
             }
         }
     }

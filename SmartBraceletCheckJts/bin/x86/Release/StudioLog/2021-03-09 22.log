@@ -1,0 +1,40 @@
+2021-03-09 22:14:08,796 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-09 22:14:08,877 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-09 22:14:08,924 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-09 22:14:08,936 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-09 22:14:08,945 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-09 22:14:08,951 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005\DUT1_WIFI-AP6255.jts]
+2021-03-09 22:14:09,486 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-09 22:14:09,510 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-09 22:14:43,470 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-09 22:14:43,521 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-09 22:14:43,536 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-09 22:14:43,550 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-09 22:14:59,590 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-09 22:14:59,598 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SKG\DUT1_WIFI-AP6255.jts]
+2021-03-09 22:14:59,692 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-09 22:14:59,703 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-09 22:17:44,541 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-09 22:17:44,545 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-09 22:17:44,548 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SKG\DUT1_WIFI-AP6255.jts]
+2021-03-09 22:17:44,553 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-09 22:17:44,557 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-09 22:17:50,309 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio TsmSaveLayout_Click 422 - save layout ./projects/layout.xml success

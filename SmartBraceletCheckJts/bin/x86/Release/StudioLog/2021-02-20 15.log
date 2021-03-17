@@ -1,0 +1,1795 @@
+2021-02-20 15:36:42,062 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-02-20 15:36:42,145 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-02-20 15:36:42,178 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-02-20 15:36:42,185 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-02-20 15:36:42,192 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:36:42,196 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:36:42,640 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:36:42,652 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:36:45,243 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:36:45,247 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:36:45,284 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:36:45,288 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:38:40,218 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:38:40
+
+
+2021-02-20 15:38:40,255 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-02-20 15:38:40,270 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2021-02-20 15:38:40,290 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:38.0215ms
+                                                                        PASS
+2021-02-20 15:38:40,308 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-02-20 15:38:40,353 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-02-20 15:38:40,364 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-02-20 15:38:40,378 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=12456789012345
+2021-02-20 15:38:40,393 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-02-20 15:38:40,447 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN invalid
+2021-02-20 15:38:40,462 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckSn(String sn) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Task\Executer\ParseLabelExecuter.cs:行号 94
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Task\Executer\ParseLabelExecuter.cs:行号 59
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-02-20 15:38:40,681 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:373.4453ms
+                                                                        FAIL
+2021-02-20 15:38:40,693 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开串口
+2021-02-20 15:38:40,719 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:25.4834ms
+                                                                        SKIP
+2021-02-20 15:38:40,733 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 4 检测产品上电中....
+2021-02-20 15:38:40,770 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:37.7753ms
+                                                                        SKIP
+2021-02-20 15:38:40,785 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 5 进入测试模式
+2021-02-20 15:38:40,816 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:31.787ms
+                                                                        SKIP
+2021-02-20 15:38:40,835 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 6 信息检查
+2021-02-20 15:38:40,859 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:24.277ms
+                                                                        SKIP
+2021-02-20 15:38:40,877 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 7 发送按键测试命令
+2021-02-20 15:38:40,905 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:28.024ms
+                                                                        SKIP
+2021-02-20 15:38:40,919 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 10 测试LEFT MIC-输出声音
+2021-02-20 15:38:40,956 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:36.417ms
+                                                                        SKIP
+2021-02-20 15:38:40,969 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 测试RIGHT MIC-发出声音
+2021-02-20 15:38:40,981 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:12.1283ms
+                                                                        SKIP
+2021-02-20 15:38:40,995 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 关闭声音输出
+2021-02-20 15:38:41,020 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:24.9331ms
+                                                                        SKIP
+2021-02-20 15:38:41,034 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 15 清除配对记录
+2021-02-20 15:38:41,075 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:41.1731ms
+                                                                        SKIP
+2021-02-20 15:38:41,092 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 16 退出产测模式
+2021-02-20 15:38:41,102 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:10.3556ms
+                                                                        SKIP
+2021-02-20 15:38:41,121 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 关闭串口
+2021-02-20 15:38:41,145 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 给定关键字不在字典中。
+2021-02-20 15:38:41,187 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\ClosePhoneExecuter.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 410
+2021-02-20 15:38:41,402 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:281.0808ms
+                                                                        FAIL
+2021-02-20 15:38:41,421 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 Deinit
+2021-02-20 15:38:41,442 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:20.4741ms
+                                                                        PASS
+2021-02-20 15:38:41,454 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-02-20 15:38:41,466 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckSn(String sn) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Task\Executer\ParseLabelExecuter.cs:行号 94
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Task\Executer\ParseLabelExecuter.cs:行号 59
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-02-20 15:38:41,574 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:01.3608517
+2021-02-20 15:38:58,423 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:38:58,427 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:38:58,431 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:38:58,447 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:38:58,449 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:39:07,917 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:39:07
+
+
+2021-02-20 15:39:07,938 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-02-20 15:39:07,956 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2021-02-20 15:39:07,980 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:43.8376ms
+                                                                        PASS
+2021-02-20 15:39:07,999 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-02-20 15:39:08,014 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-02-20 15:39:08,028 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-02-20 15:39:08,043 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=123456789123456
+2021-02-20 15:39:08,059 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-02-20 15:39:08,073 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:76.4903ms
+                                                                        PASS
+2021-02-20 15:39:08,089 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开串口
+2021-02-20 15:39:08,228 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:139.8591ms
+                                                                        PASS
+2021-02-20 15:39:08,244 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 4 检测产品上电中....
+2021-02-20 15:39:14,748 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 检测到产品上电，AT response=[??P   ?      579/  1 | [hal_trace_rx_open] 0
+      579/  1 | [hal_trace_rx_register] Add test
+      579/  1 | 0: 
+      579/  1 | 1: 
+      579/  1 | 2: 
+      579/  1 | 3: 
+      579/  1 | 4: 
+      579/  1 | 5: 
+
+
+CHIP=best2000
+CRASH_DUMP_SIZE=CRASH_DUMP_SECTION_SIZE
+AUD_SEC_SIZE=0
+USER_SEC_SIZE=0x1000
+FACT_SEC_SIZE=0x1000
+FLASH_BASE=0x38000000
+FLASH_SIZE=0x100000
+NV_REC_DEV_VER=NV_REC_DEV_VER
+BUILD_DATE=Aug 16 2019 16:39:46
+REV_INFO=:SM005
+
+------
+CHIP_ID: 2
+------
+
+      580/  1 | Dc calib L OK: 0x90ee
+      580/  1 | Dc calib R OK: 0xc052
+      580/  1 | ANA: DC CALIB L=238 R=82
+      580/  1 | app_init
+
+      580/  1 | app_pwl_open
+      580/  1 | app_pwl_setup 0
+      582/  1 | force APP_BATTERY_CHARGER_PLUGIN
+      582/  0 | hal_gpadc_adc2volt_calib efuse:410/539 LV=410, HV=539, Slope:1937 Intcpt:5
+      591/  1 | app_battery_open battery currvolt:4188 nRet:1
+      591/  1 | 1
+      591/  1 | app_status_indication_set 5
+      592/  1 | app_status_indication_set_oooo 5
+      592/  1 | app_pwl_setup 0
+      592/  1 | app_pwl_start 0
+      592/  1 | idx:0 pin:16 lvl:0
+      592/  1 | CHARGING!!!
+      612/  1 | app_key_init_on_charging
+      612/  1 | app_deinit case:0
+]  contain =[APP_BATTERY_CHARGER]
+2021-02-20 15:39:15,789 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:7544.8499ms
+                                                                        PASS
+2021-02-20 15:39:15,813 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 5 进入测试模式
+2021-02-20 15:39:15,932 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_PT_START
+2021-02-20 15:39:16,452 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=     1112/  1 | app_status_indication_set 3
+     1112/  1 | app_status_indication_set_llll 3
+     1113/  1 | app_voice_report 3===0
+     1113/  1 | status =7
+     1592/  3 | app_battery_handle_process ,volt==4192
+     1592/  3 | plugin app_gethfp_level 9,4192
+     1592/  3 | [app_10_second_timer_check] 1
+     1592/  3 | [app_hfp_battery_report]==[9]
+     1592/  3 | force APP_BATTERY_CHARGER_PLUGIN
+     1592/  3 | battery_volt_level_voice_report=4192
+     2066/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+     2067/  0 | pos:13,CMD_PT_START
+
+
+     2067/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+2021-02-20 15:39:16,479 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:667.0423ms
+                                                                        PASS
+2021-02-20 15:39:16,498 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 6 信息检查
+2021-02-20 15:39:16,624 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_GET_INFO
+2021-02-20 15:39:16,942 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:SM005SM005,BT Addr:62 25 34 37 27 11 
+Current Level:9
+
+2021-02-20 15:39:16,956 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:460.1604ms
+                                                                        PASS
+2021-02-20 15:39:16,976 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 7 发送按键测试命令
+2021-02-20 15:39:17,095 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_KEY_TEST
+2021-02-20 15:39:17,173 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_KEY_TEST start
+
+2021-02-20 15:39:17,206 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:230.1124ms
+                                                                        PASS
+2021-02-20 15:39:17,226 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 10 测试LEFT MIC-输出声音
+2021-02-20 15:39:17,343 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_LMIC_START
+2021-02-20 15:39:17,594 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_LEFT_START TEST
+
+2021-02-20 15:39:17,638 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:412.7775ms
+                                                                        PASS
+2021-02-20 15:39:17,663 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 测试RIGHT MIC-发出声音
+2021-02-20 15:39:17,784 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_RMIC_START
+2021-02-20 15:39:18,019 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_RIGHT_START TEST
+
+2021-02-20 15:39:18,046 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:384.4357ms
+                                                                        PASS
+2021-02-20 15:39:18,079 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 关闭声音输出
+2021-02-20 15:39:18,208 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_MIC_STOP
+2021-02-20 15:39:18,444 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: MIC TEST EXIT Success
+
+2021-02-20 15:39:18,458 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:379.6468ms
+                                                                        PASS
+2021-02-20 15:39:18,477 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 15 清除配对记录
+2021-02-20 15:39:18,601 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_CLR_PAIRLIST
+2021-02-20 15:39:18,821 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CLR  PAIR  LIST Success
+
+2021-02-20 15:39:18,837 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:363.0488ms
+                                                                        PASS
+2021-02-20 15:39:18,853 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 16 退出产测模式
+2021-02-20 15:39:18,975 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_PT_STOP
+2021-02-20 15:39:19,513 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_PT_STOP Success
+
+2021-02-20 15:39:19,526 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:674.5429ms
+                                                                        PASS
+2021-02-20 15:39:19,552 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 关闭串口
+2021-02-20 15:39:19,594 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:43.766ms
+                                                                        PASS
+2021-02-20 15:39:19,610 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 Deinit
+2021-02-20 15:39:19,627 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:17.6701ms
+                                                                        PASS
+2021-02-20 15:39:19,650 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2021-02-20 15:39:19,678 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+2021-02-20 15:39:19,694 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:11.7872651
+2021-02-20 15:40:50,011 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:40:50,016 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:40:50,018 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:40:50,020 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:40:50,022 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:47:37,630 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:47:37
+
+
+2021-02-20 15:47:37,657 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-02-20 15:47:37,677 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2021-02-20 15:47:37,682 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:26.9284ms
+                                                                        PASS
+2021-02-20 15:47:37,707 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-02-20 15:47:37,750 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-02-20 15:47:37,765 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-02-20 15:47:37,783 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=123456789123456
+2021-02-20 15:47:37,797 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-02-20 15:47:37,813 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:108.321ms
+                                                                        PASS
+2021-02-20 15:47:37,829 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开串口
+2021-02-20 15:47:37,961 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:133.671ms
+                                                                        PASS
+2021-02-20 15:47:37,978 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 4 检测产品上电中....
+2021-02-20 15:47:42,299 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 检测到产品上电，AT response=[?P   ?      579/  1 | [hal_trace_rx_open] 0
+      579/  1 | [hal_trace_rx_register] Add test
+      579/  1 | 0: 
+      579/  1 | 1: 
+      579/  1 | 2: 
+      579/  1 | 3: 
+      579/  1 | 4: 
+      579/  1 | 5: 
+
+
+CHIP=best2000
+CRASH_DUMP_SIZE=CRASH_DUMP_SECTION_SIZE
+AUD_SEC_SIZE=0
+USER_SEC_SIZE=0x1000
+FACT_SEC_SIZE=0x1000
+FLASH_BASE=0x38000000
+FLASH_SIZE=0x100000
+NV_REC_DEV_VER=NV_REC_DEV_VER
+BUILD_DATE=Aug 16 2019 16:39:46
+REV_INFO=:SM005
+
+------
+CHIP_ID: 2
+------
+
+      580/  1 | Dc calib L OK: 0x90ee
+      580/  1 | Dc calib R OK: 0xc052
+      580/  1 | ANA: DC CALIB L=238 R=82
+      580/  1 | app_init
+
+      580/  1 | app_pwl_open
+      580/  1 | app_pwl_setup 0
+      582/  1 | force APP_BATTERY_CHARGER_PLUGIN
+      582/  0 | hal_gpadc_adc2volt_calib efuse:410/539 LV=410, HV=539, Slope:1937 Intcpt:5
+      591/  1 | app_battery_open battery currvolt:4188 nRet:1
+      591/  1 | 1
+      591/  1 | app_status_indication_set 5
+      592/  1 | app_status_indication_set_oooo 5
+      592/  1 | app_pwl_setup 0
+      592/  1 | app_pwl_start 0
+      592/  1 | idx:0 pin:16 lvl:0
+      592/  1 | CHARGING!!!
+      612/  1 | app_key_init_on_charging
+      612/  1 | app_deinit case:0
+]  contain =[APP_BATTERY_CHARGER]
+2021-02-20 15:47:43,330 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:5353.8677ms
+                                                                        PASS
+2021-02-20 15:47:43,348 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 5 进入测试模式
+2021-02-20 15:47:43,473 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_PT_START
+2021-02-20 15:47:44,022 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=     1112/  1 | app_status_indication_set 3
+     1112/  1 | app_status_indication_set_llll 3
+     1113/  1 | app_voice_report 3===0
+     1113/  1 | status =7
+     1592/  3 | app_battery_handle_process ,volt==4196
+     1592/  3 | plugin app_gethfp_level 9,4196
+     1592/  3 | [app_10_second_timer_check] 1
+     1592/  3 | [app_hfp_battery_report]==[9]
+     1592/  3 | force APP_BATTERY_CHARGER_PLUGIN
+     1592/  3 | battery_volt_level_voice_report=4196
+     1914/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+     1914/  0 | pos:13,CMD_PT_START
+
+
+     1914/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+2021-02-20 15:47:44,036 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:689.5621ms
+                                                                        PASS
+2021-02-20 15:47:44,067 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 6 信息检查
+2021-02-20 15:47:44,196 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_GET_INFO
+2021-02-20 15:47:44,527 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:SM005SM005,BT Addr:62 25 34 37 27 11 
+Current Level:9
+
+2021-02-20 15:47:44,540 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:473.8355ms
+                                                                        PASS
+2021-02-20 15:47:44,562 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 7 发送按键测试命令
+2021-02-20 15:47:44,684 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_KEY_TEST
+2021-02-20 15:47:44,765 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_KEY_TEST start
+
+2021-02-20 15:47:44,779 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:223.7258ms
+                                                                        PASS
+2021-02-20 15:47:44,799 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 8 检测音量+按键
+2021-02-20 15:47:45,016 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,126 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,238 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,347 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,445 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,553 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,663 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,774 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,884 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:45,995 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,103 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,213 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,322 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,433 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,544 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,655 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,765 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,876 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:46,978 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,098 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,194 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,317 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,413 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=Volume  up key ok!
+
+2021-02-20 15:47:47,537 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,648 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,768 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,881 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:47,976 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,102 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,210 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,320 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,433 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,542 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,648 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=  
+2021-02-20 15:47:48,763 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,873 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:48,988 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,094 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,202 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,311 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,422 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,531 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,639 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,750 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,859 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:49,967 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,076 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,187 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,298 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,408 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,518 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,628 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,738 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,848 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:50,945 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,068 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,163 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,274 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,386 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,496 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,606 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,715 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,828 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:51,933 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,046 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,153 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,266 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,377 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,487 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,596 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,706 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,817 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:52,914 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,036 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,148 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,259 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,379 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,475 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,598 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,710 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,815 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:53,913 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,034 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,142 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,251 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,361 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,469 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,579 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,689 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,799 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:54,909 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,016 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,126 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,234 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,337 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,454 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,564 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,675 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,783 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,894 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:55,998 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,111 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,221 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,331 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,435 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,550 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,661 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,772 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,867 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:56,978 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,083 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,194 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,307 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,419 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,522 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,637 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,741 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,866 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:57,961 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,070 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,179 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,291 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,398 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,514 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,614 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,728 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,836 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:58,947 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,059 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,167 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,278 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,386 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,494 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,602 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,713 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,821 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:47:59,934 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - Wait TimeOut, 15seconds
+2021-02-20 15:48:00,083 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Fail
+2021-02-20 15:48:00,103 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-02-20 15:48:00,322 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:15523.4948ms
+                                                                        FAIL
+2021-02-20 15:48:00,378 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 9 检测音量-按键
+2021-02-20 15:48:00,398 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:19.4412ms
+                                                                        SKIP
+2021-02-20 15:48:00,437 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 10 测试LEFT MIC-输出声音
+2021-02-20 15:48:00,457 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:20.2565ms
+                                                                        SKIP
+2021-02-20 15:48:00,482 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 测试RIGHT MIC-发出声音
+2021-02-20 15:48:00,506 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:23.9363ms
+                                                                        SKIP
+2021-02-20 15:48:00,547 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 关闭声音输出
+2021-02-20 15:48:00,568 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:20.945ms
+                                                                        SKIP
+2021-02-20 15:48:00,593 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 15 清除配对记录
+2021-02-20 15:48:00,638 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:44.5351ms
+                                                                        SKIP
+2021-02-20 15:48:00,657 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 16 退出产测模式
+2021-02-20 15:48:00,681 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:23.2155ms
+                                                                        SKIP
+2021-02-20 15:48:00,711 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 关闭串口
+2021-02-20 15:48:00,739 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:27.9558ms
+                                                                        PASS
+2021-02-20 15:48:00,763 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 Deinit
+2021-02-20 15:48:00,783 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:20.8095ms
+                                                                        PASS
+2021-02-20 15:48:00,826 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-02-20 15:48:00,854 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第8项:
+检测音量+按键
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-02-20 15:48:00,881 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:23.268297
+2021-02-20 15:51:25,357 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:51:25,361 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:51:25,365 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:51:25,371 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:51:25,374 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:51:40,402 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:51:40,406 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:51:40,409 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:51:40,414 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:51:40,418 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:55:26,186 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:55:26,190 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-02-20 15:55:26,193 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-\DUT1_WIFI-AP6255.jts]
+2021-02-20 15:55:26,198 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-02-20 15:55:26,201 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-02-20 15:55:47,413 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:55:47
+
+
+2021-02-20 15:55:47,446 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-02-20 15:55:47,471 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2021-02-20 15:55:47,495 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:52.8549ms
+                                                                        PASS
+2021-02-20 15:55:47,511 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-02-20 15:55:47,537 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-02-20 15:55:47,557 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-02-20 15:55:47,573 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=123456789123456
+2021-02-20 15:55:47,599 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-02-20 15:55:47,616 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:105.6296ms
+                                                                        PASS
+2021-02-20 15:55:47,653 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开串口
+2021-02-20 15:55:47,777 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:125.0426ms
+                                                                        PASS
+2021-02-20 15:55:47,798 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 4 检测产品上电中....
+2021-02-20 15:55:52,564 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 检测到产品上电，AT response=[?P   ?      579/  1 | [hal_trace_rx_open] 0
+      579/  1 | [hal_trace_rx_register] Add test
+      579/  1 | 0: 
+      579/  1 | 1: 
+      579/  1 | 2: 
+      579/  1 | 3: 
+      579/  1 | 4: 
+      579/  1 | 5: 
+
+
+CHIP=best2000
+CRASH_DUMP_SIZE=CRASH_DUMP_SECTION_SIZE
+AUD_SEC_SIZE=0
+USER_SEC_SIZE=0x1000
+FACT_SEC_SIZE=0x1000
+FLASH_BASE=0x38000000
+FLASH_SIZE=0x100000
+NV_REC_DEV_VER=NV_REC_DEV_VER
+BUILD_DATE=Aug 16 2019 16:39:46
+REV_INFO=:SM005
+
+------
+CHIP_ID: 2
+------
+
+      580/  1 | Dc calib L OK: 0x90ee
+      580/  1 | Dc calib R OK: 0xc052
+      580/  1 | ANA: DC CALIB L=238 R=82
+      580/  1 | app_init
+
+      580/  1 | app_pwl_open
+      580/  1 | app_pwl_setup 0
+      582/  1 | force APP_BATTERY_CHARGER_PLUGIN
+      582/  0 | hal_gpadc_adc2volt_calib efuse:410/539 LV=410, HV=539, Slope:1937 Intcpt:5
+      591/  1 | app_battery_open battery currvolt:4196 nRet:1
+      591/  1 | 1
+      591/  1 | app_status_indication_set 5
+      592/  1 | app_status_indication_set_oooo 5
+      592/  1 | app_pwl_setup 0
+      592/  1 | app_pwl_start 0
+      592/  1 | idx:0 pin:16 lvl:0
+      592/  1 | CHARGING!!!
+      612/  1 | app_key_init_on_charging
+      612/  1 | app_deinit case:0
+]  contain =[APP_BATTERY_CHARGER]
+2021-02-20 15:55:53,596 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:5799.8895ms
+                                                                        PASS
+2021-02-20 15:55:53,622 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 5 进入测试模式
+2021-02-20 15:55:53,751 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_PT_START
+2021-02-20 15:55:54,284 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=     1112/  1 | app_status_indication_set 3
+     1112/  1 | app_status_indication_set_llll 3
+     1112/  1 | app_voice_report 3===0
+     1113/  1 | status =7
+     1592/  3 | app_battery_handle_process ,volt==4195
+     1592/  3 | plugin app_gethfp_level 9,4195
+     1592/  3 | [app_10_second_timer_check] 1
+     1592/  3 | [app_hfp_battery_report]==[9]
+     1592/  3 | force APP_BATTERY_CHARGER_PLUGIN
+     1592/  3 | battery_volt_level_voice_report=4195
+     2022/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+     2022/  0 | pos:13,CMD_PT_START
+
+
+     2022/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+2021-02-20 15:55:54,298 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:677.738ms
+                                                                        PASS
+2021-02-20 15:55:54,319 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 6 信息检查
+2021-02-20 15:55:54,473 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_GET_INFO
+2021-02-20 15:55:54,802 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:SM005SM005,BT Addr:62 25 34 37 27 11 
+Current Level:9
+
+2021-02-20 15:55:54,834 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:516.0062ms
+                                                                        PASS
+2021-02-20 15:55:54,863 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 7 发送按键测试命令
+2021-02-20 15:55:54,988 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_KEY_TEST
+2021-02-20 15:55:55,068 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_KEY_TEST start
+
+2021-02-20 15:55:55,087 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:227.4248ms
+                                                                        PASS
+2021-02-20 15:55:55,113 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 8 检测音量+按键
+2021-02-20 15:55:55,287 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:55,382 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:55,506 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:55,599 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:55,710 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:55,820 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:55,931 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,039 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,149 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,260 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,367 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,478 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,590 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,699 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,810 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:56,919 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,023 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,140 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,248 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,358 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,467 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,575 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,687 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,796 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:57,908 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,016 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,126 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,235 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,342 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,452 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,562 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,674 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,783 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=  
+2021-02-20 15:55:58,883 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:58,996 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,103 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,217 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,330 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,427 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,552 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,659 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,757 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,879 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:55:59,976 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,097 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,208 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,316 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,428 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,522 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,632 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,756 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,853 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:00,961 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,073 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,184 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,293 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,401 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,512 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,622 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,731 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,841 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:01,952 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,060 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,171 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,279 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,387 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,492 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,606 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,716 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,826 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:02,936 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,044 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,155 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,264 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,375 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,481 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,592 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,704 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,813 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:03,923 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,031 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,142 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,252 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,358 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,466 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,571 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,686 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,796 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:04,907 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,015 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,125 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,234 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,342 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,454 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,562 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,668 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,779 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,887 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:05,998 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,108 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,218 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,327 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,438 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,544 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,655 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,763 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,873 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:06,983 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,090 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,202 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,311 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,424 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,522 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,644 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,755 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,865 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:07,975 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,085 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,195 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,305 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,417 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,528 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,639 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,748 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,858 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:08,967 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,076 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,185 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,294 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,406 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,516 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,623 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,733 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,842 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:09,949 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:10,062 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:10,173 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - Wait TimeOut, 15seconds
+2021-02-20 15:56:10,315 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Fail
+2021-02-20 15:56:10,339 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-02-20 15:56:10,594 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:15482.0246ms
+                                                                        FAIL
+2021-02-20 15:56:10,613 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 9 检测音量-按键
+2021-02-20 15:56:10,646 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:32.4449ms
+                                                                        SKIP
+2021-02-20 15:56:10,665 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 10 测试LEFT MIC-输出声音
+2021-02-20 15:56:10,703 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:37.8973ms
+                                                                        SKIP
+2021-02-20 15:56:10,724 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 测试RIGHT MIC-发出声音
+2021-02-20 15:56:10,754 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:29.7983ms
+                                                                        SKIP
+2021-02-20 15:56:10,799 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 关闭声音输出
+2021-02-20 15:56:10,815 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:15.9616ms
+                                                                        SKIP
+2021-02-20 15:56:10,863 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 15 清除配对记录
+2021-02-20 15:56:10,881 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:17.8514ms
+                                                                        SKIP
+2021-02-20 15:56:10,928 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 16 退出产测模式
+2021-02-20 15:56:10,949 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:21.1415ms
+                                                                        SKIP
+2021-02-20 15:56:10,971 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 关闭串口
+2021-02-20 15:56:11,003 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:32.2614ms
+                                                                        PASS
+2021-02-20 15:56:11,023 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 Deinit
+2021-02-20 15:56:11,059 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:36.822ms
+                                                                        PASS
+2021-02-20 15:56:11,112 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-02-20 15:56:11,128 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第8项:
+检测音量+按键
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-02-20 15:56:11,173 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:23.7709045
+2021-02-20 15:56:35,497 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:56:35
+
+
+2021-02-20 15:56:35,529 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-02-20 15:56:35,552 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2021-02-20 15:56:35,563 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:35.4001ms
+                                                                        PASS
+2021-02-20 15:56:35,610 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-02-20 15:56:35,626 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-02-20 15:56:35,664 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-02-20 15:56:35,685 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=123456789123456
+2021-02-20 15:56:35,701 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-02-20 15:56:35,764 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:155.7131ms
+                                                                        PASS
+2021-02-20 15:56:35,801 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开串口
+2021-02-20 15:56:35,952 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:151.5644ms
+                                                                        PASS
+2021-02-20 15:56:35,980 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 4 检测产品上电中....
+2021-02-20 15:56:40,497 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 检测到产品上电，AT response=[?P   ?      579/  1 | [hal_trace_rx_open] 0
+      579/  1 | [hal_trace_rx_register] Add test
+      579/  1 | 0: 
+      579/  1 | 1: 
+      579/  1 | 2: 
+      579/  1 | 3: 
+      579/  1 | 4: 
+      579/  1 | 5: 
+
+
+CHIP=best2000
+CRASH_DUMP_SIZE=CRASH_DUMP_SECTION_SIZE
+AUD_SEC_SIZE=0
+USER_SEC_SIZE=0x1000
+FACT_SEC_SIZE=0x1000
+FLASH_BASE=0x38000000
+FLASH_SIZE=0x100000
+NV_REC_DEV_VER=NV_REC_DEV_VER
+BUILD_DATE=Aug 16 2019 16:39:46
+REV_INFO=:SM005
+
+------
+CHIP_ID: 2
+------
+
+      580/  1 | Dc calib L OK: 0x90ee
+      580/  1 | Dc calib R OK: 0xc052
+      580/  1 | ANA: DC CALIB L=238 R=82
+      580/  1 | app_init
+
+      580/  1 | app_pwl_open
+      580/  1 | app_pwl_setup 0
+      582/  1 | force APP_BATTERY_CHARGER_PLUGIN
+      582/  0 | hal_gpadc_adc2volt_calib efuse:410/539 LV=410, HV=539, Slope:1937 Intcpt:5
+      591/  1 | app_battery_open battery currvolt:4196 nRet:1
+      591/  1 | 1
+      591/  1 | app_status_indication_set 5
+      592/  1 | app_status_indication_set_oooo 5
+      592/  1 | app_pwl_setup 0
+      592/  1 | app_pwl_start 0
+      592/  1 | idx:0 pin:16 lvl:0
+      592/  1 | CHARGING!!!
+      612/  1 | app_key_init_on_charging
+      612/  1 | app_deinit case:0
+]  contain =[APP_BATTERY_CHARGER]
+2021-02-20 15:56:41,530 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:5550.5974ms
+                                                                        PASS
+2021-02-20 15:56:41,549 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 5 进入测试模式
+2021-02-20 15:56:41,702 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_PT_START
+2021-02-20 15:56:42,269 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=     1112/  1 | app_status_indication_set 3
+     1112/  1 | app_status_indication_set_llll 3
+     1113/  1 | app_voice_report 3===0
+     1113/  1 | status =7
+     1592/  3 | app_battery_handle_process ,volt==4196
+     1592/  3 | plugin app_gethfp_level 9,4196
+     1592/  3 | [app_10_second_timer_check] 1
+     1592/  3 | [app_hfp_battery_report]==[9]
+     1592/  3 | force APP_BATTERY_CHARGER_PLUGIN
+     1592/  3 | battery_volt_level_voice_report=4196
+     2105/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+     2105/  0 | pos:13,CMD_PT_START
+
+
+     2105/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+2021-02-20 15:56:42,291 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:742.9415ms
+                                                                        PASS
+2021-02-20 15:56:42,321 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 6 信息检查
+2021-02-20 15:56:42,468 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_GET_INFO
+2021-02-20 15:56:42,798 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:SM005SM005,BT Addr:62 25 34 37 27 11 
+Current Level:9
+
+2021-02-20 15:56:42,841 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:522.1022ms
+                                                                        PASS
+2021-02-20 15:56:42,871 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 7 发送按键测试命令
+2021-02-20 15:56:43,000 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_KEY_TEST
+2021-02-20 15:56:43,108 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_KEY_TEST start
+
+2021-02-20 15:56:43,124 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:254.2737ms
+                                                                        PASS
+2021-02-20 15:56:43,174 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 8 检测音量+按键
+2021-02-20 15:56:43,374 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:43,482 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:43,591 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:43,699 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:43,805 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:43,917 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,025 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,135 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,243 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,354 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,466 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,573 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,684 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,795 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:44,904 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,016 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,125 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,235 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,342 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,452 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,560 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,673 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,783 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:45,893 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,002 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,112 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,223 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,333 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,432 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,547 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=Volume  up key ok!
+
+2021-02-20 15:56:46,591 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - 包含关键字：Volume  up key ok!
+2021-02-20 15:56:46,729 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:3557.0531ms
+                                                                        PASS
+2021-02-20 15:56:46,790 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 9 检测音量-按键
+2021-02-20 15:56:46,845 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=  
+2021-02-20 15:56:46,877 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:46,989 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,034 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,093 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,137 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,204 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,220 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,313 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,355 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,419 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,465 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,525 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,543 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,642 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,674 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,752 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,769 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,861 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,939 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:47,988 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,033 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,079 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,092 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,187 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,231 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,298 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,314 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,407 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,450 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,515 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,559 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,625 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,643 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,731 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,777 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,839 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,865 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,949 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:48,997 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,056 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,082 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,165 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,181 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,274 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,304 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,383 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,403 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,493 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,520 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,602 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,621 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,712 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,738 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,822 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,842 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,933 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:49,961 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,043 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,058 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,153 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,212 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,261 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,281 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,371 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,399 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,482 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,499 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,592 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,633 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,701 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,718 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,812 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,855 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,922 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:50,938 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,028 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,082 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,140 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,157 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,250 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,292 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,360 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,375 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,469 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,516 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,579 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,594 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,689 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,735 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,800 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,814 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,899 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:51,929 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,021 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,040 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,123 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,179 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,241 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,257 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,338 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,378 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,444 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,460 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,555 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,582 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,664 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,681 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,774 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,816 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,883 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,899 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:52,991 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,017 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,101 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,115 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,212 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,242 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,323 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,338 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,432 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,460 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,539 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,561 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,650 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,677 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,759 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,773 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,867 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,895 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:53,976 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,004 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,101 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,118 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,211 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,238 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,322 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,351 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,432 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,464 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,545 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,588 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,651 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,681 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,765 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,809 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,874 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,918 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:54,986 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,008 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,093 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,151 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,205 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,249 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,316 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,335 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,412 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,453 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,536 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,578 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,645 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,715 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,757 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,795 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,863 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,896 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:55,973 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,021 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,082 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,132 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,190 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,205 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,300 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,361 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,404 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,449 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,515 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,557 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,625 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,669 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,735 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,779 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,844 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,890 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:56,954 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,004 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,060 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,105 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,173 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,219 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,280 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,300 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,391 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,435 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,499 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,542 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,609 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,632 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,720 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,762 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,826 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,869 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,935 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:57,979 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,045 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,066 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,153 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,182 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,263 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,306 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - Wait TimeOut, 15seconds
+2021-02-20 15:56:58,467 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,508 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,594 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,696 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,812 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:58,923 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,029 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,144 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,252 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,362 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,466 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,571 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,684 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,793 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:56:59,898 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,014 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,125 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,238 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,345 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,455 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,564 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,673 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,781 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,893 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:00,995 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,115 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,225 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,334 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,443 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,552 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,647 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,758 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,867 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:01,977 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - Wait TimeOut, 15seconds
+2021-02-20 15:57:02,133 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Fail
+2021-02-20 15:57:02,178 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-02-20 15:57:02,410 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:15621.2805ms
+                                                                        FAIL
+2021-02-20 15:57:02,445 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 10 测试LEFT MIC-输出声音
+2021-02-20 15:57:02,473 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:28.1459ms
+                                                                        SKIP
+2021-02-20 15:57:02,514 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 测试RIGHT MIC-发出声音
+2021-02-20 15:57:02,558 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:44.5303ms
+                                                                        SKIP
+2021-02-20 15:57:02,602 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 关闭声音输出
+2021-02-20 15:57:02,639 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:37.3589ms
+                                                                        SKIP
+2021-02-20 15:57:02,661 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 15 清除配对记录
+2021-02-20 15:57:02,697 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:36.352ms
+                                                                        SKIP
+2021-02-20 15:57:02,734 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 16 退出产测模式
+2021-02-20 15:57:02,771 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:36.9388ms
+                                                                        SKIP
+2021-02-20 15:57:02,805 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 关闭串口
+2021-02-20 15:57:02,834 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:29.1044ms
+                                                                        PASS
+2021-02-20 15:57:02,872 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 Deinit
+2021-02-20 15:57:02,935 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:62.5155ms
+                                                                        PASS
+2021-02-20 15:57:02,974 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-02-20 15:57:02,998 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第9项:
+检测音量-按键
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-02-20 15:57:03,021 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:27.5352063
+2021-02-20 15:57:51,268 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:57:51
+
+
+2021-02-20 15:57:51,302 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-02-20 15:57:51,332 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 14 - Start Init......
+2021-02-20 15:57:51,370 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:70.3601ms
+                                                                        PASS
+2021-02-20 15:57:51,421 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-02-20 15:57:51,458 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-02-20 15:57:51,502 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-02-20 15:57:51,536 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=123456789123456
+2021-02-20 15:57:51,567 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-02-20 15:57:51,625 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:207.4545ms
+                                                                        PASS
+2021-02-20 15:57:51,674 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开串口
+2021-02-20 15:57:51,819 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:147.97ms
+                                                                        PASS
+2021-02-20 15:57:51,848 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 4 检测产品上电中....
+2021-02-20 15:57:55,276 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 检测到产品上电，AT response=[?P   ?      579/  1 | [hal_trace_rx_open] 0
+      579/  1 | [hal_trace_rx_register] Add test
+      579/  1 | 0: 
+      579/  1 | 1: 
+      579/  1 | 2: 
+      579/  1 | 3: 
+      579/  1 | 4: 
+      579/  1 | 5: 
+
+
+CHIP=best2000
+CRASH_DUMP_SIZE=CRASH_DUMP_SECTION_SIZE
+AUD_SEC_SIZE=0
+USER_SEC_SIZE=0x1000
+FACT_SEC_SIZE=0x1000
+FLASH_BASE=0x38000000
+FLASH_SIZE=0x100000
+NV_REC_DEV_VER=NV_REC_DEV_VER
+BUILD_DATE=Aug 16 2019 16:39:46
+REV_INFO=:SM005
+
+------
+CHIP_ID: 2
+------
+
+      580/  1 | Dc calib L OK: 0x90ee
+      580/  1 | Dc calib R OK: 0xc052
+      580/  1 | ANA: DC CALIB L=238 R=82
+      580/  1 | app_init
+
+      580/  1 | app_pwl_open
+      580/  1 | app_pwl_setup 0
+      582/  1 | force APP_BATTERY_CHARGER_PLUGIN
+      582/  0 | hal_gpadc_adc2volt_calib efuse:410/539 LV=410, HV=539, Slope:1937 Intcpt:5
+      591/  1 | app_battery_open battery currvolt:4188 nRet:1
+      591/  1 | 1
+      591/  1 | app_status_indication_set 5
+      592/  1 | app_status_indication_set_oooo 5
+      592/  1 | app_pwl_setup 0
+      592/  1 | app_pwl_start 0
+      592/  1 | idx:0 pin:16 lvl:0
+      592/  1 | CHARGING!!!
+      612/  1 | app_key_init_on_charging
+      612/  1 | app_deinit case:0
+]  contain =[APP_BATTERY_CHARGER]
+2021-02-20 15:57:56,311 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:4463.364ms
+                                                                        PASS
+2021-02-20 15:57:56,342 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 5 进入测试模式
+2021-02-20 15:57:56,502 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_PT_START
+2021-02-20 15:57:57,065 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=     1112/  1 | app_status_indication_set 3
+     1112/  1 | app_status_indication_set_llll 3
+     1112/  1 | app_voice_report 3===0
+     1113/  1 | status =7
+     1592/  3 | app_battery_handle_process ,volt==4192
+     1592/  3 | plugin app_gethfp_level 9,4192
+     1592/  3 | [app_10_second_timer_check] 1
+     1592/  3 | [app_hfp_battery_report]==[9]
+     1592/  3 | force APP_BATTERY_CHARGER_PLUGIN
+     1592/  3 | battery_volt_level_voice_report=4192
+     2094/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+     2094/  0 | pos:13,CMD_PT_START
+
+
+     2094/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+2021-02-20 15:57:57,089 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:749.2334ms
+                                                                        PASS
+2021-02-20 15:57:57,118 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 6 信息检查
+2021-02-20 15:57:57,270 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_GET_INFO
+2021-02-20 15:57:57,634 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:SM005SM005,BT Addr:62 25 34 37 27 11 
+Current Level:9
+
+2021-02-20 15:57:57,707 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:589.8833ms
+                                                                        PASS
+2021-02-20 15:57:57,750 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 7 发送按键测试命令
+2021-02-20 15:57:57,883 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_KEY_TEST
+2021-02-20 15:57:57,978 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=TR: CMD_KEY_TEST start
+
+2021-02-20 15:57:58,006 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:260.6115ms
+                                                                        PASS
+2021-02-20 15:57:58,048 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 8 检测音量+按键
+2021-02-20 15:57:58,228 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,336 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,447 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,556 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,668 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,777 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,887 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:58,996 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=Volume  up key ok!
+
+2021-02-20 15:57:59,024 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - 包含关键字：Volume  up key ok!
+2021-02-20 15:57:59,175 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:1129.3787ms
+                                                                        PASS
+2021-02-20 15:57:59,232 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 9 检测音量-按键
+2021-02-20 15:57:59,292 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,324 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,402 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,433 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,510 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,541 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,619 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,648 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,730 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,759 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,837 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,868 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,949 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:57:59,978 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,059 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,089 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,166 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,195 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,275 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,306 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,385 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,415 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,493 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,524 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,602 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,632 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,711 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,742 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,820 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,867 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,930 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:00,990 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,038 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,070 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,162 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,195 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,259 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,325 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,395 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,427 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response= 
+2021-02-20 15:58:01,474 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,507 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response= 
+2021-02-20 15:58:01,587 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,617 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,695 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,741 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,804 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,834 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,913 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:01,945 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,023 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,055 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,134 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,162 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,243 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,276 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,354 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,385 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,462 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,496 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,573 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,604 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,682 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,711 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,791 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,822 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,900 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:02,935 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,011 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,043 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,119 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,151 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,229 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,261 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,342 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,388 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,453 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,546 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,595 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,637 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,690 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,735 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,784 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,838 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,894 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:03,944 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,000 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,051 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,113 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,158 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,221 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,266 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,330 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,378 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,439 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,484 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,549 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,591 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,658 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,692 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,768 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,823 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,875 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:04,926 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,064 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,099 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,135 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,184 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,221 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,256 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,317 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,368 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,427 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,465 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,523 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,565 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,655 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,693 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,755 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,800 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,849 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,896 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:05,975 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,006 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,085 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,155 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,198 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,243 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,290 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,328 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,399 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,429 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,510 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,559 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,619 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,662 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,728 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,760 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,840 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,882 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,950 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:06,993 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,057 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,102 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,167 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,198 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,272 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,306 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,385 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,432 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,495 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,538 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,607 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,654 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,716 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,775 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,828 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,870 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,936 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:07,981 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,047 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,092 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,155 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,201 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,267 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,323 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,403 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,442 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,485 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,526 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,595 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,647 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,705 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,772 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,820 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,864 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,923 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:08,970 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,024 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,076 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,144 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,188 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,253 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,285 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,355 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,395 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,465 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,522 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,570 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,601 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,683 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,725 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,793 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,824 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,911 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:09,956 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,009 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,048 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,115 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,156 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,237 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,274 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,336 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,388 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,454 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,498 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,562 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,609 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,665 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,702 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,780 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,826 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,882 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,920 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:10,996 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,064 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,109 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,155 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,215 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,266 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,322 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,355 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,433 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,480 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,546 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,593 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,654 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,701 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,763 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,801 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,876 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,919 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:11,984 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,026 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,092 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,133 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,200 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,231 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,310 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,352 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,432 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,479 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,530 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,574 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,639 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,683 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,747 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,778 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,851 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,887 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,967 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:12,995 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,078 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,121 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,185 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,234 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - Wait TimeOut, 15seconds
+2021-02-20 15:58:13,390 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,441 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,516 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,626 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,737 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,840 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:13,955 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:14,062 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:14,175 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:14,283 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Response=
+2021-02-20 15:58:14,394 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - Wait TimeOut, 15seconds
+2021-02-20 15:58:14,558 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Fail
+2021-02-20 15:58:14,601 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-02-20 15:58:14,825 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:15594.353ms
+                                                                        FAIL
+2021-02-20 15:58:14,878 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 10 测试LEFT MIC-输出声音
+2021-02-20 15:58:14,912 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:34.0345ms
+                                                                        SKIP
+2021-02-20 15:58:14,967 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 测试RIGHT MIC-发出声音
+2021-02-20 15:58:15,005 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:38.0658ms
+                                                                        SKIP
+2021-02-20 15:58:15,038 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 关闭声音输出
+2021-02-20 15:58:15,084 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:46.2776ms
+                                                                        SKIP
+2021-02-20 15:58:15,123 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 15 清除配对记录
+2021-02-20 15:58:15,163 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:39.8919ms
+                                                                        SKIP
+2021-02-20 15:58:15,196 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 16 退出产测模式
+2021-02-20 15:58:15,242 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:46.8754ms
+                                                                        SKIP
+2021-02-20 15:58:15,292 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 关闭串口
+2021-02-20 15:58:15,327 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:34.8716ms
+                                                                        PASS
+2021-02-20 15:58:15,380 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 Deinit
+2021-02-20 15:58:15,433 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:52.7163ms
+                                                                        PASS
+2021-02-20 15:58:15,481 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-02-20 15:58:15,531 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第9项:
+检测音量-按键
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 35
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-02-20 15:58:15,573 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:24.3146706

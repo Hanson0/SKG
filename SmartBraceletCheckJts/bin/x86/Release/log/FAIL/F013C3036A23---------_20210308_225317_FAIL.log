@@ -1,0 +1,113 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 22:53:17
+
+
+1 Init
+TestTime:23.9359ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=F013C3036A23
+TestTime:60.8371ms
+                                                                        PASS
+3 打开主串口
+TestTime:3695.0224ms
+                                                                        PASS
+4 检测SM005产品上电中...
+超时：System.Func`1[System.Boolean]
+TestTime:30436.2735ms
+                                                                        FAIL
+5 检测Poweron按键上电
+TestTime:8.0131ms
+                                                                        SKIP
+6 进入测试模式
+TestTime:15.9991ms
+                                                                        SKIP
+7 信息检查
+TestTime:11.9997ms
+                                                                        SKIP
+8 过滤字符
+TestTime:13.036ms
+                                                                        SKIP
+9 变量大小写转换
+TestTime:11.9678ms
+                                                                        SKIP
+10 反序功能
+TestTime:9.0094ms
+                                                                        SKIP
+11 发送按键测试命令
+TestTime:19.7948ms
+                                                                        SKIP
+12 检测音量+按键
+TestTime:9.9385ms
+                                                                        SKIP
+13 检测音量-按键
+TestTime:10.0157ms
+                                                                        SKIP
+14 测试LEFT MIC-输出声音
+TestTime:9.3635ms
+                                                                        SKIP
+15 用户判断
+TestTime:11.4482ms
+                                                                        SKIP
+16 测试RIGHT MIC-发出声音
+TestTime:9.5457ms
+                                                                        SKIP
+17 用户判断
+TestTime:8.9737ms
+                                                                        SKIP
+18 关闭声音输出
+TestTime:10.9722ms
+                                                                        SKIP
+20 蓝牙配对测试
+TestTime:9.1454ms
+                                                                        SKIP
+21 蓝牙配对测试
+TestTime:12.4528ms
+                                                                        SKIP
+23 清除配对记录
+TestTime:16.049ms
+                                                                        SKIP
+24 退出产测模式
+TestTime:10.9714ms
+                                                                        SKIP
+29 关闭主串口
+TestTime:15.9107ms
+                                                                        PASS
+31 Deinit
+TestTime:8.9316ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第4项:
+检测SM005产品上电中...
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 53
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:34.9429165
+

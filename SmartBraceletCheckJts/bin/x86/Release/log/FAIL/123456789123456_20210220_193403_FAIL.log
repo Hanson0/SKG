@@ -1,0 +1,203 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 19:34:03
+
+
+1 Init
+TestTime:23.9317ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789123456
+MAC=
+TestTime:85.6718ms
+                                                                        PASS
+3 打开串口
+TestTime:136.0124ms
+                                                                        PASS
+5 进入测试模式
+AT Commond=CMD_PT_START
+AT Response=TR: CMD_PT_START Success
+
+
+TestTime:711.5031ms
+                                                                        PASS
+6 信息检查
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:8
+
+TestTime:452.8007ms
+                                                                        PASS
+7 发送按键测试命令
+AT Commond=CMD_KEY_TEST
+AT Response=TR: CMD_KEY_TEST start
+
+TestTime:232.7313ms
+                                                                        PASS
+8 检测音量+按键
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume  up key ok!
+
+包含关键字：Volume  up key ok!
+TestTime:6922.4327ms
+                                                                        PASS
+9 检测音量-按键
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume down key ok!
+
+包含关键字：Volume down key ok!
+TestTime:3155.9556ms
+                                                                        PASS
+10 测试LEFT MIC-输出声音
+AT Commond=CMD_LMIC_START
+AT Response=TR: CMD_LEFT_START TEST
+
+TestTime:365.1023ms
+                                                                        PASS
+11 用户判断
+Wait TimeOut, 15seconds
+User Confirm Fail
+TestTime:15759.4616ms
+                                                                        FAIL
+12 测试RIGHT MIC-发出声音
+TestTime:10.9732ms
+                                                                        SKIP
+13 用户判断
+TestTime:13.5173ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:17.1781ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:13.9978ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:16.9359ms
+                                                                        SKIP
+22 关闭串口
+TestTime:11.9667ms
+                                                                        PASS
+24 Deinit
+TestTime:14.5543ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第11项:
+用户判断
+AILinkFactoryAuto.Task.BaseException: User Confirm Fail
+   在 AILinkFactoryAuto.Task.Executer.UserConfirmExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:28.3625621
+

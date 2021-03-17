@@ -1,0 +1,334 @@
+2021-03-06 18:13:00,352 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-06 18:13:00,401 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-06 18:13:00,406 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-06 18:13:00,416 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-06 18:13:00,426 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:13:00,431 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:13:00,755 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:13:00,770 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:14:54,121 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-06 18:14:54,157 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-06 18:14:54,166 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-06 18:14:54,180 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-06 18:14:54,194 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:14:54,198 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:14:54,615 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:14:54,626 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:15:20,602 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:15:20,605 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:15:20,614 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:15:20,617 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:21:44,000 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:21:44,009 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:21:44,011 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:21:44,015 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:21:44,024 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:23:43,361 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-06 18:23:43,390 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-06 18:23:43,396 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-06 18:23:43,406 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-06 18:23:43,413 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:23:43,418 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:23:43,748 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:23:43,780 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:23:46,065 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:23:46,072 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:23:46,089 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:23:46,092 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:24:01,797 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:24:01,803 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:24:01,809 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:24:01,812 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:26:22,826 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:26:22,833 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:26:22,836 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:26:22,840 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:26:22,843 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:26:38,568 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 18:26:38
+
+
+2021-03-06 18:26:38,646 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-06 18:26:38,670 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-06 18:26:38,674 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:34.4103ms
+                                                                        PASS
+2021-03-06 18:26:38,721 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-06 18:26:38,763 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 未能加载文件或程序集“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”或它的某一个依赖项。系统找不到指定的文件。
+2021-03-06 18:26:38,793 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.IO.FileNotFoundException: 未能加载文件或程序集“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+=== 预绑定状态信息 ===
+日志: DisplayName = InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499
+ (Fully-specified)
+日志: Appbase = file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/
+日志: 初始 PrivatePath = NULL
+调用程序集: AILinkFactoryAuto.Task.SmartBracelet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 未找到应用程序配置文件。
+日志: 使用主机配置文件: 
+日志: 使用 C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 策略后引用: InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal.DLL。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal/InTheHand.Net.Personal.DLL。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal.EXE。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal/InTheHand.Net.Personal.EXE。
+
+2021-03-06 18:26:39,007 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:287.4824ms
+                                                                        FAIL
+2021-03-06 18:26:39,125 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-06 18:26:39,142 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:16.8671ms
+                                                                        PASS
+2021-03-06 18:26:39,154 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-06 18:26:39,166 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第19项:
+蓝牙配对测试
+System.IO.FileNotFoundException: 未能加载文件或程序集“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+=== 预绑定状态信息 ===
+日志: DisplayName = InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499
+ (Fully-specified)
+日志: Appbase = file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/
+日志: 初始 PrivatePath = NULL
+调用程序集: AILinkFactoryAuto.Task.SmartBracelet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 未找到应用程序配置文件。
+日志: 使用主机配置文件: 
+日志: 使用 C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 策略后引用: InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal.DLL。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal/InTheHand.Net.Personal.DLL。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal.EXE。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal/InTheHand.Net.Personal.EXE。
+
+
+2021-03-06 18:26:39,326 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:00.7664017
+2021-03-06 18:27:49,697 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-06 18:27:49,739 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-06 18:27:49,744 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-06 18:27:49,755 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-06 18:27:49,762 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:27:49,770 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:27:50,215 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:27:50,238 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:27:54,654 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:27:54,657 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:27:54,679 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:27:54,682 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:27:56,130 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 18:27:56
+
+
+2021-03-06 18:27:56,162 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-06 18:27:56,183 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-06 18:27:56,196 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:35.714ms
+                                                                        PASS
+2021-03-06 18:27:56,237 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-06 18:28:10,166 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:13929.6789ms
+                                                                        PASS
+2021-03-06 18:28:10,225 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-06 18:28:10,256 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:33.9101ms
+                                                                        PASS
+2021-03-06 18:28:10,275 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2021-03-06 18:28:10,296 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+2021-03-06 18:28:10,320 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:14.1984932
+2021-03-06 18:28:37,865 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-06 18:28:37,914 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-06 18:28:37,924 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-06 18:28:37,930 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-06 18:28:37,940 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:28:37,944 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:28:38,281 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:28:38,301 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:28:42,014 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:28:42,017 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:28:42,038 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:28:42,041 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:28:43,267 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 18:28:43
+
+
+2021-03-06 18:28:43,306 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-06 18:28:43,323 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-06 18:28:43,336 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:32.1586ms
+                                                                        PASS
+2021-03-06 18:28:43,384 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-06 18:29:21,625 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:38240.8246ms
+                                                                        PASS
+2021-03-06 18:29:21,683 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-06 18:29:21,711 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:29.9211ms
+                                                                        PASS
+2021-03-06 18:29:21,727 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2021-03-06 18:29:21,744 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+2021-03-06 18:29:21,759 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:38.5025363
+2021-03-06 18:29:24,129 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 18:29:24
+
+
+2021-03-06 18:29:24,154 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-06 18:29:24,170 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-06 18:29:24,174 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:21.6602ms
+                                                                        PASS
+2021-03-06 18:29:24,252 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-06 18:32:59,794 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-06 18:32:59,827 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-06 18:32:59,835 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-06 18:32:59,841 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-06 18:32:59,852 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:32:59,857 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:33:00,222 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:33:00,245 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:33:03,638 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-06 18:33:03,646 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-06 18:33:03,664 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-06 18:33:03,667 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-06 18:33:05,386 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 18:33:05
+
+
+2021-03-06 18:33:05,420 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-06 18:33:05,435 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-06 18:33:05,439 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:21.9418ms
+                                                                        PASS
+2021-03-06 18:33:05,493 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试

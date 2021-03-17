@@ -1,0 +1,76 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-19, Test Time: 14:27:20
+
+
+1 Init
+TestTime:27.8227ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789012345
+MAC=
+TestTime:79.2513ms
+                                                                        PASS
+3 打开串口
+TestTime:130.4145ms
+                                                                        PASS
+10 发送授权指令
+Tx:A5 C3 00 23 00 00 00 23 01 07 12 34 56 78 90 12 34 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8E 
+Rx:
+Response Length Not enough
+TestTime:856.3776ms
+                                                                        FAIL
+11 授权指令成功状态检查
+TestTime:18.9473ms
+                                                                        SKIP
+12 回读确保授权写入成功-发送查询指令
+TestTime:17.9529ms
+                                                                        SKIP
+13 回读确保授权写入成功-查询内容检查
+TestTime:14.9591ms
+                                                                        SKIP
+14 用户判断
+TestTime:30.9167ms
+                                                                        SKIP
+15 关闭串口
+TestTime:14.9606ms
+                                                                        PASS
+16 关闭检测串口
+ClosePhoneProperties No PortName:COM5
+TestTime:257.3515ms
+                                                                        FAIL
+17 Deinit
+TestTime:26.2043ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第10项:
+发送授权指令
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:01.7872906
+

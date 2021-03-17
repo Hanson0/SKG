@@ -1,0 +1,105 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 13:54:04
+
+
+1 Init
+TestTime:14.2335ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789012345
+MAC=
+TestTime:57.8459ms
+                                                                        PASS
+3 打开主串口
+超时：System.Func`1[System.Boolean]
+TestTime:10377.4652ms
+                                                                        FAIL
+4 检测SM005产品上电中...
+TestTime:13.2568ms
+                                                                        SKIP
+5 进入测试模式
+TestTime:9.4689ms
+                                                                        SKIP
+6 信息检查，获取蓝牙MAC
+TestTime:14.107ms
+                                                                        SKIP
+7 过滤字符
+TestTime:10.0046ms
+                                                                        SKIP
+8 变量大小写转换
+TestTime:9.9737ms
+                                                                        SKIP
+9 发送按键测试命令
+TestTime:8.9761ms
+                                                                        SKIP
+10 检测音量+按键
+TestTime:9.9726ms
+                                                                        SKIP
+11 检测音量-按键
+TestTime:17.3929ms
+                                                                        SKIP
+12 测试LEFT MIC-输出声音
+TestTime:9.4944ms
+                                                                        SKIP
+13 用户判断
+TestTime:11.9703ms
+                                                                        SKIP
+14 测试RIGHT MIC-发出声音
+TestTime:12.1352ms
+                                                                        SKIP
+15 用户判断
+TestTime:9.9209ms
+                                                                        SKIP
+16 关闭声音输出
+TestTime:8.9721ms
+                                                                        SKIP
+20 清除配对记录
+TestTime:8.9747ms
+                                                                        SKIP
+21 退出产测模式
+TestTime:15.9239ms
+                                                                        SKIP
+22 测试RF
+TestTime:12.9961ms
+                                                                        SKIP
+27 关闭主串口
+给定关键字不在字典中。
+TestTime:255.7656ms
+                                                                        FAIL
+29 Deinit
+TestTime:12.3135ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第3项:
+打开主串口
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\OpenPhoneExecuter.cs:行号 98
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:11.3694511
+

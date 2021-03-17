@@ -223,3 +223,7 @@ F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletC
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\MesDll.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\MesDll.xml
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\obj\x86\Debug\SmartBraceletCheckJts.csproj.CopyComplete
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\InTheHand.Net.Personal.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Base.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\AILinkFactoryAuto.Dut.AtCommand.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheckJts\bin\x86\Debug\InTheHand.Net.Personal.xml

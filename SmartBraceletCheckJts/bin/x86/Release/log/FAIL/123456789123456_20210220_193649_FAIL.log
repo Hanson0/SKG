@@ -1,0 +1,105 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 19:36:49
+
+
+1 Init
+TestTime:25.9336ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789123456
+MAC=
+TestTime:61.8631ms
+                                                                        PASS
+3 打开串口
+TestTime:121.5478ms
+                                                                        PASS
+5 进入测试模式
+AT Commond=CMD_PT_START
+AT Response=
+AT response=[] not contain error=[TR: CMD_PT_START Success]
+重试第1次
+AT Commond=CMD_PT_START
+AT Response=
+AT response=[] not contain error=[TR: CMD_PT_START Success]
+重试第2次
+AT Commond=CMD_PT_START
+AT Response=
+AT response=[] not contain error=[TR: CMD_PT_START Success]
+重试第3次
+AT Commond=CMD_PT_START
+AT Response=
+AT response=[] not contain error=[TR: CMD_PT_START Success]
+TestTime:3674.541ms
+                                                                        FAIL
+6 信息检查
+TestTime:15.8819ms
+                                                                        SKIP
+7 发送按键测试命令
+TestTime:17.9264ms
+                                                                        SKIP
+8 检测音量+按键
+TestTime:15.6502ms
+                                                                        SKIP
+9 检测音量-按键
+TestTime:10.3193ms
+                                                                        SKIP
+10 测试LEFT MIC-输出声音
+TestTime:15.3279ms
+                                                                        SKIP
+11 用户判断
+TestTime:16.9116ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:10.9733ms
+                                                                        SKIP
+13 用户判断
+TestTime:18.9832ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:11.003ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:14.9871ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:11.7745ms
+                                                                        SKIP
+22 关闭串口
+TestTime:16.8327ms
+                                                                        PASS
+24 Deinit
+TestTime:15.7553ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第5项:
+进入测试模式
+AILinkFactoryAuto.Task.BaseException: AT response=[] not contain error=[TR: CMD_PT_START Success]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 145
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:04.4525067
+

@@ -1,0 +1,208 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 19:37:06
+
+
+1 Init
+TestTime:18.9127ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789123456
+MAC=
+TestTime:65.8036ms
+                                                                        PASS
+3 打开串口
+TestTime:132.9366ms
+                                                                        PASS
+4 检测产品上电中....
+检测到产品上电，AT response=[    13190/  2 | app_bt_accessmode_timehandler accMode=3
+    13191/  5 | app_bt_mail_process src_thread:0x200256c0 request_id:5 enter
+    13191/  5 | !!!ME_SetAccessibleMode  MEC(accOp).mode = 3, mode = 3
+
+MeStartOperation f 
+MeAcc: !!!MeHandleAccessModeOp  event=1 curMode =3
+    13191/  5 | app_bt_global_handle evt = 10
+    13191/  5 | ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x3
+MeStartOperation end
+    13191/  5 | app_set_accessmode status=0x2
+    13191/  5 | app_bt_mail_process request_id:5 :status:25 exit
+]  contain =[MeStartOperation]
+TestTime:1604.8807ms
+                                                                        PASS
+5 进入测试模式
+AT Commond=CMD_PT_START
+AT Response=    14504/  0 | [hal_trace_product_test_rx_irq_handler] 14, 0, 64
+    14504/  0 | pos:13,CMD_PT_START
+
+
+    14504/  3 | app_product_test_handle PRODUCT_TEST_CMD enter
+
+TR: CMD_PT_START Success
+
+
+TestTime:665.8462ms
+                                                                        PASS
+6 信息检查
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:8
+
+TestTime:464.3064ms
+                                                                        PASS
+7 发送按键测试命令
+AT Commond=CMD_KEY_TEST
+AT Response=TR: CMD_KEY_TEST start
+
+TestTime:213.3846ms
+                                                                        PASS
+8 检测音量+按键
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume  up key ok!
+
+包含关键字：Volume  up key ok!
+TestTime:6169.5008ms
+                                                                        PASS
+9 检测音量-按键
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume down key ok!
+
+包含关键字：Volume down key ok!
+TestTime:1524.9596ms
+                                                                        PASS
+10 测试LEFT MIC-输出声音
+AT Commond=CMD_LMIC_START
+AT Response=TR: CMD_LEFT_START TEST
+
+TestTime:353.7164ms
+                                                                        PASS
+11 用户判断
+User Press Space
+TestTime:2984.4814ms
+                                                                        PASS
+12 测试RIGHT MIC-发出声音
+AT Commond=CMD_RMIC_START
+AT Response=TR: CMD_RIGHT_START TEST
+
+TestTime:355.347ms
+                                                                        PASS
+13 用户判断
+User Press Space
+TestTime:558.5244ms
+                                                                        PASS
+14 关闭声音输出
+AT Commond=CMD_MIC_STOP
+AT Response=TR: MIC TEST EXIT Success
+
+TestTime:369.4291ms
+                                                                        PASS
+15 清除配对记录
+AT Commond=CMD_CLR_PAIRLIST
+AT Response=TR: CLR  PAIR  LIST Success
+
+TestTime:363.9425ms
+                                                                        PASS
+16 退出产测模式
+AT Commond=CMD_PT_STOP
+AT Response=TR: CMD_PT_STOP Success
+    29956/  1 | app_deinit case:0
+    29956/  3 | app_audio_manager_handle_process enter
+    29956/  3 | STREAM MANAGE bt_media_stop type= 1,device id = 0,ptr=0
+    29956/  3 | bt_media_stop media_active = 0,curr_active_media = 0
+    29956/  3 | SBC STOPPING
+    29956/  3 | bt_media_stop end media_active = 0,curr_active_media = 0
+    29956/  3 | app_audio_manager_handle_process exit -1
+
+TestTime:658.0664ms
+                                                                        PASS
+22 关闭串口
+TestTime:14.5288ms
+                                                                        PASS
+24 Deinit
+TestTime:18.2438ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:16.9979687
+

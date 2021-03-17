@@ -1,0 +1,51 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 13:12:24
+
+
+1 Init
+TestTime:12.9647ms
+                                                                        PASS
+19 蓝牙配对测试
+DeviceName:84:6F:CE:3F:E2:9A,DeviceAddress:846FCE3FE29A
+DeviceName:D4:62:EA:56:07:CB,DeviceAddress:D462EA5607CB
+DeviceName:60:AB:D2:1C:66:19,DeviceAddress:60ABD21C6619
+DeviceName:AC:71:0C:EE:DB:BD,DeviceAddress:AC710CEEDBBD
+DeviceName:60:AB:D2:1C:56:B0,DeviceAddress:60ABD21C56B0
+DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+DeviceName:AILINKIOT,DeviceAddress:847637963B6F
+DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+DeviceName:Mi Outdoor Bluetooth Speaker,DeviceAddress:1895526CCD7B
+DeviceName:MEIZU,DeviceAddress:90F052A67D9F
+DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+DeviceName:原来是阿源呐的Mi 10,DeviceAddress:582059B829DD
+DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+TestTime:36205.482ms
+                                                                        PASS
+30 Deinit
+TestTime:13.9462ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:36.3678445
+

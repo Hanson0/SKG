@@ -1,0 +1,386 @@
+2021-03-08 09:00:26,448 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-08 09:00:26,501 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-08 09:00:26,535 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-08 09:00:26,543 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-08 09:00:26,552 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-08 09:00:26,558 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-08 09:00:27,077 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-08 09:00:27,098 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-08 09:00:28,732 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-08 09:00:28,734 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-08 09:00:28,757 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-08 09:00:28,762 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-08 09:00:30,169 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 09:00:30
+
+
+2021-03-08 09:00:30,203 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-08 09:00:30,223 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-08 09:00:30,229 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:26.1692ms
+                                                                        PASS
+2021-03-08 09:00:30,281 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-08 09:00:59,314 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:LAPTOP-78I81BR4,DeviceAddress:4CEBBD3F7D4C
+2021-03-08 09:00:59,345 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+2021-03-08 09:00:59,391 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+2021-03-08 09:00:59,410 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+2021-03-08 09:00:59,430 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 未扫描到指定MAC的蓝牙 
+
+2021-03-08 09:00:59,464 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: 未扫描到指定MAC的蓝牙 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 72
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-08 09:00:59,673 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:29393.2354ms
+                                                                        FAIL
+2021-03-08 09:00:59,688 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-08 09:00:59,711 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:23.922ms
+                                                                        PASS
+2021-03-08 09:00:59,725 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-08 09:00:59,738 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第19项:
+蓝牙配对测试
+AILinkFactoryAuto.Task.BaseException: 未扫描到指定MAC的蓝牙 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 72
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-08 09:00:59,841 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:29.6791777
+2021-03-08 09:01:03,653 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 09:01:03
+
+
+2021-03-08 09:01:03,679 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-08 09:01:03,695 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-08 09:01:03,698 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:22.0235ms
+                                                                        PASS
+2021-03-08 09:01:03,756 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-08 09:01:16,408 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:F4:60:E2:71:33:03,DeviceAddress:F460E2713303
+2021-03-08 09:01:23,020 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:58:20:59:B8:29:DD,DeviceAddress:582059B829DD
+2021-03-08 09:01:33,528 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+2021-03-08 09:01:33,550 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+2021-03-08 09:01:33,577 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+2021-03-08 09:01:33,599 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:CJ小帅的Redmi Note 7 Pro,DeviceAddress:7C03AB212802
+2021-03-08 09:02:07,418 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+2021-03-08 09:02:57,992 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 由于目标主机坏了，套接字操作失败。 7C03AB212802:0000111e00001000800000805f9b34fb
+2021-03-08 09:02:58,064 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.Net.Sockets.SocketException (0x80004005): 由于目标主机坏了，套接字操作失败。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-08 09:02:58,281 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:114529.4904ms
+                                                                        FAIL
+2021-03-08 09:02:58,303 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-08 09:02:58,323 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:20.4441ms
+                                                                        PASS
+2021-03-08 09:02:58,341 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-08 09:02:58,358 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 由于目标主机坏了，套接字操作失败。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-08 09:02:58,381 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:01:54.7402083
+2021-03-08 09:03:05,964 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 09:03:05
+
+
+2021-03-08 09:03:06,011 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-08 09:03:06,031 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-08 09:03:06,044 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:35.8346ms
+                                                                        PASS
+2021-03-08 09:03:06,103 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-08 09:03:21,102 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:4C:EB:BD:3F:7D:4C,DeviceAddress:4CEBBD3F7D4C
+2021-03-08 09:03:21,139 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:84:6F:CE:3F:E2:9A,DeviceAddress:846FCE3FE29A
+2021-03-08 09:03:21,194 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:原来是阿源呐的Mi 10,DeviceAddress:582059B829DD
+2021-03-08 09:03:21,237 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+2021-03-08 09:03:21,318 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:CJ小帅的Redmi Note 7 Pro,DeviceAddress:7C03AB212802
+2021-03-08 09:03:24,370 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+2021-03-08 09:03:24,444 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:HN-WX9X,DeviceAddress:405BD8A83B38
+2021-03-08 09:03:24,466 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+2021-03-08 09:03:24,486 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:MAIMANG 8,DeviceAddress:D462EA5607CB
+2021-03-08 09:03:41,236 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 向一个无法连接的网络尝试了一个套接字操作。 7C03AB212802:0000111e00001000800000805f9b34fb
+2021-03-08 09:03:41,293 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-08 09:03:41,508 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:35404.3331ms
+                                                                        FAIL
+2021-03-08 09:03:41,528 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-08 09:03:41,568 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:40.4438ms
+                                                                        PASS
+2021-03-08 09:03:41,597 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-08 09:03:41,610 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-08 09:03:41,629 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:35.6787671
+2021-03-08 09:04:04,240 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-08 09:04:04,284 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-08 09:04:04,292 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-08 09:04:04,325 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-08 09:04:04,351 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-08 09:04:04,358 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-08 09:04:04,835 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-08 09:04:04,844 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-08 09:04:06,433 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-08 09:04:06,441 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-08 09:04:06,463 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-08 09:04:06,466 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-08 09:04:08,246 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 09:04:08
+
+
+2021-03-08 09:04:08,284 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-08 09:04:08,300 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-08 09:04:08,309 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:30.2966ms
+                                                                        PASS
+2021-03-08 09:04:08,354 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-08 09:04:20,579 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:F4:60:E2:71:33:03,DeviceAddress:F460E2713303
+2021-03-08 09:04:20,604 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:CJ小帅的Redmi Note 7 Pro,DeviceAddress:7C03AB212802
+2021-03-08 09:04:23,160 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+2021-03-08 09:04:23,182 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+2021-03-08 09:04:23,203 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:原来是阿源呐的Mi 10,DeviceAddress:582059B829DD
+2021-03-08 09:04:23,223 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:YONGFEIZHANG,DeviceAddress:287FCFE10158
+2021-03-08 09:04:23,243 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+2021-03-08 09:04:23,264 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+2021-03-08 09:04:23,279 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:HN-WX9X,DeviceAddress:405BD8A83B38
+2021-03-08 09:05:00,499 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 向一个无法连接的网络尝试了一个套接字操作。 7C03AB212802:0000111e00001000800000805f9b34fb
+2021-03-08 09:05:00,527 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-08 09:05:00,745 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:52390.4877ms
+                                                                        FAIL
+2021-03-08 09:05:00,758 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-08 09:05:00,777 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:19.6795ms
+                                                                        PASS
+2021-03-08 09:05:00,791 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-08 09:05:00,803 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-08 09:05:00,822 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:52.583087
+2021-03-08 09:35:22,993 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-08 09:35:23,062 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-08 09:35:23,070 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-08 09:35:23,078 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormLog FormLog_Shown 44 - FormLog................Success!
+2021-03-08 09:35:23,088 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-08 09:35:23,093 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM004-AMP板&功放\DUT1_WIFI-AP6255.jts]
+2021-03-08 09:35:23,595 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-08 09:35:23,618 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-08 09:35:28,479 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-08 09:35:28,482 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-BT-TEST\DUT1_WIFI-AP6255.jts]
+2021-03-08 09:35:28,504 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-08 09:35:28,510 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-08 09:35:30,671 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 09:35:30
+
+
+2021-03-08 09:35:30,717 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-08 09:35:30,738 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-08 09:35:30,747 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:30.7814ms
+                                                                        PASS
+2021-03-08 09:35:30,799 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 19 蓝牙配对测试
+2021-03-08 09:35:48,647 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:4C:EB:BD:3F:7D:4C,DeviceAddress:4CEBBD3F7D4C
+2021-03-08 09:35:48,685 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:A4:45:19:B2:F6:97,DeviceAddress:A44519B2F697
+2021-03-08 09:35:48,721 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+2021-03-08 09:35:48,744 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:原来是阿源呐的Mi 10,DeviceAddress:582059B829DD
+2021-03-08 09:35:48,798 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:chunxu,DeviceAddress:F460E2713303
+2021-03-08 09:35:48,819 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:Mi Outdoor Bluetooth Speaker,DeviceAddress:1895526CCD7B
+2021-03-08 09:35:55,887 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+2021-03-08 09:35:55,910 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+2021-03-08 09:35:55,931 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:HN-WX9X,DeviceAddress:405BD8A83B38
+2021-03-08 09:35:55,949 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:MAIMANG 8,DeviceAddress:D462EA5607CB
+2021-03-08 09:35:55,968 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:WRT-WX9,DeviceAddress:48F17F6C0551
+2021-03-08 09:36:33,835 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 向一个无法连接的网络尝试了一个套接字操作。 1895526CCD7B:0000111e00001000800000805f9b34fb
+2021-03-08 09:36:33,933 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 1895526CCD7B:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-08 09:36:34,148 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:63349.7552ms
+                                                                        FAIL
+2021-03-08 09:36:34,185 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 30 Deinit
+2021-03-08 09:36:34,203 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:17.7896ms
+                                                                        PASS
+2021-03-08 09:36:34,217 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-08 09:36:34,237 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 向一个无法连接的网络尝试了一个套接字操作。 1895526CCD7B:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-08 09:36:34,323 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:01:03.6574682

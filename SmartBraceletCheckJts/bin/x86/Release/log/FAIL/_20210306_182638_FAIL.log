@@ -1,0 +1,64 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-06, Test Time: 18:26:38
+
+
+1 Init
+TestTime:34.4103ms
+                                                                        PASS
+19 蓝牙配对测试
+未能加载文件或程序集“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”或它的某一个依赖项。系统找不到指定的文件。
+TestTime:287.4824ms
+                                                                        FAIL
+30 Deinit
+TestTime:16.8671ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第19项:
+蓝牙配对测试
+System.IO.FileNotFoundException: 未能加载文件或程序集“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499”
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+=== 预绑定状态信息 ===
+日志: DisplayName = InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499
+ (Fully-specified)
+日志: Appbase = file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/
+日志: 初始 PrivatePath = NULL
+调用程序集: AILinkFactoryAuto.Task.SmartBracelet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 未找到应用程序配置文件。
+日志: 使用主机配置文件: 
+日志: 使用 C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 策略后引用: InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal.DLL。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal/InTheHand.Net.Personal.DLL。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal.EXE。
+日志: 尝试下载新的 URL file:///F:/2_工作和软件/1_工作存档/02Ohters/SKG/code/WF-RTL8720N/SmartBraceletCheckJts/bin/x86/Release/InTheHand.Net.Personal/InTheHand.Net.Personal.EXE。
+
+
+all test time:0:00:00.7664017
+

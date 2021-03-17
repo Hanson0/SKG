@@ -1,0 +1,59 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 16:03:48
+
+
+1 Init
+TestTime:14.9606ms
+                                                                        PASS
+19 蓝牙配对测试
+DeviceName:Mi Outdoor Bluetooth Speaker,DeviceAddress:1895526CCD7B
+DeviceName:DESKTOP-Q8N6PAP,DeviceAddress:EC5C68B78B74
+DeviceName:LAPTOP-78I81BR4,DeviceAddress:4CEBBD3F7D4C
+DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+DeviceName:MEIZU,DeviceAddress:90F052A67D9F
+DeviceName:chunxu,DeviceAddress:F460E2713303
+DeviceName:原来是阿源呐的Mi 10,DeviceAddress:582059B829DD
+DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+DeviceName:OPPO Reno4 5G,DeviceAddress:14472DCAA0BE
+在其上下文中，该请求的地址无效。 1895526CCD7B:0000fff400001000800000805f9b34fb
+TestTime:24729.4705ms
+                                                                        FAIL
+30 Deinit
+TestTime:12.9107ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 在其上下文中，该请求的地址无效。 1895526CCD7B:0000fff400001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 93
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:24.8873051
+

@@ -15,7 +15,7 @@ using System.Threading;
 namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 {
     //public class AccessToMacExecuter : IExecuter
-    //{
+    //{ 
     //    ////FindDeviceProperties config;
     //    //private GlobalVaribles configGv;
     //    //public void Run(IProperties properties, GlobalDic<string, object> globalDic)//virtual

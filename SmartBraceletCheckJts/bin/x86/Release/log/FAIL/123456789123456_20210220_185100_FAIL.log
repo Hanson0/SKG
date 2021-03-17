@@ -1,0 +1,148 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 18:51:00
+
+
+1 Init
+TestTime:60.591ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789123456
+MAC=
+TestTime:149.3134ms
+                                                                        PASS
+3 打开串口
+TestTime:152.3805ms
+                                                                        PASS
+5 进入测试模式
+AT Commond=CMD_PT_START
+AT Response=TR: CMD_PT_START Success
+
+
+TestTime:734.1316ms
+                                                                        PASS
+6 信息检查
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+
+AT response=[TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+] not contain check info=[B T Name:SM005]
+重试第1次
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+
+AT response=[TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+] not contain check info=[B T Name:SM005]
+重试第2次
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+
+AT response=[TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+] not contain check info=[B T Name:SM005]
+重试第3次
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+
+AT response=[TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+] not contain check info=[B T Name:SM005]
+TestTime:3307.3311ms
+                                                                        FAIL
+7 发送按键测试命令
+TestTime:27.1821ms
+                                                                        SKIP
+8 检测音量+按键
+TestTime:31.4692ms
+                                                                        SKIP
+9 检测音量-按键
+TestTime:34.9243ms
+                                                                        SKIP
+10 测试LEFT MIC-输出声音
+TestTime:37.842ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:47.8764ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:39.2612ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:34.1026ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:39.861ms
+                                                                        SKIP
+22 关闭串口
+TestTime:45.3583ms
+                                                                        PASS
+24 Deinit
+TestTime:30.8037ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第6项:
+信息检查
+AILinkFactoryAuto.Task.BaseException: AT response=[TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:0
+] not contain check info=[B T Name:SM005]
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 158
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:05.4723419
+

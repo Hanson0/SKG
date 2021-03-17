@@ -1,0 +1,83 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-19, Test Time: 14:53:31
+
+
+1 Init
+TestTime:46.6987ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789012345
+MAC=
+TestTime:161.5903ms
+                                                                        PASS
+3 打开串口
+TestTime:146.5416ms
+                                                                        PASS
+4 检测产品上电中....
+超时：System.Func`1[System.Boolean]
+TestTime:30474.2784ms
+                                                                        FAIL
+5 进入测试模式
+TestTime:20.8919ms
+                                                                        SKIP
+6 信息检查
+TestTime:20.166ms
+                                                                        SKIP
+7 发送按键测试命令
+TestTime:19.7488ms
+                                                                        SKIP
+10 测试LEFT MIC-输出声音
+TestTime:21.9749ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:23.9135ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:37.1219ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:25.1007ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:14.9594ms
+                                                                        SKIP
+22 关闭串口
+TestTime:15.925ms
+                                                                        PASS
+24 Deinit
+TestTime:19.9156ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第4项:
+检测产品上电中....
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Utils\TimeUtils.cs:行号 71
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 53
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:31.5376141
+

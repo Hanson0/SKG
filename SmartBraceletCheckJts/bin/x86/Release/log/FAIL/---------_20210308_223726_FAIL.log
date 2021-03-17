@@ -1,0 +1,114 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 22:37:26
+
+
+1 Init
+TestTime:32.909ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+MAC null
+TestTime:434.4663ms
+                                                                        FAIL
+3 打开主串口
+TestTime:34.8888ms
+                                                                        SKIP
+4 检测SM005产品上电中...
+TestTime:54.6156ms
+                                                                        SKIP
+5 检测Poweron按键上电
+TestTime:38.5559ms
+                                                                        SKIP
+6 进入测试模式
+TestTime:45.3548ms
+                                                                        SKIP
+7 信息检查
+TestTime:27.7766ms
+                                                                        SKIP
+8 过滤字符
+TestTime:46.0806ms
+                                                                        SKIP
+9 变量大小写转换
+TestTime:71.4341ms
+                                                                        SKIP
+10 反序功能
+TestTime:40.6143ms
+                                                                        SKIP
+11 发送按键测试命令
+TestTime:30.9796ms
+                                                                        SKIP
+12 检测音量+按键
+TestTime:40.4734ms
+                                                                        SKIP
+13 检测音量-按键
+TestTime:21.94ms
+                                                                        SKIP
+14 测试LEFT MIC-输出声音
+TestTime:34.8648ms
+                                                                        SKIP
+15 用户判断
+TestTime:41.5403ms
+                                                                        SKIP
+16 测试RIGHT MIC-发出声音
+TestTime:21.155ms
+                                                                        SKIP
+17 用户判断
+TestTime:24.2316ms
+                                                                        SKIP
+18 关闭声音输出
+TestTime:30.1182ms
+                                                                        SKIP
+20 蓝牙配对测试
+TestTime:42.654ms
+                                                                        SKIP
+21 蓝牙配对测试
+TestTime:12.4784ms
+                                                                        SKIP
+23 清除配对记录
+TestTime:37.0367ms
+                                                                        SKIP
+24 退出产测模式
+TestTime:14.615ms
+                                                                        SKIP
+29 关闭主串口
+给定关键字不在字典中。
+TestTime:291.9327ms
+                                                                        FAIL
+31 Deinit
+TestTime:17.2789ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: MAC null
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckMac(String mac)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:02.3255259
+

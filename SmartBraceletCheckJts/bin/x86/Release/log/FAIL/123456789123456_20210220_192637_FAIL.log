@@ -1,0 +1,521 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 19:26:37
+
+
+1 Init
+TestTime:23.9371ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789123456
+MAC=
+TestTime:73.8774ms
+                                                                        PASS
+3 打开串口
+TestTime:134.0736ms
+                                                                        PASS
+5 进入测试模式
+AT Commond=CMD_PT_START
+AT Response=TR: CMD_PT_START Success
+
+
+TestTime:660.1047ms
+                                                                        PASS
+6 信息检查
+AT Commond=CMD_GET_INFO
+AT Response=TR: CMD_GET_INFO
+hw_ver:0.1.4
+fw_ver:1.1.20
+B T Name:Mi Outdoor Bluetooth Speaker,BT Addr:7b cd 6c 52 95 18 
+Current Level:8
+
+TestTime:467.4311ms
+                                                                        PASS
+7 发送按键测试命令
+AT Commond=CMD_KEY_TEST
+AT Response=TR: CMD_KEY_TEST start
+
+TestTime:234.5986ms
+                                                                        PASS
+8 检测音量+按键
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume  up key ok!
+
+包含关键字：Volume  up key ok!
+TestTime:1205.3611ms
+                                                                        PASS
+9 检测音量-按键
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：Volume down key ok!
+
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Wait TimeOut, 15seconds
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Response：
+Wait TimeOut, 30seconds
+Fail
+TestTime:36803.3515ms
+                                                                        FAIL
+10 测试LEFT MIC-输出声音
+TestTime:10.4203ms
+                                                                        SKIP
+11 用户判断
+TestTime:14.6247ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:13.479ms
+                                                                        SKIP
+13 用户判断
+TestTime:31.8406ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:12.1111ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:20.2467ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:10.0112ms
+                                                                        SKIP
+22 关闭串口
+TestTime:18.3599ms
+                                                                        PASS
+24 Deinit
+TestTime:31.3031ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第9项:
+检测音量-按键
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:40.1189018
+

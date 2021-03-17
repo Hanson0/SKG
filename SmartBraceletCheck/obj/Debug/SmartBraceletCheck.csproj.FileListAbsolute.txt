@@ -18,3 +18,8 @@ F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletC
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Debug\AILinkFactoryAuto.Task.SmartBracelet.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Debug\AILinkFactoryAuto.Task.SmartBracelet.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Debug\SmartBraceletCheck.csprojAssemblyReference.cache
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Debug\log4net.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Debug\AILinkFactoryAuto.Base.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Debug\AILinkFactoryAuto.Dut.AtCommand.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Debug\log4net.xml

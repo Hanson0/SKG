@@ -1,0 +1,57 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 09:01:03
+
+
+1 Init
+TestTime:22.0235ms
+                                                                        PASS
+19 蓝牙配对测试
+DeviceName:F4:60:E2:71:33:03,DeviceAddress:F460E2713303
+DeviceName:58:20:59:B8:29:DD,DeviceAddress:582059B829DD
+DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+DeviceName:OPPO A5,DeviceAddress:C02E250090A2
+DeviceName:CJ小帅的Redmi Note 7 Pro,DeviceAddress:7C03AB212802
+DeviceName:2327608081的Redmi K20 Pro,DeviceAddress:E0DCFFDD4980
+由于目标主机坏了，套接字操作失败。 7C03AB212802:0000111e00001000800000805f9b34fb
+TestTime:114529.4904ms
+                                                                        FAIL
+30 Deinit
+TestTime:20.4441ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第19项:
+蓝牙配对测试
+System.Net.Sockets.SocketException (0x80004005): 由于目标主机坏了，套接字操作失败。 7C03AB212802:0000111e00001000800000805f9b34fb
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 InTheHand.Net.Bluetooth.Msft.SocketBluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothEndPoint remoteEP)
+   在 InTheHand.Net.Sockets.BluetoothClient.Connect(BluetoothAddress address, Guid service)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 80
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:01:54.7402083
+

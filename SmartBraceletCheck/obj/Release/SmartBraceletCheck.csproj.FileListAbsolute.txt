@@ -4,8 +4,6 @@ F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletC
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\AILinkFactoryAuto.Task.Common.TipAndCheckUartForm.resources
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\SmartBraceletCheck.csproj.GenerateResource.cache
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\SmartBraceletCheck.csproj.CoreCompileInputs.cache
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\SmartBraceletCheck.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\SmartBraceletCheck.pdb
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\AILinkFactoryAuto.Base.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\AILinkFactoryAuto.Dut.AtCommand.dll
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\ManagedWifi.dll
@@ -17,5 +15,11 @@ F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletC
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\MesDll.xml
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\Newtonsoft.Json.xml
 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\SmartBraceletCheck.csproj.CopyComplete
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\SmartBraceletCheck.dll
-F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\SmartBraceletCheck.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\AILinkFactoryAuto.Task.SmartBracelet.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\AILinkFactoryAuto.Task.SmartBracelet.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\AILinkFactoryAuto.Task.SmartBracelet.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\obj\Release\AILinkFactoryAuto.Task.SmartBracelet.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\log4net.dll
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\AILinkFactoryAuto.Base.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\AILinkFactoryAuto.Dut.AtCommand.pdb
+F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\bin\Release\log4net.xml

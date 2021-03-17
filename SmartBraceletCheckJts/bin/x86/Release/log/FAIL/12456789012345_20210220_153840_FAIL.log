@@ -1,0 +1,84 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 15:38:40
+
+
+1 Init
+TestTime:38.0215ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=12456789012345
+MAC=
+SN invalid
+TestTime:373.4453ms
+                                                                        FAIL
+3 打开串口
+TestTime:25.4834ms
+                                                                        SKIP
+4 检测产品上电中....
+TestTime:37.7753ms
+                                                                        SKIP
+5 进入测试模式
+TestTime:31.787ms
+                                                                        SKIP
+6 信息检查
+TestTime:24.277ms
+                                                                        SKIP
+7 发送按键测试命令
+TestTime:28.024ms
+                                                                        SKIP
+10 测试LEFT MIC-输出声音
+TestTime:36.417ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:12.1283ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:24.9331ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:41.1731ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:10.3556ms
+                                                                        SKIP
+22 关闭串口
+给定关键字不在字典中。
+TestTime:281.0808ms
+                                                                        FAIL
+24 Deinit
+TestTime:20.4741ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: SN invalid
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckSn(String sn) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Task\Executer\ParseLabelExecuter.cs:行号 94
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Task\Executer\ParseLabelExecuter.cs:行号 59
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:01.3608517
+

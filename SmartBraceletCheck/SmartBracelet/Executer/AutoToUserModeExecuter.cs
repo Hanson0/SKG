@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 
 namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
-{
+{ 
     public class AutoToUserModeExecuter : IExecuter
     {
         private string pattern;

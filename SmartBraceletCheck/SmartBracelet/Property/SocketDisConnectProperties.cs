@@ -8,7 +8,7 @@ using System.Text;
 namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 {
     public class SocketDisConnectProperties : CommonProperties
-    {
+    { 
 
     }
 }

@@ -1,0 +1,87 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-02-20, Test Time: 18:50:24
+
+
+1 Init
+TestTime:79.837ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=123456789123456
+MAC=
+TestTime:235.1308ms
+                                                                        PASS
+3 打开串口
+超时：System.Func`1[System.Boolean]
+TestTime:10538.6733ms
+                                                                        FAIL
+5 进入测试模式
+TestTime:62.8318ms
+                                                                        SKIP
+6 信息检查
+TestTime:52.8661ms
+                                                                        SKIP
+7 发送按键测试命令
+TestTime:53.7116ms
+                                                                        SKIP
+8 检测音量+按键
+TestTime:47.3545ms
+                                                                        SKIP
+9 检测音量-按键
+TestTime:48.5532ms
+                                                                        SKIP
+10 测试LEFT MIC-输出声音
+TestTime:53.4952ms
+                                                                        SKIP
+12 测试RIGHT MIC-发出声音
+TestTime:53.9281ms
+                                                                        SKIP
+14 关闭声音输出
+TestTime:42.8918ms
+                                                                        SKIP
+15 清除配对记录
+TestTime:50.1419ms
+                                                                        SKIP
+16 退出产测模式
+TestTime:46.6752ms
+                                                                        SKIP
+22 关闭串口
+给定关键字不在字典中。
+TestTime:368.3204ms
+                                                                        FAIL
+24 Deinit
+TestTime:63.2625ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第3项:
+打开串口
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskBase\Utils\TimeUtils.cs:行号 71
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\OpenPhoneExecuter.cs:行号 98
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:12.814432
+

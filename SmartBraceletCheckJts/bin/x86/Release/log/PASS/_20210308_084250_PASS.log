@@ -1,0 +1,43 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-08, Test Time: 08:42:50
+
+
+1 Init
+TestTime:27.9091ms
+                                                                        PASS
+19 蓝牙配对测试
+DeviceName:4C:EB:BD:3F:7D:4C,DeviceAddress:4CEBBD3F7D4C
+DeviceName:84:6F:CE:3F:E2:9A,DeviceAddress:846FCE3FE29A
+DeviceName:CJ小帅的Redmi Note 7 Pro,DeviceAddress:7C03AB212802
+DeviceName:LAPTOP-2CUJNPP1,DeviceAddress:24EE9A5ABF49
+DeviceName:OPPO A11,DeviceAddress:A4C9395CF83C
+TestTime:18991.912ms
+                                                                        PASS
+30 Deinit
+TestTime:19.5556ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:19.2178666
+

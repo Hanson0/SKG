@@ -1,0 +1,142 @@
+2021-03-09 08:26:12,037 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: 未扫描到指定MAC的蓝牙信号 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ScanBindBtExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ScanBindBtExecuter.cs:行号 84
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-09 08:26:13,150 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - 重试第1次
+2021-03-09 08:26:33,493 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:48:F1:7F:6C:05:51		DeviceAddress:48F17F6C0551
+2021-03-09 08:26:33,531 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:HUAWEI AM08		DeviceAddress:F013C3036A23
+2021-03-09 08:26:33,569 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:Mi Outdoor Bluetooth Speaker		DeviceAddress:1895526CCD7B
+2021-03-09 08:26:33,604 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:2327608081的Redmi K20 Pro		DeviceAddress:E0DCFFDD4980
+2021-03-09 08:26:33,662 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A5		DeviceAddress:C02E250090A2
+2021-03-09 08:26:33,692 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:MEIZU		DeviceAddress:90F052A67D9F
+2021-03-09 08:26:33,735 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:OPPO A11		DeviceAddress:A4C9395CF83C
+2021-03-09 08:26:33,779 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:原来是阿源呐的Mi 10		DeviceAddress:582059B829DD
+2021-03-09 08:26:33,894 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - DeviceName:AILINKIOT		DeviceAddress:847637963B6F
+2021-03-09 08:26:33,950 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 已检测到蓝牙信号，MAC:F013C3036A23
+2021-03-09 08:26:33,992 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:33190985.2055ms
+                                                                        PASS
+2021-03-09 08:26:34,041 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 23 清除配对记录
+2021-03-09 08:26:34,169 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_CLR_PAIRLIST
+2021-03-09 08:26:34,293 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 端口被关闭。
+2021-03-09 08:26:34,413 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 124
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-09 08:26:34,622 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - 重试第1次
+2021-03-09 08:26:34,760 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_CLR_PAIRLIST
+2021-03-09 08:26:34,836 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 端口被关闭。
+2021-03-09 08:26:34,900 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 124
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-09 08:26:35,120 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - 重试第2次
+2021-03-09 08:26:35,250 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_CLR_PAIRLIST
+2021-03-09 08:26:35,406 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 端口被关闭。
+2021-03-09 08:26:35,495 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 124
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-09 08:26:35,703 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - 重试第3次
+2021-03-09 08:26:35,827 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - AT Commond=CMD_CLR_PAIRLIST
+2021-03-09 08:26:35,916 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 端口被关闭。
+2021-03-09 08:26:35,950 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 124
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-09 08:26:36,161 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:2130.9869ms
+                                                                        FAIL
+2021-03-09 08:26:36,188 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 退出产测模式
+2021-03-09 08:26:36,213 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:24.9811ms
+                                                                        SKIP
+2021-03-09 08:26:36,248 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 29 关闭主串口
+2021-03-09 08:26:36,279 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:31.0137ms
+                                                                        PASS
+2021-03-09 08:26:36,319 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 31 Deinit
+2021-03-09 08:26:36,355 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:35.503ms
+                                                                        PASS
+2021-03-09 08:26:36,385 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-09 08:26:36,408 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第23项:
+清除配对记录
+System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 124
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-09 08:26:36,438 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:9:14:01.5920347
+2021-03-09 08:39:01,660 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-09 08:39:01,705 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-09 08:39:01,705 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-09 08:39:01,709 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-09 08:39:01,710 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-ALL\DUT1_WIFI-AP6255.jts]
+2021-03-09 08:39:02,018 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-09 08:39:02,018 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-09 08:47:13,799 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-09 08:47:13,831 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 东莞市华复实业有限公司-万魔声学PCBA自动测试系统 V1.0.3
+2021-03-09 08:47:13,831 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.3
+2021-03-09 08:47:13,838 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-09 08:47:13,838 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SM005-ALL\DUT1_WIFI-AP6255.jts]
+2021-03-09 08:47:14,096 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-09 08:47:14,096 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-09 08:58:30,441 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-09 08:58:30,460 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 万魔声学SM005，SKG自动测试系统 V1.0.0
+2021-03-09 08:58:30,460 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - V1.0.0
+2021-03-09 08:58:30,465 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2021-03-09 08:58:30,466 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[\projects\SM005-ALL\DUT1_WIFI-AP6255.jts]
+2021-03-09 08:58:30,670 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2021-03-09 08:58:30,670 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!
+2021-03-09 08:58:48,589 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-09 08:58:48,610 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - 万魔声学SM005，SKG自动测试系统 V1.0.0
+2021-03-09 08:58:48,611 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 0 - V1.0.0
+2021-03-09 08:58:48,616 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - DUT1
+2021-03-09 08:58:48,617 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - 加载测试序列=[\projects\SM005-ALL\DUT1_WIFI-AP6255.jts]
+2021-03-09 08:58:48,809 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 0 - 加载测试序列成功
+2021-03-09 08:58:48,810 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 0 - FormMain................Success!

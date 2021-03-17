@@ -33,7 +33,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             string newAtCommand = atCommand;
             Match match = Regex.Match(atCommand, @"{([0-9a-zA-Z_]+)}");
             for (int i = 1; i < match.Groups.Count; i++)
-            {
+            { 
                 string key = match.Groups[i].ToString();
                 string value = configGv.Get(key);
 
