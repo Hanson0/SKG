@@ -1,0 +1,107 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 13:52:35
+
+
+1 Init
+TestTime:33.1117ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:123.0894ms
+                                                                        PASS
+3 打开主串口
+TestTime:151.7433ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:164.1532ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+校验位正确,返回校验位:71,计算校验位:231
+应答报文格式正确
+TestTime:5098.993ms
+                                                                        PASS
+13 AT-获取EMS1
+AT Commond=AT+EMS1?
+AT Response=EMS1=31.102
+OK
+
+TestTime:981.9524ms
+                                                                        PASS
+14 检查EMS1
+检查出错，EMS1的值：31.1，大于设定最大值：5 FAIL 
+
+TestTime:312.96ms
+                                                                        FAIL
+15 发SKG控制指令-EMS24
+TestTime:17.7301ms
+                                                                        SKIP
+16 AT-获取EMS2
+TestTime:36.6383ms
+                                                                        SKIP
+17 检查EMS2
+TestTime:21.6253ms
+                                                                        SKIP
+27 AT-控制继电器电压输出5V
+TestTime:41.6949ms
+                                                                        SKIP
+28 上报检测-充电检测
+TestTime:30.8647ms
+                                                                        SKIP
+29 AT-读取电量值
+TestTime:42.4521ms
+                                                                        SKIP
+30 AT-控制继电器关闭电压输出
+TestTime:33.9415ms
+                                                                        SKIP
+31 上报检测-未充电检测
+TestTime:24.9672ms
+                                                                        SKIP
+32 上报检测-加热按键检测
+TestTime:29.1874ms
+                                                                        SKIP
+36 关闭主串口
+TestTime:17.046ms
+                                                                        PASS
+37 关闭电气参数检测串口
+TestTime:20.7474ms
+                                                                        PASS
+38 Deinit
+TestTime:19.3844ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第14项:
+检查EMS1
+System.Exception: 检查出错，EMS1的值：31.1，大于设定最大值：5 FAIL 
+
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\CheckRangeValueExecuter.cs:行号 44
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:07.8642747
+

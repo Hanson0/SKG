@@ -37,12 +37,12 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             下发授权
         }
 
-        [Category("DataLength"), Description("数据部分长度")]
-        public int DataLength
-        { 
-            get { return dataLength; }
-            set { dataLength = value; }
-        }
+        //[Category("DataLength"), Description("数据部分长度")]
+        //public int DataLength
+        //{ 
+        //    get { return dataLength; }
+        //    set { dataLength = value; }
+        //}
 
 
         [Category("SerialPort"), Description("PortName"), TypeConverter(typeof(PortNamesConverter))]

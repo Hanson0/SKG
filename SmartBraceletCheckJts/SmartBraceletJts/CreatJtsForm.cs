@@ -17,6 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using static AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties;
+using static AILinkFactoryAuto.Task.SmartBracelet.Property.FormTipAndUartCheckProperties;
 
 namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
 {
@@ -522,7 +523,8 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 findDevice.Item = "检测音量+按键";//Find Device
                 findDevice.CommonProperties = new FormTipAndUartCheckProperties()
                 {
-                    CountDownTime=15*1000,
+                    PortName = "COM4",
+                    CountDownTime = 15*1000,
                     Tips= "请按音量+",
 
                     AtCommandOk = "Volume  up key ok!",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
@@ -544,6 +546,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 findDevice.Item = "检测音量-按键";//Find Device
                 findDevice.CommonProperties = new FormTipAndUartCheckProperties()
                 {
+                    PortName="COM4",
                     CountDownTime = 30 * 1000,
                     Tips = "请按音量-",
 
@@ -856,7 +859,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                     //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
                     //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
                     GlobalVariblesKey = new string[] { "{RetQueryData}"},//, "{DevBt_MAC}" 
-                    DataLength = 32,
+                    //DataLength = 32,
                     //Timeout = 30 * 1000,
                     RetryCount = 0,
                     SleepTimeBefore = 0,
@@ -872,8 +875,10 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 findDevice.Item = "检查SKG的查询内容";//Find Device
                 findDevice.CommonProperties = new SkgQueryCheckProperties()
                 {
-                    GlobalVariblesKey= "RetQueryData",
-                    FirmwareName= "K4-2T-",
+                    IfCheckFinishTest= SkgQueryCheckProperties.EnumIfCheckFinishTest.不检查,
+                    CheckNumberInFlash= SkgQueryCheckProperties.EnumCheckNumberInFlash.不检查,
+                    GlobalVariblesKey = "RetQueryData",
+                    FirmwareName= "K5-2T",
                     FirewareVersion="1010",
                     SoftwareVersion="1011",
                     VolMaxValue=3000,//mv
@@ -913,7 +918,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 {
                     PortName = "COM4",
                     Head= "A5C3",
-                    DataLength = 20,
+                    //DataLength = 20,
                     ReservedWord = "0000",
                     CommandWord="0040",
                     PowerOnOffSetting= SKGControlCommandProperties.EnumPowerOnOffSetting.开机,
@@ -929,25 +934,25 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                     BtTestOnOffSetting= SKGControlCommandProperties.EnumBtTestOnOffSetting.开启蓝牙测试,
                     MotorControl= SKGControlCommandProperties.EnumMotorControl.开启1档力度,
                     AginTestOnOffSetting= SKGControlCommandProperties.EnumAginTestOnOffSetting.不开启老化测试,
-                    AginTestTime= 30,//30分钟
-                    VibrationControl1= SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl2 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl3 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl4 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl5 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl6 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl7 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl8 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl9 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl10 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl11 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl12 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl13 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl14 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl15 = SKGControlCommandProperties.EnumVibrationControl.开,
-                    VibrationControl16 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    AginTestTime= 3,//30分钟
+                    //VibrationControl1= SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl2 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl3 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl4 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl5 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl6 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl7 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl8 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl9 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl10 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl11 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl12 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl13 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl14 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl15 = SKGControlCommandProperties.EnumVibrationControl.开,
+                    //VibrationControl16 = SKGControlCommandProperties.EnumVibrationControl.开,
 
-                    RedLightControl640nm= SKGControlCommandProperties.EnumVibrationControl.开,
+                    //RedLightControl640nm= SKGControlCommandProperties.EnumRedControl.开,
 
 
                     //AtCommand = "A5C3001D0000004001010103E803E800640101000001030003FFFF015E",
@@ -1076,7 +1081,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 {
                     PortName = "COM4",
                     Head = "A5C3",
-                    DataLength = 26,
+                    //DataLength = 26,
                     ReservedWord = "0000",
                     CommandWord = "0023",
                     CommandType = SKGAuthorizeCommandProperties.EnumCommandType.下发授权,
@@ -1098,7 +1103,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
             {
                 TaskItem findDevice = new TaskItem();
                 findDevice.Enable = true;
-                findDevice.Item = "SKG授权指令成功状态检查";//Find Device
+                findDevice.Item = "检查SKG授权返回";//Find Device
                 findDevice.CommonProperties = new SkgAuthorizeCheckProperties()
                 {
 
@@ -1130,7 +1135,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                     //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
                     //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
                     GlobalVariblesKey = new string[] { "{RetQueryData}" },//, "{DevBt_MAC}" 
-                    DataLength = 32,
+                    //DataLength = 32,
                     //Timeout = 30 * 1000,
                     RetryCount = 0,
                     SleepTimeBefore = 0,
@@ -1148,7 +1153,7 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 {
 
                     GlobalVariblesKey = "RetQueryData",
-                    CheckNumberInFlash= SkgQueryCheckProperties.EnumCheckNumberInFlash.检查SN,//因为前面授权写入的是SN，所以检查SN
+                    CheckNumberInFlash= SkgQueryCheckProperties.EnumCheckNumberInFlash.检查是否写入过PCBA_ID,//因为前面授权写入的是SN，所以检查SN
                     //FirmwareName = "K4-2T-",
                     //FirewareVersion = "1010",
                     //SoftwareVersion = "1011",
@@ -1173,6 +1178,32 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
                 findDevice.Executer = new SkgQueryCheckExecuter();
                 taskItemManager.Put(findDevice);
             }
+
+            //提示并检测音量-按键按下            
+            if (cbSkg.Checked)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "检测按键";//Find Device
+                findDevice.CommonProperties = new FormTipAndUartCheckProperties()
+                {
+                    PortName = "COM4",
+                    UartDataType= EnumUartDataType.Hex,
+                    CountDownTime = 30 * 1000,
+                    Tips = "请按+键",
+
+                    AtCommandOk = "A04103",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+                    //CheckInfo = new string[] { "FW VER: 1.0.5" },//mac: B4C9B9A4A6E5
+                    //GlobalVariblesKeyPattern = new string[] { "MAC = ([0-9A-F]{12})", "BT MAC = ([0-9A-F]{12})" },//, "([0-9A-Fa-f:]{18})" 
+                    //GlobalVariblesKey = new string[] { "{DevWifi_MAC}","{DevBt_MAC}" },//, "{DevBt_MAC}" 
+
+
+                    RetryCount = 0,
+                };
+                findDevice.Executer = new FormTipAndUartCheckExecuter();
+                taskItemManager.Put(findDevice);
+            }
+
             #endregion
 
             #region 低压通道

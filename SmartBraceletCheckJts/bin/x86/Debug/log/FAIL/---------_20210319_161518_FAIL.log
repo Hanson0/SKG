@@ -1,0 +1,124 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 16:15:18
+
+
+1 Init
+TestTime:31.9141ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:114.42ms
+                                                                        PASS
+3 打开主串口
+TestTime:142.4661ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:152.6108ms
+                                                                        PASS
+5 检测SKG产品上电中...
+检测到产品上电，Response:
+A5C3000D0000A0410001030189A5C3000D0000A041000101018B
+  contain:
+A5C3
+TestTime:8923.3284ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+RX校验位核验正确,返回校验位:47,计算校验位:47
+应答报文格式正确
+TestTime:663.7338ms
+                                                                        PASS
+13 AT-获取EMS1
+AT Commond=AT+EMS1?
+端口被关闭。
+重试第1次
+AT Commond=AT+EMS1?
+端口被关闭。
+重试第2次
+AT Commond=AT+EMS1?
+端口被关闭。
+重试第3次
+AT Commond=AT+EMS1?
+端口被关闭。
+TestTime:1691.8749ms
+                                                                        FAIL
+14 检查EMS1
+TestTime:18.95ms
+                                                                        SKIP
+15 发SKG控制指令-EMS24
+TestTime:18.9491ms
+                                                                        SKIP
+16 AT-获取EMS2
+TestTime:18.9479ms
+                                                                        SKIP
+17 检查EMS2
+TestTime:16.9553ms
+                                                                        SKIP
+27 AT-控制继电器电压输出5V
+TestTime:44.951ms
+                                                                        SKIP
+28 上报检测-充电检测
+TestTime:33.3091ms
+                                                                        SKIP
+29 AT-读取电量值
+TestTime:21.9435ms
+                                                                        SKIP
+30 检查CRT值
+TestTime:21.9429ms
+                                                                        SKIP
+31 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+端口被关闭。
+TestTime:307.5352ms
+                                                                        FAIL
+32 上报检测-未充电检测
+TestTime:20.0026ms
+                                                                        SKIP
+33 上报检测-加热按键检测
+TestTime:45.6131ms
+                                                                        SKIP
+37 关闭主串口
+TestTime:76.6089ms
+                                                                        PASS
+38 关闭电气参数检测串口
+TestTime:25.9308ms
+                                                                        PASS
+39 Deinit
+TestTime:33.9097ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第13项:
+AT-获取EMS1
+System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(String text)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\AtCommandExecuter.cs:行号 124
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:13.2804932
+

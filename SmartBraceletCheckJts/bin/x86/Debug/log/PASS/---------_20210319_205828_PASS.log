@@ -1,0 +1,309 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 20:58:28
+
+
+1 Init
+TestTime:25.9796ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:115.6732ms
+                                                                        PASS
+3 打开主串口
+TestTime:143.6594ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:167.865ms
+                                                                        PASS
+7 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 82 80 00 31 32 33 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 D1 
+核验RX的校验位：错误,返回校验位:D1,计算校验位:8F
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 82 80 00 31 32 33 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 8F 
+核验RX的校验位：正确,返回校验位:8F,计算校验位:8F
+应答报文格式检查PASS
+TestTime:1523.6265ms
+                                                                        PASS
+8 检查SKG的查询内容
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+电压值(mV)：：4226，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:2732.115ms
+                                                                        PASS
+9 SKG授权-PCBID授权
+Tx:A5 C3 00 23 00 00 00 23 02 0F 31 31 32 32 33 33 34 34 35 35 36 36 41 42 43 00 00 00 00 00 00 00 00 00 2B 
+Rx:A5 C3 00 35 00 00 A0 23 02 3F 31 31 32 32 33 33 34 34 35 35 36 36 41 42 43 00 00 00 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 40 
+核验RX的校验位：正确,返回校验位:40,计算校验位:40
+应答报文格式检查PASS
+回复的授权内容:313132323333343435353636414243000000000000000000
+发送的授权内容:313132323333343435353636414243000000000000000000
+一致
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+授权成功
+TestTime:690.0885ms
+                                                                        PASS
+10 回读确保授权写入成功-发送查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 82 80 00 31 31 32 32 33 33 34 34 35 35 36 36 41 42 43 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 91 
+核验RX的校验位：错误,返回校验位:91,计算校验位:FA
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 82 80 00 31 31 32 32 33 33 34 34 35 35 36 36 41 42 43 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 FA 
+核验RX的校验位：正确,返回校验位:FA,计算校验位:FA
+应答报文格式检查PASS
+TestTime:1408.3937ms
+                                                                        PASS
+11 回读确保授权写入成功-查询内容检查
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+读取的PCBA-ID:112233445566ABC
+预写PCBIDA-ID :112233445566ABC与写入的PCBA-ID ：112233445566ABC，一致
+TestTime:642.3645ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+EMS 脉宽设置:3500uS
+EMS 频率设置:1000Hz
+EMS 幅度设置:50000mV
+加热档位控制:开启42度加热或加热中档
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+核验RX的校验位：正确,返回校验位:47,计算校验位:47
+应答报文格式检查PASS
+TestTime:617.2226ms
+                                                                        PASS
+13 AT-获取EMS1
+AT Commond=AT+EMS1?
+AT Response=EMS1=45.493
+OK
+
+TestTime:293.9384ms
+                                                                        PASS
+14 检查EMS1
+EMS1的值：45.49，在设定范围：1 ~ 50之间 PASS 
+
+TestTime:82.4963ms
+                                                                        PASS
+15 发SKG控制指令-EMS24
+EMS 脉宽设置:3500uS
+EMS 频率设置:1000Hz
+EMS 幅度设置:50000mV
+加热档位控制:开启42度加热或加热中档
+Tx:A5 C3 00 1A 00 00 00 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E1 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 41 
+核验RX的校验位：正确,返回校验位:41,计算校验位:41
+应答报文格式检查PASS
+TestTime:567.9967ms
+                                                                        PASS
+16 AT-获取EMS2
+AT Commond=AT+EMS2?
+AT Response=EMS2=30.683
+OK
+
+TestTime:280.8259ms
+                                                                        PASS
+17 检查EMS2
+EMS2的值：30.68，在设定范围：1 ~ 60之间 PASS 
+
+TestTime:30.8223ms
+                                                                        PASS
+18 发SKG控制指令-开机
+开关机设置:开机
+Tx:A5 C3 00 1A 00 00 00 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 
+Rx:A5 C3 00 1A 00 00 A0 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+核验RX的校验位：正确,返回校验位:9D,计算校验位:9D
+应答报文格式检查PASS
+TestTime:622.8491ms
+                                                                        PASS
+19 发SKG控制指令-关机
+开关机设置:关机
+Tx:A5 C3 00 1A 00 00 00 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:627.2107ms
+                                                                        PASS
+20 发SKG控制指令-发出声音+LED全关
+LED 模式设置:LED全关
+Tx:A5 C3 00 1A 00 00 00 40 00 03 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 00 03 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:653.2852ms
+                                                                        PASS
+21 声音检查-用户判断
+User Press Space
+TestTime:1946.3072ms
+                                                                        PASS
+22 发SKG控制指令-LED红/橙灯
+LED 模式设置:红或橙色LED开
+Tx:A5 C3 00 1A 00 00 00 40 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 
+Rx:A5 C3 00 1A 00 00 A0 40 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+核验RX的校验位：正确,返回校验位:9D,计算校验位:9D
+应答报文格式检查PASS
+TestTime:665.998ms
+                                                                        PASS
+23 LED红/橙灯检查-用户判断
+User Press Space
+TestTime:2059.6605ms
+                                                                        PASS
+24 发SKG控制指令-LED蓝灯
+LED 模式设置:蓝色LED开
+Tx:A5 C3 00 1A 00 00 00 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:622.9043ms
+                                                                        PASS
+25 LED蓝灯检查-用户判断
+User Press Space
+TestTime:978.5817ms
+                                                                        PASS
+26 发SKG控制指令-LED绿灯
+LED 模式设置:绿色LED开
+Tx:A5 C3 00 1A 00 00 00 40 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 38 
+Rx:A5 C3 00 1A 00 00 A0 40 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 98 
+核验RX的校验位：正确,返回校验位:98,计算校验位:98
+应答报文格式检查PASS
+TestTime:617.8022ms
+                                                                        PASS
+27 LED绿灯检查-用户判断
+User Press Space
+TestTime:1256.5266ms
+                                                                        PASS
+34 AT-控制继电器电压输出5V
+AT Commond=AT+VO=1!
+AT Response=VO=1
+OK
+
+TestTime:283.2345ms
+                                                                        PASS
+35 上报检测-充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 03 01 89 A5 C3 00 0D 00 00 A0 41 00 01 01 01 8B FF FF 00 
+PASS,返回正确状态关键字：A041000103
+TestTime:414.7866ms
+                                                                        PASS
+36 AT-读取电量值
+AT Commond=AT+CRT1?
+AT Response=CRT1=0.000
+OK
+
+read info value fail
+重试第1次
+AT Commond=AT+CRT1?
+AT Response=CRT1=-511.996
+OK
+
+TestTime:798.9658ms
+                                                                        PASS
+37 检查CRT值
+CRT1的值：-511.9，在设定范围：-600 ~ 900之间 PASS 
+
+TestTime:36.9692ms
+                                                                        PASS
+38 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:278.4992ms
+                                                                        PASS
+39 上报检测-未充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 01 01 86 A5 C3 00 0D 00 00 A0 41 00 01 01 01 8B A5 C3 00 0D 00 00 A0 41 00 02 01 01 88 A5 C3 00 0D 00 00 A0 41 00 02 03 01 8A 
+PASS,返回正确状态关键字：A041000201
+TestTime:365.6292ms
+                                                                        PASS
+40 上报检测-加热按键检测
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Wait TimeOut, 15seconds
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+PASS,返回正确状态关键字：A04102
+TestTime:5071.479ms
+                                                                        PASS
+45 关闭主串口
+TestTime:28.9246ms
+                                                                        PASS
+46 关闭电气参数检测串口
+TestTime:23.2307ms
+                                                                        PASS
+47 Deinit
+TestTime:28.2685ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:27.7571135
+

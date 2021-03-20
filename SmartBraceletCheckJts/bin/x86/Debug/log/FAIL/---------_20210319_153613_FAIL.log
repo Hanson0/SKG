@@ -1,0 +1,166 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 15:36:13
+
+
+1 Init
+TestTime:30.9174ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:142.0034ms
+                                                                        PASS
+3 打开主串口
+TestTime:141.1803ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:154.5968ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+校验位核验正确,返回校验位:47,计算校验位:47
+应答报文格式正确
+TestTime:678.1963ms
+                                                                        PASS
+13 AT-获取EMS1
+AT Commond=AT+EMS1?
+AT Response=EMS1=31.423
+OK
+
+TestTime:1000.8043ms
+                                                                        PASS
+14 检查EMS1
+EMS1的值：31.42，在设定范围：1 ~ 50之间 PASS 
+
+TestTime:67.3336ms
+                                                                        PASS
+15 发SKG控制指令-EMS24
+Tx:A5 C3 00 1A 00 00 00 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E1 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 41 
+校验位核验正确,返回校验位:41,计算校验位:41
+应答报文格式正确
+TestTime:591.3595ms
+                                                                        PASS
+16 AT-获取EMS2
+AT Commond=AT+EMS2?
+AT Response=EMS2=32.238
+OK
+
+TestTime:266.2553ms
+                                                                        PASS
+17 检查EMS2
+EMS2的值：32.23，在设定范围：1 ~ 60之间 PASS 
+
+TestTime:22.727ms
+                                                                        PASS
+27 AT-控制继电器电压输出5V
+AT Commond=AT+VO=1!
+AT Response=VO=1
+OK
+
+TestTime:275.8093ms
+                                                                        PASS
+28 上报检测-充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 03 01 89 A5 C3 00 0D 00 00 A0 41 00 01 01 01 8B 
+包含关键字：A041000103
+TestTime:370.0912ms
+                                                                        PASS
+29 AT-读取电量值
+AT Commond=AT+CRT1?
+AT Response=CRT1=0.004
+OK
+
+TestTime:370.5285ms
+                                                                        PASS
+30 检查CRT值
+CRT1的值：0.004，在设定范围：0 ~ 900之间 PASS 
+
+TestTime:23.1797ms
+                                                                        PASS
+31 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:262.2728ms
+                                                                        PASS
+32 上报检测-未充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 00 02 01 01 88 A5 C3 00 0D 00 00 A0 41 00 02 03 01 8A 
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Fail
+TestTime:3866.7919ms
+                                                                        FAIL
+33 上报检测-加热按键检测
+TestTime:20.9814ms
+                                                                        SKIP
+37 关闭主串口
+TestTime:14.3891ms
+                                                                        PASS
+38 关闭电气参数检测串口
+TestTime:12.2049ms
+                                                                        PASS
+39 Deinit
+TestTime:16.0078ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第32项:
+上报检测-未充电检测
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 50
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:08.8715037
+

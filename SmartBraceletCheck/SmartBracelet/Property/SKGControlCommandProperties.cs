@@ -47,7 +47,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         private EnumVibrationControl vibrationControl15;
         private EnumVibrationControl vibrationControl16;
 
-        private EnumVibrationControl redLightControl640nm;
+        private EnumRedControl redLightControl640nm;
         
         private string portName;
 
@@ -78,6 +78,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         public enum EnumPowerOnOffSetting
         {
+            不设置=0,
             开机=1,
             关机=2,
             跳转到bootloader_升级预留 = 3
@@ -85,7 +86,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         public enum EnumLedModeSetting
         {
-            红或橙色LED开=1,
+            不设置 = 0,
+            红或橙色LED开 = 1,
             蓝色LED开=2,
             LED全关=3,
             绿色LED开=4,
@@ -93,6 +95,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         public enum EnumEmsTestSwitch
         {
+            不设置=0,
             开启正反交替脉冲_2电极产品=1,
             关闭=2,
             正反交替脉冲A_B=3,
@@ -103,6 +106,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         public enum EnumHeatingGearControl
         {
+            不设置=0,
             开启42度加热或加热中档 = 1,
             关闭加热 = 2,
             加热低档 = 3,
@@ -127,12 +131,14 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         public enum EnumBtTestOnOffSetting
         {
+            不设置 = 0,
             开启蓝牙测试 = 1,
             关闭蓝牙测试 = 2,
         }
 
         public enum EnumMotorControl
         {
+            不设置 = 0,
             电机输出一段震动 = 1,
             关闭电机 = 2,
             开启1档力度 = 3,
@@ -149,11 +155,18 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         public enum EnumVibrationControl
         {
-            开 = 0,
-            关 = 1,
+            关 = 0,
+            开 = 1,
         }
 
-        
+        public enum EnumRedControl
+        {
+            不设置 = 0,
+            开 = 1,
+            关 = 2,
+        }
+
+
 
         [Category("Head"), Description("命令起始标志")]
         public string Head
@@ -272,120 +285,120 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             set { aginTestTime = value; }
         }
         #region 多路振动电机控制
-        [Category("DataContent"), Description("第1通道振动电机控制")]
-        public EnumVibrationControl VibrationControl1
-        {
-            get { return vibrationControl1; }
-            set { vibrationControl1 = value; }
-        }
+        //[Category("DataContent"), Description("第1通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl1
+        //{
+        //    get { return vibrationControl1; }
+        //    set { vibrationControl1 = value; }
+        //}
 
-        [Category("DataContent"), Description("第2通道振动电机控制")]
-        public EnumVibrationControl VibrationControl2
-        {
-            get { return vibrationControl2; }
-            set { vibrationControl2 = value; }
-        }
-        [Category("DataContent"), Description("第3通道振动电机控制")]
-        public EnumVibrationControl VibrationControl3
-        {
-            get { return vibrationControl3; }
-            set { vibrationControl3 = value; }
-        }
-        [Category("DataContent"), Description("第4通道振动电机控制")]
-        public EnumVibrationControl VibrationControl4
-        {
-            get { return vibrationControl4; }
-            set { vibrationControl4 = value; }
-        }
-        [Category("DataContent"), Description("第5通道振动电机控制")]
-        public EnumVibrationControl VibrationControl5
-        {
-            get { return vibrationControl5; }
-            set { vibrationControl5 = value; }
-        }
-        [Category("DataContent"), Description("第6通道振动电机控制")]
-        public EnumVibrationControl VibrationControl6
-        {
-            get { return vibrationControl6; }
-            set { vibrationControl6 = value; }
-        }
-        [Category("DataContent"), Description("第7通道振动电机控制")]
-        public EnumVibrationControl VibrationControl7
-        {
-            get { return vibrationControl7; }
-            set { vibrationControl7 = value; }
-        }
-        [Category("DataContent"), Description("第8通道振动电机控制")]
-        public EnumVibrationControl VibrationControl8
-        {
-            get { return vibrationControl8; }
-            set { vibrationControl8 = value; }
-        }
-        [Category("DataContent"), Description("第9通道振动电机控制")]
-        public EnumVibrationControl VibrationControl9
-        {
-            get { return vibrationControl9; }
-            set { vibrationControl9 = value; }
-        }
-        [Category("DataContent"), Description("第10通道振动电机控制")]
-        public EnumVibrationControl VibrationControl10
-        {
-            get { return vibrationControl10; }
-            set { vibrationControl10 = value; }
-        }
-        [Category("DataContent"), Description("第11通道振动电机控制")]
-        public EnumVibrationControl VibrationControl11
-        {
-            get { return vibrationControl11; }
-            set { vibrationControl11 = value; }
-        }
-        [Category("DataContent"), Description("第12通道振动电机控制")]
-        public EnumVibrationControl VibrationControl12
-        {
-            get { return vibrationControl12; }
-            set { vibrationControl12 = value; }
-        }
-        [Category("DataContent"), Description("第13通道振动电机控制")]
-        public EnumVibrationControl VibrationControl13
-        {
-            get { return vibrationControl13; }
-            set { vibrationControl13 = value; }
-        }
-        [Category("DataContent"), Description("第14通道振动电机控制")]
-        public EnumVibrationControl VibrationControl14
-        {
-            get { return vibrationControl14; }
-            set { vibrationControl14 = value; }
-        }
-        [Category("DataContent"), Description("第15通道振动电机控制")]
-        public EnumVibrationControl VibrationControl15
-        {
-            get { return vibrationControl15; }
-            set { vibrationControl15 = value; }
-        }
-        [Category("DataContent"), Description("第16通道振动电机控制")]
-        public EnumVibrationControl VibrationControl16
-        {
-            get { return vibrationControl16; }
-            set { vibrationControl16 = value; }
-        }
+        //[Category("DataContent"), Description("第2通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl2
+        //{
+        //    get { return vibrationControl2; }
+        //    set { vibrationControl2 = value; }
+        //}
+        //[Category("DataContent"), Description("第3通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl3
+        //{
+        //    get { return vibrationControl3; }
+        //    set { vibrationControl3 = value; }
+        //}
+        //[Category("DataContent"), Description("第4通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl4
+        //{
+        //    get { return vibrationControl4; }
+        //    set { vibrationControl4 = value; }
+        //}
+        //[Category("DataContent"), Description("第5通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl5
+        //{
+        //    get { return vibrationControl5; }
+        //    set { vibrationControl5 = value; }
+        //}
+        //[Category("DataContent"), Description("第6通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl6
+        //{
+        //    get { return vibrationControl6; }
+        //    set { vibrationControl6 = value; }
+        //}
+        //[Category("DataContent"), Description("第7通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl7
+        //{
+        //    get { return vibrationControl7; }
+        //    set { vibrationControl7 = value; }
+        //}
+        //[Category("DataContent"), Description("第8通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl8
+        //{
+        //    get { return vibrationControl8; }
+        //    set { vibrationControl8 = value; }
+        //}
+        //[Category("DataContent"), Description("第9通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl9
+        //{
+        //    get { return vibrationControl9; }
+        //    set { vibrationControl9 = value; }
+        //}
+        //[Category("DataContent"), Description("第10通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl10
+        //{
+        //    get { return vibrationControl10; }
+        //    set { vibrationControl10 = value; }
+        //}
+        //[Category("DataContent"), Description("第11通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl11
+        //{
+        //    get { return vibrationControl11; }
+        //    set { vibrationControl11 = value; }
+        //}
+        //[Category("DataContent"), Description("第12通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl12
+        //{
+        //    get { return vibrationControl12; }
+        //    set { vibrationControl12 = value; }
+        //}
+        //[Category("DataContent"), Description("第13通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl13
+        //{
+        //    get { return vibrationControl13; }
+        //    set { vibrationControl13 = value; }
+        //}
+        //[Category("DataContent"), Description("第14通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl14
+        //{
+        //    get { return vibrationControl14; }
+        //    set { vibrationControl14 = value; }
+        //}
+        //[Category("DataContent"), Description("第15通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl15
+        //{
+        //    get { return vibrationControl15; }
+        //    set { vibrationControl15 = value; }
+        //}
+        //[Category("DataContent"), Description("第16通道振动电机控制")]
+        //public EnumVibrationControl VibrationControl16
+        //{
+        //    get { return vibrationControl16; }
+        //    set { vibrationControl16 = value; }
+        //}
 
         #endregion
 
-        [Category("DataContent"), Description("640nm 红光控制,G7 新增功能")]
-        public EnumVibrationControl RedLightControl640nm
-        {
-            get { return redLightControl640nm; }
-            set { redLightControl640nm = value; }
-        }
+        //[Category("DataContent"), Description("640nm 红光控制,G7 新增功能")]
+        //public EnumRedControl RedLightControl640nm
+        //{
+        //    get { return redLightControl640nm; }
+        //    set { redLightControl640nm = value; }
+        //}
 
-        [Category("DataLength"), Description("数据部分长度")]
-        public int DataLength
-        {
-            get { return dataLength; }
-            set { dataLength = value; }
-        }
-        
+        //[Category("DataLength"), Description("数据部分长度")]
+        //public int DataLength
+        //{
+        //    get { return dataLength; }
+        //    set { dataLength = value; }
+        //}
+
 
         [Category("SerialPort"), Description("PortName"), TypeConverter(typeof(PortNamesConverter))]
         public string PortName

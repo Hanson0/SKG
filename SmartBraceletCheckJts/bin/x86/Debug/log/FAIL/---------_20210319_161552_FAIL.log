@@ -1,0 +1,109 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 16:15:52
+
+
+1 Init
+TestTime:15.9295ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:62.8326ms
+                                                                        PASS
+3 打开主串口
+TestTime:138.6307ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:1522.1514ms
+                                                                        PASS
+5 检测SKG产品上电中...
+超时：System.Func`1[System.Boolean]
+TestTime:30359.5955ms
+                                                                        FAIL
+12 发SKG控制指令-EMS13
+TestTime:12.4214ms
+                                                                        SKIP
+13 AT-获取EMS1
+TestTime:13.8926ms
+                                                                        SKIP
+14 检查EMS1
+TestTime:10.9356ms
+                                                                        SKIP
+15 发SKG控制指令-EMS24
+TestTime:16.8785ms
+                                                                        SKIP
+16 AT-获取EMS2
+TestTime:11.968ms
+                                                                        SKIP
+17 检查EMS2
+TestTime:10.9302ms
+                                                                        SKIP
+27 AT-控制继电器电压输出5V
+TestTime:14.9255ms
+                                                                        SKIP
+28 上报检测-充电检测
+TestTime:17.883ms
+                                                                        SKIP
+29 AT-读取电量值
+TestTime:18.4701ms
+                                                                        SKIP
+30 检查CRT值
+TestTime:16.7707ms
+                                                                        SKIP
+31 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=SYS on!
+VO=0
+OK
+
+TestTime:260.7042ms
+                                                                        PASS
+32 上报检测-未充电检测
+TestTime:17.242ms
+                                                                        SKIP
+33 上报检测-加热按键检测
+TestTime:15.8804ms
+                                                                        SKIP
+37 关闭主串口
+TestTime:20.5048ms
+                                                                        PASS
+38 关闭电气参数检测串口
+TestTime:12.0528ms
+                                                                        PASS
+39 Deinit
+TestTime:20.7064ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第5项:
+检测SKG产品上电中...
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 130
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:32.9995975
+

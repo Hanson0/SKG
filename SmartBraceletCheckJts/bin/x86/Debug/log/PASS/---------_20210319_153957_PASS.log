@@ -1,0 +1,175 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 15:39:57
+
+
+1 Init
+TestTime:16.009ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:63.5039ms
+                                                                        PASS
+3 打开主串口
+TestTime:130.3864ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:123.5431ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+RX校验位核验正确,返回校验位:47,计算校验位:47
+应答报文格式正确
+TestTime:577.3448ms
+                                                                        PASS
+13 AT-获取EMS1
+AT Commond=AT+EMS1?
+AT Response=EMS1=33.595
+OK
+
+TestTime:948.4115ms
+                                                                        PASS
+14 检查EMS1
+EMS1的值：33.59，在设定范围：1 ~ 50之间 PASS 
+
+TestTime:25.2788ms
+                                                                        PASS
+15 发SKG控制指令-EMS24
+Tx:A5 C3 00 1A 00 00 00 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E1 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 41 
+RX校验位核验正确,返回校验位:41,计算校验位:41
+应答报文格式正确
+TestTime:562.3482ms
+                                                                        PASS
+16 AT-获取EMS2
+AT Commond=AT+EMS2?
+AT Response=EMS2=30.707
+OK
+
+TestTime:261.9153ms
+                                                                        PASS
+17 检查EMS2
+EMS2的值：30.7，在设定范围：1 ~ 60之间 PASS 
+
+TestTime:32.8146ms
+                                                                        PASS
+27 AT-控制继电器电压输出5V
+AT Commond=AT+VO=1!
+AT Response=VO=1
+OK
+
+TestTime:279.2743ms
+                                                                        PASS
+28 上报检测-充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 03 01 89 A5 C3 00 0D 00 00 A0 41 00 01 01 01 8B 
+包含关键字：A041000103
+TestTime:308.9439ms
+                                                                        PASS
+29 AT-读取电量值
+AT Commond=AT+CRT1?
+AT Response=CRT1=0.023
+OK
+
+TestTime:378.4705ms
+                                                                        PASS
+30 检查CRT值
+CRT1的值：0.023，在设定范围：0 ~ 900之间 PASS 
+
+TestTime:30.6071ms
+                                                                        PASS
+31 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:281.0621ms
+                                                                        PASS
+32 上报检测-未充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 00 02 01 01 88 A5 C3 00 0D 00 00 A0 41 00 02 03 01 8A 
+包含关键字：A041000201
+TestTime:337.1182ms
+                                                                        PASS
+33 上报检测-加热按键检测
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+包含关键字：A04102
+TestTime:4932.0544ms
+                                                                        PASS
+37 关闭主串口
+TestTime:17.9525ms
+                                                                        PASS
+38 关闭电气参数检测串口
+TestTime:11.9678ms
+                                                                        PASS
+39 Deinit
+TestTime:19.2763ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:09.7507885
+

@@ -1,0 +1,106 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 16:16:34
+
+
+1 Init
+TestTime:24.9355ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:62.8311ms
+                                                                        PASS
+3 打开主串口
+TestTime:122.7033ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:138.8063ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:
+Response Length Not enough
+TestTime:682.0011ms
+                                                                        FAIL
+13 AT-获取EMS1
+TestTime:51.6076ms
+                                                                        SKIP
+14 检查EMS1
+TestTime:18.9485ms
+                                                                        SKIP
+15 发SKG控制指令-EMS24
+TestTime:13.9652ms
+                                                                        SKIP
+16 AT-获取EMS2
+TestTime:15.9565ms
+                                                                        SKIP
+17 检查EMS2
+TestTime:14.4928ms
+                                                                        SKIP
+27 AT-控制继电器电压输出5V
+TestTime:11.0088ms
+                                                                        SKIP
+28 上报检测-充电检测
+TestTime:18.0242ms
+                                                                        SKIP
+29 AT-读取电量值
+TestTime:13.6168ms
+                                                                        SKIP
+30 检查CRT值
+TestTime:15.958ms
+                                                                        SKIP
+31 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:261.5671ms
+                                                                        PASS
+32 上报检测-未充电检测
+TestTime:14.4097ms
+                                                                        SKIP
+33 上报检测-加热按键检测
+TestTime:15.9865ms
+                                                                        SKIP
+37 关闭主串口
+TestTime:13.352ms
+                                                                        PASS
+38 关闭电气参数检测串口
+TestTime:14.5771ms
+                                                                        PASS
+39 Deinit
+TestTime:15.6399ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第12项:
+发SKG控制指令-EMS13
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 416
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:01.9809083
+

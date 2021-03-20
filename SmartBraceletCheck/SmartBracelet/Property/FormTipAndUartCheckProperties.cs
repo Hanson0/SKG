@@ -24,6 +24,12 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         private int countDownTime = 30000;
 
         private string tips;
+        private EnumUartDataType uartDataType;
+        public enum EnumUartDataType
+        {
+            String,
+            Hex,
+        }
 
         //private Keys keyPass;
 
@@ -40,6 +46,14 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             get { return countDownTime; }
             set { countDownTime = value; }
         }
+
+        [Category("Common"), Description("串口数据类型")]
+        public EnumUartDataType UartDataType
+        {
+            get { return uartDataType; }
+            set { uartDataType = value; }
+        }
+
 
         [Category("Common"), Description("tips")]
         public string Tips

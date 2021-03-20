@@ -1,0 +1,76 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-17, Test Time: 22:29:32
+
+
+1 Init
+TestTime:36.3981ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=123456789012
+TestTime:71.8027ms
+                                                                        PASS
+3 打开主串口
+TestTime:135.0209ms
+                                                                        PASS
+5 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 32 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A3 
+应答报文格式正确
+TestTime:2051.2917ms
+                                                                        PASS
+6 检查SKG的查询内容
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+硬件版本号:0100,与设置版本号:0100一致
+软件版本号:0001000A,与设置版本号:0001000A一致
+MCU ID:49F9220000001713130C0000
+BLE MAC:804B508200F4
+电压值(mV)：：3890，在设定范围：500 ~ 5000之间 PASS 
+
+NTC1 开路或短路,NTC温度输出 0x8000
+TestTime:107537.4204ms
+                                                                        FAIL
+7 发送SKG控制指令
+TestTime:19.9471ms
+                                                                        SKIP
+18 关闭主串口
+TestTime:14.9606ms
+                                                                        PASS
+20 Deinit
+TestTime:16.9522ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第6项:
+检查SKG的查询内容
+AILinkFactoryAuto.Task.BaseException: NTC1 开路或短路,NTC温度输出 0x8000
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgQueryCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SkgQueryCheckExecuter.cs:行号 160
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:01:50.1821797
+

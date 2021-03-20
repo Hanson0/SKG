@@ -4,6 +4,7 @@ using AILinkFactoryAuto.Dut.AtCommand.Property;
 using AILinkFactoryAuto.Task.Executer;
 using AILinkFactoryAuto.Task.Property;
 using AILinkFactoryAuto.Task.SmartBracelet.Property;
+using AILinkFactoryAuto.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -166,6 +167,24 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //    throw new BaseException("超时：");
             //}
             #endregion
+            //发命令后一直循环接收->检验->拼接，超过500ms还没检验通过则超时FAIL
+            //TimeUtils.Execute(() =>
+            //{
+            //    comDut.Write(config.TestPowerOnAT + endLine);
+            //    Thread.Sleep(config.AtCommandInterval);
+            //    response += comDut.ReadExisting();
+            //    if (!string.IsNullOrEmpty(config.AtCommandOk))
+            //    {
+            //        if (response.Contains(config.AtCommandOk))
+            //        {
+            //            log.Info(string.Format("检测到产品上电，AT response=[{0}]  contain =[{1}]", response, config.AtCommandOk));
+            //            //跳出循环执行
+            //            return true;
+            //        }
+            //    }
+            //    //继续循环执行
+            //    return false;
+            //}, config.Timeout);
 
             int n = comDut.BytesToRead;
             byte[] buf = new byte[n];
@@ -330,16 +349,18 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             Array.Copy(buf, 0, bufOutOxr, 0, buf.Length - 1);
             byte xor = ByteToXOR(bufOutOxr);
 
-            if (!(buf[n-1] != xor))
+            if (buf[n-1] != xor)
             {
-                throw new BaseException(string.Format("校验不正确"));
+                throw new BaseException(string.Format("核验RX的校验位：错误,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
             }
+            log.Info(string.Format("核验RX的校验位：正确,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
 
 
 
-            //数据内容 32个字节
-            byte[] dataArry = new byte[config.DataLength];
-            Array.Copy(buf, 8, dataArry, 0, config.DataLength);
+            //数据内容 32个字节——长度是不固定的
+            byte[] dataArry = new byte[iTotalLength-9];//config.DataLength
+            Array.Copy(buf, 8, dataArry, 0, iTotalLength - 9);//config.DataLength
+
             //添加到全局变量中
             if (config.GlobalVariblesKey != null)
             {
@@ -363,7 +384,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                     string key = matchKey.Groups[1].ToString();
 
                     configGv.Add(key, dataArry);
-                    log.Info("应答报文正确");
+                    log.Info("应答报文格式检查PASS");
                 }
             }
 

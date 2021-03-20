@@ -1,0 +1,1887 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:04:11
+
+
+
+1 Init
+
+TestTime:22.1907ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:98.4862ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:149.7408ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 22 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 B3 
+
+应答报文格式正确
+
+TestTime:658.4912ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3874，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:2918.2348ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:11:43
+
+
+
+1 Init
+
+TestTime:14.9613ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:54.8525ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:135.6179ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 3C 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 AD 
+
+应答报文格式正确
+
+TestTime:582.5759ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3900，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:108.4773ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:12:29
+
+
+
+1 Init
+
+TestTime:15.9579ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:60.8365ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:138.1541ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 46 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 D7 
+
+应答报文格式正确
+
+TestTime:569.0148ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3910，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:135.994ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:20:51
+
+
+
+1 Init
+
+TestTime:17.9532ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:52.8584ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:118.8155ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 33 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A2 
+
+应答报文格式正确
+
+TestTime:580.6433ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3891，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:106.1264ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:21:50
+
+
+
+1 Init
+
+TestTime:14.962ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:66.8216ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:122.2595ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 41 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 D0 
+
+应答报文格式正确
+
+TestTime:571.4452ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3905，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:116.6541ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:27:00
+
+
+
+1 Init
+
+TestTime:14.567ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:49.8683ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:128.6656ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 39 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A8 
+
+应答报文格式正确
+
+TestTime:576.765ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3897，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:143.323ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:28:09
+
+
+
+1 Init
+
+TestTime:17.9512ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:59.8396ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:128.5745ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 35 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A4 
+
+应答报文格式正确
+
+TestTime:568.071ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3893，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:131.5313ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:34:08
+
+
+
+1 Init
+
+TestTime:15.9571ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:54.8532ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:123.1988ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 39 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A8 
+
+应答报文格式正确
+
+TestTime:594.891ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3897，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:137.529ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:34:49
+
+
+
+1 Init
+
+TestTime:19.947ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:64.8244ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:120.6244ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 3F 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 AE 
+
+应答报文格式正确
+
+TestTime:573.6182ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3903，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:128.591ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+字符串的末尾有其他无法分析的字符。
+
+TestTime:171011.6216ms
+                                                                        FAIL
+
+8 用户判断
+
+TestTime:18.4521ms
+                                                                        SKIP
+
+18 关闭主串口
+
+TestTime:13.4114ms
+                                                                        PASS
+
+20 Deinit
+
+TestTime:13.0877ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第7项:
+发送SKG控制指令
+System.FormatException: 字符串的末尾有其他无法分析的字符。
+   在 System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   在 System.Convert.ToByte(String value, Int32 fromBase)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.strToToHexByte(String hexString) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 631
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 294
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:02:52.2108111
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:38:05
+
+
+
+1 Init
+
+TestTime:18.9494ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:74.8018ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:131.6474ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 36 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A7 
+
+应答报文格式正确
+
+TestTime:585.1103ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3894，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:134.2691ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:39:38
+
+
+
+1 Init
+
+TestTime:21.9402ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:61.8363ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:123.667ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 51 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 C0 
+
+应答报文格式正确
+
+TestTime:578.3042ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3921，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:113.6218ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:40:47
+
+
+
+1 Init
+
+TestTime:15.9578ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:60.8367ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:126.6524ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 52 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 C3 
+
+应答报文格式正确
+
+TestTime:600.6616ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3922，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:136.2163ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+Tx:A5 C3 00 1D 00 00 00 40 01 01 01 03 E8 03 E8 03 E8 01 01 00 00 01 03 00 03 C0 05 01 
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:48:51
+
+
+
+1 Init
+
+TestTime:13.9617ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:55.8515ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:139.5527ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 46 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 D7 
+
+应答报文格式正确
+
+TestTime:583.8708ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3910，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:123.612ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+Tx:A5 C3 00 1D 00 00 00 40 01 01 01 03 E8 03 E8 03 E8 01 01 00 00 01 03 00 03 C0 05 01 14 
+
+Rx:
+
+Response Length Not enough
+
+TestTime:40703.88ms
+                                                                        FAIL
+
+8 用户判断
+
+TestTime:15.0021ms
+                                                                        SKIP
+
+18 关闭主串口
+
+TestTime:12.2837ms
+                                                                        PASS
+
+20 Deinit
+
+TestTime:18.3922ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第7项:
+发送SKG控制指令
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 459
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:00:41.8638449
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:54:03
+
+
+
+1 Init
+
+TestTime:19.9475ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:69.8149ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:122.6701ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 4F 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 DE 
+
+应答报文格式正确
+
+TestTime:572.3534ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3919，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:175.3138ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+Tx:A5 C3 00 1D 00 00 00 40 01 01 01 03 E8 03 E8 03 E8 01 01 00 00 01 03 00 03 D0 
+
+Rx:
+
+Response Length Not enough
+
+TestTime:2323.7414ms
+                                                                        FAIL
+
+8 用户判断
+
+TestTime:10.7488ms
+                                                                        SKIP
+
+18 关闭主串口
+
+TestTime:12.8444ms
+                                                                        PASS
+
+20 Deinit
+
+TestTime:12.9649ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第7项:
+发送SKG控制指令
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 416
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:00:03.5226359
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 10:58:25
+
+
+
+1 Init
+
+TestTime:14.2647ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:66.8213ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:120.1752ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 2B 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 BA 
+
+应答报文格式正确
+
+TestTime:551.3671ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3883，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:116.4599ms
+                                                                        PASS
+
+7 发送SKG控制指令
+
+Tx:A5 C3 00 1D 00 00 00 40 01 01 01 03 E8 03 E8 03 E8 03 01 00 00 01 03 00 03 D2 
+
+Rx:
+
+Response Length Not enough
+
+TestTime:775.9522ms
+                                                                        FAIL
+
+8 用户判断
+
+TestTime:12.0093ms
+                                                                        SKIP
+
+18 关闭主串口
+
+TestTime:15.9395ms
+                                                                        PASS
+
+20 Deinit
+
+TestTime:14.7387ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第7项:
+发送SKG控制指令
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 416
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:00:01.8870181
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:25:15
+
+
+
+1 Init
+
+TestTime:28.9232ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:82.7792ms
+                                                                        PASS
+
+3 打开主串口
+
+超时：System.Func`1[System.Boolean]
+
+TestTime:10420.5477ms
+                                                                        FAIL
+
+5 发送SKG查询指令
+
+TestTime:29.3098ms
+                                                                        SKIP
+
+6 检查SKG的查询内容
+
+TestTime:37.2954ms
+                                                                        SKIP
+
+13 SKG授权
+
+TestTime:23.3997ms
+                                                                        SKIP
+
+18 发送SKG授权指令
+
+TestTime:12.1032ms
+                                                                        SKIP
+
+19 关闭主串口
+
+给定关键字不在字典中。
+
+TestTime:276.5691ms
+                                                                        FAIL
+
+21 Deinit
+
+TestTime:13.7304ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第3项:
+打开主串口
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\OpenPhoneExecuter.cs:行号 98
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:00:11.154494
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:25:55
+
+
+
+1 Init
+
+TestTime:14.9596ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=123456789012
+
+TestTime:57.7477ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:124.37ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 39 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A8 
+
+校验位正确,返回校验位:168,计算校验位:168
+
+应答报文格式正确
+
+TestTime:637.6994ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3897，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:107581.5336ms
+                                                                        PASS
+
+13 SKG授权
+
+Tx:A5 C3 00 23 00 00 00 23 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 65 
+
+Rx:
+
+Response Length Not enough
+
+TestTime:140352.5195ms
+                                                                        FAIL
+
+19 关闭主串口
+
+TestTime:16.9204ms
+                                                                        PASS
+
+21 Deinit
+
+TestTime:15.0458ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第13项:
+SKG授权
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 451
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:04:09.0075508
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:46:27
+
+
+
+1 Init
+
+TestTime:35.9385ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=1234567890ABC
+
+MAC invalid
+
+TestTime:302.1961ms
+                                                                        FAIL
+
+3 打开主串口
+
+TestTime:9.9165ms
+                                                                        SKIP
+
+5 发送SKG查询指令
+
+TestTime:8.9736ms
+                                                                        SKIP
+
+6 检查SKG的查询内容
+
+TestTime:15.0006ms
+                                                                        SKIP
+
+13 SKG授权-SWD
+
+TestTime:10.9707ms
+                                                                        SKIP
+
+14 SKG授权-PCBA-ID
+
+TestTime:11.2438ms
+                                                                        SKIP
+
+16 回读确保授权写入成功-发送查询指令
+
+TestTime:27.9015ms
+                                                                        SKIP
+
+17 回读确保授权写入成功-查询内容检查
+
+TestTime:11.0084ms
+                                                                        SKIP
+
+20 关闭主串口
+
+给定关键字不在字典中。
+
+TestTime:231.1741ms
+                                                                        FAIL
+
+22 Deinit
+
+TestTime:13.2607ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: MAC invalid
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckMac(String mac)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:00:00.8905602
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:46:43
+
+
+
+1 Init
+
+TestTime:15.9575ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:57.8449ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:135.0265ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 35 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 A4 
+
+校验位正确,返回校验位:164,计算校验位:164
+
+应答报文格式正确
+
+TestTime:577.6103ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3893，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:2555.8692ms
+                                                                        PASS
+
+13 SKG授权-SWD
+
+Tx:A5 C3 00 23 00 00 00 23 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 65 
+
+Rx:
+
+Response Length Not enough
+
+TestTime:4696.4085ms
+                                                                        FAIL
+
+14 SKG授权-PCBA-ID
+
+TestTime:11.8069ms
+                                                                        SKIP
+
+16 回读确保授权写入成功-发送查询指令
+
+TestTime:10.9416ms
+                                                                        SKIP
+
+17 回读确保授权写入成功-查询内容检查
+
+TestTime:10.0079ms
+                                                                        SKIP
+
+20 关闭主串口
+
+TestTime:13.4798ms
+                                                                        PASS
+
+22 Deinit
+
+TestTime:14.9255ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第13项:
+SKG授权-SWD
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 451
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:00:08.3841455
+
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:47:26
+
+
+
+1 Init
+
+TestTime:12.5793ms
+                                                                        PASS
+
+2 扫码枪扫描标签
+
+IMEI=
+
+MEID=
+
+SN=
+
+MAC=
+
+TestTime:51.8789ms
+                                                                        PASS
+
+3 打开主串口
+
+TestTime:124.0985ms
+                                                                        PASS
+
+5 发送SKG查询指令
+
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 3E 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 AF 
+
+校验位正确,返回校验位:175,计算校验位:175
+
+应答报文格式正确
+
+TestTime:567.0159ms
+                                                                        PASS
+
+6 检查SKG的查询内容
+
+未完成过PCBA测试
+
+未完成过整机测试
+
+未完成过老化测试
+
+硬件版本号:0100,与设置版本号:0100一致
+
+软件版本号:0001000A,与设置版本号:0001000A一致
+
+MCU ID:49F9220000001713130C0000
+
+BLE MAC:804B508200F4
+
+电压值(mV)：：3902，在设定范围：500 ~ 5000之间 PASS 
+
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+
+TestTime:1350.9714ms
+                                                                        PASS
+
+14 SKG授权-PCBA-ID
+
+Tx:A5 C3 00 23 00 00 00 23 02 0D 31 32 33 34 35 36 37 38 39 30 41 42 43 00 00 00 00 00 00 00 00 00 00 00 28 
+
+Rx:
+
+Response Length Not enough
+
+TestTime:213651.5124ms
+                                                                        FAIL
+
+16 回读确保授权写入成功-发送查询指令
+
+TestTime:12.4727ms
+                                                                        SKIP
+
+17 回读确保授权写入成功-查询内容检查
+
+TestTime:10.9384ms
+                                                                        SKIP
+
+20 关闭主串口
+
+TestTime:14.1734ms
+                                                                        PASS
+
+22 Deinit
+
+TestTime:12.4664ms
+                                                                        PASS
+
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+
+第14项:
+SKG授权-PCBA-ID
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 451
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+
+all test time:0:03:36.0335955
+

@@ -123,7 +123,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             command += config.Head;
 
             //int型的处理-转2字节byte,连接到16进制字符串中
-            int allLength = 9 + config.DataLength;
+            int allLength = 9 + 17; //config.DataLength
             byte[] byteTemp = new byte[2];
             byte[] oneByteTemp = new byte[1];
 
@@ -135,106 +135,175 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
             //DataContent部分
             //枚举类的处理
-            int intTemp = (int)config.PowerOnOffSetting;
+            int intTemp = (int)config.PowerOnOffSetting;//开关机设置
+            if (config.PowerOnOffSetting != 0)
+            {
+                log.Info(string.Format("开关机设置:{0}", config.PowerOnOffSetting));
+            }
             command += intTemp.ToString().PadLeft(2,'0');
 
             intTemp = (int)config.LedModeSetting;
+            if (config.LedModeSetting != 0)
+            {
+                log.Info(string.Format("LED 模式设置:{0}", config.LedModeSetting));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.EmsTestSwitch;
+            if (config.EmsTestSwitch != 0)
+            {
+                log.Info(string.Format("EMS 测试开关设置:{0}", config.EmsTestSwitch));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             //int型的处理
             byteTemp = intToBytes(config.EmsPWSetting);
+            if (config.EmsPWSetting!=0)
+            {
+                log.Info(string.Format("EMS 脉宽设置:{0}uS", config.EmsPWSetting));
+            }
             command += byteToHexStr(byteTemp);
 
             byteTemp = intToBytes(config.EmsFreqSetting);
+            if (config.EmsFreqSetting != 0)
+            {
+                log.Info(string.Format("EMS 频率设置:{0}Hz", config.EmsFreqSetting));
+            }
             command += byteToHexStr(byteTemp);
 
             byteTemp = intToBytes(config.EmsAmplitudeSetting);
+            if (config.EmsAmplitudeSetting != 0)
+            {
+                log.Info(string.Format("EMS 幅度设置:{0}mV", config.EmsAmplitudeSetting));
+            }
+
             command += byteToHexStr(byteTemp);
 
             //枚举类的处理
             intTemp = (int)config.HeatingGearControl;
+            if (config.HeatingGearControl != 0)
+            {
+                log.Info(string.Format("加热档位控制:{0}", config.HeatingGearControl));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.VoiceControl;
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.WritePcbaFinishFlag;
+            if (config.WritePcbaFinishFlag != 0)
+            {
+                log.Info(string.Format("PCBA 测试完成标志:{0}", config.WritePcbaFinishFlag));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.WholeMachineFinishFlag;
+            if (config.WholeMachineFinishFlag != 0)
+            {
+                log.Info(string.Format("PCBA 测试完成标志:{0}", config.WholeMachineFinishFlag));
+            }
+
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.BtTestOnOffSetting;
+            if (config.BtTestOnOffSetting != 0)
+            {
+                log.Info(string.Format("蓝牙模块测试:{0}", config.BtTestOnOffSetting));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.MotorControl;
+            if (config.MotorControl != 0)
+            {
+                log.Info(string.Format("电机控制:{0}", config.MotorControl));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             intTemp = (int)config.AginTestOnOffSetting;
+            if (config.AginTestOnOffSetting != 0)
+            {
+                log.Info(string.Format("老化测试开关:{0}", config.AginTestOnOffSetting));
+            }
             command += intTemp.ToString().PadLeft(2, '0');
 
             //int型的处理-转为1字节byte
             oneByteTemp = intToOneBytes(config.AginTestTime);
-            command += byteToHexStr(byteTemp);
+            if (config.AginTestTime != 0)
+            {
+                log.Info(string.Format("老化测试时间:{0}分钟", config.AginTestTime*10));
+            }
+            command += byteToHexStr(oneByteTemp);
             #region 多路振动控制
-            intTemp = (int)config.VibrationControl1;
-            command += intTemp.ToString().PadLeft(2, '0');
+            //高位在前，第16位，为第16个电机
+            if (true)
+            {
+                //int bit1 = (int)config.VibrationControl16;
+                //bit1 = bit1 << 7;
 
-            intTemp = (int)config.VibrationControl2;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit2 = (int)config.VibrationControl15;
+                //bit2 = bit2 << 6;
 
-            intTemp = (int)config.VibrationControl3;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit3 = (int)config.VibrationControl14;
+                //bit3 = bit3 << 5;
 
-            intTemp = (int)config.VibrationControl4;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit4 = (int)config.VibrationControl13;
+                //bit4 = bit4 << 4;
 
-            intTemp = (int)config.VibrationControl5;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit5 = (int)config.VibrationControl12;
+                //bit5 = bit5 << 3;
 
-            intTemp = (int)config.VibrationControl6;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit6 = (int)config.VibrationControl11;
+                //bit6 = bit6 << 2;
 
-            intTemp = (int)config.VibrationControl7;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit7 = (int)config.VibrationControl10;
+                //bit7 = bit7 << 1;
 
-            intTemp = (int)config.VibrationControl8;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int bit8 = (int)config.VibrationControl9;
 
-            intTemp = (int)config.VibrationControl9;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //int byte2 = bit1 | bit2 | bit3 | bit4 | bit5 | bit6 | bit7 | bit8;
+                //command += byte2.ToString("X");//.PadLeft(2, '0')
 
-            intTemp = (int)config.VibrationControl10;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit1 = (int)config.VibrationControl8;
+                //bit1 = bit1 << 7;
 
-            intTemp = (int)config.VibrationControl11;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit2 = (int)config.VibrationControl7;
+                //bit2 = bit2 << 6;
 
-            intTemp = (int)config.VibrationControl12;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit3 = (int)config.VibrationControl6;
+                //bit3 = bit3 << 5;
 
-            intTemp = (int)config.VibrationControl13;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit4 = (int)config.VibrationControl5;
+                //bit4 = bit4 << 4;
 
-            intTemp = (int)config.VibrationControl4;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit5 = (int)config.VibrationControl4;
+                //bit5 = bit5 << 3;
 
-            intTemp = (int)config.VibrationControl5;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit6 = (int)config.VibrationControl3;
+                //bit6 = bit6 << 2;
 
-            intTemp = (int)config.VibrationControl6;
-            command += intTemp.ToString().PadLeft(2, '0');
+                //bit7 = (int)config.VibrationControl2;
+                //bit7 = bit7 << 1;
+
+                //bit8 = (int)config.VibrationControl1;
+
+                //int byte1 = bit1 | bit2 | bit3 | bit4 | bit5 | bit6 | bit7 | bit8;
+
+                //command += byte1.ToString("X").PadLeft(2, '0');
+            }
             #endregion
-            intTemp = (int)config.RedLightControl640nm;
-            command += intTemp.ToString().PadLeft(2, '0');
+            #region 640nm 红光控制,G7 新增功能
+            if (true)
+            {
+                //intTemp = (int)config.RedLightControl640nm;
+                //command += intTemp.ToString("X").PadLeft(2, '0');//
+            }
+            #endregion
+            //在加校验位
+            byte[] exceptXor = strToToHexByte(command);
+            byte xor = ByteToXOR(exceptXor);
+            command += xor.ToString("X").PadLeft(2, '0');
 
-
-            //byteToHexStr();
-
-            //byte[] atCommand = strToToHexByte(config.AtCommand);
+            //发送完整控制命令
             byte[] atCommand = strToToHexByte(command);
 
             //string atCommand = PreTranslateAtCommand(config.AtCommand);
@@ -446,18 +515,22 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //异或校验 1字节
             byte[] bufOutOxr = new byte[buf.Length - 1];
             Array.Copy(buf, 0, bufOutOxr, 0, buf.Length - 1);
-            byte xor = ByteToXOR(bufOutOxr);
+            byte retXor = ByteToXOR(bufOutOxr);
 
-            if (!(buf[n - 1] != xor))
+            if (buf[n - 1] != retXor)
             {
-                throw new BaseException(string.Format("Response 校验位不正确"));
+                throw new BaseException(string.Format("核验RX的校验位：错误,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], retXor));
             }
-
+            log.Info(string.Format("核验RX的校验位：正确,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], retXor));
 
 
             //数据内容 32个字节
-            byte[] dataArry = new byte[config.DataLength];
-            Array.Copy(buf, 8, dataArry, 0, config.DataLength);
+            //byte[] dataArry = new byte[config.DataLength];
+            //Array.Copy(buf, 8, dataArry, 0, config.DataLength);
+
+            byte[] dataArry = new byte[iTotalLength - 9];//config.DataLength
+            Array.Copy(buf, 8, dataArry, 0, iTotalLength - 9);//config.DataLength
+
             //添加到全局变量中
             if (config.GlobalVariblesKey != null)
             {
@@ -481,7 +554,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                     string key = matchKey.Groups[1].ToString();
 
                     configGv.Add(key, dataArry);
-                    log.Info("应答报文正确");
+                    log.Info("应答报文格式检查PASS");
                 }
             }
             //检查是否有效果!!!

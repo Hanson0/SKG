@@ -30,6 +30,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
         public void Run(IProperties properties, GlobalDic<string, object> globalDic)
         {
+            log = globalDic[typeof(ILog).ToString()] as ILog;
+
             SkgQueryCheckProperties config = properties as SkgQueryCheckProperties;
 
             //解析是否收到正确的包,包头，命令，校验位
@@ -55,6 +57,10 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 }
                 else
                 {
+                    if (config.IfCheckFinishTest== SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过PCBA测试)
+                    {
+                        throw new BaseException("未完成过PCBA测试");
+                    }
                     log.Info("未完成过PCBA测试");
                 }
             }
@@ -68,6 +74,11 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 }
                 else
                 {
+                    if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过整机测试)
+                    {
+                        throw new BaseException("未完成过整机测试");
+                    }
+
                     log.Info("未完成过整机测试");
                 }
             }
@@ -81,6 +92,11 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 }
                 else
                 {
+                    if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过老化测试)
+                    {
+                        throw new BaseException("未完成过老化测试");
+                    }
+
                     log.Info("未完成过老化测试");
                 }
             }
@@ -91,7 +107,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             {
                 byte[] dataFirmwareVersion = new byte[2];
                 Array.Copy(dataArry, 3, dataFirmwareVersion, 0, 2);
-                string strFirmwareVersion = System.Text.Encoding.ASCII.GetString(dataFirmwareVersion);
+                string strFirmwareVersion = byteToHexStr(dataFirmwareVersion);
+                //strFirmwareVersion = System.Text.Encoding.Unicode.GetString(dataFirmwareVersion);//ASCII
                 //string strFirmwareVersion = byteToHexStr(dataFirmwareVersion);
                 if (strFirmwareVersion != config.FirewareVersion)
                 {
@@ -109,7 +126,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             {
                 byte[] dataSoftwareVersion = new byte[4];
                 Array.Copy(dataArry, 5, dataSoftwareVersion, 0, 4);
-                string strSoftwareVersion = System.Text.Encoding.ASCII.GetString(dataSoftwareVersion);
+                string strSoftwareVersion = byteToHexStr(dataSoftwareVersion);
+                 //strSoftwareVersion = System.Text.Encoding.ASCII.GetString(dataSoftwareVersion);
                 //string strSoftwareVersion = byteToHexStr(dataSoftwareVersion);
                 if (strSoftwareVersion != config.SoftwareVersion)
                 {
@@ -129,13 +147,13 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
             //BLE MAC
             byte[] dataBleMac = new byte[6];
-            Array.Copy(dataArry, 21, dataBleMac, 0, 12);
+            Array.Copy(dataArry, 21, dataBleMac, 0, 6);
             //ASCII码的方式
             //string strDataMcuId = System.Text.Encoding.ASCII.GetString(dataMcuId);
             //BLE MAC：1F39A109,低位在前0x09,0xA1的直接16进制拼接方式
             string strDataBleMac = byteToHexStrReverse(dataBleMac);
             log.Info(string.Format("BLE MAC:{0}", strDataBleMac));
-
+            configGv.Add(GlobalVaribles.MAC, strDataBleMac);
             //电池电压
             //长度 2字节
             if (!(config.VolMaxValue==0&& config.VolMinValue==0))
@@ -162,43 +180,49 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             }
 
             //PCBA-ID
-            if (config.CheckNumberInFlash== SkgQueryCheckProperties.EnumCheckNumberInFlash.检查PCBA_ID)
+            if (config.CheckNumberInFlash== SkgQueryCheckProperties.EnumCheckNumberInFlash.检查是否写入过PCBA_ID)
             {
-                if (dataArry[31] > 0x18 )
+                if (dataArry[30] > 0x18 )
                 {
                     throw new BaseException(string.Format("PCBID 有效长度:{0}不在0~24的合理范围内，未授权过", dataArry[31]));
                 }
                 byte[] dataPcbaId = new byte[24];
-                Array.Copy(dataArry, 32, dataPcbaId, 0, 24);
+                Array.Copy(dataArry, 31, dataPcbaId, 0, 24);
                 //ASCII码的方式
                 //string strDataMcuId = System.Text.Encoding.ASCII.GetString(dataMcuId);
                 //MCU ID：1F39A109高位在前1F,39的直接16进制拼接方式
-                string strDataPcbaId = byteToHexStr(dataPcbaId);
-                log.Info(string.Format("PCBA-ID:{0}", strDataPcbaId));
+
+                
+                string strDataPcbaId = Encoding.ASCII.GetString(dataPcbaId);//byteToHexStr(dataPcbaId);
+                strDataPcbaId = strDataPcbaId.Replace("\0", "");
+                log.Info(string.Format("读取的PCBA-ID:{0}", strDataPcbaId));
                 //int型处理
                 string preSnPcbaId = configGv.Get(GlobalVaribles.LABEL_SN);
                 if (preSnPcbaId!= strDataPcbaId)
                 {
                     throw new BaseException(string.Format("预写PCBIDA-ID :{0}与写入的PCBA-ID ：{1}，不一致", preSnPcbaId, strDataPcbaId));
                 }
-
+                log.Info(string.Format("预写PCBIDA-ID :{0}与写入的PCBA-ID ：{1}，一致", preSnPcbaId, strDataPcbaId));
                 //configGv.Add("ReadPcbaId", strDataPcbaId);
             }
-            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.检查SN)
+            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.检查是否写入过SN)
             {
-                if (dataArry[31] > 0x18)
+                if (dataArry[56] > 0x18)//31
                 {
                     throw new BaseException(string.Format("SN 有效长度:{0}不在0~24的合理范围内，未授权过", dataArry[31]));
                 }
 
                 byte[] dataSn = new byte[24];
-                Array.Copy(dataArry, 32, dataSn, 0, 24);
+                Array.Copy(dataArry, 57, dataSn, 0, 24);//32
                 //ASCII码的方式
                 //string strDataMcuId = System.Text.Encoding.ASCII.GetString(dataMcuId);
                 //MCU ID：1F39A109高位在前1F,39的直接16进制拼接方式
                 //不足的，需要判断补0?
-                string strDataSn = byteToHexStr(dataSn);
-                log.Info(string.Format("SN:{0}", strDataSn));
+                //string strDataSn = byteToHexStr(dataSn);
+                string strDataSn = Encoding.ASCII.GetString(dataSn);//byteToHexStr(dataPcbaId);
+                strDataSn=strDataSn.Replace("\0", "");
+
+                log.Info(string.Format("读取的SN:{0}", strDataSn));
 
                 //int型处理
                 string preSn = configGv.Get(GlobalVaribles.LABEL_SN);
@@ -209,7 +233,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
 
                 //configGv.Add("ReadSn", strDataSn);
             }
-            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.检查蓝牙广播信息)
+            else if (config.CheckNumberInFlash == SkgQueryCheckProperties.EnumCheckNumberInFlash.检查是否写入过蓝牙广播信息)
             {
                 //预留-查询返回信息中没有蓝牙广播信息
 
@@ -223,10 +247,16 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //固件名称
             if (!string.IsNullOrEmpty(config.FirmwareName))
             {
-                byte[] dataFirmwareName = new byte[8];
-                Array.Copy(dataArry, 81, dataFirmwareName, 0, 8);
+                //byte[] dataFirmwareName = new byte[8];
+                //Array.Copy(dataArry, 81, dataFirmwareName, 0, 8);
+
+                byte[] dataFirmwareName = new byte[5];
+                Array.Copy(dataArry, 80, dataFirmwareName, 0, 5);
+
                 string strDataFirmwareName = System.Text.Encoding.ASCII.GetString(dataFirmwareName);
+                strDataFirmwareName = strDataFirmwareName.Replace("\0", " ");
                 //string strSoftwareVersion = byteToHexStr(dataSoftwareVersion);
+                //log.Info("固件名称:" + strDataFirmwareName);
                 if (strDataFirmwareName != config.FirmwareName)
                 {
                     throw new BaseException(string.Format("固件名称:{0},与设置固件名称:{1}不一致", strDataFirmwareName, config.FirmwareName));

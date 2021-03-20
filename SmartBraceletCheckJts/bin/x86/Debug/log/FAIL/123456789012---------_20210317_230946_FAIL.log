@@ -1,0 +1,78 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-17, Test Time: 23:09:46
+
+
+1 Init
+TestTime:23.7767ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=123456789012
+TestTime:73.8024ms
+                                                                        PASS
+3 打开主串口
+TestTime:138.5643ms
+                                                                        PASS
+5 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 43 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 D2 
+应答报文格式正确
+TestTime:569.5391ms
+                                                                        PASS
+6 检查SKG的查询内容
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+硬件版本号:0100,与设置版本号:0100一致
+软件版本号:0001000A,与设置版本号:0001000A一致
+MCU ID:49F9220000001713130C0000
+BLE MAC:804B508200F4
+电压值(mV)：：3907，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-21 
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+TestTime:15331.4043ms
+                                                                        PASS
+7 发送SKG控制指令
+ComDut No PortName:COM4
+TestTime:287.7201ms
+                                                                        FAIL
+18 关闭主串口
+TestTime:16.9163ms
+                                                                        PASS
+20 Deinit
+TestTime:28.6809ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第7项:
+发送SKG控制指令
+AILinkFactoryAuto.Task.BaseException: ComDut No PortName:COM4
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 90
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:16.7535344
+

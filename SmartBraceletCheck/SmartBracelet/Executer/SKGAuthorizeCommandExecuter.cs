@@ -123,7 +123,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             command += config.Head;
 
             //int型的处理-转2字节byte,连接到16进制字符串中
-            int allLength = 9 + config.DataLength;
+            int allLength = 9 + 26;//config.DataLength
             byte[] byteTemp = new byte[2];
             byte[] oneByteTemp = new byte[1];
             byteTemp = intToBytes(allLength);
@@ -146,19 +146,20 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 )
             {
                 #region //扫描的SN/PCBA码是直接16进制的连接
-                int effectiveLength = snPcbaId.Length / 2;
-                command += effectiveLength.ToString("X2");
-                command += snPcbaId.PadRight(48, '0');
+                //int effectiveLength = snPcbaId.Length / 2;
+                //command += effectiveLength.ToString("X2");
+                //command += snPcbaId.PadRight(48, '0');
                 #endregion
 
                 #region //扫描的SN/PCBA码是字符型，ASCII码的方式
-                //byte[] bytesSnPcba = System.Text.Encoding.ASCII.GetBytes(snPcbaId);
-                //command += bytesSnPcba.Length.ToString("X2");
-                //command += byteToHexStr(bytesSnPcba).PadRight(48,'0');
+                byte[] bytesSnPcba = System.Text.Encoding.ASCII.GetBytes(snPcbaId);
+                command += bytesSnPcba.Length.ToString("X2");
+                command += byteToHexStr(bytesSnPcba).PadRight(48, '0');
                 #endregion
             }
             else if(config.AuthorizeEvent == SKGAuthorizeCommandProperties.EnumAuthorizeEvent.授权写入蓝牙广播报信息)
             {
+                //V16版的协议不写蓝牙广播
                 byte[] bytesSnPcba = System.Text.Encoding.ASCII.GetBytes(config.BleBroadcastName);
                 command += bytesSnPcba.Length.ToString("X2");
                 command += byteToHexStr(bytesSnPcba).PadRight(17, '0');
@@ -166,8 +167,11 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                 command += config.DeviceType;
                 command += config.ReservedWord1;
                 command += config.ReservedWord2;
-                //string bleBroadcastInfo=
-                //configGv.Add("BleBroadcastInfo",)
+            }
+            else if (config.AuthorizeEvent == SKGAuthorizeCommandProperties.EnumAuthorizeEvent.解锁SWD)
+            {
+                byte[] seroArry = new byte[25];
+                command += byteToHexStr(seroArry);
             }
 
 
@@ -272,6 +276,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //byteToHexStr();
 
             //byte[] atCommand = strToToHexByte(config.AtCommand);
+
+            //计算校验位
             byte[] atCommandOutXor = strToToHexByte(command);
             byte[] atCommand = new byte[atCommandOutXor.Length + 1];
 
@@ -492,16 +498,21 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             Array.Copy(buf, 0, bufOutOxr, 0, buf.Length - 1);
             byte xor = ByteToXOR(bufOutOxr);
 
-            if (!(buf[n - 1] != xor))
+            if (buf[n - 1] != xor)
             {
-                throw new BaseException(string.Format("Response 校验位不正确"));
+                throw new BaseException(string.Format("核验RX的校验位：错误,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
             }
+            log.Info(string.Format("核验RX的校验位：正确,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
 
 
 
             //数据内容 32个字节
-            byte[] dataArry = new byte[config.DataLength];
-            Array.Copy(buf, 8, dataArry, 0, config.DataLength);
+            //byte[] dataArry = new byte[config.DataLength];
+            //Array.Copy(buf, 8, dataArry, 0, config.DataLength);
+
+            byte[] dataArry = new byte[iTotalLength - 9];//config.DataLength
+            Array.Copy(buf, 8, dataArry, 0, iTotalLength - 9);//config.DataLength
+
             //添加到全局变量中
             if (config.GlobalVariblesKey != null)
             {
@@ -525,11 +536,42 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
                     string key = matchKey.Groups[1].ToString();
 
                     configGv.Add(key, dataArry);
-                    log.Info("应答报文正确");
+                    log.Info("应答报文格式检查PASS");
                 }
             }
-            //检查是否有效果!!!
-            //通过另外一个AT口,去获取电流值
+
+            //检查是否授权正确：
+            //授权事件确认检查
+            //dataArry[0]
+
+            string revAuthorizeContent= byteToHexStr(dataArry).Substring(4, 48);
+            string sendAuthorizeContent = command.Substring(20, 48);
+            if (revAuthorizeContent!= sendAuthorizeContent)
+            {
+                throw new BaseException(string.Format("授权失败\r\n回复的授权内容:{0}\r\n发送的授权内容:{1}\r\n不一致", revAuthorizeContent, sendAuthorizeContent));
+            }
+            log.Info(string.Format("回复的授权内容:{0}\r\n发送的授权内容:{1}\r\n一致", revAuthorizeContent, sendAuthorizeContent));
+            //MCU ID
+            byte[] dataMcuId = new byte[12];
+            Array.Copy(dataArry, 26, dataMcuId, 0, 12);
+            //ASCII码的方式
+            //string strDataMcuId = System.Text.Encoding.ASCII.GetString(dataMcuId);
+            //MCU ID：1F39A109高位在前1F,39的直接16进制拼接方式
+            string strDataMcuId = byteToHexStr(dataMcuId);
+            log.Info(string.Format("MCU ID:{0}", strDataMcuId));
+            if (strDataMcuId.Contains("00000000000000000000"))
+            {
+                throw new BaseException(string.Format("授权失败,数据为00的MCUID"));
+            }
+            //BLE MAC
+            byte[] dataBleMac = new byte[6];
+            Array.Copy(dataArry, 38, dataBleMac, 0, 6);
+            //ASCII码的方式
+            //string strDataMcuId = System.Text.Encoding.ASCII.GetString(dataMcuId);
+            //BLE MAC：1F39A109,低位在前0x09,0xA1的直接16进制拼接方式
+            string strDataBleMac = byteToHexStrReverse(dataBleMac);
+            log.Info(string.Format("BLE MAC:{0}", strDataBleMac));
+            log.Info(string.Format("授权成功"));
 
 
 

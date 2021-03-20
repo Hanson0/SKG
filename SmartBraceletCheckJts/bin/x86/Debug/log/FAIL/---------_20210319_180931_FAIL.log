@@ -1,0 +1,316 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 18:09:31
+
+
+1 Init
+TestTime:16.9184ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:65.8242ms
+                                                                        PASS
+3 打开主串口
+TestTime:136.839ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:128.7897ms
+                                                                        PASS
+7 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 84 80 00 34 34 34 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 D3 
+RX校验位核验正确,返回校验位:D3,计算校验位:8D
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 86 80 00 34 34 34 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 8F 
+RX校验位核验正确,返回校验位:8F,计算校验位:8F
+应答报文格式正确
+TestTime:1369.7422ms
+                                                                        PASS
+8 检查SKG的查询内容
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+电压值(mV)：：4230，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:1328.9478ms
+                                                                        PASS
+9 SKG授权-PCBID授权
+Tx:A5 C3 00 23 00 00 00 23 02 0D 34 34 34 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 58 
+Rx:A5 C3 00 35 00 00 A0 23 02 3D 34 34 34 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 33 
+RX校验位核验正确,返回校验位:33,计算校验位:33
+应答报文格式正确
+回复的授权内容:343434343536373839414243440000000000000000000000
+发送的授权内容:343434343536373839414243440000000000000000000000
+一致
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+授权成功
+TestTime:637.6417ms
+                                                                        PASS
+10 回读确保授权写入成功-发送查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 83 80 00 34 34 34 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 E1 
+RX校验位核验正确,返回校验位:E1,计算校验位:8A
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 84 80 00 34 34 34 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 8D 
+RX校验位核验正确,返回校验位:8D,计算校验位:8D
+应答报文格式正确
+TestTime:1370.1667ms
+                                                                        PASS
+11 回读确保授权写入成功-查询内容检查
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+读取的PCBA-ID:444456789ABCD
+预写PCBIDA-ID :444456789ABCD与写入的PCBA-ID ：444456789ABCD，一致
+TestTime:529.4559ms
+                                                                        PASS
+12 发SKG控制指令-EMS13
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+RX校验位核验正确,返回校验位:47,计算校验位:47
+应答报文格式正确
+TestTime:487.2651ms
+                                                                        PASS
+13 AT-获取EMS1
+AT Commond=AT+EMS1?
+AT Response=EMS1=32.164
+OK
+
+TestTime:257.869ms
+                                                                        PASS
+14 检查EMS1
+EMS1的值：32.16，在设定范围：1 ~ 50之间 PASS 
+
+TestTime:27.926ms
+                                                                        PASS
+15 发SKG控制指令-EMS24
+Tx:A5 C3 00 1A 00 00 00 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E1 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 41 
+RX校验位核验正确,返回校验位:41,计算校验位:41
+应答报文格式正确
+TestTime:478.0084ms
+                                                                        PASS
+16 AT-获取EMS2
+AT Commond=AT+EMS2?
+AT Response=EMS2=30.905
+OK
+
+TestTime:266.5404ms
+                                                                        PASS
+17 检查EMS2
+EMS2的值：30.9，在设定范围：1 ~ 60之间 PASS 
+
+TestTime:30.7579ms
+                                                                        PASS
+18 发SKG控制指令-开机
+Tx:A5 C3 00 1A 00 00 00 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 
+Rx:A5 C3 00 1A 00 00 A0 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+RX校验位核验正确,返回校验位:9D,计算校验位:9D
+应答报文格式正确
+TestTime:576.8485ms
+                                                                        PASS
+19 发SKG控制指令-关机
+Tx:A5 C3 00 1A 00 00 00 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+RX校验位核验正确,返回校验位:9E,计算校验位:9E
+应答报文格式正确
+TestTime:588.8462ms
+                                                                        PASS
+20 发SKG控制指令-发出声音
+Tx:A5 C3 00 1A 00 00 00 40 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 3D 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 9D 
+RX校验位核验正确,返回校验位:9D,计算校验位:9D
+应答报文格式正确
+TestTime:590.7046ms
+                                                                        PASS
+21 声音检查-用户判断
+User Press Space
+TestTime:2031.2018ms
+                                                                        PASS
+22 发SKG控制指令-LED蓝灯
+Tx:A5 C3 00 1A 00 00 00 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+RX校验位核验正确,返回校验位:9E,计算校验位:9E
+应答报文格式正确
+TestTime:604.7901ms
+                                                                        PASS
+23 LED蓝灯检查-用户判断
+User Press Space
+TestTime:7152.9116ms
+                                                                        PASS
+24 发SKG控制指令-LED绿灯
+Tx:A5 C3 00 1A 00 00 00 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+RX校验位核验正确,返回校验位:9E,计算校验位:9E
+应答报文格式正确
+TestTime:579.7944ms
+                                                                        PASS
+25 LED绿灯检查-用户判断
+Wait TimeOut, 15seconds
+User Press Space
+TestTime:6311.296ms
+                                                                        PASS
+30 声音检查-用户判断
+Wait TimeOut, 15seconds
+User Press Space
+TestTime:2620.756ms
+                                                                        PASS
+31 LED灯检查-用户判断
+User Press Space
+TestTime:1625.8854ms
+                                                                        PASS
+32 AT-控制继电器电压输出5V
+AT Commond=AT+VO=1!
+AT Response=VO=1
+OK
+
+TestTime:260.3987ms
+                                                                        PASS
+33 上报检测-充电检测
+Rx:A5 C3 00 0D 00 00 A0 41 02 01 03 01 8B A5 C3 00 0D 00 00 A0 41 02 01 01 01 89 00 E5 FF FF FF E6 00 
+Rx:
+Rx:
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 01 01 86 A5 C3 00 0D 00 00 A0 41 00 01 01 01 8B 
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Wait TimeOut, 15seconds
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+Rx:
+未返回正确状态关键字：A041000103
+Wait TimeOut, 8seconds
+Fail
+TestTime:8588.2932ms
+                                                                        FAIL
+34 AT-读取电量值
+TestTime:11.0031ms
+                                                                        SKIP
+35 检查CRT值
+TestTime:12.8445ms
+                                                                        SKIP
+36 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:256.4796ms
+                                                                        PASS
+37 上报检测-未充电检测
+TestTime:11.8454ms
+                                                                        SKIP
+38 上报检测-加热按键检测
+TestTime:12.9301ms
+                                                                        SKIP
+42 关闭主串口
+TestTime:12.9675ms
+                                                                        PASS
+43 关闭电气参数检测串口
+TestTime:12.0998ms
+                                                                        PASS
+44 Deinit
+TestTime:12.0209ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第33项:
+上报检测-充电检测
+AILinkFactoryAuto.Task.BaseException: Fail
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FormTipAndUartCheckExecuter.cs:行号 50
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:39.8579069
+

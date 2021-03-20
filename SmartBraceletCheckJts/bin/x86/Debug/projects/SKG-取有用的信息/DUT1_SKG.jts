@@ -1,0 +1,608 @@
+{
+  "$type": "System.Collections.Generic.List`1[[AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base]], mscorlib",
+  "$values": [
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Init",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.InitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.InitExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "扫码枪扫描标签",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.ParseLabelProperties, AILinkFactoryAuto.Base",
+        "SnLocation": 1,
+        "ImeiLocation": 0,
+        "MeidLocation": 0,
+        "MacLocation": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.ParseLabelExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "打开主串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 100,
+        "PortName": "COM4",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": null,
+        "AutoKey": null,
+        "ExecuteCondition": 1,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "检测SKG产品上电中...",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.FindDeviceProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "commandType": 1,
+        "PortName": "COM4",
+        "TestPowerOnAT": "",
+        "AtCommandInterval": 100,
+        "EndLine": "",
+        "AtCommandOk": "A5C3",
+        "GlobalVariblesKey": null,
+        "GlobalVariblesKeyPattern": null,
+        "CheckInfo": null,
+        "AtCommandError": null,
+        "CommandType": 1,
+        "ExecuteCondition": 1,
+        "Timeout": 30000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "关闭蓝牙测试串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.ClosePhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 0,
+        "PortName": "COM5",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": "\\r\\n",
+        "AutoKey": null,
+        "ExecuteCondition": 0,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "发送SKG查询指令",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "PortName": "COM4",
+        "AtCommand": "A5C3001100000037FFFFFFFFFFFFFFFF40",
+        "AtCommandError": null,
+        "AtCommandOk": null,
+        "AtCommandInterval": 500,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{RetQueryData}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": null,
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "检查SKG的查询内容",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgQueryCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "IfCheckFinishTest": 0,
+        "CheckNumberInFlash": 0,
+        "VolMaxValue": 3000,
+        "VolMinValue": 500,
+        "Ntc1MaxValue": 900,
+        "Ntc1MinValue": 10,
+        "Ntc2MaxValue": 900,
+        "Ntc2MinValue": 10,
+        "Ntc3MaxValue": 900,
+        "Ntc3MinValue": 10,
+        "MotorSpeedMaxValue": 1000,
+        "MotorSpeedMinValue": 100,
+        "GlobalVariblesKey": "RetQueryData",
+        "FirewareVersion": "1010",
+        "SoftwareVersion": "1011",
+        "FirmwareName": "K5-2T",
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgQueryCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "发送SKG控制指令",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGControlCommandProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "Head": "A5C3",
+        "ReservedWord": "0000",
+        "CommandWord": "0040",
+        "PowerOnOffSetting": 1,
+        "LedModeSetting": 1,
+        "EmsTestSwitch": 1,
+        "EmsPWSetting": 1000,
+        "EmsFreqSetting": 1000,
+        "EmsAmplitudeSetting": 1000,
+        "HeatingGearControl": 1,
+        "VoiceControl": 1,
+        "WritePcbaFinishFlag": 0,
+        "WholeMachineFinishFlag": 0,
+        "BtTestOnOffSetting": 1,
+        "MotorControl": 3,
+        "AginTestOnOffSetting": 0,
+        "AginTestTime": 3,
+        "PortName": "COM4",
+        "AtCommand": null,
+        "AtCommandError": null,
+        "AtCommandOk": null,
+        "AtCommandInterval": 500,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{RetControlData}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": null,
+        "CommandType": 1,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "用户判断",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.UserConfirmProperties, AILinkFactoryAuto.Base",
+        "CountDownTime": 15000,
+        "Tips": "测试LED灯-人工判断",
+        "KeyPass": 32,
+        "KeyFail": 70,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.UserConfirmExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "用户判断",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.UserConfirmProperties, AILinkFactoryAuto.Base",
+        "CountDownTime": 15000,
+        "Tips": "测试蜂鸣器-人工判断",
+        "KeyPass": 32,
+        "KeyFail": 70,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.UserConfirmExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "打开电气参数检测串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.OpenPhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 100,
+        "PortName": "COM5",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": null,
+        "AutoKey": null,
+        "ExecuteCondition": 1,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "AT-获取低压通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.AtCommandProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "commandType": 0,
+        "PortName": "COM5",
+        "AtCommand": "AT+LVL1?",
+        "AtCommandError": "UNKNOWN",
+        "AtCommandOk": "OK",
+        "AtCommandInterval": 800,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{LVL1}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "LVL1=([.0-9]{5})"
+          ]
+        },
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 8000,
+        "SleepTimeBefore": 100,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.AtCommandExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "检查低压通道1",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.CheckRangeValueProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "TestValueName": "低压通道1电压值",
+        "MinValue": 1.0,
+        "MaxValue": 3.0,
+        "GlobalVarible": "LVL1",
+        "ExecuteCondition": 1,
+        "Timeout": 3000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.CheckRangeValueExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "发送SKG授权指令",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGAuthorizeCommandProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "Head": "A5C3",
+        "ReservedWord": "0000",
+        "CommandWord": "0023",
+        "AuthorizeEvent": 1,
+        "BleBroadcastName": null,
+        "DeviceType": null,
+        "ReservedWord1": null,
+        "ReservedWord2": null,
+        "RespDataLength": 44,
+        "PortName": "COM4",
+        "AtCommand": null,
+        "AtCommandError": null,
+        "AtCommandOk": null,
+        "AtCommandInterval": 500,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{RespAuthorizeData}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": null,
+        "CommandType": 2,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "检查SKG授权返回",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgAuthorizeCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "GlobalVariblesKey": "RespAuthorizeData",
+        "FirewareVersion": null,
+        "SoftwareVersion": null,
+        "FirmwareName": null,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgAuthorizeCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "回读确保授权写入成功-发送查询指令",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SKGProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "PortName": "COM4",
+        "AtCommand": "A5C3001100000037FFFFFFFFFFFFFFFF40",
+        "AtCommandError": null,
+        "AtCommandOk": null,
+        "AtCommandInterval": 500,
+        "CheckInfo": null,
+        "GlobalVariblesKey": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "{RetQueryData}"
+          ]
+        },
+        "GlobalVariblesKeyPattern": null,
+        "CommandType": 0,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "回读确保授权写入成功-查询内容检查",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.SkgQueryCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "IfCheckFinishTest": 0,
+        "CheckNumberInFlash": 2,
+        "VolMaxValue": 0,
+        "VolMinValue": 0,
+        "Ntc1MaxValue": 0,
+        "Ntc1MinValue": 0,
+        "Ntc2MaxValue": 0,
+        "Ntc2MinValue": 0,
+        "Ntc3MaxValue": 0,
+        "Ntc3MinValue": 0,
+        "MotorSpeedMaxValue": 0,
+        "MotorSpeedMinValue": 0,
+        "GlobalVariblesKey": "RetQueryData",
+        "FirewareVersion": null,
+        "SoftwareVersion": null,
+        "FirmwareName": null,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgQueryCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "检测按键",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Property.FormTipAndUartCheckProperties, AILinkFactoryAuto.Task.SmartBracelet",
+        "CountDownTime": 30000,
+        "UartDataType": 1,
+        "Tips": "请按+键",
+        "PortName": "COM4",
+        "TestPowerOnAT": null,
+        "AtCommandInterval": 0,
+        "EndLine": null,
+        "AtCommandOk": "A04103",
+        "GlobalVariblesKey": null,
+        "GlobalVariblesKeyPattern": null,
+        "CheckInfo": null,
+        "AtCommandError": null,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.SmartBracelet.Executer.FormTipAndUartCheckExecuter, AILinkFactoryAuto.Task.SmartBracelet"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "用户判断",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.UserConfirmProperties, AILinkFactoryAuto.Base",
+        "CountDownTime": 30000,
+        "Tips": "被测板卡是否有完成声音发出？",
+        "KeyPass": 32,
+        "KeyFail": 70,
+        "ExecuteCondition": 1,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.UserConfirmExecuter, AILinkFactoryAuto.Base"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "关闭主串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.ClosePhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 0,
+        "PortName": "COM4",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": "\\r\\n",
+        "AutoKey": null,
+        "ExecuteCondition": 0,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": false,
+      "Item": "关闭电气参数检测串口",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Property.ClosePhoneProperties, AILinkFactoryAuto.Dut.AtCommand",
+        "AtType": 0,
+        "SleepTimeAfterFindDut": 0,
+        "PortName": "COM5",
+        "BaudRate": 115200,
+        "Rts": true,
+        "Dtr": true,
+        "Parity": 0,
+        "EndLine": "\\r\\n",
+        "AutoKey": null,
+        "ExecuteCondition": 0,
+        "Timeout": 10000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 0,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter, AILinkFactoryAuto.Dut.AtCommand"
+      }
+    },
+    {
+      "$type": "AILinkFactoryAuto.Task.TaskItem, AILinkFactoryAuto.Base",
+      "Enable": true,
+      "Item": "Deinit",
+      "CommonProperties": {
+        "$type": "AILinkFactoryAuto.Task.Property.DeinitProperties, AILinkFactoryAuto.Base",
+        "TopMost": false,
+        "LogType": 2,
+        "ExecuteCondition": 0,
+        "Timeout": 1000,
+        "SleepTimeBefore": 0,
+        "SleepTimeAfter": 0,
+        "RetryCount": 3,
+        "RetryInterval": 200
+      },
+      "Executer": {
+        "$type": "AILinkFactoryAuto.Task.Executer.DeinitExecuter, AILinkFactoryAuto.Base"
+      }
+    }
+  ]
+}

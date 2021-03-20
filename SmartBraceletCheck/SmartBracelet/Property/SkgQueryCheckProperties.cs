@@ -12,6 +12,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         //private bool checkPcba_id;
         //private bool checkSn;
         private EnumCheckNumberInFlash checkNumberInFlash;
+        private EnumIfCheckFinishTest ifCheckFinishTest;
 
         private int volMaxValue;
         private int volMinValue;
@@ -34,12 +35,21 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         private string softwareVersion;
         private string firmwareName;
 
+        public enum EnumIfCheckFinishTest
+        {
+            不检查,
+            检查是否完成过PCBA测试,
+            检查是否完成过整机测试,
+            检查是否完成过老化测试,
+        }
+
+
         public enum EnumCheckNumberInFlash
         {
             不检查,
-            检查SN,
-            检查PCBA_ID,
-            检查蓝牙广播信息,
+            检查是否写入过SN,
+            检查是否写入过PCBA_ID,
+            检查是否写入过蓝牙广播信息,
         }
 
         //[Category("NumberCheck"), Description("是否检查写入的PCBA-ID")]
@@ -55,8 +65,15 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         //    get { return checkSn; }
         //    set { checkSn = value; }
         //}
+        
+        [Category("CheckIfFinishTest"), Description("检查是否已完成过测试")]
+        public EnumIfCheckFinishTest IfCheckFinishTest
+        {
+            get { return ifCheckFinishTest; }
+            set { ifCheckFinishTest = value; }
+        }
 
-        [Category("NumberCheck"), Description("检查写入Flash中的什么号?（SN/PCBA-ID/蓝牙广播信息）")]
+        [Category("CheckIfWriteNumberInFlash"), Description("检查是否向Flash写入过号（SN/PCBA-ID/蓝牙广播信息）")]
         public EnumCheckNumberInFlash CheckNumberInFlash
         {
             get { return checkNumberInFlash; }

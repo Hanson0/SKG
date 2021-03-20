@@ -1,0 +1,158 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-19, Test Time: 17:21:22
+
+
+1 Init
+TestTime:20.9438ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:73.8414ms
+                                                                        PASS
+3 打开主串口
+TestTime:130.1714ms
+                                                                        PASS
+4 打开电气参数检测串口
+TestTime:123.3022ms
+                                                                        PASS
+7 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 60 80 00 31 32 33 34 35 36 37 38 39 30 41 42 43 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 19 
+RX校验位核验正确,返回校验位:19,计算校验位:19
+应答报文格式正确
+TestTime:589.3801ms
+                                                                        PASS
+8 检查SKG的查询内容
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+电压值(mV)：：4192，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:2207.9507ms
+                                                                        PASS
+9 SKG授权-PCBID授权
+Tx:A5 C3 00 23 00 00 00 23 02 0D 31 31 33 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 5F 
+Rx:A5 C3 00 35 00 00 A0 23 02 3D 31 31 33 34 35 36 37 38 39 41 42 43 44 00 00 00 00 00 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 34 
+RX校验位核验正确,返回校验位:34,计算校验位:34
+应答报文格式正确
+回复的授权内容:313133343536373839414243440000000000000000000000
+发送的授权内容:313133343536373839414243440000000000000000000000
+一致
+MCU ID:DB2A230000000A231A0CFFFF
+源数组长度不足。请检查 srcIndex 和长度以及数组的下限。
+TestTime:131995.4156ms
+                                                                        FAIL
+10 回读确保授权写入成功-发送查询指令
+TestTime:16.1728ms
+                                                                        SKIP
+11 回读确保授权写入成功-查询内容检查
+TestTime:18.1495ms
+                                                                        SKIP
+12 发SKG控制指令-EMS13
+TestTime:11.3282ms
+                                                                        SKIP
+13 AT-获取EMS1
+TestTime:11.0035ms
+                                                                        SKIP
+14 检查EMS1
+TestTime:14.6845ms
+                                                                        SKIP
+15 发SKG控制指令-EMS24
+TestTime:11.9319ms
+                                                                        SKIP
+16 AT-获取EMS2
+TestTime:10.9705ms
+                                                                        SKIP
+17 检查EMS2
+TestTime:11.1333ms
+                                                                        SKIP
+18 发SKG控制指令-开机
+TestTime:13.9377ms
+                                                                        SKIP
+19 发SKG控制指令-关机
+TestTime:12.0106ms
+                                                                        SKIP
+20 发SKG控制指令-发出声音+LED灯
+TestTime:20.7597ms
+                                                                        SKIP
+26 声音检查-用户判断
+TestTime:29.1545ms
+                                                                        SKIP
+27 LED灯检查-用户判断
+TestTime:16.723ms
+                                                                        SKIP
+28 AT-控制继电器电压输出5V
+TestTime:14.9953ms
+                                                                        SKIP
+29 上报检测-充电检测
+TestTime:10.935ms
+                                                                        SKIP
+30 AT-读取电量值
+TestTime:14.5501ms
+                                                                        SKIP
+31 检查CRT值
+TestTime:17.9153ms
+                                                                        SKIP
+32 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:265.0406ms
+                                                                        PASS
+33 上报检测-未充电检测
+TestTime:18.9514ms
+                                                                        SKIP
+34 上报检测-加热按键检测
+TestTime:18.9159ms
+                                                                        SKIP
+38 关闭主串口
+TestTime:20.9459ms
+                                                                        PASS
+39 关闭电气参数检测串口
+TestTime:14.9263ms
+                                                                        PASS
+40 Deinit
+TestTime:12.0194ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第9项:
+SKG授权-PCBID授权
+System.ArgumentException: 源数组长度不足。请检查 srcIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 568
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:02:16.3692181
+

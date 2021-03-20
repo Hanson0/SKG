@@ -1,0 +1,86 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:47:26
+
+
+1 Init
+TestTime:12.5793ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:51.8789ms
+                                                                        PASS
+3 打开主串口
+TestTime:124.0985ms
+                                                                        PASS
+5 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 60 00 00 A0 37 00 00 00 01 00 00 01 00 0A 49 F9 22 00 00 00 17 13 13 0C 00 00 F4 00 82 50 4B 80 0F 3E 80 00 32 30 33 30 39 41 30 30 39 32 31 34 39 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 4B 35 2D 32 31 00 AF 
+校验位正确,返回校验位:175,计算校验位:175
+应答报文格式正确
+TestTime:567.0159ms
+                                                                        PASS
+6 检查SKG的查询内容
+未完成过PCBA测试
+未完成过整机测试
+未完成过老化测试
+硬件版本号:0100,与设置版本号:0100一致
+软件版本号:0001000A,与设置版本号:0001000A一致
+MCU ID:49F9220000001713130C0000
+BLE MAC:804B508200F4
+电压值(mV)：：3902，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-21 ,与设置固件名称:K5-21 一致
+TestTime:1350.9714ms
+                                                                        PASS
+14 SKG授权-PCBA-ID
+Tx:A5 C3 00 23 00 00 00 23 02 0D 31 32 33 34 35 36 37 38 39 30 41 42 43 00 00 00 00 00 00 00 00 00 00 00 28 
+Rx:
+Response Length Not enough
+TestTime:213651.5124ms
+                                                                        FAIL
+16 回读确保授权写入成功-发送查询指令
+TestTime:12.4727ms
+                                                                        SKIP
+17 回读确保授权写入成功-查询内容检查
+TestTime:10.9384ms
+                                                                        SKIP
+20 关闭主串口
+TestTime:14.1734ms
+                                                                        PASS
+22 Deinit
+TestTime:12.4664ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第14项:
+SKG授权-PCBA-ID
+AILinkFactoryAuto.Task.BaseException: Response Length Not enough
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 451
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:03:36.0335955
+

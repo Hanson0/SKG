@@ -24,8 +24,23 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             {
                 throw new BaseException("COM为空");
             }
+            ComDut comDut = null;
+            foreach (var item in comDutList)
+            {
+                if (item.PortName == config.PortName)
+                {
+                    comDut = item;
+                    break;
+                }
 
-            TipAndCheckUartForm formUserConfirm = new TipAndCheckUartForm(config, log, comDutList[0])
+            }
+            if (comDut == null)
+            {
+                throw new BaseException(string.Format("ComDut No PortName:{0}", config.PortName));
+            }
+
+
+            TipAndCheckUartForm formUserConfirm = new TipAndCheckUartForm(config, log, comDut)
             {
             };
             formUserConfirm.ShowDialog();

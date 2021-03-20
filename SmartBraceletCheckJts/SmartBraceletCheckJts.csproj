@@ -48,11 +48,13 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AILinkFactoryAuto.Base">
-      <HintPath>bin\x86\Release\AILinkFactoryAuto.Base.dll</HintPath>
+    <Reference Include="AILinkFactoryAuto.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\AILinkFactoryAuto.Base.dll</HintPath>
     </Reference>
-    <Reference Include="AILinkFactoryAuto.Dut.AtCommand">
-      <HintPath>bin\x86\Release\AILinkFactoryAuto.Dut.AtCommand.dll</HintPath>
+    <Reference Include="AILinkFactoryAuto.Dut.AtCommand, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\AILinkFactoryAuto.Dut.AtCommand.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -30,7 +30,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
         public void Run(IProperties properties, GlobalDic<string, object> globalDic)
         {
             SkgAuthorizeCheckProperties config = properties as SkgAuthorizeCheckProperties;
-
+            log = globalDic[typeof(ILog).ToString()] as ILog;
             //解析是否收到正确的包,包头，命令，校验位
             //起始标志 数据长度 保留字     命令字     数据内容    异或校验码 
             //0XA5C3    9+N     0x0000      0x0037      Data        异或 
@@ -120,6 +120,9 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //}
 
             #endregion
+            //授权事件确认检查
+            //dataArry[0]
+
             //MCU ID
             byte[] dataMcuId = new byte[12];
             Array.Copy(dataArry, 26, dataMcuId, 0, 12);

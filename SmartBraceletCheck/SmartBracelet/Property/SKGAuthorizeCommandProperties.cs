@@ -162,12 +162,12 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             set { reservedWord2 = value; }
         }
 
-        [Category("DataLength"), Description("数据部分长度")]
-        public int DataLength
-        {
-            get { return dataLength; }
-            set { dataLength = value; }
-        }
+        //[Category("DataLength"), Description("数据部分长度")]
+        //public int DataLength
+        //{
+        //    get { return dataLength; }
+        //    set { dataLength = value; }
+        //}
 
         [Category("DataLength"), Description("回复数据的数据部分长度")]
         public int RespDataLength

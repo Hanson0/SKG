@@ -1,0 +1,75 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-18, Test Time: 15:46:27
+
+
+1 Init
+TestTime:35.9385ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=1234567890ABC
+MAC invalid
+TestTime:302.1961ms
+                                                                        FAIL
+3 打开主串口
+TestTime:9.9165ms
+                                                                        SKIP
+5 发送SKG查询指令
+TestTime:8.9736ms
+                                                                        SKIP
+6 检查SKG的查询内容
+TestTime:15.0006ms
+                                                                        SKIP
+13 SKG授权-SWD
+TestTime:10.9707ms
+                                                                        SKIP
+14 SKG授权-PCBA-ID
+TestTime:11.2438ms
+                                                                        SKIP
+16 回读确保授权写入成功-发送查询指令
+TestTime:27.9015ms
+                                                                        SKIP
+17 回读确保授权写入成功-查询内容检查
+TestTime:11.0084ms
+                                                                        SKIP
+20 关闭主串口
+给定关键字不在字典中。
+TestTime:231.1741ms
+                                                                        FAIL
+22 Deinit
+TestTime:13.2607ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第2项:
+扫码枪扫描标签
+AILinkFactoryAuto.Task.BaseException: MAC invalid
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.CheckMac(String mac)
+   在 AILinkFactoryAuto.Task.Executer.ParseLabelExecuter.Run(IProperties properties, GlobalDic`2 globalDic)
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:00.8905602
+
