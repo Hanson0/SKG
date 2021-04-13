@@ -1206,6 +1206,28 @@ namespace AILinkFactoryAuto.GenJts.SmartBraceletJts
 
             #endregion
 
+            #region 状态事件上报
+            if (cbSkg.Checked)
+            {
+                TaskItem findDevice = new TaskItem();
+                findDevice.Enable = true;
+                findDevice.Item = "电池充电上报状态检测中...";//Find Device
+                findDevice.CommonProperties = new FormTipAndUartCheckProperties()
+                {
+                    PortName = "COM4",
+                    UartDataType = EnumUartDataType.Hex,
+                    CountDownTime = 5 * 1000,
+                    Tips = "电池充电上报状态检测中...",
+                    CheckBatteryStatus= FormTipAndUartCheckProperties.EnumCheckBatteryStatus.充满状态,
+                    //AtCommandOk = "A04103",// "wifi init success",//+NOTICE:SCANFINISH  upload param init
+
+                    RetryCount = 0,
+                };
+                findDevice.Executer = new FormTipAndUartCheckExecuter();
+                taskItemManager.Put(findDevice);
+            }
+
+            #endregion
             #region 低压通道
             //if (true)
             //{

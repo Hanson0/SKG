@@ -1,0 +1,142 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-26, Test Time: 15:36:09
+
+
+1 Init
+TestTime:30.5195ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:87.6748ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:141.868ms
+                                                                        PASS
+6 检测SKG产品上电中...
+超时：System.Func`1[System.Boolean]
+TestTime:30417.0612ms
+                                                                        FAIL
+8 SKG查询指令-所有信息查询
+TestTime:42.8647ms
+                                                                        SKIP
+9 SKG检查-软硬件版本固件名电压等信息
+TestTime:45.5465ms
+                                                                        SKIP
+10 SKG检查-是否完成过整机测试
+TestTime:33.1613ms
+                                                                        SKIP
+11 SKG授权指令-PCBID授权
+TestTime:13.0001ms
+                                                                        SKIP
+12 SKG查询指令-回读授权信息
+TestTime:13.5302ms
+                                                                        SKIP
+13 SKG检查-检查回读的授权信息
+TestTime:17.5781ms
+                                                                        SKIP
+14 SKG控制指令-EMS13通道
+TestTime:43.4836ms
+                                                                        SKIP
+15 采集板卡-AT获取EMS1
+TestTime:33.494ms
+                                                                        SKIP
+16 SKG检查-EMS1值
+TestTime:15.9964ms
+                                                                        SKIP
+17 SKG控制指令-EMS24通道
+TestTime:14.0436ms
+                                                                        SKIP
+19 SKG检查-检查EMS2
+TestTime:9.3851ms
+                                                                        SKIP
+20 SKG控制指令-开机
+TestTime:9.0097ms
+                                                                        SKIP
+21 SKG控制指令-关机
+TestTime:22.9388ms
+                                                                        SKIP
+22 SKG控制指令-发出声音+LED全关
+TestTime:36.8971ms
+                                                                        SKIP
+23 SKG检查-声音检查
+TestTime:12.0034ms
+                                                                        SKIP
+24 SKG控制指令-LED红/橙灯
+TestTime:28.9231ms
+                                                                        SKIP
+25 SKG检查-LED红/橙灯检查
+TestTime:39.1804ms
+                                                                        SKIP
+26 SKG控制指令-LED蓝灯
+TestTime:15.0132ms
+                                                                        SKIP
+27 SKG检查-LED蓝灯检查
+TestTime:11.7752ms
+                                                                        SKIP
+37 SKG检查-检查CRT值
+TestTime:17.9528ms
+                                                                        SKIP
+40 SKG状态上报检测-加热按键检测
+TestTime:47.8659ms
+                                                                        SKIP
+41 SKG状态上报检测-电源按键检测
+TestTime:19.6875ms
+                                                                        SKIP
+45 SKG控制指令-关机
+TestTime:12.0027ms
+                                                                        SKIP
+47 SKG检查-待机时低压通道1
+TestTime:18.9421ms
+                                                                        SKIP
+48 SKG控制指令-写入PCBA测试完成标志
+TestTime:20.9471ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:17.9216ms
+                                                                        PASS
+52 关闭采集板卡串口
+ClosePhoneProperties No PortName:COM43
+TestTime:249.0001ms
+                                                                        FAIL
+53 关闭蓝牙dongle串口
+ClosePhoneProperties No PortName:COM43
+TestTime:236.8407ms
+                                                                        FAIL
+54 Deinit
+TestTime:15.4725ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第6项:
+检测SKG产品上电中...
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 130
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:32.3194362
+

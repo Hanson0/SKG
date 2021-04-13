@@ -1,0 +1,196 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-31, Test Time: 20:33:24
+
+
+1 Init
+TestTime:21.9414ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:65.7852ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:130.259ms
+                                                                        PASS
+4 打开采集板卡串口
+TestTime:122.418ms
+                                                                        PASS
+5 打开蓝牙dongel串口
+TestTime:140.0735ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 20 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 6A 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 20 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 6A 
+核验RX的校验位：正确,返回校验位:6A,计算校验位:6A
+应答报文格式检查PASS
+TestTime:215.5484ms
+                                                                        PASS
+9 SKG检查-软硬件版本固件名电压等信息
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:49CA74000000053A120CFFFF
+BLE MAC:804B50AD69B4
+电压值(mV)：：3872，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:4103.7179ms
+                                                                        PASS
+10 MAC反序
+倒序16进制Number转换失败，System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ReverseNumberExecuter.strToToHexByte(String hexString) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ReverseNumberExecuter.cs:行号 76
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ReverseNumberExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ReverseNumberExecuter.cs:行号 36
+TestTime:20872.7636ms
+                                                                        FAIL
+12 SKG授权指令-PCBID授权
+TestTime:15.9935ms
+                                                                        SKIP
+13 SKG查询指令-回读授权信息
+TestTime:10.9307ms
+                                                                        SKIP
+14 SKG检查-检查回读的授权信息
+TestTime:10.0096ms
+                                                                        SKIP
+15 SKG控制指令-EMS13通道
+TestTime:14.6664ms
+                                                                        SKIP
+16 采集板卡-AT获取EMS1
+TestTime:11.0101ms
+                                                                        SKIP
+17 SKG检查-EMS1值
+TestTime:14.2084ms
+                                                                        SKIP
+18 SKG控制指令-EMS24通道
+TestTime:10.0065ms
+                                                                        SKIP
+19 采集板卡-AT获取EMS2
+TestTime:10.8448ms
+                                                                        SKIP
+20 SKG检查-检查EMS2
+TestTime:11.412ms
+                                                                        SKIP
+21 SKG控制指令-开机
+TestTime:14.3354ms
+                                                                        SKIP
+22 SKG控制指令-关机
+TestTime:14.4071ms
+                                                                        SKIP
+23 SKG控制指令-发出声音+LED全关
+TestTime:9.9882ms
+                                                                        SKIP
+24 SKG检查-声音检查
+TestTime:10.0083ms
+                                                                        SKIP
+25 SKG控制指令-LED红/橙灯
+TestTime:13.8136ms
+                                                                        SKIP
+26 SKG检查-LED红/橙灯检查
+TestTime:13.5657ms
+                                                                        SKIP
+27 SKG控制指令-LED蓝灯
+TestTime:10.9693ms
+                                                                        SKIP
+28 SKG检查-LED蓝灯检查
+TestTime:10.9655ms
+                                                                        SKIP
+30 蓝牙dongle-AT启动测试RSSI和上下行丢包率
+TestTime:14.3259ms
+                                                                        SKIP
+31 SKG检查-蓝牙RSSI信号强度
+TestTime:16.5003ms
+                                                                        SKIP
+32 SKG检查-蓝牙上行丢包率
+TestTime:13.6902ms
+                                                                        SKIP
+33 SKG检查-蓝牙下行丢包率
+TestTime:9.9648ms
+                                                                        SKIP
+35 采集板卡-AT控制继电器电压输出5V
+TestTime:11.2273ms
+                                                                        SKIP
+36 SKG状态上报检测-电池充电状态检测
+TestTime:10.0078ms
+                                                                        SKIP
+37 采集板卡-AT读取电量值
+TestTime:11.9656ms
+                                                                        SKIP
+38 SKG检查-检查CRT值
+TestTime:13.3813ms
+                                                                        SKIP
+39 采集板卡-AT控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:256.3986ms
+                                                                        PASS
+40 SKG状态上报检测-电池未充电状态检测
+TestTime:10.9337ms
+                                                                        SKIP
+41 SKG状态上报检测-加热按键检测
+TestTime:10.0084ms
+                                                                        SKIP
+42 SKG状态上报检测-电源按键检测
+TestTime:21.8916ms
+                                                                        SKIP
+46 SKG控制指令-关机
+TestTime:11.9733ms
+                                                                        SKIP
+47 采集板卡-AT获取待机时低压通道1
+TestTime:17.9781ms
+                                                                        SKIP
+48 SKG检查-待机时低压通道1
+TestTime:10.9726ms
+                                                                        SKIP
+49 SKG控制指令-写入PCBA测试完成标志
+TestTime:13.8664ms
+                                                                        SKIP
+52 关闭SKG主串口
+TestTime:10.2067ms
+                                                                        PASS
+53 关闭采集板卡串口
+TestTime:13.4569ms
+                                                                        PASS
+54 关闭蓝牙dongle串口
+TestTime:139.6512ms
+                                                                        PASS
+55 Deinit
+TestTime:12.2189ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第10项:
+MAC反序
+AILinkFactoryAuto.Task.BaseException: 倒序16进制Number转换失败，System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ReverseNumberExecuter.strToToHexByte(String hexString) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ReverseNumberExecuter.cs:行号 76
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ReverseNumberExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ReverseNumberExecuter.cs:行号 36
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.ReverseNumberExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\ReverseNumberExecuter.cs:行号 46
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:27.4119603
+

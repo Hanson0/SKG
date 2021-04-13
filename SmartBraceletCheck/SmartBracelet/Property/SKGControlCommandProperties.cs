@@ -87,8 +87,8 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         public enum EnumLedModeSetting
         {
             不设置 = 0,
-            红或橙色LED开 = 1,
-            蓝色LED开=2,
+            蓝色LED开 = 1,
+            红或橙色LED开 =2,
             LED全关=3,
             绿色LED开=4,
         }

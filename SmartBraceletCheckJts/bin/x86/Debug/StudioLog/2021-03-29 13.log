@@ -1,0 +1,367 @@
+2021-03-29 13:16:01,173 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-29 13:16:01,205 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 万魔声学SM005，SKG自动测试系统 V1.0.0
+2021-03-29 13:16:01,205 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.0
+2021-03-29 13:16:01,208 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-29 13:16:01,209 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SKG-TEST\DUT1_SKGtest.jts]
+2021-03-29 13:16:01,495 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-29 13:16:01,495 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-29 13:16:05,165 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-29, Test Time: 13:16:05
+
+
+2021-03-29 13:16:05,204 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-29 13:16:05,216 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-29 13:16:05,223 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:20.9424ms
+                                                                        PASS
+2021-03-29 13:16:05,243 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-03-29 13:16:05,285 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-03-29 13:16:05,298 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-03-29 13:16:05,307 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=
+2021-03-29 13:16:05,318 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-03-29 13:16:05,331 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:91.8967ms
+                                                                        PASS
+2021-03-29 13:16:05,345 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开SKG主串口
+2021-03-29 13:16:15,495 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 超时：System.Func`1[System.Boolean]
+2021-03-29 13:16:15,524 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\OpenPhoneExecuter.cs:行号 98
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-29 13:16:15,731 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:10388.085ms
+                                                                        FAIL
+2021-03-29 13:16:15,746 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 8 SKG查询指令-所有信息查询
+2021-03-29 13:16:15,756 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:9.9444ms
+                                                                        SKIP
+2021-03-29 13:16:15,766 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 9 SKG检查-软硬件版本固件名电压等信息
+2021-03-29 13:16:15,774 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.0098ms
+                                                                        SKIP
+2021-03-29 13:16:15,783 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 11 SKG授权指令-PCBID授权
+2021-03-29 13:16:15,791 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.6941ms
+                                                                        SKIP
+2021-03-29 13:16:15,806 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 SKG查询指令-回读授权信息
+2021-03-29 13:16:15,814 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.7384ms
+                                                                        SKIP
+2021-03-29 13:16:15,823 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 13 SKG检查-检查回读的授权信息
+2021-03-29 13:16:15,851 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:27.9005ms
+                                                                        SKIP
+2021-03-29 13:16:15,865 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 SKG控制指令-EMS13通道
+2021-03-29 13:16:15,873 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.0147ms
+                                                                        SKIP
+2021-03-29 13:16:15,882 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 17 SKG控制指令-EMS24通道
+2021-03-29 13:16:15,892 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:9.2869ms
+                                                                        SKIP
+2021-03-29 13:16:15,900 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 20 SKG控制指令-开机
+2021-03-29 13:16:15,911 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:11.5101ms
+                                                                        SKIP
+2021-03-29 13:16:15,924 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 21 SKG控制指令-关机
+2021-03-29 13:16:15,934 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:9.2535ms
+                                                                        SKIP
+2021-03-29 13:16:15,945 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 SKG控制指令-发出声音+LED全关
+2021-03-29 13:16:15,954 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:9.1986ms
+                                                                        SKIP
+2021-03-29 13:16:15,962 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 23 SKG检查-声音检查
+2021-03-29 13:16:15,974 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:11.7121ms
+                                                                        SKIP
+2021-03-29 13:16:15,987 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 SKG控制指令-LED红/橙灯
+2021-03-29 13:16:15,996 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.5607ms
+                                                                        SKIP
+2021-03-29 13:16:16,008 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 25 SKG检查-LED红/橙灯检查
+2021-03-29 13:16:16,017 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:9.019ms
+                                                                        SKIP
+2021-03-29 13:16:16,026 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 26 SKG控制指令-LED蓝灯
+2021-03-29 13:16:16,037 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:11.2112ms
+                                                                        SKIP
+2021-03-29 13:16:16,050 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 27 SKG检查-LED蓝灯检查
+2021-03-29 13:16:16,058 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.4006ms
+                                                                        SKIP
+2021-03-29 13:16:16,070 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 40 SKG状态上报检测-加热按键检测
+2021-03-29 13:16:16,078 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.2257ms
+                                                                        SKIP
+2021-03-29 13:16:16,095 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 41 SKG状态上报检测-电源按键检测
+2021-03-29 13:16:16,104 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.9758ms
+                                                                        SKIP
+2021-03-29 13:16:16,120 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 45 SKG控制指令-关机
+2021-03-29 13:16:16,131 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:11.0418ms
+                                                                        SKIP
+2021-03-29 13:16:16,140 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 48 SKG控制指令-写入PCBA测试完成标志
+2021-03-29 13:16:16,148 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:8.0154ms
+                                                                        SKIP
+2021-03-29 13:16:16,157 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 51 关闭SKG主串口
+2021-03-29 13:16:16,167 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 给定关键字不在字典中。
+2021-03-29 13:16:16,177 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.ClosePhoneExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\ClosePhoneExecuter.cs:行号 17
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 410
+2021-03-29 13:16:16,388 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:230.1191ms
+                                                                        FAIL
+2021-03-29 13:16:16,410 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 54 Deinit
+2021-03-29 13:16:16,442 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:31.8225ms
+                                                                        PASS
+2021-03-29 13:16:16,463 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-29 13:16:16,484 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第3项:
+打开SKG主串口
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\OpenPhoneExecuter.cs:行号 98
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-29 13:16:16,502 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:11.3421782
+2021-03-29 13:17:37,268 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-29, Test Time: 13:17:37
+
+
+2021-03-29 13:17:37,286 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-29 13:17:37,297 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-29 13:17:37,299 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:14.244ms
+                                                                        PASS
+2021-03-29 13:17:37,311 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 2 扫码枪扫描标签
+2021-03-29 13:17:37,323 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - IMEI=
+2021-03-29 13:17:37,333 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MEID=
+2021-03-29 13:17:37,345 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - SN=
+2021-03-29 13:17:37,356 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MAC=
+2021-03-29 13:17:37,366 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:56.7866ms
+                                                                        PASS
+2021-03-29 13:17:37,380 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 3 打开SKG主串口
+2021-03-29 13:17:37,498 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:118.9116ms
+                                                                        PASS
+2021-03-29 13:17:37,516 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 8 SKG查询指令-所有信息查询
+2021-03-29 13:17:37,557 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+2021-03-29 13:17:37,700 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 接收的长度:98
+2021-03-29 13:17:37,745 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Rx:94 28 EA D0 A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 92 0C FF FF B4 69 AD 50 4B 80 0F 38 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 2C 
+2021-03-29 13:17:37,760 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 头部不是0xA5，buffer.RemoveAt：94
+2021-03-29 13:17:37,903 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 接收的长度:0
+2021-03-29 13:17:37,914 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 头部不是0xA5，buffer.RemoveAt：28
+2021-03-29 13:17:38,030 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 接收的长度:0
+2021-03-29 13:17:38,042 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 头部不是0xA5，buffer.RemoveAt：EA
+2021-03-29 13:17:38,155 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 接收的长度:0
+2021-03-29 13:17:38,167 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 头部不是0xA5，buffer.RemoveAt：D0
+2021-03-29 13:17:38,282 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 超时：System.Func`1[System.Boolean]
+2021-03-29 13:17:38,294 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGExecuter.cs:行号 171
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-29 13:17:38,314 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - 重试第1次
+2021-03-29 13:17:38,341 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+2021-03-29 13:17:38,471 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 接收的长度:94
+2021-03-29 13:17:38,484 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E D1 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 9A 
+2021-03-29 13:17:38,496 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E D1 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 9A 
+2021-03-29 13:17:38,504 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 核验RX的校验位：正确,返回校验位:9A,计算校验位:9A
+2021-03-29 13:17:38,556 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 应答报文格式检查PASS
+2021-03-29 13:17:38,580 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:1064.7165ms
+                                                                        PASS
+2021-03-29 13:17:38,599 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 9 SKG检查-软硬件版本固件名电压等信息
+2021-03-29 13:17:38,623 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 硬件版本号:0000,与设置版本号:0000一致
+2021-03-29 13:17:38,649 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 软件版本号:00000000,与设置版本号:00000000一致
+2021-03-29 13:17:38,659 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - MCU ID:49CA74000000053A120CFFFF
+2021-03-29 13:17:38,670 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - BLE MAC:804B50AD69B4
+2021-03-29 13:17:38,685 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 电压值(mV)：：3793，在设定范围：500 ~ 5000之间 PASS 
+
+2021-03-29 13:17:38,704 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 固件名称:K5-2T,与设置固件名称:K5-2T一致
+2021-03-29 13:17:38,720 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:126.3222ms
+                                                                        PASS
+2021-03-29 13:17:38,741 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 11 SKG授权指令-PCBID授权
+2021-03-29 13:17:38,760 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Tx:A5 C3 00 23 00 00 00 23 02 0D 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 2B 
+2021-03-29 13:17:38,774 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 连到系统上的设备没有发挥作用。
+
+2021-03-29 13:17:38,812 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.IO.IOException: 连到系统上的设备没有发挥作用。
+
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 298
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-29 13:17:38,832 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - 重试第1次
+2021-03-29 13:17:38,844 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - Tx:A5 C3 00 23 00 00 00 23 02 0D 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 2B 
+2021-03-29 13:17:41,748 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 由于线程退出或应用程序请求，已中止 I/O 操作。
+
+2021-03-29 13:17:41,800 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.View.FormMain Run 422 - System.IO.IOException: 由于线程退出或应用程序请求，已中止 I/O 操作。
+
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 298
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+2021-03-29 13:17:41,816 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - TestTime:3079.9668ms
+                                                                        FAIL
+2021-03-29 13:17:41,828 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 12 SKG查询指令-回读授权信息
+2021-03-29 13:17:41,844 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:15.6218ms
+                                                                        SKIP
+2021-03-29 13:17:41,862 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 13 SKG检查-检查回读的授权信息
+2021-03-29 13:17:41,878 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:15.9576ms
+                                                                        SKIP
+2021-03-29 13:17:41,899 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 14 SKG控制指令-EMS13通道
+2021-03-29 13:17:41,922 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:22.9548ms
+                                                                        SKIP
+2021-03-29 13:17:41,936 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 17 SKG控制指令-EMS24通道
+2021-03-29 13:17:41,965 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:28.7948ms
+                                                                        SKIP
+2021-03-29 13:17:41,980 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 20 SKG控制指令-开机
+2021-03-29 13:17:41,990 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:9.617ms
+                                                                        SKIP
+2021-03-29 13:17:42,002 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 21 SKG控制指令-关机
+2021-03-29 13:17:42,013 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:11.4691ms
+                                                                        SKIP
+2021-03-29 13:17:42,024 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 22 SKG控制指令-发出声音+LED全关
+2021-03-29 13:17:42,041 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:17.6393ms
+                                                                        SKIP
+2021-03-29 13:17:42,054 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 23 SKG检查-声音检查
+2021-03-29 13:17:42,066 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:12.5285ms
+                                                                        SKIP
+2021-03-29 13:17:42,078 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 24 SKG控制指令-LED红/橙灯
+2021-03-29 13:17:42,102 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:23.9721ms
+                                                                        SKIP
+2021-03-29 13:17:42,112 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 25 SKG检查-LED红/橙灯检查
+2021-03-29 13:17:42,126 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:13.9819ms
+                                                                        SKIP
+2021-03-29 13:17:42,136 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 26 SKG控制指令-LED蓝灯
+2021-03-29 13:17:42,152 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:16.2823ms
+                                                                        SKIP
+2021-03-29 13:17:42,165 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 27 SKG检查-LED蓝灯检查
+2021-03-29 13:17:42,200 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:34.9627ms
+                                                                        SKIP
+2021-03-29 13:17:42,211 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 40 SKG状态上报检测-加热按键检测
+2021-03-29 13:17:42,246 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:35.256ms
+                                                                        SKIP
+2021-03-29 13:17:42,257 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 41 SKG状态上报检测-电源按键检测
+2021-03-29 13:17:42,279 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:21.775ms
+                                                                        SKIP
+2021-03-29 13:17:42,305 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 45 SKG控制指令-关机
+2021-03-29 13:17:42,325 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:19.9462ms
+                                                                        SKIP
+2021-03-29 13:17:42,348 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 48 SKG控制指令-写入PCBA测试完成标志
+2021-03-29 13:17:42,372 [Thread-DUT1] WARN  UiDebug AILinkFactoryAuto.Core.Log Warn 43 - TestTime:23.6111ms
+                                                                        SKIP
+2021-03-29 13:17:42,392 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 51 关闭SKG主串口
+2021-03-29 13:17:42,408 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:16.9543ms
+                                                                        PASS
+2021-03-29 13:17:42,424 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 54 Deinit
+2021-03-29 13:17:42,439 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:14.9622ms
+                                                                        PASS
+2021-03-29 13:17:42,491 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2021-03-29 13:17:42,509 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+第11项:
+SKG授权指令-PCBID授权
+System.IO.IOException: 由于线程退出或应用程序请求，已中止 I/O 操作。
+
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 298
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+2021-03-29 13:17:42,526 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:05.2678938
+2021-03-29 13:18:06,734 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 476 - 
+           _____ _      _       _    ______         _                                 _        _____ _             _ _       
+     /\   |_   _| |    (_)     | |  |  ____|       | |                     /\        | |      / ____| |           | (_)      
+    /  \    | | | |     _ _ __ | | _| |__ __ _  ___| |_ ___  _ __ _   _   /  \  _   _| |_ ___| (___ | |_ _   _  __| |_  ___  
+   / /\ \   | | | |    | | '_ \| |/ /  __/ _` |/ __| __/ _ \| '__| | | | / /\ \| | | | __/ _ \\___ \| __| | | |/ _` | |/ _ \ 
+  / ____ \ _| |_| |____| | | | |   <| | | (_| | (__| || (_) | |  | |_| |/ ____ \ |_| | || (_) |___) | |_| |_| | (_| | | (_) |
+ /_/    \_\_____|______|_|_| |_|_|\_\_|  \__,_|\___|\__\___/|_|   \__, /_/    \_\__,_|\__\___/_____/ \__|\__,_|\__,_|_|\___/ 
+                                                                   __/ |                                                     
+                                                                  |___/                                                      
+
+2021-03-29 13:18:06,751 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 480 - 万魔声学SM005，SKG自动测试系统 V1.0.0
+2021-03-29 13:18:06,751 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio FormStudio_Shown 481 - V1.0.0
+2021-03-29 13:18:06,755 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-29 13:18:06,756 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\SKG-TEST\DUT1_SKGtest.jts]
+2021-03-29 13:18:06,962 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-29 13:18:06,962 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-29 13:18:08,645 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormStudio TsmDeleteLayout_Click 222 - delete layout ./projects/layout.xml success
+2021-03-29 13:18:21,185 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-29 13:18:21,186 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\空项\DUT1_SKG.jts]
+2021-03-29 13:18:21,193 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-29 13:18:21,194 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-29 13:18:27,905 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-29 13:18:27,906 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 230 - DUT1
+2021-03-29 13:18:27,906 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 233 - 加载测试序列=[\projects\空项\DUT1_SKG.jts]
+2021-03-29 13:18:27,907 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain LoadJts 272 - 加载测试序列成功
+2021-03-29 13:18:27,907 [FormStudio] INFO  UiInfo AILinkFactoryAuto.View.FormMain FormMain_Shown 236 - FormMain................Success!
+2021-03-29 13:18:29,339 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-29, Test Time: 13:18:29
+
+
+2021-03-29 13:18:29,392 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 1 Init
+2021-03-29 13:18:29,406 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Task.Executer.InitExecuter Run 0 - Start Init......
+2021-03-29 13:18:29,412 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:21.943ms
+                                                                        PASS
+2021-03-29 13:18:29,454 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - 23 Deinit
+2021-03-29 13:18:29,470 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - TestTime:17.9526ms
+                                                                        PASS
+2021-03-29 13:18:29,488 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Pass 49 - 
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+2021-03-29 13:18:29,498 [Thread-DUT1] ERROR UiDebug AILinkFactoryAuto.Core.Log Fail 38 - 
+2021-03-29 13:18:29,508 [Thread-DUT1] INFO  UiDebug AILinkFactoryAuto.Core.Log Info 32 - all test time:0:00:00.1755316

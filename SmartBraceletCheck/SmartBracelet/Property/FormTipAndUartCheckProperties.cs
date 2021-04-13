@@ -25,6 +25,50 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
 
         private string tips;
         private EnumUartDataType uartDataType;
+
+        
+        private EnumCheckKeyEvent checkKeyEvent;
+        private EnumCheckUsbInsertEvent checkUsbInsert;
+        private EnumCheckBatteryStatus checkBatteryStatus;
+        private EnumCheckWearingStatus checkWearingStatus;
+        
+
+        public enum EnumCheckKeyEvent
+        {
+            不检查,
+            无按键,
+            电源键按下,
+            加热键被按下,
+            加键被按下,
+            减键被按下,
+        }
+
+        
+        public enum EnumCheckUsbInsertEvent
+        {
+            不检查,
+            无状态改变,
+            USB未插入,
+            USB已插入,
+        }
+        public enum EnumCheckBatteryStatus
+        {
+            不检查,
+            无状态改变,
+            未充电,
+            充电中,
+            充满状态,
+            电量不足,
+        }
+
+        public enum EnumCheckWearingStatus
+        {
+            不检查,
+            无状态改变,
+            未检测到佩戴,
+            检测到有佩戴,
+        }
+        
         public enum EnumUartDataType
         {
             String,
@@ -39,6 +83,36 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
         //{
         //    this.RetryCount = 0;
         //}
+
+
+
+        [Category("StatusEventReportCheck"), Description("检查按键状态事件")]
+        public EnumCheckKeyEvent CheckKeyEvent
+        {
+            get { return checkKeyEvent; }
+            set { checkKeyEvent = value; }
+        }
+
+        [Category("StatusEventReportCheck"), Description("检查USB插入状态")]
+        public EnumCheckUsbInsertEvent CheckUsbInsert
+        {
+            get { return checkUsbInsert; }
+            set { checkUsbInsert = value; }
+        }
+
+        [Category("StatusEventReportCheck"), Description("检查电池状态")]
+        public EnumCheckBatteryStatus CheckBatteryStatus
+        {
+            get { return checkBatteryStatus; }
+            set { checkBatteryStatus = value; }
+        }
+
+        [Category("StatusEventReportCheck"), Description("检查佩戴状态")]
+        public EnumCheckWearingStatus CheckWearingStatus
+        {
+            get { return checkWearingStatus; }
+            set { checkWearingStatus = value; }
+        }
 
         [Category("Common"), Description("count down time, unit:ms")]
         public int CountDownTime

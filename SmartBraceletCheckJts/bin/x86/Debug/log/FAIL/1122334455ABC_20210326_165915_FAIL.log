@@ -1,0 +1,140 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-26, Test Time: 16:59:15
+
+
+1 Init
+TestTime:15.6554ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:62.5017ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:123.7138ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第2次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第3次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第4次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 53 80 80 31 31 32 32 33 33 34 34 35 35 41 42 43 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 1B 
+核验RX的校验位：错误,返回校验位:1B,计算校验位:9B
+超时：System.Func`1[System.Boolean]
+重试第5次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第6次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第7次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+重试第8次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+超时：System.Func`1[System.Boolean]
+TestTime:5764.2694ms
+                                                                        FAIL
+9 SKG检查-软硬件版本固件名电压等信息
+TestTime:15.6242ms
+                                                                        SKIP
+11 SKG授权指令-PCBID授权
+TestTime:15.5859ms
+                                                                        SKIP
+12 SKG查询指令-回读授权信息
+TestTime:0ms
+                                                                        SKIP
+13 SKG检查-检查回读的授权信息
+TestTime:15.5874ms
+                                                                        SKIP
+14 SKG控制指令-EMS13通道
+TestTime:12.5411ms
+                                                                        SKIP
+17 SKG控制指令-EMS24通道
+TestTime:11.9862ms
+                                                                        SKIP
+20 SKG控制指令-开机
+TestTime:0ms
+                                                                        SKIP
+21 SKG控制指令-关机
+TestTime:15.6179ms
+                                                                        SKIP
+22 SKG控制指令-发出声音+LED全关
+TestTime:15.6242ms
+                                                                        SKIP
+23 SKG检查-声音检查
+TestTime:31.2384ms
+                                                                        SKIP
+24 SKG控制指令-LED红/橙灯
+TestTime:15.586ms
+                                                                        SKIP
+25 SKG检查-LED红/橙灯检查
+TestTime:0ms
+                                                                        SKIP
+26 SKG控制指令-LED蓝灯
+TestTime:15.6206ms
+                                                                        SKIP
+27 SKG检查-LED蓝灯检查
+TestTime:15.6591ms
+                                                                        SKIP
+40 SKG状态上报检测-加热按键检测
+TestTime:15.5815ms
+                                                                        SKIP
+41 SKG状态上报检测-电源按键检测
+TestTime:0ms
+                                                                        SKIP
+45 SKG控制指令-关机
+TestTime:15.5876ms
+                                                                        SKIP
+48 SKG控制指令-写入PCBA测试完成标志
+TestTime:15.6225ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:31.2409ms
+                                                                        PASS
+54 Deinit
+TestTime:15.3871ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第8项:
+SKG查询指令-所有信息查询
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGExecuter.cs:行号 171
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:06.6200231
+

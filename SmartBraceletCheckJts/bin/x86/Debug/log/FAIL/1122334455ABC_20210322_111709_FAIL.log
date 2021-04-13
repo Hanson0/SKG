@@ -1,0 +1,166 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-22, Test Time: 11:17:09
+
+
+1 Init
+TestTime:29.1765ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:103.6566ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:4003.8633ms
+                                                                        PASS
+4 打开采集板卡串口
+超时：System.Func`1[System.Boolean]
+TestTime:10488.5674ms
+                                                                        FAIL
+8 SKG查询指令-所有信息查询
+TestTime:55.4747ms
+                                                                        SKIP
+9 SKG检查-软硬件版本固件名电压等信息
+TestTime:52.1043ms
+                                                                        SKIP
+10 SKG检查-是否完成过整机测试
+TestTime:45.3386ms
+                                                                        SKIP
+11 SKG授权指令-PCBID授权
+TestTime:21.7571ms
+                                                                        SKIP
+12 SKG查询指令-回读授权信息
+TestTime:15.0468ms
+                                                                        SKIP
+13 SKG检查-检查回读的授权信息
+TestTime:36.7151ms
+                                                                        SKIP
+14 SKG控制指令-EMS13通道
+TestTime:34.7382ms
+                                                                        SKIP
+15 采集板卡-AT获取EMS1
+TestTime:21.9911ms
+                                                                        SKIP
+16 SKG检查-EMS1值
+TestTime:16.6385ms
+                                                                        SKIP
+17 SKG控制指令-EMS24通道
+TestTime:16.9104ms
+                                                                        SKIP
+18 采集板卡-AT获取EMS2
+TestTime:14.7272ms
+                                                                        SKIP
+19 SKG检查-检查EMS2
+TestTime:13.2757ms
+                                                                        SKIP
+20 SKG控制指令-开机
+TestTime:12.0009ms
+                                                                        SKIP
+21 SKG控制指令-关机
+TestTime:19.9272ms
+                                                                        SKIP
+22 SKG控制指令-发出声音+LED全关
+TestTime:31.4542ms
+                                                                        SKIP
+23 SKG检查-声音检查
+TestTime:15.8785ms
+                                                                        SKIP
+24 SKG控制指令-LED红/橙灯
+TestTime:36.8241ms
+                                                                        SKIP
+25 SKG检查-LED红/橙灯检查
+TestTime:13.9559ms
+                                                                        SKIP
+26 SKG控制指令-LED蓝灯
+TestTime:19.1345ms
+                                                                        SKIP
+27 SKG检查-LED蓝灯检查
+TestTime:18.0709ms
+                                                                        SKIP
+28 SKG控制指令-开启蓝牙
+TestTime:19.2782ms
+                                                                        SKIP
+33 SKG控制指令-关闭蓝牙
+TestTime:25.9624ms
+                                                                        SKIP
+34 采集板卡-AT控制继电器电压输出5V
+TestTime:24.7536ms
+                                                                        SKIP
+35 SKG状态上报检测-电池充电状态检测
+TestTime:44.7787ms
+                                                                        SKIP
+36 采集板卡-AT读取电量值
+TestTime:11.094ms
+                                                                        SKIP
+37 SKG检查-检查CRT值
+TestTime:15.3198ms
+                                                                        SKIP
+38 采集板卡-AT控制继电器关闭电压输出
+ComDut No PortName:COM43
+TestTime:264.7301ms
+                                                                        FAIL
+39 SKG状态上报检测-电池未充电状态检测
+TestTime:23.2554ms
+                                                                        SKIP
+40 SKG状态上报检测-加热按键检测
+TestTime:38.8961ms
+                                                                        SKIP
+41 SKG状态上报检测-电源按键检测
+TestTime:47.451ms
+                                                                        SKIP
+45 SKG控制指令-关机
+TestTime:18.6776ms
+                                                                        SKIP
+46 采集板卡-AT获取待机时低压通道1
+TestTime:20.4324ms
+                                                                        SKIP
+47 SKG检查-待机时低压通道1
+TestTime:18.7393ms
+                                                                        SKIP
+48 SKG控制指令-写入PCBA测试完成标志
+TestTime:18.9934ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:14.9455ms
+                                                                        PASS
+52 关闭采集板卡串口
+ClosePhoneProperties No PortName:COM43
+TestTime:238.743ms
+                                                                        FAIL
+54 Deinit
+TestTime:16.9781ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第4项:
+打开采集板卡串口
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Dut.AtCommand.Executer.OpenPhoneExecutor.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\TaskAtCommand\AtCommand\Executer\OpenPhoneExecuter.cs:行号 98
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:16.8878738
+

@@ -1,0 +1,138 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-26, Test Time: 16:56:03
+
+
+1 Init
+TestTime:0ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:62.4841ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:125.4132ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第2次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第3次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第4次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第5次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第6次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第7次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+重试第8次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+端口被关闭。
+TestTime:546.314ms
+                                                                        FAIL
+9 SKG检查-软硬件版本固件名电压等信息
+TestTime:15.5769ms
+                                                                        SKIP
+11 SKG授权指令-PCBID授权
+TestTime:0ms
+                                                                        SKIP
+12 SKG查询指令-回读授权信息
+TestTime:15.6203ms
+                                                                        SKIP
+13 SKG检查-检查回读的授权信息
+TestTime:0ms
+                                                                        SKIP
+14 SKG控制指令-EMS13通道
+TestTime:15.6523ms
+                                                                        SKIP
+17 SKG控制指令-EMS24通道
+TestTime:15.5913ms
+                                                                        SKIP
+20 SKG控制指令-开机
+TestTime:15.6068ms
+                                                                        SKIP
+21 SKG控制指令-关机
+TestTime:0ms
+                                                                        SKIP
+22 SKG控制指令-发出声音+LED全关
+TestTime:15.6524ms
+                                                                        SKIP
+23 SKG检查-声音检查
+TestTime:15.6207ms
+                                                                        SKIP
+24 SKG控制指令-LED红/橙灯
+TestTime:15.6227ms
+                                                                        SKIP
+25 SKG检查-LED红/橙灯检查
+TestTime:0ms
+                                                                        SKIP
+26 SKG控制指令-LED蓝灯
+TestTime:15.6529ms
+                                                                        SKIP
+27 SKG检查-LED蓝灯检查
+TestTime:15.622ms
+                                                                        SKIP
+40 SKG状态上报检测-加热按键检测
+TestTime:15.5862ms
+                                                                        SKIP
+41 SKG状态上报检测-电源按键检测
+TestTime:15.6246ms
+                                                                        SKIP
+45 SKG控制指令-关机
+TestTime:15.6167ms
+                                                                        SKIP
+48 SKG控制指令-写入PCBA测试完成标志
+TestTime:15.654ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:15.6222ms
+                                                                        PASS
+54 Deinit
+TestTime:0ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第8项:
+SKG查询指令-所有信息查询
+System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGExecuter.cs:行号 130
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:01.3117406
+

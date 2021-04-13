@@ -168,27 +168,168 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //}
             #endregion
             //发命令后一直循环接收->检验->拼接，超过500ms还没检验通过则超时FAIL
-            //TimeUtils.Execute(() =>
-            //{
-            //    comDut.Write(config.TestPowerOnAT + endLine);
-            //    Thread.Sleep(config.AtCommandInterval);
-            //    response += comDut.ReadExisting();
-            //    if (!string.IsNullOrEmpty(config.AtCommandOk))
-            //    {
-            //        if (response.Contains(config.AtCommandOk))
-            //        {
-            //            log.Info(string.Format("检测到产品上电，AT response=[{0}]  contain =[{1}]", response, config.AtCommandOk));
-            //            //跳出循环执行
-            //            return true;
-            //        }
-            //    }
-            //    //继续循环执行
-            //    return false;
-            //}, config.Timeout);
+            TimeUtils.Execute(() =>
+            {
+                int n = comDut.BytesToRead;
+                //if (n==0)
+                //{
+                //    //继续循环执行
+                //    return false;
+                //}
+                log.Info(string.Format("接收的长度:{0}", n));
+                if (n > 0)
+                {
+                    byte[] buf = new byte[n];
+                    comDut.Read(buf, 0, n);
+                    UartDisplay(buf, "R");
 
-            int n = comDut.BytesToRead;
-            byte[] buf = new byte[n];
-            comDut.Read(buf, 0, n);
+                    buffer.Clear();
+                    buffer.AddRange(buf);
+
+                }
+
+                //byte[] buf = new byte[n];
+                //comDut.Read(buf, 0, n);
+                //buffer.AddRange(buf);
+
+                if (buffer.Count > 9)
+                {
+                    if (buffer[0] == 0xA5)
+                    {
+                        //throw new BaseException(string.Format("Head Error"));
+                        //if (&& buf[1] == 0xC3))
+                        //{
+
+                        //}
+                        if (buffer[1] == 0xC3)
+                        {
+                            byte high = buffer[2];
+                            byte low = buffer[3];
+                            int iTotalLength = (high & 0xFF) << 8 | low;
+
+                            if (buffer.Count < iTotalLength) //数据区尚未接收完整
+                            {
+                                //继续循环执行
+                                log.Info(string.Format("数据尚未接收完整,已接收:{0},总长度:{1}", buffer.Count, iTotalLength));
+                                return false;
+                            }
+                            byte[] oneFrameBytes = new byte[iTotalLength];
+                            buffer.CopyTo(0, oneFrameBytes, 0, iTotalLength);
+                            buffer.RemoveRange(0, iTotalLength);
+
+                            UartDisplay(oneFrameBytes, "R");
+
+                            #region //开始校验-命令字
+                            if (config.CommandType == SKGProperties.EnumCommandType.查询指令)
+                            {
+                                if (!(oneFrameBytes[6] == 0xA0 && oneFrameBytes[7] == 0x37))
+                                {
+                                    log.Info(string.Format("CMD Type Error"));
+                                    //继续循环执行
+                                    return false;
+                                }
+                            }
+                            else if (config.CommandType == SKGProperties.EnumCommandType.控制指令)
+                            {
+                                if (!(oneFrameBytes[6] == 0xA0 && oneFrameBytes[7] == 0x40))
+                                {
+                                    log.Info(string.Format("CMD Type Error"));
+                                    //继续循环执行
+                                    return false;
+
+                                }
+                            }
+                            else if (config.CommandType == SKGProperties.EnumCommandType.下发授权)
+                            {
+                                if (!(oneFrameBytes[6] == 0xA0 && oneFrameBytes[7] == 0x23))
+                                {
+                                    log.Info(string.Format("CMD Type Error"));
+                                    //继续循环执行
+                                    return false;
+
+                                }
+                            }
+                            else
+                            {
+                                log.Info(string.Format("非法指令类型"));
+                                //继续循环执行
+                                return false;
+
+                            }
+
+                            //异或校验 1字节
+                            byte[] bufOutOxr = new byte[oneFrameBytes.Length - 1];
+                            Array.Copy(oneFrameBytes, 0, bufOutOxr, 0, oneFrameBytes.Length - 1);
+                            byte xor = ByteToXOR(bufOutOxr);
+
+                            if (oneFrameBytes[iTotalLength - 1] != xor)
+                            {
+                                log.Info(string.Format("核验RX的校验位：错误,返回校验位:{0:X2},计算校验位:{1:X2}", oneFrameBytes[iTotalLength - 1], xor));
+                                //继续循环执行
+                                return false;
+                            }
+                            log.Info(string.Format("核验RX的校验位：正确,返回校验位:{0:X2},计算校验位:{1:X2}", oneFrameBytes[iTotalLength - 1], xor));
+
+                            //数据内容 32个字节——长度是不固定的
+                            byte[] dataArry = new byte[iTotalLength - 9];//config.DataLength
+                            Array.Copy(oneFrameBytes, 8, dataArry, 0, iTotalLength - 9);//config.DataLength
+
+                            //添加到全局变量中
+                            if (config.GlobalVariblesKey != null)
+                            {
+                                for (int i = 0; i < config.GlobalVariblesKey.Length; i++)
+                                {
+                                    Match matchKey = Regex.Match(config.GlobalVariblesKey[i], this.pattern);
+                                    if (!matchKey.Success)
+                                    {
+                                        throw new BaseException("read info key fail");
+                                    }
+
+                                    string key = matchKey.Groups[1].ToString();
+
+                                    configGv.Add(key, dataArry);
+                                    log.Info("应答报文格式检查PASS");
+                                }
+                            }
+
+                            //跳出循环执行
+                            return true;
+
+                            #endregion
+                        }
+                        else
+                        {
+                            log.Info(string.Format("头部不是0xA5,0xC3，buffer.RemoveAt：{0:X2},{1:X2}", buffer[0], buffer[1]));
+
+                            buffer.RemoveRange(0, 2);
+                            //继续循环执行
+                            return false;
+
+                        }
+
+                    }
+                    else
+                    {
+                        log.Info(string.Format("头部不是0xA5，buffer.RemoveAt：{0:X2}", buffer[0]));
+                        buffer.RemoveAt(0);
+                        //继续循环执行
+                        return false;
+
+                    }
+                }
+                else
+                {
+                    //继续循环执行
+                    log.Info(string.Format("buffer.Count:{0}小于最小长度9", buffer.Count));
+
+                    return false;
+                }
+
+            }, config.Timeout);
+
+            //int n = comDut.BytesToRead;
+            //byte[] buf = new byte[n];
+            //comDut.Read(buf, 0, n);
             #region
             ////1.缓存数据
             //buffer.AddRange(buf);
@@ -292,101 +433,104 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //}
             #endregion
 
-            //解析是否收到正确的包,包头，命令，校验位
-            //起始标志 数据长度 保留字     命令字     数据内容    异或校验码 
-            //0XA5C3    9+N     0x0000      0x0037      Data        异或 
-            //2 字节  2 字节    2 字节      2 字节      N 字节     1 字节
-            UartDisplay(buf,"R");
-            if (buf.Length < 9)
-            {
-                throw new BaseException(string.Format("Length Not enough"));
-            }
-            //包头
-            if (!(buf[0]==0xA5 && buf[1]==0xC3))
-            {
-                throw new BaseException(string.Format("Head Error"));
-            }
-            //长度 2字节
-            byte high = buf[2];
-            byte low = buf[3];
-            int iTotalLength = (high & 0xFF) << 8 | low;
+            #region
+            ////解析是否收到正确的包,包头，命令，校验位
+            ////起始标志 数据长度 保留字     命令字     数据内容    异或校验码 
+            ////0XA5C3    9+N     0x0000      0x0037      Data        异或 
+            ////2 字节  2 字节    2 字节      2 字节      N 字节     1 字节
+            //UartDisplay(buf,"R");
+            //if (buf.Length < 9)
+            //{
+            //    throw new BaseException(string.Format("Length Not enough"));
+            //}
+            ////包头
+            //if (!(buf[0]==0xA5 && buf[1]==0xC3))
+            //{
+            //    throw new BaseException(string.Format("Head Error"));
+            //}
+            ////长度 2字节
+            //byte high = buf[2];
+            //byte low = buf[3];
+            //int iTotalLength = (high & 0xFF) << 8 | low;
 
-            if (iTotalLength != n)
-            {
-                throw new BaseException(string.Format("Length Error,长度位：{0},实际长度:{1}", iTotalLength,n));
-            }
+            //if (iTotalLength != n)
+            //{
+            //    throw new BaseException(string.Format("Length Error,长度位：{0},实际长度:{1}", iTotalLength,n));
+            //}
 
-            //命令字
-            if (config.CommandType==SKGProperties.EnumCommandType.查询指令)
-            {
-                if (!(buf[6] == 0xA0 && buf[7] == 0x37))
-                {
-                    throw new BaseException(string.Format("CMD Type Error"));
-                }
-            }
-            else if(config.CommandType == SKGProperties.EnumCommandType.控制指令)
-            {
-                if (!(buf[6] == 0xA0 && buf[7] == 0x40))
-                {
-                    throw new BaseException(string.Format("CMD Type Error"));
-                }
-            }
-            else if(config.CommandType == SKGProperties.EnumCommandType.下发授权)
-            {
-                if (!(buf[6] == 0xA0 && buf[7] == 0x23))
-                {
-                    throw new BaseException(string.Format("CMD Type Error"));
-                }
-            }
-            else
-            {
-                throw new BaseException(string.Format("非法指令类型"));
-            }
-
-
-            //异或校验 1字节
-            byte[] bufOutOxr = new byte[buf.Length - 1];
-            Array.Copy(buf, 0, bufOutOxr, 0, buf.Length - 1);
-            byte xor = ByteToXOR(bufOutOxr);
-
-            if (buf[n-1] != xor)
-            {
-                throw new BaseException(string.Format("核验RX的校验位：错误,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
-            }
-            log.Info(string.Format("核验RX的校验位：正确,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
+            ////命令字
+            //if (config.CommandType==SKGProperties.EnumCommandType.查询指令)
+            //{
+            //    if (!(buf[6] == 0xA0 && buf[7] == 0x37))
+            //    {
+            //        throw new BaseException(string.Format("CMD Type Error"));
+            //    }
+            //}
+            //else if(config.CommandType == SKGProperties.EnumCommandType.控制指令)
+            //{
+            //    if (!(buf[6] == 0xA0 && buf[7] == 0x40))
+            //    {
+            //        throw new BaseException(string.Format("CMD Type Error"));
+            //    }
+            //}
+            //else if(config.CommandType == SKGProperties.EnumCommandType.下发授权)
+            //{
+            //    if (!(buf[6] == 0xA0 && buf[7] == 0x23))
+            //    {
+            //        throw new BaseException(string.Format("CMD Type Error"));
+            //    }
+            //}
+            //else
+            //{
+            //    throw new BaseException(string.Format("非法指令类型"));
+            //}
 
 
+            ////异或校验 1字节
+            //byte[] bufOutOxr = new byte[buf.Length - 1];
+            //Array.Copy(buf, 0, bufOutOxr, 0, buf.Length - 1);
+            //byte xor = ByteToXOR(bufOutOxr);
 
-            //数据内容 32个字节——长度是不固定的
-            byte[] dataArry = new byte[iTotalLength-9];//config.DataLength
-            Array.Copy(buf, 8, dataArry, 0, iTotalLength - 9);//config.DataLength
+            //if (buf[n-1] != xor)
+            //{
+            //    throw new BaseException(string.Format("核验RX的校验位：错误,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
+            //}
+            //log.Info(string.Format("核验RX的校验位：正确,返回校验位:{0:X2},计算校验位:{1:X2}", buf[n - 1], xor));
 
-            //添加到全局变量中
-            if (config.GlobalVariblesKey != null)
-            {
-                for (int i = 0; i < config.GlobalVariblesKey.Length; i++)
-                {
-                    //string pattern = "-([0-9]{2}) ";
-                    //Match matchValue = Regex.Match(response, pattern);
-                    //if (!matchValue.Success)
-                    //{
-                    //    throw new BaseException("read info value fail");
-                    //}
 
-                    //string value = matchValue.Groups[1].ToString();
 
-                    Match matchKey = Regex.Match(config.GlobalVariblesKey[i], this.pattern);
-                    if (!matchKey.Success)
-                    {
-                        throw new BaseException("read info key fail");
-                    }
+            ////数据内容 32个字节——长度是不固定的
+            //byte[] dataArry = new byte[iTotalLength-9];//config.DataLength
+            //Array.Copy(buf, 8, dataArry, 0, iTotalLength - 9);//config.DataLength
 
-                    string key = matchKey.Groups[1].ToString();
+            ////添加到全局变量中
+            //if (config.GlobalVariblesKey != null)
+            //{
+            //    for (int i = 0; i < config.GlobalVariblesKey.Length; i++)
+            //    {
+            //        //string pattern = "-([0-9]{2}) ";
+            //        //Match matchValue = Regex.Match(response, pattern);
+            //        //if (!matchValue.Success)
+            //        //{
+            //        //    throw new BaseException("read info value fail");
+            //        //}
 
-                    configGv.Add(key, dataArry);
-                    log.Info("应答报文格式检查PASS");
-                }
-            }
+            //        //string value = matchValue.Groups[1].ToString();
+
+            //        Match matchKey = Regex.Match(config.GlobalVariblesKey[i], this.pattern);
+            //        if (!matchKey.Success)
+            //        {
+            //            throw new BaseException("read info key fail");
+            //        }
+
+            //        string key = matchKey.Groups[1].ToString();
+
+            //        configGv.Add(key, dataArry);
+            //        log.Info("应答报文格式检查PASS");
+            //    }
+            //}
+            #endregion
+
 
             ////如果收到的包正确
             //string str = byteToHexStr(buf);

@@ -1,0 +1,133 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-26, Test Time: 16:55:24
+
+
+1 Init
+TestTime:15.6193ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:78.107ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:140.9688ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E FA 80 00 31 31 32 32 33 33 34 34 35 35 41 42 43 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 4C 
+核验RX的校验位：正确,返回校验位:4C,计算校验位:4C
+应答报文格式检查PASS
+TestTime:4420.1918ms
+                                                                        PASS
+9 SKG检查-软硬件版本固件名电压等信息
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:49CA74000000053A120CFFFF
+BLE MAC:804B50AD69B4
+电压值(mV)：：3834，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:163.1293ms
+                                                                        PASS
+11 SKG授权指令-PCBID授权
+Tx:A5 C3 00 23 00 00 00 23 02 0D 31 31 32 32 33 33 34 34 35 35 41 42 43 00 00 00 00 00 00 00 00 00 00 00 29 
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 23 00 00 00 23 02 0D 31 31 32 32 33 33 34 34 35 35 41 42 43 00 00 00 00 00 00 00 00 00 00 00 29 
+连到系统上的设备没有发挥作用。
+
+TestTime:808.3018ms
+                                                                        FAIL
+12 SKG查询指令-回读授权信息
+TestTime:15.6241ms
+                                                                        SKIP
+13 SKG检查-检查回读的授权信息
+TestTime:15.6585ms
+                                                                        SKIP
+14 SKG控制指令-EMS13通道
+TestTime:31.2053ms
+                                                                        SKIP
+17 SKG控制指令-EMS24通道
+TestTime:15.6241ms
+                                                                        SKIP
+20 SKG控制指令-开机
+TestTime:15.6192ms
+                                                                        SKIP
+21 SKG控制指令-关机
+TestTime:15.6216ms
+                                                                        SKIP
+22 SKG控制指令-发出声音+LED全关
+TestTime:31.211ms
+                                                                        SKIP
+23 SKG检查-声音检查
+TestTime:0ms
+                                                                        SKIP
+24 SKG控制指令-LED红/橙灯
+TestTime:31.1935ms
+                                                                        SKIP
+25 SKG检查-LED红/橙灯检查
+TestTime:0ms
+                                                                        SKIP
+26 SKG控制指令-LED蓝灯
+TestTime:15.6219ms
+                                                                        SKIP
+27 SKG检查-LED蓝灯检查
+TestTime:15.5839ms
+                                                                        SKIP
+40 SKG状态上报检测-加热按键检测
+TestTime:31.2071ms
+                                                                        SKIP
+41 SKG状态上报检测-电源按键检测
+TestTime:15.5889ms
+                                                                        SKIP
+45 SKG控制指令-关机
+TestTime:0ms
+                                                                        SKIP
+48 SKG控制指令-写入PCBA测试完成标志
+TestTime:15.5846ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:31.1965ms
+                                                                        PASS
+54 Deinit
+TestTime:15.1829ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第11项:
+SKG授权指令-PCBID授权
+System.IO.IOException: 连到系统上的设备没有发挥作用。
+
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   在 System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGAuthorizeCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGAuthorizeCommandExecuter.cs:行号 298
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:06.3611644
+

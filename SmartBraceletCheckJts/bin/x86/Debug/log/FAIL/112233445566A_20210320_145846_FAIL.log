@@ -1,0 +1,173 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-20, Test Time: 14:58:46
+
+
+1 Init
+TestTime:24.4454ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:91.8327ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:5554.6065ms
+                                                                        PASS
+4 打开采集板卡串口
+TestTime:2692.5143ms
+                                                                        PASS
+7 发送SKG查询指令
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 01 01 86 
+CMD Type Error
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 0D 00 00 A0 41 00 01 01 01 8B 
+CMD Type Error
+超时：System.Func`1[System.Boolean]
+重试第2次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 0D 00 00 A0 41 00 02 01 01 88 
+CMD Type Error
+超时：System.Func`1[System.Boolean]
+TestTime:2116.6143ms
+                                                                        FAIL
+8 发送SKG查询指令
+TestTime:22.9347ms
+                                                                        SKIP
+9 检查SKG查询到的信息
+TestTime:40.2656ms
+                                                                        SKIP
+10 SKG授权-PCBID授权
+TestTime:21.1355ms
+                                                                        SKIP
+11 回读确保授权写入成功-发送查询指令
+TestTime:39.7159ms
+                                                                        SKIP
+12 回读确保授权写入成功-查询内容检查
+TestTime:15.8718ms
+                                                                        SKIP
+13 发SKG控制指令-EMS13通道
+TestTime:24.9357ms
+                                                                        SKIP
+14 AT-获取EMS1
+TestTime:24.5812ms
+                                                                        SKIP
+15 检查EMS1
+TestTime:11.9646ms
+                                                                        SKIP
+16 发SKG控制指令-EMS24-通道
+TestTime:13.9606ms
+                                                                        SKIP
+17 AT-获取EMS2
+TestTime:9.973ms
+                                                                        SKIP
+18 检查EMS2
+TestTime:10.0061ms
+                                                                        SKIP
+19 发SKG控制指令-开机
+TestTime:11.9668ms
+                                                                        SKIP
+20 发SKG控制指令-关机
+TestTime:10.9708ms
+                                                                        SKIP
+21 发SKG控制指令-发出声音+LED全关
+TestTime:38.8985ms
+                                                                        SKIP
+22 声音检查-用户判断
+TestTime:23.9012ms
+                                                                        SKIP
+23 发SKG控制指令-LED红/橙灯
+TestTime:32.9105ms
+                                                                        SKIP
+24 LED红/橙灯检查-用户判断
+TestTime:12.9652ms
+                                                                        SKIP
+25 发SKG控制指令-LED蓝灯
+TestTime:16.9534ms
+                                                                        SKIP
+26 LED蓝灯检查-用户判断
+TestTime:14.9593ms
+                                                                        SKIP
+33 AT-控制继电器电压输出5V
+TestTime:32.7084ms
+                                                                        SKIP
+34 上报检测-充电及USB插入状态检测
+TestTime:50.7874ms
+                                                                        SKIP
+35 AT-读取电量值
+TestTime:32.1728ms
+                                                                        SKIP
+36 检查CRT值
+TestTime:15.6695ms
+                                                                        SKIP
+37 AT-控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=SYS on!
+VO=0
+OK
+
+TestTime:281.1299ms
+                                                                        PASS
+38 上报检测-未充电及USB拔出状态检测
+TestTime:11.1161ms
+                                                                        SKIP
+39 状态上报检测-加热按键检测
+TestTime:21.6245ms
+                                                                        SKIP
+40 状态上报检测-电源按键检测
+TestTime:21.6427ms
+                                                                        SKIP
+44 发SKG控制指令-关机
+TestTime:8.9831ms
+                                                                        SKIP
+45 AT-获取待机时低压通道1
+TestTime:18.0635ms
+                                                                        SKIP
+46 检查待机时低压通道1
+TestTime:11.0091ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:14.9589ms
+                                                                        PASS
+52 关闭采集板卡串口
+TestTime:13.9621ms
+                                                                        PASS
+53 Deinit
+TestTime:12.0023ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第7项:
+发送SKG查询指令
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGExecuter.cs:行号 171
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+all test time:0:00:12.1425023
+

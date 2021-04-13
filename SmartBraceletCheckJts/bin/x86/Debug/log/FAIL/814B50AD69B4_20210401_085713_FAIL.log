@@ -1,0 +1,296 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-04-01, Test Time: 08:57:13
+
+
+1 Init
+TestTime:18.9495ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=814B50AD69B4
+TestTime:63.8706ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:131.1221ms
+                                                                        PASS
+4 打开采集板卡串口
+TestTime:122.4501ms
+                                                                        PASS
+5 打开蓝牙dongel串口
+TestTime:135.1466ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A6 80 00 38 30 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 C7 
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A6 80 00 38 30 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 C7 
+核验RX的校验位：错误,返回校验位:C7,计算校验位:99
+接收的长度:0
+buffer.Count:0小于最小长度9
+接收的长度:0
+buffer.Count:0小于最小长度9
+接收的长度:0
+buffer.Count:0小于最小长度9
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A5 80 00 38 30 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 9A 
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A5 80 00 38 30 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 9A 
+核验RX的校验位：正确,返回校验位:9A,计算校验位:9A
+应答报文格式检查PASS
+TestTime:944.795ms
+                                                                        PASS
+9 SKG检查-软硬件版本固件名电压等信息
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:DB2A230000000A231A0CFFFF
+电压值(mV)：：4261，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:78.6249ms
+                                                                        PASS
+12 SKG授权指令-PCBID授权
+Tx:A5 C3 00 23 00 00 00 23 02 0C 38 31 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 6E 
+接收的长度:53
+Rx:A5 C3 00 35 00 00 A0 23 02 3C 38 31 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 05 
+Rx:A5 C3 00 35 00 00 A0 23 02 3C 38 31 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 05 
+核验RX的校验位：正确,返回校验位:05,计算校验位:05
+应答报文格式检查PASS
+回复的授权内容:383134423530414436394234000000000000000000000000
+发送的授权内容:383134423530414436394234000000000000000000000000
+一致
+MCU ID:DB2A230000000A231A0CFFFF
+BLE MAC:000000000000
+授权成功
+TestTime:255.5713ms
+                                                                        PASS
+13 SKG查询指令-回读授权信息
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:93
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A5 80 00 31 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 F0 
+数据尚未接收完整,已接收:93,总长度:94
+接收的长度:0
+数据尚未接收完整,已接收:93,总长度:94
+接收的长度:0
+数据尚未接收完整,已接收:93,总长度:94
+接收的长度:0
+数据尚未接收完整,已接收:93,总长度:94
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A5 80 00 38 31 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 9B 
+Rx:A5 C3 00 5E 00 00 A0 37 00 00 FF 00 00 00 00 00 00 DB 2A 23 00 00 00 0A 23 1A 0C FF FF 00 00 00 00 00 00 10 A5 80 00 38 31 34 42 35 30 41 44 36 39 42 34 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 9B 
+核验RX的校验位：正确,返回校验位:9B,计算校验位:9B
+应答报文格式检查PASS
+TestTime:902.9549ms
+                                                                        PASS
+14 SKG检查-检查回读的授权信息
+MCU ID:DB2A230000000A231A0CFFFF
+读取的PCBA-ID:814B50AD69B4
+预写PCBIDA-ID :814B50AD69B4与写入的PCBA-ID ：814B50AD69B4，一致
+TestTime:46.9586ms
+                                                                        PASS
+15 SKG控制指令-EMS13通道
+EMS 测试开关设置:正反交替脉冲A_B
+EMS 脉宽设置:3500uS
+EMS 频率设置:1000Hz
+EMS 幅度设置:50000mV
+加热档位控制:开启42度加热或加热中档
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+接收的长度:26
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+核验RX的校验位：正确,返回校验位:47,计算校验位:47
+应答报文格式检查PASS
+TestTime:262.2756ms
+                                                                        PASS
+16 采集板卡-AT获取EMS1
+AT Commond=AT+EMS1?
+AT Response=EMS1=43.420
+OK
+
+TestTime:261.0238ms
+                                                                        PASS
+17 SKG检查-EMS1值
+EMS1的值：43.42，在设定范围：0 ~ 50之间 PASS 
+
+TestTime:38.8904ms
+                                                                        PASS
+18 SKG控制指令-EMS24通道
+EMS 测试开关设置:正反交替脉冲E_F
+EMS 脉宽设置:3500uS
+EMS 频率设置:1000Hz
+EMS 幅度设置:50000mV
+Tx:A5 C3 00 1A 00 00 00 40 00 00 05 0D AC 03 E8 C3 50 00 00 00 00 00 00 00 00 E0 
+接收的长度:26
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 00 00 00 00 00 00 00 00 40 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 00 00 00 00 00 00 00 00 40 
+核验RX的校验位：正确,返回校验位:40,计算校验位:40
+应答报文格式检查PASS
+TestTime:231.6968ms
+                                                                        PASS
+19 采集板卡-AT获取EMS2
+AT Commond=AT+EMS2?
+AT Response=EMS2=32.386
+OK
+
+TestTime:275.518ms
+                                                                        PASS
+20 SKG检查-检查EMS2
+EMS2的值：32.38，在设定范围：0 ~ 60之间 PASS 
+
+TestTime:25.4178ms
+                                                                        PASS
+21 SKG控制指令-开机
+开关机设置:开机
+Tx:A5 C3 00 1A 00 00 00 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 
+接收的长度:26
+Rx:A5 C3 00 1A 00 00 A0 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+Rx:A5 C3 00 1A 00 00 A0 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+核验RX的校验位：正确,返回校验位:9D,计算校验位:9D
+应答报文格式检查PASS
+TestTime:226.6078ms
+                                                                        PASS
+22 SKG控制指令-关机
+开关机设置:关机
+Tx:A5 C3 00 1A 00 00 00 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+接收的长度:26
+Rx:A5 C3 00 1A 00 00 A0 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+Rx:A5 C3 00 1A 00 00 A0 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:205.2804ms
+                                                                        PASS
+23 SKG控制指令-发出声音+LED全关
+LED 模式设置:LED全关
+Tx:A5 C3 00 1A 00 00 00 40 00 03 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 3E 
+接收的长度:0
+buffer.Count:0小于最小长度9
+接收的长度:25
+Rx:A5 C3 00 1A 00 00 A0 40 00 03 00 00 00 00 00 00 00 01 00 00 00 00 00 00 9E 
+数据尚未接收完整,已接收:25,总长度:26
+接收的长度:0
+数据尚未接收完整,已接收:25,总长度:26
+接收的长度:0
+数据尚未接收完整,已接收:25,总长度:26
+超时：System.Func`1[System.Boolean]
+TestTime:637.361ms
+                                                                        FAIL
+24 SKG检查-声音检查
+TestTime:15.2028ms
+                                                                        SKIP
+25 SKG控制指令-LED红/橙灯
+TestTime:7.979ms
+                                                                        SKIP
+26 SKG检查-LED红/橙灯检查
+TestTime:11.9684ms
+                                                                        SKIP
+27 SKG控制指令-LED蓝灯
+TestTime:13.9238ms
+                                                                        SKIP
+28 SKG检查-LED蓝灯检查
+TestTime:10.953ms
+                                                                        SKIP
+30 MAC反序
+TestTime:15.953ms
+                                                                        SKIP
+31 蓝牙dongle-AT启动测试RSSI和上下行丢包率
+TestTime:11.0068ms
+                                                                        SKIP
+32 SKG检查-蓝牙RSSI信号强度
+TestTime:10.0074ms
+                                                                        SKIP
+33 SKG检查-蓝牙上行丢包率
+TestTime:9.9727ms
+                                                                        SKIP
+34 SKG检查-蓝牙下行丢包率
+TestTime:11.9344ms
+                                                                        SKIP
+36 采集板卡-AT控制继电器电压输出5V
+TestTime:12.9652ms
+                                                                        SKIP
+37 SKG状态上报检测-电池充电状态检测
+TestTime:9.9746ms
+                                                                        SKIP
+38 采集板卡-AT读取电量值
+TestTime:12.9801ms
+                                                                        SKIP
+39 SKG检查-检查CRT值
+TestTime:9.9733ms
+                                                                        SKIP
+40 采集板卡-AT控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:260.7884ms
+                                                                        PASS
+41 SKG状态上报检测-电池未充电状态检测
+TestTime:9.9718ms
+                                                                        SKIP
+42 SKG状态上报检测-加热按键检测
+TestTime:10.7159ms
+                                                                        SKIP
+43 SKG状态上报检测-电源按键检测
+TestTime:10.1907ms
+                                                                        SKIP
+47 SKG控制指令-关机
+TestTime:11.0045ms
+                                                                        SKIP
+48 采集板卡-AT获取待机时低压通道1
+TestTime:10.9344ms
+                                                                        SKIP
+49 SKG检查-待机时低压通道1
+TestTime:9.9376ms
+                                                                        SKIP
+50 SKG控制指令-写入PCBA测试完成标志
+TestTime:11.9684ms
+                                                                        SKIP
+53 关闭SKG主串口
+TestTime:14.4878ms
+                                                                        PASS
+54 关闭采集板卡串口
+TestTime:11.2823ms
+                                                                        PASS
+55 关闭蓝牙dongle串口
+TestTime:126.5329ms
+                                                                        PASS
+56 Deinit
+TestTime:11.7331ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第23项:
+SKG控制指令-发出声音+LED全关
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SKGControlCommandExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SKGControlCommandExecuter.cs:行号 358
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+all test time:0:00:06.2470582
+

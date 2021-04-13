@@ -1,0 +1,135 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-26, Test Time: 15:54:36
+
+
+1 Init
+TestTime:15.9576ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:57.6564ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:131.645ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+Rx:A5 C3 00 5E 00 00 A0 37 FF FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E D8 80 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 2E 
+核验RX的校验位：正确,返回校验位:2E,计算校验位:2E
+应答报文格式检查PASS
+TestTime:188.5788ms
+                                                                        PASS
+9 SKG检查-软硬件版本固件名电压等信息
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:49CA74000000053A120CFFFF
+BLE MAC:804B50AD69B4
+电压值(mV)：：3800，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:128.2015ms
+                                                                        PASS
+10 SKG检查-是否完成过整机测试
+未完成过整机测试
+TestTime:236.3876ms
+                                                                        FAIL
+11 SKG授权指令-PCBID授权
+TestTime:18.9639ms
+                                                                        SKIP
+12 SKG查询指令-回读授权信息
+TestTime:10.0266ms
+                                                                        SKIP
+13 SKG检查-检查回读的授权信息
+TestTime:11.6853ms
+                                                                        SKIP
+14 SKG控制指令-EMS13通道
+TestTime:9.9744ms
+                                                                        SKIP
+15 采集板卡-AT获取EMS1
+TestTime:12.7753ms
+                                                                        SKIP
+16 SKG检查-EMS1值
+TestTime:10.005ms
+                                                                        SKIP
+17 SKG控制指令-EMS24通道
+TestTime:13.3305ms
+                                                                        SKIP
+19 SKG检查-检查EMS2
+TestTime:12.9295ms
+                                                                        SKIP
+20 SKG控制指令-开机
+TestTime:10.0683ms
+                                                                        SKIP
+21 SKG控制指令-关机
+TestTime:12.0069ms
+                                                                        SKIP
+22 SKG控制指令-发出声音+LED全关
+TestTime:9.976ms
+                                                                        SKIP
+23 SKG检查-声音检查
+TestTime:9.0623ms
+                                                                        SKIP
+24 SKG控制指令-LED红/橙灯
+TestTime:11.4669ms
+                                                                        SKIP
+25 SKG检查-LED红/橙灯检查
+TestTime:8.9183ms
+                                                                        SKIP
+26 SKG控制指令-LED蓝灯
+TestTime:11.5523ms
+                                                                        SKIP
+27 SKG检查-LED蓝灯检查
+TestTime:12.6013ms
+                                                                        SKIP
+40 SKG状态上报检测-加热按键检测
+TestTime:9.1491ms
+                                                                        SKIP
+41 SKG状态上报检测-电源按键检测
+TestTime:10.0136ms
+                                                                        SKIP
+45 SKG控制指令-关机
+TestTime:11.9797ms
+                                                                        SKIP
+48 SKG控制指令-写入PCBA测试完成标志
+TestTime:11.3758ms
+                                                                        SKIP
+51 关闭SKG主串口
+TestTime:9.9715ms
+                                                                        PASS
+54 Deinit
+TestTime:13.411ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第10项:
+SKG检查-是否完成过整机测试
+AILinkFactoryAuto.Task.BaseException: 未完成过整机测试
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.SkgQueryCheckExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\SkgQueryCheckExecuter.cs:行号 83
+   在 AILinkFactoryAuto.View.FormMain.Run() 位置 F:\2_工作和软件\1_工作存档\01长虹爱联\功能测试框架搭建\new\Platform\AILinkFactoryAuto\View\FormMain.cs:行号 404
+
+all test time:0:00:01.5266339
+

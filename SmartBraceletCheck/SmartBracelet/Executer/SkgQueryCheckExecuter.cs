@@ -49,55 +49,61 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Executer
             //string firmwareName = config.FirmwareName;
             #region
             //是否完成过PCBA 0x01：已完成过 其他值：未完成过
-            if (true)
+            if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过PCBA测试 ||
+                config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.全检
+                )
             {
-                if (dataArry[0] == 0x01)
+                if (dataArry[0] == 0x00)
                 {
                     log.Info("完成过PCBA测试");
                 }
                 else
                 {
-                    if (config.IfCheckFinishTest== SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过PCBA测试)
-                    {
+                    //if (config.IfCheckFinishTest== SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过PCBA测试)
+                    //{
                         throw new BaseException("未完成过PCBA测试");
-                    }
-                    log.Info("未完成过PCBA测试");
+                    //}
+                    //log.Info("未完成过PCBA测试");
                 }
             }
 
             //查询是否完成过整机测试  0x01：已完成过 其他值：未完成过
-            if (true)//check Whole machine test
+            if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过整机测试 ||
+                config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.全检
+                )
             {
-                if (dataArry[1] == 0x01)
+                if (dataArry[1] == 0x00)
                 {
                     log.Info("完成过整机测试");
                 }
                 else
                 {
-                    if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过整机测试)
-                    {
+                    //if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过整机测试)
+                    //{
                         throw new BaseException("未完成过整机测试");
-                    }
+                    //}
 
-                    log.Info("未完成过整机测试");
+                    //log.Info("未完成过整机测试");
                 }
             }
 
             //查询是否完成过老化测试  0x01：已完成过 其他值：未完成过
-            if (true)//checkAgeing
+            if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过老化测试 ||
+                config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.全检
+                )
             {
-                if (dataArry[2] == 0x01)
+                if (dataArry[2] == 0x00)
                 {
                     log.Info("完成过老化测试");
                 }
                 else
                 {
-                    if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过老化测试)
-                    {
+                    //if (config.IfCheckFinishTest == SkgQueryCheckProperties.EnumIfCheckFinishTest.检查是否完成过老化测试)
+                    //{
                         throw new BaseException("未完成过老化测试");
-                    }
+                    //}
 
-                    log.Info("未完成过老化测试");
+                    //log.Info("未完成过老化测试");
                 }
             }
 

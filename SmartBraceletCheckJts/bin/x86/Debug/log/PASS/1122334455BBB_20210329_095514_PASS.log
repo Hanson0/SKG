@@ -1,0 +1,349 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-03-29, Test Time: 09:55:14
+
+
+1 Init
+TestTime:15.9578ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=
+TestTime:59.6481ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:131.9715ms
+                                                                        PASS
+8 SKG查询指令-所有信息查询
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E E7 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 F2 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E E7 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 F2 
+核验RX的校验位：错误,返回校验位:F2,计算校验位:AC
+接收的长度:0
+buffer.Count:0小于等于9
+接收的长度:0
+buffer.Count:0小于等于9
+接收的长度:0
+buffer.Count:0小于等于9
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:93
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 42 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 08 
+数据区尚未接收完整,buffer:93,iTotal:94
+接收的长度:0
+数据区尚未接收完整,buffer:93,iTotal:94
+接收的长度:0
+数据区尚未接收完整,buffer:93,iTotal:94
+接收的长度:0
+数据区尚未接收完整,buffer:93,iTotal:94
+超时：System.Func`1[System.Boolean]
+重试第2次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 80 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 47 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 0D 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 80 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 47 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 0D 
+核验RX的校验位：错误,返回校验位:0D,计算校验位:8D
+接收的长度:0
+buffer.Count:0小于等于9
+接收的长度:0
+buffer.Count:0小于等于9
+接收的长度:0
+buffer.Count:0小于等于9
+超时：System.Func`1[System.Boolean]
+重试第3次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E F6 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 BD 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E F6 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 BD 
+核验RX的校验位：正确,返回校验位:BD,计算校验位:BD
+应答报文格式检查PASS
+TestTime:2557.1832ms
+                                                                        PASS
+9 SKG检查-软硬件版本固件名电压等信息
+硬件版本号:0000,与设置版本号:0000一致
+软件版本号:00000000,与设置版本号:00000000一致
+MCU ID:49CA74000000053A120CFFFF
+BLE MAC:804B50AD69B4
+电压值(mV)：：3830，在设定范围：500 ~ 5000之间 PASS 
+
+固件名称:K5-2T,与设置固件名称:K5-2T一致
+TestTime:76.7982ms
+                                                                        PASS
+11 SKG授权指令-PCBID授权
+Tx:A5 C3 00 23 00 00 00 23 02 0D 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 2B 
+Rx:A5 C3 00 35 00 00 A0 23 02 3D 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 90 
+核验RX的校验位：正确,返回校验位:90,计算校验位:90
+应答报文格式检查PASS
+回复的授权内容:313132323333343435354242420000000000000000000000
+发送的授权内容:313132323333343435354242420000000000000000000000
+一致
+MCU ID:49CA74000000053A120CFFFF
+BLE MAC:804B50AD69B4
+授权成功
+TestTime:225.9957ms
+                                                                        PASS
+12 SKG查询指令-回读授权信息
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 52 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 73 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0F 52 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 73 
+核验RX的校验位：错误,返回校验位:73,计算校验位:18
+接收的长度:0
+buffer.Count:0小于等于9
+接收的长度:0
+buffer.Count:0小于等于9
+接收的长度:0
+buffer.Count:0小于等于9
+超时：System.Func`1[System.Boolean]
+重试第1次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:93
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E AC 80 00 31 4C 66 66 66 66 33 56 56 26 13 13 03 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 E7 
+数据区尚未接收完整,buffer:93,iTotal:94
+接收的长度:0
+数据区尚未接收完整,buffer:93,iTotal:94
+接收的长度:0
+数据区尚未接收完整,buffer:93,iTotal:94
+接收的长度:0
+数据区尚未接收完整,buffer:93,iTotal:94
+超时：System.Func`1[System.Boolean]
+重试第2次
+Tx:A5 C3 00 11 00 00 00 37 FF FF FF FF FF FF FF FF 40 
+接收的长度:94
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E F8 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 B3 
+Rx:A5 C3 00 5E 00 00 A0 37 00 FF FF 00 00 00 00 00 00 49 CA 74 00 00 00 05 3A 12 0C FF FF B4 69 AD 50 4B 80 0E F8 80 00 31 31 32 32 33 33 34 34 35 35 42 42 42 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 20 4B 35 2D 32 54 B3 
+核验RX的校验位：正确,返回校验位:B3,计算校验位:B3
+应答报文格式检查PASS
+TestTime:1744.0433ms
+                                                                        PASS
+13 SKG检查-检查回读的授权信息
+MCU ID:49CA74000000053A120CFFFF
+BLE MAC:804B50AD69B4
+读取的PCBA-ID:1122334455BBB
+预写PCBIDA-ID :1122334455BBB与写入的PCBA-ID ：1122334455BBB，一致
+TestTime:53.7435ms
+                                                                        PASS
+14 SKG控制指令-EMS13通道
+EMS 测试开关设置:正反交替脉冲A_B
+EMS 脉宽设置:3500uS
+EMS 频率设置:1000Hz
+EMS 幅度设置:50000mV
+加热档位控制:开启42度加热或加热中档
+Tx:A5 C3 00 1A 00 00 00 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 E7 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 03 0D AC 03 E8 C3 50 01 00 00 00 00 00 00 00 47 
+核验RX的校验位：正确,返回校验位:47,计算校验位:47
+应答报文格式检查PASS
+TestTime:286.217ms
+                                                                        PASS
+17 SKG控制指令-EMS24通道
+EMS 测试开关设置:正反交替脉冲E_F
+EMS 脉宽设置:3500uS
+EMS 频率设置:1000Hz
+EMS 幅度设置:50000mV
+Tx:A5 C3 00 1A 00 00 00 40 00 00 05 0D AC 03 E8 C3 50 00 00 00 00 00 00 00 00 E0 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 05 0D AC 03 E8 C3 50 00 00 00 00 00 00 00 00 40 
+核验RX的校验位：正确,返回校验位:40,计算校验位:40
+应答报文格式检查PASS
+TestTime:256.1605ms
+                                                                        PASS
+20 SKG控制指令-开机
+开关机设置:开机
+Tx:A5 C3 00 1A 00 00 00 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 
+Rx:A5 C3 00 1A 00 00 A0 40 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+核验RX的校验位：正确,返回校验位:9D,计算校验位:9D
+应答报文格式检查PASS
+TestTime:190.773ms
+                                                                        PASS
+21 SKG控制指令-关机
+开关机设置:关机
+Tx:A5 C3 00 1A 00 00 00 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:207.3613ms
+                                                                        PASS
+22 SKG控制指令-发出声音+LED全关
+LED 模式设置:LED全关
+Tx:A5 C3 00 1A 00 00 00 40 00 03 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 00 03 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:91.02ms
+                                                                        PASS
+23 SKG检查-声音检查
+User Press Space
+TestTime:996.9901ms
+                                                                        PASS
+24 SKG控制指令-LED红/橙灯
+LED 模式设置:红或橙色LED开
+Tx:A5 C3 00 1A 00 00 00 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:79.6747ms
+                                                                        PASS
+25 SKG检查-LED红/橙灯检查
+User Press Space
+TestTime:759.0444ms
+                                                                        PASS
+26 SKG控制指令-LED蓝灯
+LED 模式设置:蓝色LED开
+Tx:A5 C3 00 1A 00 00 00 40 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 
+Rx:A5 C3 00 0D 00 00 A0 41 00 02 03 01 8A 
+CMD Type Error
+Rx:A5 C3 00 0D 00 00 A0 41 00 02 02 01 8B 
+CMD Type Error
+Rx:A5 C3 00 1A 00 00 A0 40 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9D 
+核验RX的校验位：正确,返回校验位:9D,计算校验位:9D
+应答报文格式检查PASS
+TestTime:365.1546ms
+                                                                        PASS
+27 SKG检查-LED蓝灯检查
+User Press Space
+TestTime:1057.5321ms
+                                                                        PASS
+40 SKG状态上报检测-加热按键检测
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 02 01 89 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:89,计算校验位:89
+加热键被按下
+USB 已插入
+充电中
+未检测到佩戴
+PASS,检测到正确按键上报事件：加热键被按下
+TestTime:4648.2563ms
+                                                                        PASS
+41 SKG状态上报检测-电源按键检测
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:88,计算校验位:88
+加热键被按下
+USB 已插入
+充满状态
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:88,计算校验位:88
+加热键被按下
+USB 已插入
+充满状态
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:88,计算校验位:88
+加热键被按下
+USB 已插入
+充满状态
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 02 01 89 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:89,计算校验位:89
+加热键被按下
+USB 已插入
+充电中
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:88,计算校验位:88
+加热键被按下
+USB 已插入
+充满状态
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:88,计算校验位:88
+加热键被按下
+USB 已插入
+充满状态
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 02 01 89 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:89,计算校验位:89
+加热键被按下
+USB 已插入
+充电中
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 03 01 88 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:88,计算校验位:88
+加热键被按下
+USB 已插入
+充满状态
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 02 01 89 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:89,计算校验位:89
+加热键被按下
+USB 已插入
+充电中
+未检测到佩戴
+Wait TimeOut, 15seconds
+Wait TimeOut, 15seconds
+Wait TimeOut, 15seconds
+Rx:A5 C3 00 0D 00 00 A0 41 02 02 02 01 89 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:89,计算校验位:89
+加热键被按下
+USB 已插入
+充电中
+未检测到佩戴
+Rx:A5 C3 00 0D 00 00 A0 41 01 02 02 01 8A 
+收到DUT状态事件上报
+核验RX的校验位：正确,返回校验位:8A,计算校验位:8A
+电源键按下
+USB 已插入
+充电中
+未检测到佩戴
+PASS,检测到正确按键上报事件：电源键按下
+TestTime:12049.0607ms
+                                                                        PASS
+45 SKG控制指令-关机
+开关机设置:关机
+Tx:A5 C3 00 1A 00 00 00 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 
+Rx:A5 C3 00 1A 00 00 A0 40 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9E 
+核验RX的校验位：正确,返回校验位:9E,计算校验位:9E
+应答报文格式检查PASS
+TestTime:86.9504ms
+                                                                        PASS
+48 SKG控制指令-写入PCBA测试完成标志
+PCBA 测试完成标志:PCBA测试完成_标志写入flash
+Tx:A5 C3 00 1A 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 3D 
+Rx:A5 C3 00 1A 00 00 A0 40 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 9D 
+核验RX的校验位：正确,返回校验位:9D,计算校验位:9D
+应答报文格式检查PASS
+TestTime:118.4858ms
+                                                                        PASS
+51 关闭SKG主串口
+TestTime:17.3165ms
+                                                                        PASS
+54 Deinit
+TestTime:32.0193ms
+                                                                        PASS
+
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+     PP                                                                   PP
+     PP                 PPPPPPPP     PPP     PPPPPP   PPPPPP              PP
+     PP                 PP     PP   PP PP   PP    PP PP    PP             PP
+     PP                 PP     PP  PP   PP  PP       PP                   PP
+     PP                 PPPPPPPP  PP     PP  PPPPPP   PPPPPP              PP
+     PP                 PP        PPPPPPPPP       PP       PP             PP
+     PP                 PP        PP     PP PP    PP PP    PP             PP
+     PP                 PP        PP     PP  PPPPPP   PPPPPP              PP
+     PP                                                                   PP
+     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+
+
+all test time:0:00:26.7329721
+

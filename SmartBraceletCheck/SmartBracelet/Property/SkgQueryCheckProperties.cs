@@ -41,6 +41,7 @@ namespace AILinkFactoryAuto.Task.SmartBracelet.Property
             检查是否完成过PCBA测试,
             检查是否完成过整机测试,
             检查是否完成过老化测试,
+            全检,
         }
 
 

@@ -1,0 +1,183 @@
+
+     ***********************************************************************
+     ***********************************************************************
+     ***********                                                  **********
+     ***********                  FactoryAuto                     **********
+     ***********                  Huafuu                          **********
+     ***********                                                  **********
+     ***********                                                  **********
+     ***********************************************************************
+     ***********************************************************************
+     Test Date: 2021-04-01, Test Time: 08:54:55
+
+
+1 Init
+TestTime:36.9017ms
+                                                                        PASS
+2 扫码枪扫描标签
+IMEI=
+MEID=
+SN=
+MAC=814B50AD69B4
+TestTime:85.0371ms
+                                                                        PASS
+3 打开SKG主串口
+TestTime:140.6292ms
+                                                                        PASS
+4 打开采集板卡串口
+TestTime:161.8593ms
+                                                                        PASS
+5 打开蓝牙dongel串口
+TestTime:169.728ms
+                                                                        PASS
+6 检测SKG产品上电中...
+超时：System.Func`1[System.Boolean]
+TestTime:30354.9166ms
+                                                                        FAIL
+8 SKG查询指令-所有信息查询
+TestTime:50.0645ms
+                                                                        SKIP
+9 SKG检查-软硬件版本固件名电压等信息
+TestTime:41.9156ms
+                                                                        SKIP
+12 SKG授权指令-PCBID授权
+TestTime:19.9109ms
+                                                                        SKIP
+13 SKG查询指令-回读授权信息
+TestTime:10.9353ms
+                                                                        SKIP
+14 SKG检查-检查回读的授权信息
+TestTime:22.9775ms
+                                                                        SKIP
+15 SKG控制指令-EMS13通道
+TestTime:26.2114ms
+                                                                        SKIP
+16 采集板卡-AT获取EMS1
+TestTime:22.0552ms
+                                                                        SKIP
+17 SKG检查-EMS1值
+TestTime:15.9628ms
+                                                                        SKIP
+18 SKG控制指令-EMS24通道
+TestTime:29.7333ms
+                                                                        SKIP
+19 采集板卡-AT获取EMS2
+TestTime:10.2182ms
+                                                                        SKIP
+20 SKG检查-检查EMS2
+TestTime:14.8023ms
+                                                                        SKIP
+21 SKG控制指令-开机
+TestTime:8.9387ms
+                                                                        SKIP
+22 SKG控制指令-关机
+TestTime:14.5682ms
+                                                                        SKIP
+23 SKG控制指令-发出声音+LED全关
+TestTime:31.1458ms
+                                                                        SKIP
+24 SKG检查-声音检查
+TestTime:14.003ms
+                                                                        SKIP
+25 SKG控制指令-LED红/橙灯
+TestTime:34.1364ms
+                                                                        SKIP
+26 SKG检查-LED红/橙灯检查
+TestTime:11.6347ms
+                                                                        SKIP
+27 SKG控制指令-LED蓝灯
+TestTime:10.4472ms
+                                                                        SKIP
+28 SKG检查-LED蓝灯检查
+TestTime:13.4815ms
+                                                                        SKIP
+30 MAC反序
+TestTime:23.4943ms
+                                                                        SKIP
+31 蓝牙dongle-AT启动测试RSSI和上下行丢包率
+TestTime:43.2844ms
+                                                                        SKIP
+32 SKG检查-蓝牙RSSI信号强度
+TestTime:20.012ms
+                                                                        SKIP
+33 SKG检查-蓝牙上行丢包率
+TestTime:8.9997ms
+                                                                        SKIP
+34 SKG检查-蓝牙下行丢包率
+TestTime:11.9865ms
+                                                                        SKIP
+36 采集板卡-AT控制继电器电压输出5V
+TestTime:34.4709ms
+                                                                        SKIP
+37 SKG状态上报检测-电池充电状态检测
+TestTime:51.4177ms
+                                                                        SKIP
+38 采集板卡-AT读取电量值
+TestTime:14.1862ms
+                                                                        SKIP
+39 SKG检查-检查CRT值
+TestTime:9.9382ms
+                                                                        SKIP
+40 采集板卡-AT控制继电器关闭电压输出
+AT Commond=AT+VO=0!
+AT Response=VO=0
+OK
+
+TestTime:292.0464ms
+                                                                        PASS
+41 SKG状态上报检测-电池未充电状态检测
+TestTime:17.9717ms
+                                                                        SKIP
+42 SKG状态上报检测-加热按键检测
+TestTime:41.9422ms
+                                                                        SKIP
+43 SKG状态上报检测-电源按键检测
+TestTime:20.5849ms
+                                                                        SKIP
+47 SKG控制指令-关机
+TestTime:10.9756ms
+                                                                        SKIP
+48 采集板卡-AT获取待机时低压通道1
+TestTime:19.1389ms
+                                                                        SKIP
+49 SKG检查-待机时低压通道1
+TestTime:9.0123ms
+                                                                        SKIP
+50 SKG控制指令-写入PCBA测试完成标志
+TestTime:28.3857ms
+                                                                        SKIP
+53 关闭SKG主串口
+TestTime:11.621ms
+                                                                        PASS
+54 关闭采集板卡串口
+TestTime:10.9716ms
+                                                                        PASS
+55 关闭蓝牙dongle串口
+TestTime:123.9094ms
+                                                                        PASS
+56 Deinit
+TestTime:15.8817ms
+                                                                        PASS
+
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+     FF                                                                   FF
+     FF                    FFFFFFFF    FFF     FFFF  FF                   FF
+     FF                    FF         FF FF     FF   FF                   FF
+     FF                    FF        FF   FF    FF   FF                   FF
+     FF                    FFFFFF   FF     FF   FF   FF                   FF
+     FF                    FF       FFFFFFFFF   FF   FF                   FF
+     FF                    FF       FF     FF   FF   FF                   FF
+     FF                    FF       FF     FF  FFFF  FFFFFFFF             FF
+     FF                                                                   FF
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+
+第6项:
+检测SKG产品上电中...
+AILinkFactoryAuto.Task.BaseException: 超时：System.Func`1[System.Boolean]
+   在 AILinkFactoryAuto.Utils.TimeUtils.Execute(Func`1 func, Int32 ms, Int32 interval)
+   在 AILinkFactoryAuto.Task.SmartBracelet.Executer.FindDeviceExecuter.Run(IProperties properties, GlobalDic`2 globalDic) 位置 F:\2_工作和软件\1_工作存档\02Ohters\SKG\code\WF-RTL8720N\SmartBraceletCheck\SmartBracelet\Executer\FindDeviceExecuter.cs:行号 130
+   在 AILinkFactoryAuto.View.FormMain.Run()
+
+all test time:0:00:32.9538662
+
